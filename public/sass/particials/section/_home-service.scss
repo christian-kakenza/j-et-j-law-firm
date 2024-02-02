@@ -1,0 +1,180 @@
+.home-service {
+    background-color: $secondary-color;
+    position: relative;
+    z-index: 1;
+
+    .balance-patten {
+        background-image: url(assets/img/legalor-img39.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        opacity: 0.05;
+    }
+
+    .home-service-wrapper {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-row-gap: 30px;
+        align-items: center;
+
+        .service-left {
+            margin: -20px 80px -20px 0px;
+
+            .fact-inner-box {
+                width: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                align-items: center;
+                align-content: center;
+                aspect-ratio: 1/1;
+
+                .fact-content {
+                    background-color: $primary-color;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+
+                    i {
+                        font-size: 60px;
+                        color: $light-color;
+                    }
+
+                    h5 {
+                        color: $light-color;
+                        margin-bottom: 0;
+                        margin-top: 15px;
+                    }
+                }
+
+                .fact-image {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    min-height: 300px;
+                    max-width: 100%;
+                }
+
+                .top-right-image {
+                    background-image: url(assets/img/legalor-img17.jpg);
+                    background-position: center;
+                }
+
+                .bottom-left-image {
+                    background-image: url(assets/img/legalor-img31.jpg);
+                    background-position: center;
+                }
+
+                .top-left-content {
+                    justify-content: flex-end;
+                    padding: 0px 40px 40px 80px;
+                }
+
+                .bottom-right-content {
+                    padding: 40px 90px 0px 20px;
+                }
+            }
+
+            @include bp(xlx) {
+                margin: -20px 40px -20px 0px;
+            }
+        }
+
+        .service-right {
+            .section-head-white {
+                margin-bottom: 35px;
+            }
+
+            .counter-inner-two-side {
+                @include bp(lg) {
+                    padding-right: 70px;
+                }
+            }
+        }
+
+        @include bp(lgx) {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 60px 0;
+
+            .service-left {
+                margin: 0;
+
+                .fact-inner-box {
+                    width: 67%;
+                    margin: auto;
+
+                    .fact-image {
+                        min-height: 320px;
+                    }
+
+                    .top-left-content {
+                        justify-content: flex-end;
+                        padding: 0px 20px 20px 40px;
+                    }
+
+                    .bottom-right-content {
+                        padding: 20px 50px 0px 10px;
+                    }
+                }
+            }
+        }
+
+        @include bp(mdx) {
+            .service-left {
+                .fact-inner-box {
+                    width: 90%;
+                }
+            }
+        }
+
+        @include bp(smx) {
+            .service-left {
+                .fact-inner-box {
+                    grid-template-columns: repeat(1, 1fr);
+                    aspect-ratio: initial;
+                    border-radius: initial;
+                    width: 100%;
+
+                    .fact-content {
+                        padding: 10px 50px;
+                        justify-content: center;
+                        text-align: center;
+
+                        h5 {
+                            margin: 10px 0;
+                        }
+                    }
+
+                    .top-left-content {
+                        border-radius: 100% 100% 0% 0%;
+                    }
+
+                    .bottom-right-content {
+                        border-radius: 0% 0% 100% 100%;
+                    }
+                }
+            }
+
+            .service-right {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .section-head-white {
+                    flex-basis: initial;
+
+                    .section-title {
+                        text-align: center;
+                    }
+                }
+
+                .counter-inner-two-side {
+
+                    .counter-item {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

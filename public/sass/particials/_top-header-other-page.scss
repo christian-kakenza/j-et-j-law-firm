@@ -1,0 +1,10 @@
+.top-header-other-page {
+	position: relative;
+    z-index: 999;
+    .bottom-header {
+    	background-color: rgba(17, 17, 17, 0.3);
+    }
+}
+.fixed-header .bottom-header {
+	background-color: $secondary-color;
+}

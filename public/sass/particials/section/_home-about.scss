@@ -1,0 +1,191 @@
+.home-about-us {
+    padding: 102px 0 110px;
+
+    @include bp (mdx) {
+        padding: 60px 0;
+    }
+
+    .about-intro {
+        margin-bottom: 50px;
+
+        .about-title {
+            padding-bottom: 20px;
+            margin-bottom: 0;
+            margin-right: 18px;
+            border-right: 1px solid rgba(217, 217, 217, 0.5);
+
+            @include bp(lgx) {
+                text-align: center;
+                padding: 0;
+                margin-bottom: 20px;
+                margin-right: 0;
+                border: none;
+            }
+        }
+
+        p {
+            padding: 0 18px;
+            margin-bottom: 0;
+
+            .first-word {
+                display: block;
+                float: left;
+                text-align: center;
+                line-height: 1;
+                font-size: 50px;
+                font-weight: 400;
+                margin-right: 15px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .home-about-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        align-items: center;
+
+        .left-img {
+            position: relative;
+            background-image: url(assets/img/legalor-img18.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 680px;
+            overflow: hidden;
+
+            .video-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(calc(-50% - 40px), -50%);
+            }
+        }
+
+        .about-aside-content {
+            margin-left: -80px;
+            background-color: $light-color;
+            box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.03);
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+
+            .about-content-title {
+                color: $primary-color;
+            }
+
+            .about-author-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 35px;
+
+                .author-detail {
+                    display: flex;
+                    align-items: center;
+
+                    .author-img {
+                        margin-right: 15px;
+                        border-radius: 50%;
+                        text-align: center;
+                        overflow: hidden;
+                        height: 76px;
+                        width: 76px;
+                    }
+
+                    .author-description {
+                        .author-name {
+                            margin-bottom: 2px;
+                            color: $text-color;
+                        }
+                    }
+                }
+
+                .author-signature {
+                    height: 70px;
+                    width: 30%;
+                    text-align: center;
+                    background-image: url(assets/img/legalor-img40.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                @include bp(xsx) {
+                    flex-direction: column;
+                    margin-bottom: 20px;
+
+                    .author-signature {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .accordion-content {
+                .card {
+                    box-shadow: none;
+                    border-bottom: 1px solid rgba(217, 217, 217, 0.44);
+                    margin-bottom: 0px;
+
+                    .card-header {
+                        .mb-0 {
+                            >a {
+                                padding: 20px 30px 20px 0;
+                                font-size: 17px;
+                                font-weight: 700;
+                                font-family: $title-font;
+
+                                &:before {
+                                    right: 5px;
+                                }
+                                @include bp(mdx) {
+                                    font-size: 14px;
+                                }
+                                @include bp(smx) {
+                                    padding: 14px 14px 14px 0;
+                                }
+
+                                @include bp(xsx) {
+                                    padding: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .card-body {
+                        padding: 0 30px 20px 0;
+
+                        @include bp(smx) {
+                            padding: 0 20px 14px 0;
+                        }
+
+                        @include bp(xsx) {
+                            padding: 0px 14px 14px 0 ;
+                        }
+                    }
+                }
+            }
+
+            @include bp(mdx) {
+                padding: 50px 25px;
+            }
+        }
+
+        @include bp(mdx) {
+            grid-template-columns: repeat(1, 1fr);
+
+            .left-img {
+                min-height: 400px;
+
+                .video-button {
+                    transform: translate(-50%);
+                }
+            }
+
+            .about-aside-content {
+                margin-left: 0;
+            }
+        }
+    }
+}

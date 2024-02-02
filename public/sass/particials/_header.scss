@@ -1,0 +1,503 @@
+/*--- top header css start ---*/
+.top-header {
+    padding: 0px;
+    background-color: #111111;
+    color: $light-color;
+
+    .header-schedule-info {
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 20px;
+            color: $light-color;
+        }
+
+        .schedule-info {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 13px;
+            line-height: 1.2;
+            color: #d9d9d9;
+
+            a {
+                margin-left: 7px;
+                font-weight: 500;
+                color: $light-color;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    background-color: #787878;
+                    height: 1px;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    line-height: 1;
+                }
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+
+            @include bp(lgx) {
+                font-size: 12px;
+
+                a {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        @include bp(mdx) {
+            margin-bottom: 5px;
+        }
+
+        @include bp(xsx) {
+            .schedule-info {
+                margin-left: 8px;
+
+                a {
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+.header-contact-info {
+    margin-left: 17px;
+    width: 250px;
+
+    a {
+        padding: 16px 16px;
+        background-color: #EB9601;
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+
+        .header-contact-inner {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                i {
+                    color: $light-color;
+                    font-size: 35px;
+                }
+
+                @include bp(mdx) {
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .details-content {
+                color: $light-color;
+                margin-left: 15px;
+
+                .content-title {
+                    font-size: 13px;
+                    display: inline-block;
+                    color: $light-color;
+                    line-height: 1.2;
+                    margin-bottom: 6px;
+                }
+
+                h6 {
+                    margin-bottom: 0;
+                    color: $light-color;
+                    transition: 0.4s all;
+
+                    @include bp(mdx) {
+                        font-size: 15px;
+                    }
+
+                    @include bp(smx) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+
+    @include bp(lgx) {
+        a {
+            padding: 14px 12px;
+        }
+    }
+
+    @include bp(mdx) {
+        width: auto;
+
+        a {
+            align-items: center;
+        }
+    }
+
+    @include bp (smx) {
+        margin-left: 12px;
+
+        a .header-contact-inner .details-content {
+            margin-left: 11px;
+
+            h6 {
+                font-size: 10px;
+            }
+
+            .content-title {
+                font-size: 11px;
+            }
+        }
+    }
+
+    @include bp(xsx) {
+        display: none;
+    }
+}
+
+.header-social {
+    @include inline-flex();
+    @include align-content (center);
+    @include align-items (center);
+    padding: 10px 26px;
+    background-color: #292929;
+
+    li {
+        margin: 0 9px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        i {
+            font-size: 15px;
+            color: #d9d9d9;
+            line-height: 0;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.4s;
+
+            @include bp(xlx) {
+                font-size: 13px;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            i {
+                color: $hover-color;
+            }
+        }
+    }
+
+    @include bp(mdx) {
+        padding: 5px 26px;
+    }
+
+    @include bp(xsx) {
+        padding: 5px 10px;
+
+        ul {
+            >li {
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+.legal-list {
+    text-align: right;
+    margin-right: 25px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        line-height: 1;
+
+        li {
+            display: inline-block;
+            padding: 0 19px;
+            position: relative;
+
+            @include bp(xsx) {
+                padding: 0 10px;
+            }
+
+            &:before {
+                content: "";
+                background-color: #787878;
+                height: 15px;
+                width: 1px;
+                right: -3px;
+                top: 0px;
+                color: rgba(248, 248, 248, 0.29);
+                line-height: 1;
+                position: absolute;
+
+                @include bp(mdx) {
+                    height: 12px;
+                }
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+
+                &:before {
+                    content: none;
+                }
+            }
+
+            a {
+                text-align: center;
+                color: #d9d9d9;
+                margin-bottom: 0;
+                line-height: 1;
+                transition: all 0.4s;
+                font-size: 13px;
+
+                @include bp(xsx) {
+                    font-size: 10px;
+                }
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+
+    @include bp(lgx) {
+        ul {
+            li {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    @include bp(xsx) {
+        ul {
+            li {
+                padding: 0 4px;
+            }
+        }
+    }
+}
+
+.header-search-icon {
+    @include inline-flex();
+    @include align-content (center);
+    @include align-items (center);
+    margin-left: 16px;
+
+    .search-icon {
+        background-color: transparent;
+        color: $light-color;
+        padding: 0;
+        font-size: 16px;
+        line-height: 34px;
+        height: 38px;
+        width: 38px;
+        border: none;
+
+        &:hover,
+        &:focus {
+            color: $hover-color;
+        }
+
+        @include bp(mdx) {
+            font-size: 13px;
+            line-height: 28px;
+            height: 30px;
+            width: 30px;
+
+        }
+
+        @include bp(xsx) {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+}
+
+/*--- header Logo css start ---*/
+.site-identity {
+    .site-title {
+        margin: 0;
+        line-height: 1.5;
+        @include font-size(15);
+        color: #d5d5d5;
+
+        @include bp(lgx) {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        @include bp(smx) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .site-description {
+        @include font-size(15);
+        margin-bottom: 0;
+
+        @include bp(mdx) {
+            font-size: 13px;
+        }
+    }
+
+    img {
+        max-width: 156px;
+        @include transition(opacity 0.4s linear);
+    }
+}
+
+/*--------------------------------------------------------------
+>>> Main Header Menu
+----------------------------------------------------------------*/
+@import "menu";
+
+
+
+/*---  bottom header css ---*/
+.bottom-header {
+    background-color: #272b38;
+
+    .hb-group {
+        .site-identity {
+            .site-title {
+                margin-bottom: 0;
+            }
+        }
+
+        .bottom-sub-menu {
+            .more-about-ceo {
+                background-color: #111;
+
+                button {
+                    background-color: #111;
+                    padding: 30px 22px;
+                    color: $light-color;
+                    border: none;
+                    transition: all 0.5s;
+
+                    i {
+                        font-size: 22px;
+                    }
+
+                    &:hover {
+                        background-color: $hover-color;
+                    }
+
+                    @include bp(lgx) {
+                        padding: 26px 22px;
+                    }
+
+                    @include bp(smx) {
+                        padding: 22px;
+                    }
+
+                    @include bp(xsx) {}
+                }
+            }
+        }
+    }
+
+    @include bp(lgx) {
+        padding: 0;
+
+        .hb-group {
+            border-bottom: 1px solid rgba($light-color, 0.2);
+        }
+    }
+}
+
+/*---  header search css ---*/
+.header-search-form {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    @include align-items(center);
+}
+
+.header-search-form {
+    background-color: rgba($dark-color, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include scale(0);
+    @include transition(transform 0.5s, opacity 0.5s, visibility 0.5s);
+    z-index: 999;
+
+    .header-search {
+        position: relative;
+    }
+
+    input[type="text"] {
+        background-color: $light-color;
+        color: #292929;
+        border: none;
+        width: 100%;
+        height: 52px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .search-close {
+        color: $primary-color;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        @include font-size(18);
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+        @include transition(background-color 0.4s);
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $hover-color;
+        }
+    }
+
+    &.search-in {
+        opacity: 1;
+        visibility: visible;
+        @include scale(1);
+    }
+}
+
+/*---  top header  for other page css ---*/
+@import "top-header-other-page";
+/*---  fixed header css ---*/
+@import "fixed-header";
+/*---  mobile slick Nav css ---*/
+@import "../components/slick-nav";

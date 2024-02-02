@@ -1,0 +1,189 @@
+.feature-section {
+    padding: 110px 0;
+    background-color: #f8f8f8;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .featuer-service-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+        @include bp(lgx) {
+            grid-column-gap: 20px;
+        }
+
+        @include bp (mdx) {
+            grid-column-gap: 40px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include bp (smx) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .serice-type {
+            background-color: $light-color;
+            padding: 45px 30px;
+
+            .service-header {
+                margin-bottom: 20px;
+            }
+
+            .servie-icon {
+                color: $secondary-color;
+                font-size: 100px;
+                line-height: 1;
+                margin-bottom: 20px;
+                transition: all 0.4s;
+            }
+
+            .service-desc {
+                margin-bottom: 0;
+                color: $text-color;
+            }
+
+            &:hover {
+                .servie-icon {
+                    transform: scale(1.1);
+                }
+            }
+
+            @include bp (xsx) {
+
+                .service-header,
+                .servie-icon {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:nth-child(even) {
+                background-color: $primary-color;
+                padding: 45px 30px 45px 30px;
+
+                .service-header,
+                .servie-icon {
+                    color: $light-color;
+                }
+
+                .service-desc {
+                    color: #f8f8f8;
+                }
+            }
+        }
+    }
+}
+
+.featuer-working-operation {
+    padding: 110px 0;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .working-operation-wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 38% 62%;
+
+        .operation-info {
+            text-align: center;
+            padding: 0 40px;
+
+            @include bp(lgx) {
+                padding: 0 20px;
+            }
+
+            @include bp(xsx) {
+                padding: 0;
+            }
+
+            @include bp(md) {
+                border-right: 3px solid #f8f8f8;
+            }
+
+            .section-head {
+                @include bp(md) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .operation-chart {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-evenly;
+            align-items: center;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            text-align: center;
+
+            @include bp(lg) {
+                margin-left: 20px;
+                padding: 0 20px;
+            }
+
+            @include bp(lgx) {
+                margin-left: 10px;
+                grid-column-gap: 20px;
+            }
+
+            @include bp(mdx) {
+                margin-left: 0;
+            }
+
+            @include bp(smx) {
+                grid-template-columns: auto;
+            }
+
+            .goal-wrapper {
+                background-color: $light-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .circle-progressbar {
+                    .circle-bar {
+                        position: relative;
+                        z-index: 1;
+
+                        .circle-number {
+                            position: absolute;
+                            top: 48%;
+                            left: 50%;
+                            transform: translate(-50%);
+                            line-height: 0;
+                            font-size: 28px;
+                            font-weight: 700;
+                            color: $secondary-color;
+                        }
+                    }
+                }
+
+                .goal-title {
+                    margin-bottom: 12px;
+                    margin-top: 12px;
+                    color: $secondary-color;
+
+                    @include bp(smx) {
+                        margin: 6px 0;
+                    }
+                }
+
+            }
+        }
+
+        @include bp(mdx) {
+            grid-template-columns: auto;
+        }
+    }
+}

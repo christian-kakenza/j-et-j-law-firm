@@ -1,0 +1,241 @@
+.faq-page-section {
+    position: relative;
+    z-index: 1;
+    padding: 110px 0;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+}
+
+.faq-page-container {
+    margin-bottom: 100px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include bp(mdx) {
+        margin-bottom: 50px;
+    }
+
+    .faq-right-info {
+        @include bp(lg) {
+            margin-right: 10px;
+        }
+    }
+}
+
+.accordion-content {
+    .card {
+        box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.1);
+
+        .card-header {
+            a {
+                font-size: 15px;
+                font-weight: 400;
+
+                @include bp(mdx) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.qsn-form-container {
+    padding: 50px 40px;
+    margin-bottom: 20px;
+    background-image: url(assets/img/legalor-img5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(17, 17, 17, 0.85);
+    }
+
+    .section-head-white {
+        margin-bottom: 20px;
+
+        .section-head {
+            color: $light-color;
+        }
+    }
+
+
+
+
+    form {
+        padding-top: 10px;
+        text-align: left;
+
+        p {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    input {
+        padding: 15px;
+        border: none;
+        background-color: #f8f8f8;
+        color: #414141;
+
+        &:not([type="submit"]) {
+            min-height: 55px;
+            width: 100%;
+        }
+    }
+
+    textarea {
+        padding: 15px;
+        border: none;
+        background-color: #f8f8f8;
+        color: #414141;
+    }
+
+    input[type="submit"] {
+        background-color: $primary-color;
+        text-align: left;
+        color: $light-color;
+        text-transform: capitalize;
+        font-family: $title-font;
+        font-weight: 500;
+        line-height: 1.2;
+        padding: 16px 60px;
+        transition: 0.4s all;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+
+        @include bp(mdx) {
+            padding: 16px 30px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    @include bp(lg) {
+        margin-left: 46px;
+    }
+
+    @include bp(lgx) {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    @include bp(xsx) {
+        padding: 30px 20px;
+    }
+}
+
+.faq-testimonial {
+    margin-right: 60px;
+
+    @include bp(lgx) {
+        margin-right: 0;
+    }
+
+    .faq-image {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        .rise-sun-patten {
+            background-image: url(assets/img/legalor-img38.png);
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            opacity: 0.25;
+            background-size: contain;
+        }
+
+        img {
+            width: 76%;
+            filter: brightness(120%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+            vertical-align: middle;
+        }
+    }
+
+    .testimonial-content {
+        background-color: $primary-color;
+        color: $light-color;
+        margin-right: 25px;
+        margin-top: -80px;
+        padding: 30px;
+        position: relative;
+        z-index: 2;
+
+        @include bp(lgx) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        i {
+            font-size: 40px;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: $light-color;
+        }
+
+        p {
+            color: $light-color;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include bp(xsx) {
+            padding: 20px 15px;
+
+            i {
+                font-size: 30px;
+                margin-bottom: 10px;
+                line-height: 1;
+            }
+        }
+    }
+
+    @include bp(lgx) {
+        margin-bottom: 40px;
+    }
+}
+
+.faq-content-wrap {
+
+
+    .section-head {
+        margin-bottom: 45px;
+
+        @include bp(mdx) {
+            margin-bottom: 30px;
+        }
+    }
+}

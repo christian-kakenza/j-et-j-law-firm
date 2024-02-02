@@ -1,0 +1,214 @@
+.search-section {
+    .search-outer-wrap {
+        margin: 110px 0;
+        @include bp(mdx) {
+            margin: 60px 0;
+        }
+    }
+
+    .post {
+        border: 1px solid #f8f8f8;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+
+        .entry-content {
+            padding: 20px;
+
+            h5 {
+                margin-bottom: 5px;
+
+                a {
+                    color: #292929;
+                    transition: 0.4s all;
+
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+
+            .entry-meta {
+                margin-bottom: 5px;
+                margin-right: -8px;
+                margin-left: -8px;
+
+                .byline,
+                .posted-on,
+                .post-on,
+                .comment-info {
+                    padding: 0 8px;
+                    position: relative;
+                    display: inline-block;
+                    line-height: 1;
+                    font-size: 12px;
+                    font-weight: 400;
+
+                    &:before {
+                        content: "|";
+                        font-weight: 100;
+                        right: -4px;
+                        top: -3px;
+                        color: #a7a7a7;
+                        font-size: 16px;
+                        position: absolute;
+                        line-height: 1;
+                    }
+
+                    a {
+                        color: #a7a7a7;
+                        transition: 0.4s all;
+
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+                }
+
+                .comment-info {
+                    &:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $text-color;
+        }
+    }
+
+    .button-container {
+        .button-text {
+            color: $primary-color;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.2;
+            font-family: $title-font;
+
+            &:after {
+                content: " ..";
+                display: inline-block;
+            }
+
+            &:hover {
+                color: $hover-color;
+            }
+
+            @include bp(mdx) {
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .post-navigation-wrap {
+        margin-top: 10px;
+    }
+
+    .content-search-from {
+       padding: 110px 0;
+       background-color: #f8f8f8;
+
+
+        @include bp (mdx) {
+            padding: 60px 0;
+        }
+        .section-head {
+            margin-bottom: 0;
+        }
+        .section-title-info {
+           color: $primary-color;
+        }
+
+        .section-title-heading {
+            font-size: 50px;
+            color: $secondary-color;
+            @include bp(mdx) {
+                font-size: 24px;
+            }
+        }
+
+        .search-form {
+            margin-top: 40px;
+            border: 1px solid $primary-color;
+            padding: 0 55px 0 20px;
+            background-color: #f8f8f8;
+
+            ::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #a7a7a7;
+                opacity: 1;
+                /* Firefox */
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #a7a7a7;
+            }
+
+            ::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #a7a7a7;
+            }
+
+            input {
+                background-color: #f8f8f8;
+                height: 54px;
+            }
+
+            .search-btn {
+                padding: 20px;
+                top: 0;
+                right: 0;
+                background-color: $primary-color;
+                transition: all 0.3s;
+                height: 100%;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+
+                @include bp(smx) {
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    li {
+        margin-left: 6px;
+        margin-right: 6px;
+        transition: all 0.5s;
+
+        a {
+            color: $text-color;
+            border: none;
+            height: auto;
+            width: auto;
+            line-height: 1;
+            text-align: center;
+            border: none;
+            transition: all 0.3s;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        &:hover {
+            a {
+                background-color: $hover-color;
+                color: $light-color;
+                border: none;
+            }
+        }
+
+        &.active {
+            a {
+                background-color: $primary-color;
+                color: $light-color;
+            }
+        }
+    }
+}

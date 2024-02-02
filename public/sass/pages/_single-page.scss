@@ -1,0 +1,13 @@
+.single-page-section {
+    padding: 110px 0;
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+    .single-feature-img {
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

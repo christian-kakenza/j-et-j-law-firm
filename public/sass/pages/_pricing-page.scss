@@ -1,0 +1,102 @@
+.planing-page-section {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+
+    @include bp(mdx) {
+        padding-bottom: 50px;
+    }
+
+    .trangle-left {
+        opacity: 0.2;
+    }
+
+    .pricing-table-inner {
+        .middle-price {
+            @include bp(lgx) {
+                order: 1;
+            }
+
+            .pricing-item {
+                border-top: 4px solid $primary-color;
+                border-bottom: 4px solid $primary-color;
+                box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+                position: relative;
+                z-index: 1;
+
+                .city-pattern-overlay {
+                    background-size: 100% auto;
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        .pricing-item {
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
+            padding: 48px;
+            background-color: $light-color;
+
+            .pricing-detail {
+                text-align: center;
+
+                .pricing-head {
+                    .pricing-title {
+                        color: $primary-color;
+                    }
+
+                    .price-info {
+                        margin-bottom: 18px;
+                    }
+                }
+
+                .pricing-icon {
+                    padding: 15px 0 38px;
+                }
+
+                .cost {
+                    font-size: 70px;
+                    font-weight: 900;
+                    font-family: $title-font;
+                    text-transform: uppercase;
+                    line-height: 1.1;
+                    color: $secondary-color;
+                    margin-bottom: 40px;
+                    display: block;
+
+                    @include bp(mdx) {
+                        font-size: 45px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .ticket-btn {
+                    a {
+                        border-color: $primary-color;
+                        color: $primary-color;
+                        transition: 0.4s all;
+
+                        &:hover {
+                            background-color: $hover-color;
+                            color: $light-color;
+                            border-color: $hover-color;
+                        }
+                    }
+                }
+            }
+
+            @include bp (lgx) {
+                margin-bottom: 25px;
+            }
+
+            @include bp(xsx) {
+                padding: 40px 30px;
+
+                .pricing-detail {
+                    .pricing-icon {
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}

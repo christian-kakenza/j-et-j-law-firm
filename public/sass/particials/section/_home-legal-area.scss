@@ -1,0 +1,93 @@
+.home-legal-area {
+    padding: 101px 0 110px;
+    background-color: #f8f8f8;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .legal-area-list {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 46px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        @include bp(lgx) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include bp(smx) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .legal-area-detail {
+            .area-img {
+                text-align: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .area-content-wrapper {
+                position: relative;
+                z-index: 1;
+                box-shadow: 0px 40px 30px -40px rgba(0, 0, 0, 0.2);
+                margin: -50px 15px 0;
+                background-color: $light-color;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px 20px;
+
+                .area-detail {
+                    .role-title {
+                        margin-bottom: 3px;
+                    }
+
+                    .area-role-btn {
+                        color: $primary-color;
+                        font-size: 13px;
+
+                        a {
+                            i {
+                                margin-left: 5px;
+                            }
+                        }
+                        @include bp(xsx) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+                .legal-area-icon {
+                    font-size: 50px;
+                    color: rgba($primary-color, 0.46);
+                    transition: all 0.5s;
+                }
+
+                &:hover {
+                    .legal-area-icon {
+                        color: rgba($primary-color, 0.8);
+                    }
+                }
+            }
+        }
+
+        .item-3 {
+            @include bp(lgx) {
+                grid-column: 1/span 2;
+                width: 50%;
+            }
+
+            @include bp(smx) {
+                grid-column: 1/span 1;
+                width: initial;
+            }
+        }
+    }
+}

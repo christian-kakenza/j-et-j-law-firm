@@ -1,0 +1,158 @@
+.sidebar-section {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: url('assets/img/cross.png'), default;
+
+    .sidebar-content {
+        cursor: auto;
+        width: 360px;
+        height: 100%;
+        overflow-x: hidden;
+        background-color: $light-color;
+        padding: 20px;
+        opacity: 0;
+        position: relative;
+        top: 100px;
+        transition: all 1s;
+
+        .sidebar-close-section {
+            text-align: right;
+            margin-bottom: 20px;
+
+            button {
+                border: none;
+                background-color: $primary-color;
+                color: $light-color;
+                border-radius: 50%;
+                font-size: 16px;
+                padding: 5px 8px;
+            }
+        }
+
+        .sub-section-detail {
+            display: grid;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 100px;
+            &:last-child {
+                margin-bottom: 50px;
+            }
+
+            .head-title {
+                position: relative;
+                z-index: 1;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 55px;
+                    height: 3px;
+                    background-color: $primary-color;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .attorney-image {
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                text-align: center;
+                margin-bottom: 35px;
+                overflow: hidden;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .attorney-name {
+                margin-bottom: 20px;
+            }
+
+            .attorney-des {
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            .social-links {
+                ul {
+                    li {
+                        margin: 0 4px;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            font-size: 12px;
+                            height: 32px;
+                            width: 32px;
+                            line-height: 31px;
+                            text-align: center;
+                            color: $light-color;
+                            background-color: $primary-color;
+                            border-radius: 50%;
+                            display: inline-block;
+                            i {
+                            	transition: 0.4s;
+                            }
+                            &:hover {
+                            	i {
+                            		color: $hover-color;
+                            	}
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact-info {
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+
+                    li {
+                        span {
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 1.2;
+                            color: $text-color;
+
+                            a {
+                                color: $text-color;
+                                transition: 0.4s;
+
+                                &:hover {
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include bp(xsx) {
+            width: 100%;
+        }
+    }
+}

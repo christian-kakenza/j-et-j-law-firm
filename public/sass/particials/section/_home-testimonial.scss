@@ -1,0 +1,79 @@
+.home-testimonial-section {
+    padding: 116px 0px 110px;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .home-testimonial-wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 30% 69%;
+
+        .section-head {
+            @include bp(lg) {
+                margin-right: 40px;
+            }
+
+            .testimonial-btn {
+                margin-top: 30px;
+            }
+        }
+
+        .review-slider-wrapper {
+            .testimonial-slider {
+                .home-testimonial-content {
+                    margin: 15px 30px 0 15px;
+                    background-color: $light-color;
+
+                    .testimonila-detail {
+                        text-align: center;
+                        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+                        padding: 30px;
+                        padding-bottom: 70px;
+                        color: $secondary-color;
+                        .testimonila-icon {
+                            font-size: 48px;
+                            line-height: 1;
+                            margin-bottom: 23px;
+                        }
+                    }
+                    .author-detail {
+                        text-align: center;
+                        background-color: transparent;
+                        margin-top: -50px;
+
+                        .author-img {
+                            height: 62px;
+                            width: 62px;
+                            border-radius: 50%;
+                            text-align: center;
+                            overflow: hidden;
+                            margin-bottom: 14px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        .author-info {
+                            .author-name {
+                                color: #000;
+                                margin-bottom: 0;
+                            }
+
+                            .author-desc {
+                                color: $primary-color;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include bp(lgx) {
+            grid-template-columns: 100%;
+            .section-head {
+                text-align: center;
+            }
+        }
+    }
+}

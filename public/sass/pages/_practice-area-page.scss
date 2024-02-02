@@ -1,0 +1,21 @@
+.practice-area-section {
+	padding: 110px 0;
+	background-color: $light-color;
+	@include bp(mdx) {
+		padding: 60px 0;
+	}
+	.legal-area-list {
+		grid-row-gap: 50px;
+		margin-bottom: 0;
+		@include bp(lgx) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include bp(mdx) {
+			grid-column-gap: 26px;
+		}
+		@include bp(smx) {
+			grid-template-columns: auto;
+		}
+	}
+
+}

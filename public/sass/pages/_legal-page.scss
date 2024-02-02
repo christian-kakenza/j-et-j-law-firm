@@ -1,0 +1,7 @@
+.term-and-condition-section,
+.policy-page-section {
+	margin: 110px 0;
+	@include bp(mdx) {
+		margin: 60px 0;
+	}
+}

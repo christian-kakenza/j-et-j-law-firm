@@ -1,0 +1,170 @@
+.contact-page-section {
+    padding: 110px 0;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .map-section {
+        display: block;
+
+    }
+
+    .contact-form-inner {
+        position: relative;
+        z-index: 1;
+        margin-top: 120px;
+
+        .contact-detail-container {
+            @include bp(xl) {
+                margin-right: 56px;
+            }
+            @include bp(lg) {
+                margin-right: 20px;
+            }
+
+            .section-disc {
+                margin-bottom: 20px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .contact-details-list {
+                margin-right: 50px;
+
+                @include bp(xlx) {
+                    margin-right: 0;
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        padding: 25px 50px 25px 30px;
+                        background-color: #f8f8f8;
+                        @include bp(lg) {
+                            margin-right: 20px;
+                        }
+
+                        .icon {
+                            margin-right: 30px;
+                            text-align: center;
+                            display: inline-block;
+
+                            i {
+                                width: 80px;
+                                height: 80px;
+                                line-height: 78px;
+                                background-color: $primary-color;
+                                color: $light-color;
+                                font-size: 40px;
+                                border-radius: 50%;
+                                display: inline-block;
+                                position: relative;
+                                margin-right: 0;
+
+                                @include bp(smx) {
+                                    width: 60px;
+                                    height: 60px;
+                                    line-height: 60px;
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+
+                        .details-content {
+                            h5 {
+                                margin-bottom: 5px;
+                            }
+
+                            span {
+                                display: inline-block;
+
+                                a {
+                                    color: $text-color;
+
+                                    &:hover {
+                                        color: $hover-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @include bp(xsx) {
+                        li {
+                            padding: 20px;
+
+                            .icon {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-from-wrap {
+            position: relative;
+            z-index: 2;
+            padding: 60px;
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.03);
+            background-color: $light-color;
+
+            @include bp(xsx) {
+                padding: 50px 20px;
+            }
+
+            .contact-from {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -10px;
+                margin-right: -10px;
+
+                .width-full {
+                    width: 100%;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                p {
+                    width: 50%;
+                    padding: 0 15px;
+                    margin-bottom: 30px;
+
+                    @include bp(smx) {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        padding: 0;
+                    }
+
+                    input,
+                    textarea {
+                        border: 0;
+                        padding: 12px 20px;
+                        width: 100%;
+                    }
+
+                    input[type=submit] {
+                        width: 100%;
+                        min-height: 40px;
+                        padding: 18px 30px;
+                        background-color: $primary-color;
+                        &:hover {
+                            background-color: $hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

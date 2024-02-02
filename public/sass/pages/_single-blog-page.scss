@@ -1,0 +1,557 @@
+.single-post-section {
+    padding: 110px 0;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .primary {
+        .right-sidebar {
+            padding-right: 28px;
+
+            @include bp(lgx) {
+                padding-right: 0px;
+            }
+
+            .feature-image {
+                margin-bottom: 18px;
+            }
+
+            .single-content-wrap {
+                margin-bottom: 20px;
+
+                .single-content-imgage {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .meta-wrap {
+                margin-bottom: 28px;
+
+                .tag-links {
+                    &:before {
+                        content: "\f02c";
+                        color: $primary-color;
+                        display: inline-block;
+                        font-family: "Font Awesome 5 Free";
+                        margin-right: 6px;
+                        font-weight: 900;
+                    }
+
+                    a {
+                        font-weight: 500;
+                        line-height: 1.2;
+                        color: #414141;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            color: $hover-color;
+                        }
+
+                        &:after {
+                            content: ",";
+                            font-size: inherit;
+                            font-family: $primary-font;
+                        }
+
+                        &:last-child {
+                            &:after {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .post-socail-wrap {
+                .social-icon-wrap {
+                    .social-icon {
+                        a {
+                            display: flex;
+                            justify-content: center;
+
+                            i {
+                                width: 36px;
+                                font-size: 13px;
+                                padding-left: 6px;
+                            }
+
+                            span {
+                                font-weight: 500;
+                                padding: 9px 20px 9px 6px;
+                                background-image: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .author-wrap {
+                background-color: #f9f9f9;
+                @include clearfix;
+                @include flexbox();
+                @include flex-wrap(wrap);
+                padding: 40px 40px 32px;
+                margin-bottom: 22px;
+                @include align-items(center);
+                margin-top: 30px;
+
+                .author-thumb {
+                    width: 100px;
+
+                    img {
+                        border-radius: 100%;
+                    }
+                }
+
+                .author-content {
+                    @include calc(width, '100% - 120px');
+                    margin-left: 20px;
+
+                    .author-name {
+                        margin-bottom: 12px;
+                        margin-top: 8px;
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+
+                    .button-text {
+                        color: $primary-color;
+                        font-weight: 500;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+                }
+
+                @include bp(smx) {
+                    text-align: center;
+                    padding: 20px;
+
+                    .author-thumb {
+                        margin-bottom: 20px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .author-content {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .divider-line {
+                padding-top: 10px;
+                padding-bottom: 30px;
+
+                .st-line {
+                    width: 100%;
+                    border-top: 1px solid #AFAFAF2E;
+                    ;
+                    display: inline-block;
+                }
+            }
+
+            .comment-area {
+                .comment-title {
+                    margin-bottom: 25px;
+                }
+
+                ol {
+                    margin: 0;
+                    padding: 0;
+
+                    ol {
+                        margin-left: 30px;
+                    }
+
+                    li {
+                        list-style: none;
+                        margin-bottom: 30px;
+                        @include clearfix;
+                    }
+                }
+
+                .comment-thumb {
+                    width: 55px;
+                    @include border-radius(100%);
+                    overflow: hidden;
+                    float: left;
+                }
+
+                .comment-content {
+                    border: 1px solid #e6e6e6;
+                    @include calc(width, '100% - 65px');
+                    float: right;
+                    padding: 20px;
+
+                    .comment-header {
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 15px;
+                    }
+
+                    h5 {
+                        display: inline-block;
+                        margin-bottom: 0;
+                    }
+
+                    .post-on {
+                        font-size: 13px;
+                        margin-left: 10px;
+                    }
+
+                    .reply {
+                        background-color: $primary-color;
+                        @include font-size(14);
+                        color: $light-color;
+                        padding: 5px 12px 6px;
+                        display: inline-block;
+                        line-height: 1.2;
+                        @include transition(all 0.4s);
+
+                        i {
+                            margin-right: 4px;
+                            @include font-size(12);
+                        }
+
+                        &:hover {
+                            background-color: $hover-color;
+                        }
+                    }
+                }
+
+                @include bp(smx) {
+                    .comment-thumb {
+                        width: 25px;
+                    }
+
+                    .comment-content {
+                        @include calc(width, '100% - 35px');
+                    }
+                }
+            }
+
+            // comment form css
+            .comment-form-wrap {
+                padding-top: 5px;
+
+                .comment-title {
+                    margin-top: 8px;
+                    margin-bottom: 16px;
+                    font-size: 52px;
+
+                    @include bp(mdx) {
+                        font-size: 38px;
+                    }
+                }
+
+                .rate-wrap {
+                    padding: 0 15px;
+                    margin-bottom: 15px;
+                }
+
+                label {
+                    display: block;
+                    color: #292929;
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    line-height: 1.7;
+                }
+
+                input {
+                    border: none;
+
+                    &:not([type="submit"]) {
+                        background-color: #F8F8F8;
+                        width: 100%;
+                    }
+
+                    &[type="submit"] {
+                        margin-top: 0px;
+                        background-color: $primary-color;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            background-color: $hover-color;
+                        }
+                    }
+
+                    &[type="checkbox"] {
+                        width: auto;
+                    }
+                }
+
+                textarea {
+                    background-color: #F8F8F8;
+                    border: none;
+                }
+            }
+
+            .post-navigation {
+                @include clearfix;
+                margin: 50px -10px 0;
+
+                [class*="nav-"] {
+                    .nav-label {
+                        display: block;
+                        @include transition (color 0.4s);
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
+
+                    .nav-title {
+                        display: inline-block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-bottom: 0;
+                        font-size: 15px;
+
+                        @include bp (mdx) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .nav-label {
+                    color: #878787;
+                    font-size: 13px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: $primary-color;
+                }
+
+                .nav-prev,
+                .nav-next {
+                    width: 50%;
+                    padding: 0 10px;
+
+                    a {
+                        color: #292929;
+                        font-weight: normal;
+                        display: block;
+                        position: relative;
+                        @include transition(all 0.4s);
+
+                        &:before {
+                            color: $primary-color;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 30px;
+                            display: block;
+                            vertical-align: middle;
+                            position: absolute;
+                            top: 50%;
+                            @include translate(0, -50%);
+                        }
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: $hover-color;
+
+                            .nav-title {
+                                color: $hover-color;
+                            }
+                        }
+                    }
+                }
+
+                .nav-prev {
+                    float: left;
+
+                    @include bp(xsx) {
+                        width: 100%;
+                    }
+
+                    a {
+                        padding-left: 30px;
+
+                        &:before {
+                            left: 0;
+                            content: "\f104";
+                        }
+                    }
+                }
+
+                .nav-next {
+                    float: right;
+                    text-align: right;
+
+                    @include bp(xsx) {
+                        float: left;
+                        width: 100%;
+                    }
+
+                    a {
+                        padding-right: 30px;
+
+                        &:before {
+                            content: "\f105";
+                            right: 0;
+                        }
+                    }
+                }
+
+                .nav-prev~.nav-next {
+                    @include bp(xsx) {
+                        border-top: 1px solid #ececec;
+                        margin-top: 15px;
+                        padding-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .secondary {
+        .sidebar {
+            @include bp(lg) {
+                padding-left: 26px;
+            }
+
+            .author_widget {
+                background-color: $light-color;
+                text-align: center;
+
+                .avatar {
+                    margin-bottom: 20px;
+                    height: 150px;
+                    width: 150px;
+                }
+
+                .text-content {
+                    margin-bottom: 20px;
+
+                    .name-title {
+                        margin-bottom: 20px;
+                    }
+
+                    .author-info {
+                        margin-bottom: 0;
+                    }
+
+                }
+
+                .social-icon {
+                    ul {
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            display: inline-block;
+                            list-style-type: none;
+                            margin-right: 4px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+
+                            a {
+                                i {
+                                    font-size: 12px;
+                                    text-align: center;
+                                    height: 32px;
+                                    width: 32px;
+                                    line-height: 31px;
+                                    background-color: $primary-color;
+                                    border-radius: 50%;
+                                    color: $light-color;
+                                    transition: all 0.4s;
+
+                                    &:hover {
+                                        background-color: $hover-color;
+                                        color: $light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .widget_latest_post {
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        .post-thumb {
+                            overflow: hidden;
+                            margin-right: 15px;
+
+                            a {
+                                img {
+                                    object-fit: cover;
+                                    width: 97px;
+                                    height: 85px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .post-content {
+                    h6 {
+                        color: #292929;
+                        line-height: 1.1;
+                    }
+                }
+
+                .entry-meta {
+                    span {
+                        a {
+                            font-size: 12px;
+                            line-height: 1.3;
+                        }
+                    }
+                }
+            }
+
+            .widget_social {
+                .social-icon {
+                    @include bp(xsx) {
+                        width: 100%;
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 9px 0;
+                        border-radius: initial;
+                        background-color: $primary-color;
+
+                        i {
+                            font-size: 20px;
+                            width: auto;
+                            margin-right: 20px;
+                            text-align: center;
+                        }
+
+                        span {
+                            padding: 0;
+                            background-image: none;
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

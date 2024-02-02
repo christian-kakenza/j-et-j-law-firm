@@ -1,0 +1,88 @@
+.testimonial-section {
+    background-color: #f8f8f8;
+    padding: 110px 0;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .testimonial-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 50px;
+        align-items: center;
+
+        @include bp(lgx) {
+            grid-column-gap: 20px;
+        }
+
+        @include bp(mdx) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 30px;
+        }
+
+        .review-item {
+            .comment-box {
+                padding: 70px 40px 35px;
+                background-color: $light-color;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 35px;
+                @include bp(smx) {
+                    padding: 40px 25px 25px;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    bottom: -10px;
+                    left: 50px;
+                    width: 29px;
+                    height: 29px;
+                    background-color: $light-color;
+                    transform: rotate(45deg);
+                }
+
+                p {
+                    position: relative;
+                    z-index: 1;
+                    margin-bottom: 0;
+
+                    &:before {
+                        content: "\e99a";
+                        font-family: elementskit;
+                        position: absolute;
+                        z-index: -1;
+                        color: #f8f8f8;
+                        font-size: 50px;
+                        top: -48px;
+                        left: 0px;
+                    }
+                }
+            }
+
+            .author-detail {
+                margin-left: 35px;
+                display: flex;
+                align-items: center;
+
+                .author-img {
+                    margin-right: 22px;
+                    text-align: center;
+                    vertical-align: middle;
+                    height: 68px;
+                    width: 68px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+
+                .author-info {
+                    .author-name {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<%- include('header') %>
+    <main id="content" class="site-main">
+        <!-- Inner Banner html start-->
+        <section class="inner-banner-wrap">
+            <div class="inner-baner-container" style="background-image: url(assets/img/legalor-img50.jpg);">
+                <div class="overlay balance-patten"></div>
+                <div class="container">
+                    <div class="inner-banner-content">
+                        <h1 class="inner-title">Login</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Inner Banner html end-->
+        <!-- Account page html start -->
+        <section class="account-section">
+            <div class="container">
+                <div class="login-wrapper">
+                    <h5 class="account-title">Login</h5>
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label>Username or email address <span class="label-star">*</span></label>
+                            <input type="text" name="name" placeholder="Username or email address">
+                        </div>
+                        <div class="form-group">
+                            <label>Password <span class="label-star">*</span></label>
+                            <div class="display-password">
+                                <input type="Password" name="Passwords" placeholder="Passwords" id="showkey">
+                                <i class="password-show" id="icon" onclick="showtxt()"></i>
+                            </div>
+                        </div>
+                        <input type="submit" name="submit" value="Log in" class="login-btn">
+                        <label>
+                            <input type="checkbox" name="r">
+                            Remember me
+                        </label>
+                        <div class="forget-btn">
+                            <a href="/recover-page">Lost your password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer part -->
+<%- include('footer') %>

@@ -1,0 +1,140 @@
+.home-event-section {
+    padding: 106px 0 110px;
+    background-image: url(assets/img/eventum-img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    .overlay {
+        background-color: $secondary-color;
+        opacity: 0.85;
+    }
+
+    .type-of-event-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 45px;
+        grid-row-gap: 50px;
+
+        .event-type {
+            background-color: $light-color;
+            padding: 50px 40px 46px;
+            border-radius: 25px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: all 0.4s;
+
+            &:before {
+                content: "";
+                background-image: linear-gradient(30deg, $light-color 69%, $primary-color 100%);
+                opacity: 0.1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .event-icon-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                .event-icon {
+                    margin-bottom: 0;
+
+                    a {
+                        i {
+                            font-size: 75px;
+                            color: $primary-color;
+                            transition: all 0.4s;
+
+                            &:hover {
+                                color: $hover-color;
+                            }
+                        }
+                    }
+                }
+
+                .event-num {
+                    color: rgba(250, 3, 104, 0.1);
+                    margin-bottom: 0;
+                }
+            }
+
+            .event-detail {
+                .event-title {
+                    a {
+                        transition: all 0.4s;
+
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:hover {
+                &:before {
+                    background-image: linear-gradient(30deg, $light-color 50%, $primary-color 100%);
+                    opacity: 0.3;
+                }
+
+                .event-icon-content {
+                    .event-num {
+                        color: rgba(250, 3, 104, 0.3);
+                    }
+                }
+            }
+        }
+    }
+
+    @include bp(lgx) {
+        .type-of-event-wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @include bp(mdx) {
+        padding: 60px 0;
+
+        .type-of-event-wrap {
+            grid-column-gap: 20px;
+            grid-row-gap: 30px;
+
+            .event-type {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    @include bp(smx) {
+        .type-of-event-wrap {
+            grid-template-columns: auto;
+            grid-row-gap: 20px;
+
+            .event-type {
+                padding: 30px 20px 26px;
+
+                .event-icon-content {
+                    margin-bottom: 20px;
+                }
+            }
+            .event-detail {
+            	.event-title {
+            		margin-bottom: 10px;
+            	}
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+.about-section {
+    margin: 130px 0 50px;
+
+    @include bp(smx) {
+        margin-bottom: 0;
+    }
+
+    .info-left {
+        padding-right: 18px;
+
+        @include bp(mdx) {
+            padding: 0;
+        }
+    }
+
+    .info-right {
+        padding-left: 18px;
+
+        @include bp(mdx) {
+            padding: 0;
+        }
+    }
+
+    .counter-inner {
+        margin: 20px auto 40px;
+    }
+
+    .about-banner {
+        position: relative;
+
+        .about-image {
+            @include bp(md) {
+                padding: 0 140px 0 80px;
+            }
+
+            @include bp(mdx) {
+                margin-bottom: 30px;
+                ;
+            }
+        }
+
+        .about-left-banner {
+            display: flex;
+            padding: 38px 25px;
+            background-color: $primary-color;
+            color: $light-color;
+            align-items: center;
+            justify-content: center;
+
+            .banner-icon {
+                margin-right: 25px;
+
+                i {
+                    display: block;
+                    position: relative;
+                    font-size: 40px;
+                    height: 80px;
+                    width: 80px;
+                    line-height: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    text-align: center;
+                    background-color: $light-color;
+                    color: $primary-color;
+                }
+            }
+
+            h3 {
+                margin-bottom: 0;
+                color: #ffffff;
+            }
+
+            @include bp(md) {
+                border: 6px solid $light-color;
+                border-left: none;
+                max-width: 410px;
+                position: absolute;
+                left: 0;
+                bottom: 80px;
+                z-index: 1;
+            }
+
+            @include bp(mdx) {
+                margin-bottom: 30px;
+            }
+
+            @include bp(xsx) {
+                .banner-icon {
+                    i {
+                        font-size: 28px;
+                        height: 50px;
+                        width: 50px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+
+        .about-right-banner {
+            text-align: center;
+            padding: 40px;
+            background-color: $light-color;
+            box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.03);
+
+            .banner-title {
+                color: $primary-color;
+                margin-bottom: 30;
+            }
+
+            .info-title {
+                color: $secondary-color;
+            }
+
+            .video-button {
+                margin-bottom: 40px;
+
+                a {
+                    font-size: 25px;
+                    height: 100px;
+                    width: 100px;
+                    line-height: 100px;
+                    color: $light-color;
+                    box-shadow: none;
+                }
+            }
+
+            p {
+                color: #111111;
+            }
+
+            @include bp(md) {
+                max-width: 343px;
+                position: absolute;
+                right: 0;
+                bottom: 80px;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.about-slider {
+    background-color: white;
+    padding-bottom: 110px;
+
+    @include bp(smx) {
+        padding-bottom: 60px;
+    }
+}
+
+.about-schedule {
+    .gradient-overlay {
+        background-image: linear-gradient(90deg, #f8f8f8 50%, rgba(0, 0, 0, 0) 50%);
+        @include bp(smx) {
+            background-color: #f8f8f8;
+        }
+    }
+
+    .schedule-wrapper {
+        .right-side-schedule {
+            background-color: #f8f8f8;
+            .section-head {
+                @include bp(sm) {
+                    margin-bottom: 0;
+                }
+            }
+            .timenote {
+                .schedule-time ul li h6 {
+                    color: $text-color;
+                }
+
+                .note-list ul li span {
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

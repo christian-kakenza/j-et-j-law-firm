@@ -1,0 +1,139 @@
+.team-section {
+    padding: 110px 0;
+
+    @include bp(mdx) {
+        padding: 60px 0
+    }
+
+    .attorney-team-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 45px;
+        align-items: center;
+        justify-content: center;
+
+        @include bp(lgx) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include bp(smx) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .team-item {
+        position: relative;
+        z-index: 1;
+
+        .team-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 29%, rgba($secondary-color, 0.9) 64%);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 30px;
+            color: $light-color;
+
+            .auhtor-detail {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+
+                .author-desc {
+                    display: inline-block;
+                    margin-bottom: 15px;
+                    @include bp(smx) {
+                        margin-bottom: 8px;
+                    }
+                }
+
+                .author-name {
+                    margin-bottom: 15px;
+
+                    a {
+                        color: $light-color;
+                        transition: 0.4s all;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .author-info {
+                .contact-link {
+                    padding: 15px 0px 20px;
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style-type: none;
+
+                        li {
+                            margin-right: 24px;
+                            display: inline-flex;
+                            align-items: center;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+
+                            a {
+                                color: $light-color;
+                                font-size: 13px;
+
+                                i {
+                                    margin-right: 10px;
+                                }
+
+                                .contact-link-txt {
+                                    transition: all 0.5s;
+                                }
+
+                                &:hover {
+                                    .contact-link-txt {
+                                        color: $primary-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .socail-link {
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style-type: none;
+
+                        li {
+                            margin: 0 1px;
+                            display: inline-block;
+
+                            a {
+                                border: 1px solid #a7a7a7;
+                                color: #ffffff;
+                                border-radius: 100%;
+                                width: 30px;
+                                height: 30px;
+                                line-height: 29px;
+                                text-align: center;
+                                display: block;
+                                font-size: 13px;
+                                transition: all 0.3s ease-out;
+
+                                &:hover {
+                                    border-color: $hover-color;
+                                    background-color: $hover-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

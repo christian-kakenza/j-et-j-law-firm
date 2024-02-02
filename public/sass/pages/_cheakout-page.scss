@@ -1,0 +1,335 @@
+.checkout-section {
+    padding: 110px 0;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .cheakout-title {
+        color: $text-color;
+    }
+}
+
+.checkout-field-wrap {
+    padding: 40px;
+    margin-bottom: 24px;
+    border: 1px solid #d9d9d9;
+
+    .coupon-field {
+        margin-bottom: 25px;
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: $text-color;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            vertical-align: middle;
+            font-family: $title-font;
+
+            a {
+                color: inherit;
+            }
+        }
+
+        .form-group {
+            @include flexbox;
+            @include flex-wrap(wrap);
+            @include align-items(center);
+            margin-left: -10px;
+            margin-right: -10px;
+
+            input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
+                width: auto;
+                height: 50px;
+                @include flex-grow(1);
+                background-color: #f8f8f8;
+                border: none;
+                color: $text-color;
+            }
+
+            input[type="submit"] {
+                line-height: 1;
+                height: 50px;
+                padding: 0 30px;
+                background-color: $primary-color;
+            }
+
+            input {
+                margin: 0 15px;
+            }
+
+            .coupon-txt {
+                margin-bottom: 15px;
+            }
+
+            .coupon-btn {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .label-star {
+        color: red;
+        text-decoration: none;
+        border-bottom: none;
+        font-weight: 700;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            color: $text-color;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.2;
+            vertical-align: middle;
+        }
+
+        input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
+            width: 100%;
+            height: 50px;
+            @include flex-grow(1);
+            background-color: #f8f8f8;
+            border: none;
+            color: $text-color;
+            padding: 16px;
+
+            @include bp(smx) {
+                font-size: 13px;
+            }
+        }
+
+        select {
+            border: none;
+            color: #a7a7a7;
+            font-size: 15px;
+            background-color: #f8f8f8;
+
+            option {
+                color: $text-color;
+            }
+
+            @include bp(smx) {
+                font-size: 13px;
+            }
+        }
+
+        input[type="submit"] {
+            line-height: 1;
+            height: 55px;
+            padding: 0 30px;
+        }
+
+        ::-webkit-input-placeholder {
+            /* Edge */
+            color: #a7a7a7;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #a7a7a7;
+        }
+
+        ::placeholder {
+            color: #a7a7a7;
+        }
+    }
+
+    .last-form-group {
+        margin-bottom: 0;
+    }
+
+    .inner-form-group {
+        margin-bottom: 15px;
+
+        input {
+            width: 100%;
+            height: 55px;
+            @include flex-grow(1);
+            background-color: #f8f8f8;
+            border: none;
+            color: $text-color;
+            padding: 16px;
+            margin-bottom: 10px;
+        }
+
+        ::-webkit-input-placeholder {
+            /* Edge */
+            color: #a7a7a7;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #a7a7a7;
+        }
+
+        ::placeholder {
+            color: #a7a7a7;
+        }
+    }
+
+    @include bp(smx) {
+        padding: 20px;
+
+        .coupon-field {
+            .form-group {
+                input[type="submit"] {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+.special-notes-wrap {
+    margin-bottom: 0;
+    padding: 40px;
+    border: 1px solid #d9d9d9;
+
+    @include bp(xsx) {
+        padding: 40px 20px;
+    }
+
+    .Information-title {
+        color: $text-color;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: $text-color;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.2;
+            vertical-align: middle;
+            font-family: $title-font;
+        }
+
+        textarea {
+            background-color: #f8f8f8;
+            padding: 16px;
+            color: $text-color;
+            border: none;
+
+            ::-webkit-input-placeholder {
+                /* Edge */
+                color: #a7a7a7;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #a7a7a7;
+            }
+
+            ::placeholder {
+                color: #a7a7a7;
+            }
+        }
+    }
+}
+
+.widget-table-summary.widget-bg {
+    background-color: initial;
+    border: 1px solid #d9d9d9;
+
+    cheakout-title {
+        margin-bottom: 30px;
+    }
+
+    table {
+        margin-bottom: 0;
+
+        thead {
+            tr {
+                background-color: transparent;
+
+                th {
+                    padding-bottom: 16px;
+                    border: none;
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: $title-font;
+                    line-height: 1.2;
+                    color: #787878;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    color: $text-color;
+                    border-right: none;
+                    font-size: 13px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #d9d9d9;
+
+                    strong {
+                        color: #787878;
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                }
+
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widget-paymet-bank.widget-bg {
+    background-color: initial;
+    border: 1px solid #d9d9d9;
+
+    .cheakout-title {
+    }
+
+    .form-group {
+        label {
+            color: $text-color;
+            margin-bottom: 0;
+        }
+
+        .desc {
+            padding: 20px;
+            @include font-size(13);
+            margin-top: 15px;
+        }
+    }
+
+    .custom-radio-field {
+        img {
+            width: 150px;
+            margin-top: -5px;
+        }
+    }
+
+    .button-round {
+        width: 100%;
+        border: none;
+        display: block;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .place-order-btn {
+        border: none;
+        color: #fff;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}

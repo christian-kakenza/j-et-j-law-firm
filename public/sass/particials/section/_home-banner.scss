@@ -1,0 +1,175 @@
+.home-banner {
+    position: relative;
+    z-index: 1;
+    background-color: $secondary-color;
+    padding-top: 60px;
+    padding-bottom: 110px;
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .overlay-balance {
+        background-image: url(assets/img/legalor-img39.png);
+        background-position: 50% 43%;
+        background-repeat: no-repeat;
+        opacity: 0.1
+    }
+
+    .banner-detail {
+        margin-bottom: 56px;
+
+        .banner-title {
+            margin-bottom: 24px;
+            font-size: 60px;
+            line-height: 1.1;
+            color: $light-color;
+        }
+
+        .banner-info {
+            margin-bottom: 46px;
+            color: #d9d9d9;
+
+        }
+
+        .banner-btn-wrapper {
+            a {
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @include bp(lg) {
+            margin-right: 50px;
+        }
+
+        @include bp(lgx) {
+            .banner-title {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+
+            .banner-info {
+                margin-bottom: 30px;
+            }
+
+            .banner-btn-wrapper {
+                >a {
+                    padding: 18px 16px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        @include bp(xsx) {
+            .banner-title {
+                font-size: 38px;
+                margin-bottom: 12px;
+            }
+            .banner-info {
+                margin-bottom: 30px;
+            }
+            .banner-btn-wrapper {
+                >a {
+                    padding: 13px 10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    }
+
+    .banner-img {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        .banner-overlay-img {
+            background-image: url(assets/img/legalor-img38.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.6;
+        }
+
+        img {
+            width: 82%;
+            filter: brightness(134%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+            vertical-align: middle;
+        }
+    }
+
+    .banner-service-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 3px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+        @include bp(sm) {
+            margin-top: -15px;
+        }
+
+        @include bp (mdx) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
+        }
+
+        @include bp (smx) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .serice-type {
+            background-color: $light-color;
+            padding: 27px 30px 30px 30px;
+
+            .service-header {
+                margin-bottom: 20px;
+            }
+
+            .servie-icon {
+                color: $secondary-color;
+                font-size: 100px;
+                line-height: 1;
+                margin-bottom: 20px;
+                transition: all 0.4s;
+            }
+
+            .service-desc {
+                margin-bottom: 0;
+                color: $text-color;
+            }
+            &:hover {
+                .servie-icon {
+                    transform: scale(1.1);
+                }
+            }
+            @include bp (xsx) {
+
+                .service-header,
+                .servie-icon {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .active {
+            background-color: $primary-color;
+            padding: 42px 30px 45px 30px;
+
+            .service-header,
+            .servie-icon {
+                color: $light-color;
+            }
+
+            .service-desc {
+                color: #f8f8f8;
+            }
+        }
+    }
+}

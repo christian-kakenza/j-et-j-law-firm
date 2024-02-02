@@ -1,0 +1,299 @@
+.service-detail-section {
+    .service-detail-inner-detail {
+        .right-sidebar {
+            padding-right: 26px;
+
+            @include bp(lgx) {
+                padding-right: 0;
+            }
+        }
+
+        .service-detail-img {
+            margin-bottom: 18px;
+            background-image: url(assets/img/builderon-img51.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 395px;
+        }
+
+        .project-summary {
+            ul {
+                @include flexbox();
+                @include flex-wrap(wrap);
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    width: 50%;
+                    margin-bottom: 6px;
+                    color: $text-color;
+
+                    i {
+                        color: $primary-color;
+                        margin-right: 5px;
+                    }
+                }
+
+                @include bp(smx) {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .gallery-slider {
+            margin-top: 25px;
+
+            .gallery-item {
+                .gallery-img {
+                    img {
+                        margin: auto;
+                    }
+                }
+            }
+
+            .slick-dots {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    width: auto;
+                    height: auto;
+                    margin: 0 6px;
+
+                    button {
+                        background-color: rgba($primary-color, 0.2);
+                        @include border-radius(100%);
+                        width: 10px;
+                        height: 10px;
+
+                        &:before {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: $secondary-color;
+                        }
+                    }
+
+                    &.slick-active {
+                        button {
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar {
+            padding: 0;
+
+            .widget-form {
+                padding: 30px 25px;
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+                background-color: $light-color;
+
+                @include bp(mdx) {
+                    margin-top: 30px;
+                }
+
+                @include bp(xsx) {
+                    padding: 35px 25px;
+                }
+
+                h5 {
+                    background-color: $secondary-color;
+                    color: $light-color;
+                    text-align: center;
+                    margin-bottom: 35px;
+                    padding: 17px;
+                    line-height: 1.3;
+                }
+
+                p {
+                    input:not([type='submit']) {
+                        width: 100%;
+                        background-color: #fafafa;
+                    }
+
+                    textarea {
+                        background-color: #fafafa;
+                    }
+                }
+
+                input[type='submit'] {
+                    width: 100%;
+                }
+            }
+
+            .icon-list-content {
+                padding: 30px 30px 17px;
+                box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.25);
+                background-color: $primary-color;
+                position: relative;
+                z-index: 1;
+
+                .overlay {
+                    background-image: url(assets/img/builderon-img02.png);
+                    background-position: center right;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    opacity: 0.12;
+                }
+
+                .bg-title {
+                    margin-bottom: 30px;
+                    padding: 17px;
+                    background-color: $light-color;
+                    color: $light-color;
+                    color: #111111;
+                }
+
+                ul {
+                    li {
+                        padding-bottom: 10px;
+                        margin-bottom: 10px;
+                        color: $light-color;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid rgba($light-color, 0.44);
+
+                        &:last-child {
+                            border: none;
+                            padding-bottom: 0px;
+                            margin-bottom: 0px;
+                        }
+
+                        a {
+                            color: $light-color;
+                            font-weight: 600;
+                            font-family: $title-font;
+                            text-transform: uppercase;
+                            transition: all 0.4s;
+
+                            &:hover {
+                                color: $secondary-color;
+
+                                i {
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+
+                        i {
+                            color: $light-color;
+                            font-size: 18px;
+                            transition: all 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-process-section {
+    padding: 88px 0 100px;
+    position: relative;
+    z-index: 1;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .trangle-left {
+        background-image: url(assets/img/builderon-img25.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+    }
+
+    .trangle-right {
+        background-image: url(assets/img/builderon-img26.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+    }
+
+    .iconbox-container-bg {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 45px;
+        grid-row-gap: 30px;
+
+        .iconbox-item-bg {
+            padding: 40px 45px;
+            background-color: $light-color;
+            box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.2);
+
+            @include bp(mdx) {
+                padding: 30px;
+            }
+
+            .iconbox-content-bg {
+                .number-title {
+                    font-size: 70px;
+                    font-weight: 900;
+                    color: $primary-color;
+                    margin-bottom: 30px;
+
+                    @include bp(mdx) {
+                        font-size: 40px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                h5 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @include bp(lgx) {
+        .iconbox-container-bg {
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+
+            .item-3 {
+                grid-column: 1/span 2;
+                max-width: 455px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    @include bp(smx) {
+        .iconbox-container-bg {
+            grid-template-columns: auto;
+            justify-content: center;
+            margin-top: 30px;
+
+            .item-3 {
+                grid-column: 1;
+                max-width: 100%;
+            }
+
+            .iconbox-item-bg {
+                .iconbox-content-bg {
+                    i {
+                        height: 80px;
+                        width: 80px;
+                        line-height: 78px;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.home-gallery-section {
+    padding: 101px 0 101px;
+    ;
+
+    @include bp(mdx) {
+        padding: 60px 0;
+    }
+
+    .gallery-nav {
+        text-align: center;
+        padding: 6px 0;
+        margin-bottom: 30px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                color: $secondary-color;
+                cursor: pointer;
+                list-style-type: none;
+                margin: 0 5px;
+                padding: 7px 14px;
+                text-transform: uppercase;
+                line-height: 1.2;
+                font-weight: 500;
+                transition: all 0.4s;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.is-checked {
+                    color: $light-color;
+                    transition: all 0.4s;
+                    background-color: $primary-color;
+                }
+
+                &:hover {
+                    color: $light-color;
+                    background-color: $primary-color;
+                }
+                @include bp(lgx) {
+                    margin: 5px;
+                }
+                @include bp(smx) {
+                    margin: 5px 2px;
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery-container {
+        .gallery-grid {
+            margin: 0 -10px;
+
+            .single-gallery {
+                width: 33.33%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+
+                @include bp(mdx) {
+                    width: 50%;
+                }
+
+                @include bp(smx) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .single-gallery {
+            .gallery-img {
+                overflow: hidden;
+                position: relative;
+                transition: all 0.4s ease-out;
+
+                a {
+                    img {
+                        @include bp(smx) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .img-box {
+                    &:before {
+                        background-color: rgba(32, 70, 105, 0.85);
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                        transition: all 0.4s ease-out;
+                    }
+                }
+
+                &:hover {
+                    .img-box {
+                        &:before {
+                            opacity: 1;
+                        }
+                    }
+
+                    .facility-gallery-wrapper {
+                        opacity: 1;
+                    }
+                }
+
+                .facility-gallery-wrapper {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 40px 40px 39px;
+                    opacity: 0;
+                    z-index: 1;
+
+                    a {
+                        &:before {
+                            content: none;
+                        }
+                    }
+
+                    .facility-content {
+                        margin-top: 0px;
+
+                        a {
+                            &:before {
+                                content: none;
+                            }
+                        }
+                    }
+
+                    .facility-title {
+                        color: $light-color;
+                        margin-bottom: 0;
+
+                        a {
+                            &:before {
+                                content: none;
+                            }
+                        }
+                    }
+
+                    .facility-info {
+                        margin-top: 8px;
+                        color: #d9d9d9;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

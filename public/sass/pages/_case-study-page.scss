@@ -1,0 +1,31 @@
+.case-study-section {
+    background-color: #f8f8f8;
+}
+
+.appointment-section {
+    padding: 110px 0 0;
+
+    @include bp(mdx) {
+        padding: 60px 0 0;
+    }
+
+    .appointment-image {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        .rise-sun-patten {
+            background-image: url(assets/img/legalor-img38.png);
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            opacity: 0.25;
+            background-size: contain;
+        }
+
+        img {
+            width: 70%;
+            filter: brightness(120%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+            vertical-align: middle;
+        }
+    }
+}
