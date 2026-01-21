@@ -1,0 +1,84 @@
+🏛️  NIVEAU POLITIQUE & INSTITUTIONNEL
+│
+└── GOUVERNEUR DE KINSHASA
+     │
+     ▼
+🧭  ASSEMBLÉE GÉNÉRALE (AG)
+     │ • Instance plénière annuelle
+     │ • Validation des orientations
+     │ • Approbation des rapports
+     │
+     ▼
+⚙️  COMITÉ DE COORDINATION STRATÉGIQUE (CCS)
+     │
+     ├── PRÉSIDENT : Gouverneur de Kinshasa ou son délégué
+     ├── VICE-PRÉSIDENT : FEC
+     ├── SECRÉTAIRE : Ministère Provincial ayant la FP
+     │   └── SECRÉTAIRE ADJOINT : (à déterminer)
+     └── TRÉSORIER : Ministère Provincial des Finances
+         └── TRÉSORIER ADJOINT : (à déterminer)
+     │
+     ├── MEMBRES PERMANENTS :
+     │   • Ministère Provincial de l'Emploi
+     │   • Ministère Provincial de la Jeunesse
+     │   • Ministère Provincial des Affaires Sociales & Genre
+     │   • Ministère Provincial des PME & Entrepreneuriat
+     │   • Ministère Provincial ayant le Plan
+     │   • ONEM / Kinshasa
+     │   • INPP / Kinshasa
+     │   • ANADEC / Kinshasa
+     │   • Centre de Ressource MOSALA / Kinshasa
+     │   • COPEMECO / Kinshasa
+     │   • CNSS
+     │   • Syndicats (CSC, USTC, CCT)
+     │
+     └── OBSERVATEURS NATIONAUX :
+         ├── MNFP, MET, MEPME
+         ├── Jeunesse, EPST, Santé
+         └── Affaires Sociales, Genre, Plan, Finances
+     │
+     ▼
+🛠️  SECRÉTARIAT TECHNIQUE PERMANENT (STP)
+     │ • Rattaché au Ministère Provincial de l'Emploi
+     │
+     ├── Co-Secrétaires :
+     │   • Enabel (PTF)
+     │   • Coordonnateur PPPFM
+     │   └── Équipe technique dédiée
+     │
+     └── Rôles :
+         • Appui technique et administratif
+         • Capitalisation données & rapports
+         • Animation réseau d'acteurs
+         • Suivi-évaluation
+     │
+     ▼
+🔧  PÔLES THÉMATIQUES OPÉRATIONNELS
+   ┌────────────┬───────────────┬──────────────────┬──────────────┬──────────────────────┐
+   │            │               │                  │              │                      │
+   ▼            ▼               ▼                  ▼              ▼                      ▼
+┌─────────┐ ┌───────────┐ ┌──────────────┐ ┌─────────────┐ ┌──────────────────────┐
+│  PÔLE   │ │  PÔLE     │ │  PÔLE        │ │  PÔLE       │ │  PÔLE                │
+│ EMPLOI  │ │ FORMATION │ │ ENTREPRENEURIAT │ INSERTION  │ │ FORMALISATION &      │
+│         │ │ & CERTIF. │ │ & MÉTIERS    │ │ PROFESSIONNELLE │ PROTECTION SOCIALE │
+└─────────┘ └───────────┘ └──────────────┘ └─────────────┘ └──────────────────────┘
+   │            │               │                  │              │
+   │            │               │                  │              │
+   ▼            ▼               ▼                  ▼              ▼
+• ONEM       • INPP          • ANADEC          • CdR MOSALA    • Ministère Provincial
+  (Coordo)     (Coordo)        (Coordo)          (Coordo)        de l'Emploi (Coordo)
+• FEC        • FEC           • COPEMECO        • FEC           • CNSS
+  (Vice)       (Vice)          (Vice)            (Vice)          (Vice)
+   │            │               │                  │              │
+   ▼            ▼               ▼                  ▼              ▼
+ DIVISION     DIVISION        DIVISION          DIVISION        DIVISION
+ Emploi &     Formation       PME/              Jeunesse/       Affaires
+ Travail      Professionnelle Entrepreneuriat   Insertion       Sociales/Genre
+   │            │               │                  │              │
+   ▼            ▼               ▼                  ▼              ▼
+📌 NIVEAU LOCAL : ACTEURS DE TERRAIN
+   • Entreprises    • Centres de      • Associations        • OSC jeunesse  • Associations
+   • Services       formation         professionnelles     • Structures     travailleurs
+     déconcentrés  • Universités     • Associations de      d'insertion    informels
+   • ONG insertion • Établissements    métiers             • Services       • Services
+                     techniques                           d'orientation    sociaux
