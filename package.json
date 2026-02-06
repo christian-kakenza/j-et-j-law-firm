@@ -1,16 +1,35 @@
 {
   "name": "j-et-j-law-firm",
-  "version": "1.0.0",
-  "description": "law-firm",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "2.0.0",
+  "description": "Site web pour cabinet d'avocats J&J Law Firm",
+  "keywords": ["law-firm", "avocats", "legal", "express", "ejs"],
+  "homepage": "https://github.com/votre-username/votre-repo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/votre-username/votre-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/votre-username/votre-repo/issues"
   },
   "author": "christian_kakenza <christian.kakenza0@gmail.com>",
   "license": "ISC",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }

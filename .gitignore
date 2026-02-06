@@ -1,0 +1,40 @@
+# DÉPENDANCES NODE.JS - NE JAMAIS METTRE SUR GITHUB !
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VARIABLES D'ENVIRONNEMENT - CONFIDENTIEL !
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# FICHIERS TEMPORAIRES/DE SYSTÈME
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# LOGS
+*.log
+logs/
+
+# ÉDITEURS DE CODE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AUTRES
+dist/
+build/
+.coverage/
+.nyc_output/
+
+others/
+video/
