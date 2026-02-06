@@ -568,6 +568,18 @@ a:visited {
 /*--------------------------------------------------------------
 # Others
 --------------------------------------------------------------*/
+
+.language-tags .badge {
+    background-color: #8B0000 !important;
+    color: white !important;
+    padding: 4px 8px !important;
+    border-radius: 3px !important;
+    font-size: 0.8rem !important;
+    margin: 2px !important;
+    display: inline-block !important;
+}
+
+
 .container {
   max-width: 1170px;
   padding-left: 15px;
