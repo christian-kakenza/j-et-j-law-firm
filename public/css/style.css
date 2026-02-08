@@ -1410,6 +1410,115 @@ input[type=submit]:focus {
 /*--------------------------------------------------------------
 >>> Default 
 ----------------------------------------------------------------*/
+
+
+
+
+/* ====== STYLES POUR PAGES DE SUCCÈS ====== */
+
+.success-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #872b06; /* Couleur de ton cabinet */
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #28a745; /* Vert pour succès */
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.success-container h1 {
+    color: #872b06;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.success-container p {
+    color: #303649;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #872b06;
+    margin: 25px 0;
+    font-weight: 600;
+    color: #303649;
+}
+
+.success-container .btn-primary {
+    background: #872b06;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.success-container .btn-primary:hover {
+    background: #a30000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.2);
+}
+
+/* Animation d'entrée */
+.success-container {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .success-container {
+        margin: 40px 20px;
+        padding: 30px 20px;
+    }
+    
+    .success-icon {
+        font-size: 3rem;
+    }
+    
+    .success-container h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+
 .semi-bold {
   font-weight: 600;
 }
@@ -4632,7 +4741,7 @@ input[type=submit]:focus {
 >>> Home home-schedule  
 ----------------------------------------------------------------*/
 .home-schedule {
-  background-image: url(/images/legalor-img42.jpg);
+  background-image: url(/images/Screenshot\ 2026-02-07\ 121007.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5082,7 +5191,7 @@ input[type=submit]:focus {
   background-position: center;
 }
 .home-service .home-service-wrapper .service-left .fact-inner-box .bottom-left-image {
-  background-image: url("/images/j&j law firm....jpg");
+  background-image: url("/images/J&JUpdate.jpg");
   background-position: center;
 }
 .home-service .home-service-wrapper .service-left .fact-inner-box .top-left-content {
@@ -7403,7 +7512,7 @@ input[type=submit]:focus {
 .practice-detail-section .practice-inner-detail .left-sidebar .sidebar-contact {
   position: relative;
   z-index: 1;
-  background-image: url(/images/legalor-img5.jpg);
+  background-image: url(/images/GroupePhoto1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7509,10 +7618,12 @@ input[type=submit]:focus {
   }
 }
 
+/* Questions Fréquemment Posées */
+
 .qsn-form-container {
   padding: 50px 40px;
   margin-bottom: 20px;
-  background-image: url(/images/legalor-img5.jpg);
+  background-image: url(/images/faq.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

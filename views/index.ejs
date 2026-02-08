@@ -55,7 +55,7 @@
                         <div class="col-md-7 d-flex justify-content-md-end justify-content-between align-items-center">
                             <div class="legal-list">
                                 <ul>
-                                    <li> <a href="/blog-archive">Actualités de l'entreprise</a></li>
+                                    <!-- <li> <a href="/blog-archive">Actualités de l'entreprise</a></li> -->
                                     <li> <a href="/faq">FAQ</a></li>
                                     <li> <a href="/legal-notice">Politique</a></li>
                                 </ul>
@@ -184,7 +184,7 @@
                         Maître de Cabinet
                     </h6>
                     <figure class="attorney-image">
-                        <img src="/images/j&j maitre jethro.jpg" alt="Maître Jethro Muyombi Tshimbu" class="img-responsive">
+                        <img src="/images/honorableJethro.png" alt="Maître Jethro Muyombi Tshimbu" class="img-responsive">
                     </figure>
                     <h5 class="attorney-name">
                         Jethro Muyombi Tshimbu
@@ -271,7 +271,7 @@
                     <!-- LANGUES -->
                     <div class="languages-section">
                         <h6 class="section-subtitle">Langues parlées :</h6>
-                        <div class="language-tags">
+                            <div class="language-tags">
                             <span class="badge">Français</span>
                             <span class="badge">Anglais</span>
                             <span class="badge">Swahili</span>
@@ -417,7 +417,7 @@
                             <div class="about-author-wrapper">
                                 <div class="author-detail">
                                     <figure class="author-img">
-                                        <img src="images/j&j maitre jethro.jpg" alt="">
+                                        <img src="/images/honorableJethro.png" alt="Maître Jethro Muyombi Tshimbu" class="img-responsive">
                                     </figure>
                                     <div class="author-description">
                                         <h5 class="author-name">Jethro Muyombi tshimbu </h5>
@@ -813,7 +813,7 @@
                                     </div>
                                     <div class=" counter-item col-6">
                                         <div class="counter-no">
-                                            <span class="counter">15</span>+
+                                            <span class="counter">5</span>+
                                         </div>
                                         <div class="Completed">
                                             Bureaux
@@ -935,7 +935,11 @@
                                 </h5>
                                 <div class="entry-meta">
                                     <span class="posted-on">
-                                        <a href="#">17 août 2024</a>
+                                        <a href="#"><%= new Date().toLocaleDateString('fr-FR', { 
+                                            day: 'numeric', 
+                                            month: 'long', 
+                                            year: 'numeric' 
+                                        }) %></a>
                                     </span>
                                     <span class="comments">
                                         <!-- <a href="#">No Comments</a> -->
@@ -956,7 +960,11 @@
                                 </h5>
                                 <div class="entry-meta">
                                     <span class="posted-on">
-                                        <a href="#">17 août 2024</a>
+                                        <a href="#"><%= new Date().toLocaleDateString('fr-FR', { 
+                                            day: 'numeric', 
+                                            month: 'long', 
+                                            year: 'numeric' 
+                                        }) %></a>
                                     </span>
                                     <span class="comments">
                                         <!-- <a href="#">No Comments</a> -->
@@ -977,7 +985,11 @@
                                 </h5>
                                 <div class="entry-meta">
                                     <span class="posted-on">
-                                        <a href="#">17 août 2024</a>
+                                        <a href="#"><%= new Date().toLocaleDateString('fr-FR', { 
+                                            day: 'numeric', 
+                                            month: 'long', 
+                                            year: 'numeric' 
+                                        }) %></a>
                                     </span>
                                     <span class="comments">
                                         <!-- <a href="#">No Comments</a> -->
@@ -1068,44 +1080,71 @@
                             </aside>
                         </div>
                         <div class="col-lg-4 col-sm-6">
-                            <aside class="widget news-widget">
-                                <h5 class="widget-title">S'abonner à la newsletter</h5>
-                                <div class="textwidget widget-text">
-                                    Inscrivez-vous à notre newsletter pour recevoir les dernières actualités juridiques et des conseils exclusifs directement dans votre boîte de réception
+                        <aside class="widget news-widget">
+                            <h5 class="widget-title">S'abonner à la newsletter</h5>
+                            <div class="textwidget widget-text">
+                                Inscrivez-vous à notre newsletter pour recevoir les dernières actualités juridiques et des conseils exclusifs directement dans votre boîte de réception
+                            </div>
+                            
+                            <!-- MESSAGE QUI APPARAÎTRA -->
+                            <div id="newsletter-message" style="display: none;">
+                                <div style="background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                                    ✅ Message envoyé ! Merci pour votre abonnement.
                                 </div>
-                                <form class="footer-email-form">
-                                    <input type="email" name="email" placeholder="Entrez votre e-mail.">
-                                    <button type="submit" class="footer-email-btn">
-                                        <i aria-hidden="true" class="fas fa-paper-plane"></i>
-                                    </button>
-                                </form>
-                                <div class="footer-social-links">
-                                    <p>Suivez-nous sur les réseaux sociaux :</p>
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/" target="_blank">
-                                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.twitter.com/" target="_blank">
-                                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/" target="_blank">
-                                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.youtube.com/" target="_blank">
-                                                <i class="fab fa-youtube"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
+                            </div>
+                            
+                            <form class="footer-email-form" id="newsletter-form">
+                                <input type="email" name="email" placeholder="Entrez votre e-mail." required>
+                                <button type="submit" class="footer-email-btn">
+                                    <i aria-hidden="true" class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                            
+                            <!-- NOUVEAU CE SCRIPT -->
+                            <script>
+                                document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+                                    e.preventDefault(); // Empêche le rechargement de la page
+                                    
+                                    // Affiche le message
+                                    document.getElementById('newsletter-message').style.display = 'block';
+                                    
+                                    // Vide le champ email
+                                    this.reset();
+                                    
+                                    // Option : faire disparaître le message après 5 secondes
+                                    setTimeout(function() {
+                                        document.getElementById('newsletter-message').style.display = 'none';
+                                    }, 5000);
+                                });
+                            </script>
+                            
+                            <div class="footer-social-links">
+                                <p>Suivez-nous sur les réseaux sociaux :</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com/" target="_blank">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/" target="_blank">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
                     </div>
                 </div>
             </div>

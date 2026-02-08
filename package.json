@@ -2,7 +2,13 @@
   "name": "j-et-j-law-firm",
   "version": "2.0.0",
   "description": "Site web pour cabinet d'avocats J&J Law Firm",
-  "keywords": ["law-firm", "avocats", "legal", "express", "ejs"],
+  "keywords": [
+    "law-firm",
+    "avocats",
+    "legal",
+    "express",
+    "ejs"
+  ],
   "homepage": "https://github.com/votre-username/votre-repo#readme",
   "repository": {
     "type": "git",
@@ -20,10 +26,10 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemailer": "^8.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"

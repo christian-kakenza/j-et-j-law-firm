@@ -1,0 +1,44 @@
+<%- include('header') %>
+
+<main id="content" class="site-main">
+    <section class="inner-banner-wrap">
+        <div class="inner-baner-container" style="background-image: url(/images/GroupePhoto1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="inner-banner-content">
+                    <!-- <h1 class="inner-title">Confirmation</h1> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-page-section">
+        <div class="container">
+            <div class="success-container">
+                <div class="success-icon">✓</div>
+                <h1><%= title %></h1>
+                <p><%= message %></p>
+                
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i>
+                    <%= contactInfo %>
+                </div>
+                
+                <div class="success-actions">
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Retour à l'accueil
+                    </a>
+                    <a href="/contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Nous contacter
+                    </a>
+                </div>
+                
+                <div class="success-note">
+                    <p><small><i class="fas fa-clock"></i> Nous traiterons votre demande dans les plus brefs délais</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('footer') %>

@@ -2,11 +2,11 @@
     <main id="content" class="site-main">
         <!-- Inner Banner html start-->
         <section class="inner-banner-wrap">
-            <div class="inner-baner-container" style="background-image: url(assets/img/legalor-img50.jpg);">
+            <div class="inner-baner-container" style="background-image: url(/images/reservation.jpg);">
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <h1 class="inner-title">Réservation</h1>
+                        <!-- <h1 class="inner-title">Réservation</h1> -->
                     </div>
                 </div>
             </div>
@@ -15,15 +15,18 @@
         <!-- reservation html -->
         <div class="reservation-page-section">
             <div class="container">
-                <form method="post" class="reservation-form">
+                <form method="post" action="/reservation" class="reservation-form">
                     <div class="reservation-detais form-inner">
-                        <h3>Your Details</h3>
+                        <h3>Vos informations</h3>
                         <div class="row form-wrap">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="text" name="name" id="name" placeholder="Prénom">
+                                <input type="text" name="firstname" id="firstname" placeholder="Prénom">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="text" name="name" id="last-name" placeholder="Nom">
+                                <input type="text" name="lastname" id="lastname" placeholder="Nom">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                <input type="text" name="middlename" id="middlename" placeholder="Post-Nom">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
                                 <input type="email" name="email" id="email" placeholder="Email">
@@ -35,20 +38,36 @@
                                 <input type="tel" name="phone-no" id="phone-no" placeholder="Numéro de Téléphone">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="date" name="date" id="date" value="2023-06-01">
+                                <input type="date" name="date" id="date" 
+                                    value="<%= new Date().toISOString().split('T')[0] %>"
+                                    placeholder="<%= new Date().toLocaleDateString('fr-FR', { 
+                                        day: 'numeric', 
+                                        month: 'long', 
+                                        year: 'numeric' 
+                                    }) %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="time" name="time" id="time">
+                                <input type="time" name="time" id="time" 
+                                    value="<%= 
+                                        // Format HH:MM pour l'input time
+                                        new Date().getHours().toString().padStart(2, '0') + ':' + 
+                                        new Date().getMinutes().toString().padStart(2, '0')
+                                    %>"
+                                    placeholder="<%= new Date().toLocaleTimeString('fr-FR', { 
+                                        hour: '2-digit', 
+                                        minute: '2-digit',
+                                        hour12: false 
+                                    }) %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <!-- <input type="number" name="number" id="no-people" placeholder="Number of Ticket"> -->
+                                
                             </div>
                             <div class="col-lg-12 col-12 form-group">
                                 <textarea rows="7" name="note" id="note" placeholder="Description du Dossier..."></textarea>
                             </div>
                         </div>
                     </div>
-                    <div class="reservation-method form-inner">
+                    <!-- <div class="reservation-method form-inner">
                         <h3>Choisissez Votre Méthode de Paiement</h3>
                         <div class="form-wrap d-flex gy-5">
                             <div class="form-group radio-img">
@@ -94,9 +113,10 @@
                                 <input type="number" name="expire date" id="expire-date">
                             </div>
                         </div>
-                    </div>
-                    <button type="submit" class="button-primary">Payer Maintenant</button>
+                    </div> -->
+                    <button type="submit" class="button-primary">Envoyer</button> 
                 </form>
+                
             </div>
         </div>
     </main>

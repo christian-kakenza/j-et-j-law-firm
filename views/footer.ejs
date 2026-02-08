@@ -81,12 +81,39 @@
                         <div class="textwidget widget-text">
                             Inscrivez-vous à notre newsletter pour recevoir les dernières actualités juridiques et des conseils exclusifs directement dans votre boîte de réception
                         </div>
-                        <form class="footer-email-form">
-                            <input type="email" name="email" placeholder="Entrez votre e-mail.">
+                        
+                        <!-- MESSAGE QUI APPARAÎTRA -->
+                        <div id="newsletter-message" style="display: none;">
+                            <div style="background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                                ✅ Message envoyé ! Merci pour votre abonnement.
+                            </div>
+                        </div>
+                        
+                        <form class="footer-email-form" id="newsletter-form">
+                            <input type="email" name="email" placeholder="Entrez votre e-mail." required>
                             <button type="submit" class="footer-email-btn">
                                 <i aria-hidden="true" class="fas fa-paper-plane"></i>
                             </button>
                         </form>
+                        
+                        <!-- NOUVEAU CE SCRIPT -->
+                        <script>
+                            document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+                                e.preventDefault(); // Empêche le rechargement de la page
+                                
+                                // Affiche le message
+                                document.getElementById('newsletter-message').style.display = 'block';
+                                
+                                // Vide le champ email
+                                this.reset();
+                                
+                                // Option : faire disparaître le message après 5 secondes
+                                setTimeout(function() {
+                                    document.getElementById('newsletter-message').style.display = 'none';
+                                }, 5000);
+                            });
+                        </script>
+                        
                         <div class="footer-social-links">
                             <p>Suivez-nous sur les réseaux sociaux :</p>
                             <ul>
