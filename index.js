@@ -17,25 +17,25 @@ app.use(express.json());
 // ============ CONFIGURATION NODEMAILER ============
 
 
+// ============ CONFIGURATION NODEMAILER (ETHEAL - GARANTI) ============
 const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,  // Port alternatif
-    secure: false,  // true pour 465, false pour autres ports
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false, // true pour 465, false pour 587
     auth: {
-        user: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
-        pass: process.env.GMAIL_APP_PASSWORD || 'eipm qxzw hdmr sfsi'
-    },
-    tls: {
-        rejectUnauthorized: false  // Important pour Render
+        user: 'hermina.casper@ethereal.email',
+        pass: 'dpK4SWmy4Dx6gW94yS'
     }
 });
 
-// Vérifier la connexion Nodemailer au démarrage
-transporter.verify((error, success) => {
+// Test de la connexion au démarrage
+transporter.verify(function(error, success) {
     if (error) {
-        console.log('❌ Erreur de configuration Nodemailer:', error);
+        console.log('❌ Erreur Nodemailer:', error);
     } else {
-        console.log('✅ Nodemailer prêt à envoyer des emails');
+        console.log('✅ Serveur email PRÊT à envoyer des emails');
+        console.log('📧 Compte test: hermina.casper@ethereal.email');
+        console.log('🔑 Mot de passe: dpK4SWmy4Dx6gW94yS');
     }
 });
 
@@ -157,8 +157,8 @@ app.post('/reservation', async (req, res) => {
         
         // Email pour le cabinet
         const mailToCabinet = {
-            from: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
-            to: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
+            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
+            to: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
             subject: `📅 Nouvelle réservation - ${clientFullName}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -184,7 +184,7 @@ app.post('/reservation', async (req, res) => {
         
         // Email de confirmation au client
         const mailToClient = {
-            from: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
+            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
             to: email,
             subject: '✅ Confirmation de votre réservation - J&J Law Firm',
             html: `
@@ -215,7 +215,7 @@ app.post('/reservation', async (req, res) => {
                         <h4 style="color: #0c5460; margin-top: 0;">📞 Contact rapide :</h4>
                         <p style="margin: 5px 0;"><strong>Cabinet J&J Law Firm</strong></p>
                         <p style="margin: 5px 0;">📞 <strong>Téléphone :</strong> +243 995 482 416</p>
-                        <p style="margin: 5px 0;">📧 <strong>Email :</strong> christian.kakenza0@gmail.com</p>
+                        <p style="margin: 5px 0;">📧 <strong>Email :</strong> hermina.casper@ethereal.email</p>
                         <p style="margin: 5px 0;">📍 <strong>Adresse :</strong> nᵒ 148/A, Blvd du 30 Juin, Gombe, Kinshasa</p>
                     </div>
                     
@@ -266,8 +266,8 @@ app.post('/contact', async (req, res) => {
         
         // Email pour le cabinet
         const mailToCabinet = {
-            from: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
-            to: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
+            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
+            to: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
             subject: `📧 ${subject || 'Nouveau message'} - ${name}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -320,8 +320,8 @@ app.post('/faq-question', async (req, res) => {
         
         // Email pour le cabinet
         const mailToCabinet = {
-            from: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
-            to: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
+            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
+            to: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
             subject: `❓ Question FAQ - ${name}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -384,7 +384,7 @@ const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, () => {
     console.log(`✅ Serveur démarré sur le port ${PORT}`);
-    console.log(`📧 Email d'envoi : ${process.env.GMAIL_USER || 'christian.kakenza0@gmail.com'}`);
+    console.log(`📧 Email d'envoi : ${process.env.GMAIL_USER || 'hermina.casper@ethereal.email'}`);
     console.log(`🌐 Site accessible sur : http://localhost:${PORT}`);
     console.log('========================================');
 });
