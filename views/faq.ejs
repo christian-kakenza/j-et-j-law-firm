@@ -320,7 +320,7 @@
                                     <i class="fas fa-check-circle"></i> <strong>Votre question a été envoyée !</strong> Nous vous répondrons par email dans les 48 heures.
                                 </div>
                                 
-                                <form method="post" id="faq-form">
+                                <form method="post" id="faq-form" action="/faq-question">
                                     <p>
                                         <input type="text" name="name" placeholder="Votre Nom*" required>
                                     </p>
@@ -390,7 +390,7 @@
                             <div class="faq-testimonial">
                                 <figure class="faq-image">
                                     <div class="overlay rise-sun-patten"></div>
-                                    <img src="assets/img/legalor-img025.png" alt="">
+                                    <img src="/assets/img/legalor-img025.png" alt="">
                                 </figure>
                                 <div class="testimonial-content">
                                     <span class="quote-icon">
@@ -399,6 +399,14 @@
                                     <p>
                                         "Vous avez d'autres questions ? Contactez-nous directement."
                                     </p>
+                                    <div class="contact-actions">
+                                        <a href="/contact" class="btn-contact">
+                                            <i class="fas fa-envelope"></i> Nous contacter
+                                        </a>
+                                        <a href="tel:+243995482416" class="btn-call">
+                                            <i class="fas fa-phone"></i> Nous appeler
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -466,6 +474,28 @@
                                                 L'objectif fondamental : obtenir des résultats concrets qui protègent vos droits. Nous nous engageons à défendre vos intérêts avec rigueur et à vous offrir une tranquillité juridique durable.
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Liens vers les spécialités -->
+                                <div class="specialties-links mt-4">
+                                    <h5>Explorez nos spécialités :</h5>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <a href="/practice-area-mines" class="badge badge-mining">
+                                            <i class="fas fa-mountain"></i> Droit Minier
+                                        </a>
+                                        <a href="/practice-area-ohada" class="badge badge-ohada">
+                                            <i class="fas fa-balance-scale"></i> Droit OHADA
+                                        </a>
+                                        <a href="/practice-area-assurances" class="badge badge-insurance">
+                                            <i class="fas fa-shield-alt"></i> Droit des Assurances
+                                        </a>
+                                        <a href="/practice-area-immobilier" class="badge badge-realestate">
+                                            <i class="fas fa-home"></i> Droit Immobilier
+                                        </a>
+                                        <a href="/practice-area-droits-homme" class="badge badge-humanrights">
+                                            <i class="fas fa-handshake"></i> Droits de l'Homme
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -3,7 +3,7 @@
 <main id="content" class="site-main">
     <section class="inner-banner-wrap">
         <div class="inner-baner-container" style="background-image: url(/images/GroupePhoto1.jpg);">
-            <div class="overlay"></div>
+            <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
                     <!-- <h1 class="inner-title">Confirmation</h1> -->
@@ -15,14 +15,18 @@
     <section class="success-page-section">
         <div class="container">
             <div class="success-container">
-                <div class="success-icon">✓</div>
-                <h1><%= title %></h1>
-                <p><%= message %></p>
-                
-                <div class="contact-info">
-                    <i class="fas fa-phone-alt"></i>
-                    <%= contactInfo %>
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
                 </div>
+                <h1 class="success-title"><%= title %></h1>
+                <p class="success-message"><%= message %></p>
+                
+                <% if (contactInfo) { %>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span><%= contactInfo %></span>
+                </div>
+                <% } %>
                 
                 <div class="success-actions">
                     <a href="/" class="btn btn-primary">
@@ -31,14 +35,166 @@
                     <a href="/contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i> Nous contacter
                     </a>
+                    <a href="/practice-area" class="btn btn-outline">
+                        <i class="fas fa-balance-scale"></i> Nos spécialités
+                    </a>
                 </div>
                 
                 <div class="success-note">
-                    <p><small><i class="fas fa-clock"></i> Nous traiterons votre demande dans les plus brefs délais</small></p>
+                    <p><i class="fas fa-clock"></i> Nous traiterons votre demande dans les plus brefs délais</p>
                 </div>
             </div>
         </div>
     </section>
+    
+    <style>
+        .success-page-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+            min-height: 60vh;
+        }
+        
+        .success-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 5px solid #8B0000;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            color: #28a745;
+            margin-bottom: 30px;
+            animation: successPulse 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes successPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .success-title {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .success-message {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            display: inline-block;
+            color: #8B0000;
+            font-weight: 600;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: #8B0000;
+        }
+        
+        .success-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: #8B0000;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #a00000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 0, 0, 0.2);
+        }
+        
+        .btn-secondary {
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #1a252f;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.2);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: #8B0000;
+            border: 2px solid #8B0000;
+        }
+        
+        .btn-outline:hover {
+            background-color: #8B0000;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .success-note {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .success-note i {
+            margin-right: 8px;
+            color: #8B0000;
+        }
+        
+        @media (max-width: 768px) {
+            .success-container {
+                padding: 30px 20px;
+                margin: 0 15px;
+            }
+            
+            .success-actions {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .success-icon {
+                font-size: 60px;
+            }
+        }
+    </style>
 </main>
 
 <%- include('footer') %>
