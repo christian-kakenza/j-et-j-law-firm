@@ -18,10 +18,15 @@ app.use(express.json());
 
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 587,  // Port alternatif
+    secure: false,  // true pour 465, false pour autres ports
     auth: {
         user: process.env.GMAIL_USER || 'christian.kakenza0@gmail.com',
         pass: process.env.GMAIL_APP_PASSWORD || 'eipm qxzw hdmr sfsi'
+    },
+    tls: {
+        rejectUnauthorized: false  // Important pour Render
     }
 });
 
