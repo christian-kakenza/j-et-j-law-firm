@@ -14,28 +14,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// ============ CONFIGURATION NODEMAILER ============
-
-
-// ============ CONFIGURATION NODEMAILER (ETHEAL - GARANTI) ============
+// ============ CONFIGURATION NODEMAILER ETHEREAL ============
 const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
-    secure: false, // true pour 465, false pour 587
+    secure: false,
     auth: {
-        user: 'hermina.casper@ethereal.email',
-        pass: 'dpK4SWmy4Dx6gW94yS'
+        user: 'barney.johns@ethereal.email',
+        pass: '5knqqdjPdxaYzAzX5T'
     }
 });
 
-// Test de la connexion au démarrage
+// Test de connexion
 transporter.verify(function(error, success) {
     if (error) {
-        console.log('❌ Erreur Nodemailer:', error);
+        console.log('❌ Erreur email:', error);
     } else {
-        console.log('✅ Serveur email PRÊT à envoyer des emails');
-        console.log('📧 Compte test: hermina.casper@ethereal.email');
-        console.log('🔑 Mot de passe: dpK4SWmy4Dx6gW94yS');
+        console.log('✅ EMAILS PRÊTS ! Compte: barney.johns@ethereal.email');
+        console.log('🔗 Voir les emails: https://ethereal.email');
     }
 });
 
@@ -157,8 +153,8 @@ app.post('/reservation', async (req, res) => {
         
         // Email pour le cabinet
         const mailToCabinet = {
-            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
-            to: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
+            from: 'barney.johns@ethereal.email',
+            to: 'barney.johns@ethereal.email',
             subject: `📅 Nouvelle réservation - ${clientFullName}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -184,7 +180,7 @@ app.post('/reservation', async (req, res) => {
         
         // Email de confirmation au client
         const mailToClient = {
-            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
+            from: 'barney.johns@ethereal.email',
             to: email,
             subject: '✅ Confirmation de votre réservation - J&J Law Firm',
             html: `
@@ -215,7 +211,7 @@ app.post('/reservation', async (req, res) => {
                         <h4 style="color: #0c5460; margin-top: 0;">📞 Contact rapide :</h4>
                         <p style="margin: 5px 0;"><strong>Cabinet J&J Law Firm</strong></p>
                         <p style="margin: 5px 0;">📞 <strong>Téléphone :</strong> +243 995 482 416</p>
-                        <p style="margin: 5px 0;">📧 <strong>Email :</strong> hermina.casper@ethereal.email</p>
+                        <p style="margin: 5px 0;">📧 <strong>Email :</strong> barney.johns@ethereal.email</p>
                         <p style="margin: 5px 0;">📍 <strong>Adresse :</strong> nᵒ 148/A, Blvd du 30 Juin, Gombe, Kinshasa</p>
                     </div>
                     
@@ -266,8 +262,8 @@ app.post('/contact', async (req, res) => {
         
         // Email pour le cabinet
         const mailToCabinet = {
-            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
-            to: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
+            from: 'barney.johns@ethereal.email',
+            to: 'barney.johns@ethereal.email',
             subject: `📧 ${subject || 'Nouveau message'} - ${name}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -320,8 +316,8 @@ app.post('/faq-question', async (req, res) => {
         
         // Email pour le cabinet
         const mailToCabinet = {
-            from: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
-            to: process.env.GMAIL_USER || 'hermina.casper@ethereal.email',
+            from: 'barney.johns@ethereal.email',
+            to: 'barney.johns@ethereal.email',
             subject: `❓ Question FAQ - ${name}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -345,12 +341,55 @@ app.post('/faq-question', async (req, res) => {
             `
         };
         
+        // Email de confirmation au client
+        const mailToClient = {
+            from: 'barney.johns@ethereal.email',
+            to: email,
+            subject: '✅ Nous avons reçu votre question - J&J Law Firm',
+            html: `
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: #8B0000;">Bonjour ${name},</h2>
+                    <p>Nous avons bien reçu votre question via notre page FAQ.</p>
+                    
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h3 style="color: #333;">Votre question :</h3>
+                        <p style="background: white; padding: 15px; border-radius: 5px; font-style: italic;">"${message}"</p>
+                    </div>
+                    
+                    <p>✅ <strong>Notre engagement :</strong></p>
+                    <ul>
+                        <li>Notre équipe d'avocats analyse votre question</li>
+                        <li>Vous recevrez une réponse détaillée dans les <strong>48 heures</strong></li>
+                        <li>Pour les urgences, appelez-nous directement</li>
+                    </ul>
+                    
+                    <div style="background: #e9f7fe; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #2196F3;">
+                        <h4 style="color: #0c5460; margin-top: 0;">📞 Contact rapide :</h4>
+                        <p style="margin: 5px 0;"><strong>Cabinet J&J Law Firm</strong></p>
+                        <p style="margin: 5px 0;">📞 <strong>Téléphone :</strong> +243 995 482 416</p>
+                        <p style="margin: 5px 0;">📧 <strong>Email :</strong> barney.johns@ethereal.email</p>
+                        <p style="margin: 5px 0;">📍 <strong>Adresse :</strong> nᵒ 148/A, Blvd du 30 Juin, Gombe, Kinshasa</p>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 0.9em; margin-top: 30px;">
+                        Ceci est un message automatique de confirmation.<br>
+                        Si vous n'avez pas fait cette demande, veuillez ignorer cet email.
+                    </p>
+                </div>
+            `
+        };
+        
+        // Envoyer les deux emails
         await transporter.sendMail(mailToCabinet);
         console.log('✅ Email FAQ envoyé au cabinet');
         
+        if (email) {
+            await transporter.sendMail(mailToClient);
+            console.log('✅ Email de confirmation FAQ envoyé au client');
+        }
+        
         res.status(200).json({ success: true, message: 'Question envoyée avec succès' });
         
-
     } catch (error) {
         console.error('❌ Erreur FAQ email :', error);
         res.status(500).json({ error: 'Erreur lors de l\'envoi de la question' });
@@ -384,7 +423,7 @@ const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, () => {
     console.log(`✅ Serveur démarré sur le port ${PORT}`);
-    console.log(`📧 Email d'envoi : ${process.env.GMAIL_USER || 'hermina.casper@ethereal.email'}`);
+    console.log(`📧 Email d'envoi : barney.johns@ethereal.email`);
     console.log(`🌐 Site accessible sur : http://localhost:${PORT}`);
     console.log('========================================');
 });
