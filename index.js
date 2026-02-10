@@ -59,6 +59,18 @@ app.get('/practice-area-immobilier', (req, res) => {
     res.render('practice-area-immobilier');
 });
 
+app.get('/practice-area-constitutionnel', (req, res) => {
+    res.render('practice-area-constitutionnel');
+});
+
+app.get('/practice-area-intellectuelle', (req, res) => {
+    res.render('practice-area-intellectuelle');
+});
+
+app.get('/practice-area-transport', (req, res) => {
+    res.render('practice-area-transport');
+});
+
 app.get('/practice-area-droits-homme', (req, res) => {
     res.render('practice-area-droits-homme');
 });
