@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('practice_detail_commercial.page_title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -19,110 +19,112 @@
                     <div class="col-lg-8">
                         <div class="right-sidebar">
                             <h3 class="practice-title">
-                                Droit Commercial
+                                <%= __('practice_detail_commercial.title') %>
                             </h3>
                             <figure class="practice-img">
-                                <img src="/images/commerce2.jpg" alt="Droit Commercial">
+                                <img src="/images/commerce2.jpg" alt="<%= __('practice_detail_commercial.title') %>">
                             </figure>
                             <p class="practice-paragraph">
-                                Le Cabinet J&J Law Firm possède une expertise approfondie en droit commercial, accompagnant les entreprises et commerçants dans toutes leurs opérations commerciales en République Démocratique du Congo. Notre cabinet maîtrise les spécificités du droit commercial congolais, du Code de Commerce et des pratiques commerciales locales et internationales.
+                                <%= __('practice_detail_commercial.intro_1') %>
                             </p>
                             <p class="practice-paragraph">
-                                Nous intervenons dans la création et l'immatriculation des commerçants, la rédaction des actes de commerce, le droit des contrats commerciaux, la représentation commerciale, les procédures collectives et le contentieux commercial. Notre expertise s'étend également au droit de la distribution, à la concurrence déloyale et à la protection des intérêts commerciaux.
+                                <%= __('practice_detail_commercial.intro_2') %>
                             </p>
                             <p class="practice-paragraph">
-                                Notre approche combine une connaissance précise du cadre juridique commercial congolais avec une compréhension des enjeux économiques pratiques, garantissant à nos clients une sécurité juridique optimale dans leurs transactions et activités commerciales.
+                                <%= __('practice_detail_commercial.intro_3') %>
                             </p>
                             <article class="practice-summary">
-                                <h5 class="practice-summary-title">Expertise en Transactions Commerciales :</h5>
+                                <h5 class="practice-summary-title">
+                                    <%= __('practice_detail_commercial.expertise_title') %>
+                                </h5>
                                 <p>
-                                    Notre cabinet sécurise vos opérations commerciales en garantissant la validité juridique de vos contrats, la conformité de vos pratiques et la protection de vos intérêts commerciaux dans le respect du droit commercial congolais et du droit OHADA des affaires.
+                                    <%= __('practice_detail_commercial.expertise_text') %>
                                 </p>
                                 <div class="practical-summary-wrapper">
                                     <figure class="practical-summary-img">
-                                        <img src="/images/commerce3.jpg" alt="Transactions commerciales">
+                                        <img src="/images/commerce3.jpg" alt="<%= __('practice_detail_commercial.title') %>">
                                     </figure>
                                     <div class="practical-summary-info">
                                         <p>
-                                            Nous identifions les risques spécifiques aux transactions commerciales et proposons des mécanismes contractuels robustes pour protéger vos intérêts, tout en facilitant le développement de vos activités commerciales en RDC.
+                                            <%= __('practice_detail_commercial.approach_text') %>
                                         </p>
 
                                         <p>
-                                            Nos services en droit commercial incluent :
+                                            <%= __('practice_detail_commercial.services_title') %>
                                         </p>
                                         <ul>
                                             <li>
                                                 <i class="fas fa-store"></i>
-                                                Immatriculation au Registre du Commerce et du Crédit Mobilier (RCCM)
+                                                <%= __('practice_detail_commercial.service_1') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-file-contract"></i>
-                                                Rédaction et négociation de contrats commerciaux (vente, prestation, distribution)
+                                                <%= __('practice_detail_commercial.service_2') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-truck-loading"></i>
-                                                Droit de la distribution et de la représentation commerciale
+                                                <%= __('practice_detail_commercial.service_3') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-balance-scale"></i>
-                                                Contentieux commercial et procédures de recouvrement
+                                                <%= __('practice_detail_commercial.service_4') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-sync-alt"></i>
-                                                Procédures collectives (redressement et liquidation judiciaire)
+                                                <%= __('practice_detail_commercial.service_5') %>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </article>
                             
-                            <!-- Section Domaines du Droit Commercial -->
+                            <!-- Section Commercial Law Areas -->
                             <div class="commercial-areas mt-5">
-                                <h5 class="section-subtitle">Domaines du Droit Commercial :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_commercial.areas_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <div class="commercial-area-card">
-                                            <h6><i class="fas fa-user-tie"></i> Droit des Commerçants</h6>
-                                            <p>Statut du commerçant, obligations légales, immatriculation au RCCM</p>
+                                            <h6><i class="fas fa-user-tie"></i> <%= __('practice_detail_commercial.area_1_title') %></h6>
+                                            <p><%= __('practice_detail_commercial.area_1_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="commercial-area-card">
-                                            <h6><i class="fas fa-handshake"></i> Contrats Commerciaux</h6>
-                                            <p>Contrats de vente, distribution, franchise, concession, sous-traitance</p>
+                                            <h6><i class="fas fa-handshake"></i> <%= __('practice_detail_commercial.area_2_title') %></h6>
+                                            <p><%= __('practice_detail_commercial.area_2_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="commercial-area-card">
-                                            <h6><i class="fas fa-gavel"></i> Contentieux Commercial</h6>
-                                            <p>Litiges commerciaux, recouvrement de créances, arbitrage commercial</p>
+                                            <h6><i class="fas fa-gavel"></i> <%= __('practice_detail_commercial.area_3_title') %></h6>
+                                            <p><%= __('practice_detail_commercial.area_3_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="commercial-area-card">
-                                            <h6><i class="fas fa-exclamation-triangle"></i> Procédures Collectives</h6>
-                                            <p>Redressement judiciaire, liquidation, règlement préventif</p>
+                                            <h6><i class="fas fa-exclamation-triangle"></i> <%= __('practice_detail_commercial.area_4_title') %></h6>
+                                            <p><%= __('practice_detail_commercial.area_4_desc') %></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <!-- Section Cadre Légal -->
+                            <!-- Section Legal Framework -->
                             <div class="legal-framework mt-4">
-                                <h5 class="section-subtitle">Cadre Légal Commercial en RDC :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_commercial.legal_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul class="legal-list">
-                                            <li><i class="fas fa-book"></i> <strong>Code de Commerce</strong> : Loi du 28 juillet 1887 modifiée</li>
-                                            <li><i class="fas fa-balance-scale"></i> <strong>Acte Uniforme OHADA</strong> : Droit commercial général</li>
-                                            <li><i class="fas fa-file-invoice-dollar"></i> <strong>RCCM</strong> : Registre du Commerce et du Crédit Mobilier</li>
+                                            <li><i class="fas fa-book"></i> <%- __('practice_detail_commercial.legal_1') %></li>
+                                            <li><i class="fas fa-balance-scale"></i> <%- __('practice_detail_commercial.legal_2') %></li>
+                                            <li><i class="fas fa-file-invoice-dollar"></i> <%- __('practice_detail_commercial.legal_3') %></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul class="legal-list">
-                                            <li><i class="fas fa-landmark"></i> <strong>Code Civil</strong> : Dispositions relatives aux contrats</li>
-                                            <li><i class="fas fa-chart-line"></i> <strong>Droit de la Concurrence</strong> : Pratiques commerciales loyales</li>
-                                            <li><i class="fas fa-globe"></i> <strong>Commerce International</strong> : Incoterms, contrats internationaux</li>
+                                            <li><i class="fas fa-landmark"></i> <%- __('practice_detail_commercial.legal_4') %></li>
+                                            <li><i class="fas fa-chart-line"></i> <%- __('practice_detail_commercial.legal_5') %></li>
+                                            <li><i class="fas fa-globe"></i> <%- __('practice_detail_commercial.legal_6') %></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -131,14 +133,18 @@
                             <!-- Section Contact Action -->
                             <div class="practice-action mt-5">
                                 <div class="action-card">
-                                    <h5 class="action-title">Besoin de conseil en droit commercial ?</h5>
-                                    <p>Nos experts en droit commercial vous accompagnent dans vos transactions et opérations commerciales en RDC.</p>
+                                    <h5 class="action-title">
+                                        <%= __('practice_detail_commercial.action_title') %>
+                                    </h5>
+                                    <p>
+                                        <%= __('practice_detail_commercial.action_text') %>
+                                    </p>
                                     <div class="action-buttons">
                                         <a href="/contact" class="btn btn-primary">
-                                            <i class="fas fa-envelope"></i> Consultation commerciale
+                                            <i class="fas fa-envelope"></i> <%= __('practice_detail_commercial.action_contact') %>
                                         </a>
                                         <a href="/reservation" class="btn btn-secondary">
-                                            <i class="fas fa-calendar-check"></i> Audit commercial gratuit
+                                            <i class="fas fa-calendar-check"></i> <%= __('practice_detail_commercial.action_appointment') %>
                                         </a>
                                     </div>
                                 </div>
@@ -148,19 +154,19 @@
                     <div class="col-lg-4">
                         <div class="left-sidebar">
                             <div class="widget-bg faq-widget">
-                                <h5 class="bg-title">Notre Processus Commercial</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_commercial.process_title') %></h5>
                                 <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                     <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                         <div class="card-header" role="tab" id="qus-A">
                                             <h6 class="mb-0">
                                                 <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                    Analyse et Structuration Commerciale
+                                                    <%= __('practice_detail_commercial.process_1_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                             <div class="card-body">
-                                                Analyse de votre activité commerciale, vérification de la conformité, structuration optimale de vos opérations et définition de la stratégie commerciale juridique.
+                                                <%= __('practice_detail_commercial.process_1_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -168,13 +174,13 @@
                                         <div class="card-header" role="tab" id="qus-B">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                    Formalisation et Sécurisation
+                                                    <%= __('practice_detail_commercial.process_2_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                             <div class="card-body">
-                                                Immatriculation au RCCM si nécessaire, rédaction des contrats commerciaux, mise en place des garanties et sécurisation des transactions.
+                                                <%= __('practice_detail_commercial.process_2_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -182,52 +188,52 @@
                                         <div class="card-header" role="tab" id="qus-C">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                    Suivi et Contentieux
+                                                    <%= __('practice_detail_commercial.process_3_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                             <div class="card-body">
-                                                Accompagnement dans l'exécution des contrats, gestion des litiges commerciaux, recouvrement des créances et représentation devant les tribunaux de commerce.
+                                                <%= __('practice_detail_commercial.process_3_desc') %>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget widget-bg icon-list-content">
-                                <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_commercial.other_practices') %></h5>
                                 <ul>
                                     <li>
-                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-corporatif"><i class="fas fa-tractor"></i> Droit Agricole & Acquisition de Terres</a>
+                                        <a href="/practice-area-corporatif"><i class="fas fa-tractor"></i> <%= __('services.agricultural') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> Droit de la Famille & Divorce</a>
+                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> <%= __('services.family') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> Droit des Télécommunications</a>
+                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> <%= __('services.telecom') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> Droit Bancaire & Financement</a>
+                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> <%= __('services.banking') %></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="widget-bg sidebar-contact">
                                 <div class="overlay"></div>
-                                <h5>Laissez-nous Vous Aider !</h5>
+                                <h5><%= __('practice_detail_commercial.sidebar_title') %></h5>
                                 <p>
-                                    Vous avez une activité commerciale ? Besoin de conseil pour vos contrats ou un litige commercial ? Notre expertise en droit commercial protège vos intérêts.
+                                    <%= __('practice_detail_commercial.sidebar_text') %>
                                 </p>
                                 <div class="contact-options">
                                     <a href="tel:+243995482416" class="contact-phone">
@@ -239,7 +245,7 @@
                                         <span>+243 810 369 919</span>
                                     </a>
                                     <a href="/faq" class="btn-appointment mt-3">
-                                        <i class="fas fa-question-circle"></i> FAQ Commerciale
+                                        <i class="fas fa-question-circle"></i> <%= __('practice_detail_commercial.sidebar_faq') %>
                                     </a>
                                 </div>
                             </div>

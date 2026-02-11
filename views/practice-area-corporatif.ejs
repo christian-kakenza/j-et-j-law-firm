@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('practice_detail_agricultural.page_title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -19,107 +19,109 @@
                     <div class="col-lg-8">
                         <div class="right-sidebar">
                             <h3 class="practice-title">
-                                Droit Agricole & Acquisition de Terres
+                                <%= __('practice_detail_agricultural.title') %>
                             </h3>
                             <figure class="practice-img">
-                                <img src="/images/agricole2.jpg" alt="Droit Agricole et Terres">
+                                <img src="/images/agricole2.jpg" alt="<%= __('practice_detail_agricultural.title') %>">
                             </figure>
                             <p class="practice-paragraph">
-                                Le Cabinet J&J Law Firm dispose d'une expertise spécialisée en droit agricole congolais, avec un focus particulier sur l'acquisition, la sécurisation et l'exploitation des terres agricoles en République Démocratique du Congo. Nous accompagnons les investisseurs agricoles, les agro-industries, les coopératives et les communautés rurales dans la sécurisation juridique de leurs projets agricoles.
+                                <%= __('practice_detail_agricultural.intro_1') %>
                             </p>
                             <p class="practice-paragraph">
-                                Notre cabinet maîtrise les procédures complexes d'obtention des titres fonciers agricoles, les droits des communautés locales, les conventions d'occupation temporaire et les contrats de concession agricole. Nous intervenons dans la négociation des accords avec les autorités coutumières et l'État, la régularisation des droits fonciers et la résolution des conflits liés à l'utilisation des terres agricoles.
+                                <%= __('practice_detail_agricultural.intro_2') %>
                             </p>
                             <article class="practice-summary">
-                                <h5 class="practice-summary-title">Sécurisation Foncière des Projets Agricoles :</h5>
+                                <h5 class="practice-summary-title">
+                                    <%= __('practice_detail_agricultural.expertise_title') %>
+                                </h5>
                                 <p>
-                                    Nous garantissons la sécurité juridique de vos investissements agricoles en assurant la régularité des titres de propriété, le respect des droits des communautés locales et la conformité avec la législation foncière et agricole congolaise.
+                                    <%= __('practice_detail_agricultural.expertise_text') %>
                                 </p>
                                 <div class="practical-summary-wrapper">
                                     <figure class="practical-summary-img">
-                                        <img src="/images/agricole3.jpg" alt="Acquisition de terres agricoles">
+                                        <img src="/images/agricole3.jpg" alt="<%= __('practice_detail_agricultural.acquisition_2_title') %>">
                                     </figure>
                                     <div class="practical-summary-info">
                                         <p>
-                                            Notre expertise nous permet d'anticiper les risques juridiques spécifiques au secteur agricole et de structurer des acquisitions foncières qui respectent à la fois les intérêts des investisseurs et les droits des populations locales.
+                                            <%= __('practice_detail_agricultural.approach_text') %>
                                         </p>
 
                                         <p>
-                                            Nos services en droit agricole et foncier incluent :
+                                            <%= __('practice_detail_agricultural.services_title') %>
                                         </p>
                                         <ul>
                                             <li>
                                                 <i class="fas fa-tractor"></i>
-                                                Acquisition et régularisation de titres fonciers agricoles
+                                                <%= __('practice_detail_agricultural.service_1') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-handshake"></i>
-                                                Négociation de conventions avec les communautés locales et autorités coutumières
+                                                <%= __('practice_detail_agricultural.service_2') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-file-contract"></i>
-                                                Rédaction de contrats de concession agricole et de fermage
+                                                <%= __('practice_detail_agricultural.service_3') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-users"></i>
-                                                Conseil sur les droits des communautés locales et la responsabilité sociale
+                                                <%= __('practice_detail_agricultural.service_4') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-gavel"></i>
-                                                Résolution de conflits fonciers et contentieux agricoles
+                                                <%= __('practice_detail_agricultural.service_5') %>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </article>
                             
-                            <!-- Section Types d'Acquisition -->
+                            <!-- Section Acquisition Types -->
                             <div class="acquisition-types mt-5">
-                                <h5 class="section-subtitle">Modalités d'Acquisition de Terres Agricoles en RDC :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_agricultural.acquisition_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <div class="acquisition-card">
-                                            <h6><i class="fas fa-file-signature"></i> Concession Agricole</h6>
-                                            <p>Titre délivré par l'État pour l'exploitation de grandes superficies à vocation agricole</p>
+                                            <h6><i class="fas fa-file-signature"></i> <%= __('practice_detail_agricultural.acquisition_1_title') %></h6>
+                                            <p><%= __('practice_detail_agricultural.acquisition_1_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="acquisition-card">
-                                            <h6><i class="fas fa-home"></i> Titre Foncier Définitif</h6>
-                                            <p>Propriété privée pleine et entière avec certificat d'enregistrement au cadastre</p>
+                                            <h6><i class="fas fa-home"></i> <%= __('practice_detail_agricultural.acquisition_2_title') %></h6>
+                                            <p><%= __('practice_detail_agricultural.acquisition_2_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="acquisition-card">
-                                            <h6><i class="fas fa-clock"></i> Convention d'Occupation Temporaire</h6>
-                                            <p>Droit d'usage temporaire pour l'exploitation agricole, renouvelable</p>
+                                            <h6><i class="fas fa-clock"></i> <%= __('practice_detail_agricultural.acquisition_3_title') %></h6>
+                                            <p><%= __('practice_detail_agricultural.acquisition_3_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="acquisition-card">
-                                            <h6><i class="fas fa-users"></i> Accords avec Communautés Locales</h6>
-                                            <p>Contrats de partenariat avec les autorités coutumières pour l'usage des terres</p>
+                                            <h6><i class="fas fa-users"></i> <%= __('practice_detail_agricultural.acquisition_4_title') %></h6>
+                                            <p><%= __('practice_detail_agricultural.acquisition_4_desc') %></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <!-- Section Aspects Réglementaires -->
+                            <!-- Section Regulatory Aspects -->
                             <div class="regulatory-aspects mt-4">
-                                <h5 class="section-subtitle">Cadre Réglementaire Agricole en RDC :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_agricultural.regulatory_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul class="regulatory-list">
-                                            <li><i class="fas fa-landmark"></i> <strong>Code Foncier</strong> : Loi n°73-021 du 20 juillet 1973</li>
-                                            <li><i class="fas fa-seedling"></i> <strong>Code Agricole</strong> : Loi n°11/022 du 24 décembre 2011</li>
-                                            <li><i class="fas fa-tree"></i> <strong>Droit Coutumier</strong> : Droits des communautés locales</li>
+                                            <li><i class="fas fa-landmark"></i> <%- __('practice_detail_agricultural.regulatory_1') %></li>
+                                            <li><i class="fas fa-seedling"></i> <%- __('practice_detail_agricultural.regulatory_2') %></li>
+                                            <li><i class="fas fa-tree"></i> <%- __('practice_detail_agricultural.regulatory_3') %></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul class="regulatory-list">
-                                            <li><i class="fas fa-water"></i> <strong>Gestion des Ressources</strong> : Eau, forêts, biodiversité</li>
-                                            <li><i class="fas fa-industry"></i> <strong>Agro-industrie</strong> : Normes et standards de production</li>
-                                            <li><i class="fas fa-globe-africa"></i> <strong>Investissement</strong> : Code des investissements</li>
+                                            <li><i class="fas fa-water"></i> <%- __('practice_detail_agricultural.regulatory_4') %></li>
+                                            <li><i class="fas fa-industry"></i> <%- __('practice_detail_agricultural.regulatory_5') %></li>
+                                            <li><i class="fas fa-globe-africa"></i> <%- __('practice_detail_agricultural.regulatory_6') %></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -128,14 +130,18 @@
                             <!-- Section Contact Action -->
                             <div class="practice-action mt-5">
                                 <div class="action-card">
-                                    <h5 class="action-title">Projet d'investissement agricole ?</h5>
-                                    <p>Nos experts en droit foncier et agricole vous accompagnent dans l'acquisition et la sécurisation de vos terres agricoles en RDC.</p>
+                                    <h5 class="action-title">
+                                        <%= __('practice_detail_agricultural.action_title') %>
+                                    </h5>
+                                    <p>
+                                        <%= __('practice_detail_agricultural.action_text') %>
+                                    </p>
                                     <div class="action-buttons">
                                         <a href="/contact" class="btn btn-primary">
-                                            <i class="fas fa-envelope"></i> Étude de faisabilité
+                                            <i class="fas fa-envelope"></i> <%= __('practice_detail_agricultural.action_contact') %>
                                         </a>
                                         <a href="/reservation" class="btn btn-secondary">
-                                            <i class="fas fa-calendar-check"></i> Consultation expertise
+                                            <i class="fas fa-calendar-check"></i> <%= __('practice_detail_agricultural.action_appointment') %>
                                         </a>
                                     </div>
                                 </div>
@@ -145,19 +151,19 @@
                     <div class="col-lg-4">
                         <div class="left-sidebar">
                             <div class="widget-bg faq-widget">
-                                <h5 class="bg-title">Processus d'Acquisition</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_agricultural.process_title') %></h5>
                                 <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                     <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                         <div class="card-header" role="tab" id="qus-A">
                                             <h6 class="mb-0">
                                                 <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                    Étude de Faisabilité Foncière
+                                                    <%= __('practice_detail_agricultural.process_1_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                             <div class="card-body">
-                                                Analyse du statut juridique des terres, vérification des droits coutumiers, étude des contraintes environnementales et évaluation des risques liés à l'acquisition.
+                                                <%= __('practice_detail_agricultural.process_1_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -165,13 +171,13 @@
                                         <div class="card-header" role="tab" id="qus-B">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                    Négociation et Sécurisation
+                                                    <%= __('practice_detail_agricultural.process_2_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                             <div class="card-body">
-                                                Négociation avec les propriétaires coutumiers et l'État, rédaction des accords, obtention des autorisations et initiation des procédures d'obtention de titre.
+                                                <%= __('practice_detail_agricultural.process_2_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -179,52 +185,52 @@
                                         <div class="card-header" role="tab" id="qus-C">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                    Titrisation et Conformité Continue
+                                                    <%= __('practice_detail_agricultural.process_3_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                             <div class="card-body">
-                                                Accomplissement des formalités de titrisation auprès des services fonciers, suivi de la conformité réglementaire agricole et gestion des relations communautaires.
+                                                <%= __('practice_detail_agricultural.process_3_desc') %>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget widget-bg icon-list-content">
-                                <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_agricultural.other_practices') %></h5>
                                 <ul>
                                     <li>
-                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> Droit de la Famille & Divorce</a>
+                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> <%= __('services.family') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> Droit des Télécommunications</a>
+                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> <%= __('services.telecom') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> Droit Bancaire & Financement</a>
+                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> <%= __('services.banking') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> Droit des Affaires</a>
+                                        <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> <%= __('services.commercial') %></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="widget-bg sidebar-contact">
                                 <div class="overlay"></div>
-                                <h5>Investissez en Terres Agricoles !</h5>
+                                <h5><%= __('practice_detail_agricultural.sidebar_title') %></h5>
                                 <p>
-                                    Vous avez un projet agricole en RDC ? Besoin de sécuriser des terres pour l'agriculture ? Notre expertise en droit foncier agricole garantit la sécurité de vos investissements.
+                                    <%= __('practice_detail_agricultural.sidebar_text') %>
                                 </p>
                                 <div class="contact-options">
                                     <a href="tel:+243810369919" class="contact-phone">
@@ -236,7 +242,7 @@
                                         <span>+243 972 038 147</span>
                                     </a>
                                     <a href="/contact" class="btn-appointment mt-3">
-                                        <i class="fas fa-seedling"></i> Étude foncière gratuite
+                                        <i class="fas fa-seedling"></i> <%= __('practice_detail_agricultural.sidebar_contact') %>
                                     </a>
                                 </div>
                             </div>

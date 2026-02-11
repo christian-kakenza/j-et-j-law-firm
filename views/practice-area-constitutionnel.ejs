@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('practice_detail_constitutional.page_title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -19,110 +19,112 @@
                     <div class="col-lg-8">
                         <div class="right-sidebar">
                             <h3 class="practice-title">
-                                Droit Constitutionnel & Administratif
+                                <%= __('practice_detail_constitutional.title') %>
                             </h3>
                             <figure class="practice-img">
-                                <img src="/images/admini2.jpg" alt="Droit Constitutionnel et Administratif">
+                                <img src="/images/admini2.jpg" alt="<%= __('practice_detail_constitutional.title') %>">
                             </figure>
                             <p class="practice-paragraph">
-                                Le Cabinet J&J Law Firm dispose d'une expertise approfondie en droit constitutionnel et administratif, domaines fondamentaux qui constituent le socle de l'organisation de la société congolaise moderne. Notre équipe spécialisée comprend que la maîtrise de ces disciplines est essentielle pour le respect de l'ensemble des normes juridiques et le bon fonctionnement des institutions en République Démocratique du Congo.
+                                <%= __('practice_detail_constitutional.intro_1') %>
                             </p>
                             <p class="practice-paragraph">
-                                Le droit constitutionnel représente la base sur laquelle toutes les autres branches du droit s'appuient. Sans ce fondement solide, la société risquerait de sombrer dans l'insécurité juridique. Pour tout opérateur économique, il est crucial de bénéficier de conseils experts en droit constitutionnel, car les interactions avec les services publics et l'administration sont quotidiennes et concernent tous les aspects de la vie économique et sociale.
+                                <%= __('practice_detail_constitutional.intro_2') %>
                             </p>
                             <p class="practice-paragraph">
-                                Notre cabinet accompagne les citoyens, entreprises et institutions dans la compréhension et l'application du droit administratif, qui encadre et limite le champ d'action des agents publics. Cette expertise permet à nos clients d'exercer pleinement leurs prérogatives tout en se prémunissant contre les sanctions pouvant découler de la méconnaissance ou de la mauvaise application des règles administratives.
+                                <%= __('practice_detail_constitutional.intro_3') %>
                             </p>
                             <article class="practice-summary">
-                                <h5 class="practice-summary-title">Expertise Fondamentale pour la Sécurité Juridique :</h5>
+                                <h5 class="practice-summary-title">
+                                    <%= __('practice_detail_constitutional.expertise_title') %>
+                                </h5>
                                 <p>
-                                    Notre cabinet garantit à ses clients une compréhension approfondie des principes constitutionnels et administratifs qui régissent leurs relations avec l'État et les institutions publiques en RDC, assurant ainsi une sécurité juridique totale dans leurs opérations.
+                                    <%= __('practice_detail_constitutional.expertise_text') %>
                                 </p>
                                 <div class="practical-summary-wrapper">
                                     <figure class="practical-summary-img">
-                                        <img src="/images/admini3.jpg" alt="Droit Administratif">
+                                        <img src="/images/admini3.jpg" alt="<%= __('practice_detail_constitutional.area_2_title') %>">
                                     </figure>
                                     <div class="practical-summary-info">
                                         <p>
-                                            Notre approche combine une connaissance théorique approfondie du droit constitutionnel avec une expérience pratique des procédures administratives, permettant à nos clients de naviguer en toute confiance dans leurs relations avec l'administration congolaise.
+                                            <%= __('practice_detail_constitutional.approach_text') %>
                                         </p>
 
                                         <p>
-                                            Nos services en droit constitutionnel et administratif incluent :
+                                            <%= __('practice_detail_constitutional.services_title') %>
                                         </p>
                                         <ul>
                                             <li>
                                                 <i class="fas fa-landmark"></i>
-                                                Conseil sur l'interprétation et l'application de la Constitution congolaise
+                                                <%= __('practice_detail_constitutional.service_1') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-balance-scale"></i>
-                                                Contentieux administratif et recours contre les décisions de l'administration
+                                                <%= __('practice_detail_constitutional.service_2') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-file-contract"></i>
-                                                Accompagnement dans les procédures administratives et les relations avec les services publics
+                                                <%= __('practice_detail_constitutional.service_3') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-gavel"></i>
-                                                Défense des droits fondamentaux et des libertés publiques devant les juridictions
+                                                <%= __('practice_detail_constitutional.service_4') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-users"></i>
-                                                Conseil aux institutions et collectivités territoriales sur leurs compétences
+                                                <%= __('practice_detail_constitutional.service_5') %>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </article>
                             
-                            <!-- Section Domaines d'Intervention -->
+                            <!-- Section Areas of Intervention -->
                             <div class="constitutional-areas mt-5">
-                                <h5 class="section-subtitle">Domaines d'Intervention :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_constitutional.areas_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <div class="constitutional-area-card">
-                                            <h6><i class="fas fa-book"></i> Droit Constitutionnel</h6>
-                                            <p>Interprétation constitutionnelle, contrôle de constitutionnalité, droits fondamentaux</p>
+                                            <h6><i class="fas fa-book"></i> <%= __('practice_detail_constitutional.area_1_title') %></h6>
+                                            <p><%= __('practice_detail_constitutional.area_1_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="constitutional-area-card">
-                                            <h6><i class="fas fa-building"></i> Droit Administratif</h6>
-                                            <p>Actes administratifs, services publics, responsabilité de l'administration</p>
+                                            <h6><i class="fas fa-building"></i> <%= __('practice_detail_constitutional.area_2_title') %></h6>
+                                            <p><%= __('practice_detail_constitutional.area_2_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="constitutional-area-card">
-                                            <h6><i class="fas fa-user-tie"></i> Droit des Fonctionnaires</h6>
-                                            <p>Statut de la fonction publique, droits et obligations des agents publics</p>
+                                            <h6><i class="fas fa-user-tie"></i> <%= __('practice_detail_constitutional.area_3_title') %></h6>
+                                            <p><%= __('practice_detail_constitutional.area_3_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="constitutional-area-card">
-                                            <h6><i class="fas fa-handshake"></i> Contrats Administratifs</h6>
-                                            <p>Marchés publics, délégations de service public, partenariats public-privé</p>
+                                            <h6><i class="fas fa-handshake"></i> <%= __('practice_detail_constitutional.area_4_title') %></h6>
+                                            <p><%= __('practice_detail_constitutional.area_4_desc') %></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <!-- Section Importance Stratégique -->
+                            <!-- Section Strategic Importance -->
                             <div class="strategic-importance mt-4">
-                                <h5 class="section-subtitle">Importance Stratégique :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_constitutional.strategic_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul class="importance-list">
-                                            <li><i class="fas fa-shield-alt"></i> <strong>Socle juridique</strong> : Base de tout l'édifice juridique national</li>
-                                            <li><i class="fas fa-check-circle"></i> <strong>Sécurité juridique</strong> : Protection contre l'arbitraire administratif</li>
-                                            <li><i class="fas fa-balance-scale"></i> <strong>Équilibre des pouvoirs</strong> : Garantie de la séparation des pouvoirs</li>
+                                            <li><i class="fas fa-shield-alt"></i> <%- __('practice_detail_constitutional.importance_1') %></li>
+                                            <li><i class="fas fa-check-circle"></i> <%- __('practice_detail_constitutional.importance_2') %></li>
+                                            <li><i class="fas fa-balance-scale"></i> <%- __('practice_detail_constitutional.importance_3') %></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul class="importance-list">
-                                            <li><i class="fas fa-user-shield"></i> <strong>Protection des droits</strong> : Défense des libertés fondamentales</li>
-                                            <li><i class="fas fa-handshake"></i> <strong>Relations avec l'État</strong> : Cadre légal des interactions État-citoyens</li>
-                                            <li><i class="fas fa-gavel"></i> <strong>Contrôle juridictionnel</strong> : Recours contre les excès de pouvoir</li>
+                                            <li><i class="fas fa-user-shield"></i> <%- __('practice_detail_constitutional.importance_4') %></li>
+                                            <li><i class="fas fa-handshake"></i> <%- __('practice_detail_constitutional.importance_5') %></li>
+                                            <li><i class="fas fa-gavel"></i> <%- __('practice_detail_constitutional.importance_6') %></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -131,14 +133,18 @@
                             <!-- Section Contact Action -->
                             <div class="practice-action mt-5">
                                 <div class="action-card">
-                                    <h5 class="action-title">Besoin d'expertise constitutionnelle ?</h5>
-                                    <p>Notre équipe spécialisée en droit constitutionnel et administratif vous accompagne dans vos relations avec l'État et les institutions publiques.</p>
+                                    <h5 class="action-title">
+                                        <%= __('practice_detail_constitutional.action_title') %>
+                                    </h5>
+                                    <p>
+                                        <%= __('practice_detail_constitutional.action_text') %>
+                                    </p>
                                     <div class="action-buttons">
                                         <a href="/contact" class="btn btn-primary">
-                                            <i class="fas fa-envelope"></i> Consultation spécialisée
+                                            <i class="fas fa-envelope"></i> <%= __('practice_detail_constitutional.action_contact') %>
                                         </a>
                                         <a href="/reservation" class="btn btn-secondary">
-                                            <i class="fas fa-calendar-check"></i> Analyse constitutionnelle
+                                            <i class="fas fa-calendar-check"></i> <%= __('practice_detail_constitutional.action_appointment') %>
                                         </a>
                                     </div>
                                 </div>
@@ -148,19 +154,19 @@
                     <div class="col-lg-4">
                         <div class="left-sidebar">
                             <div class="widget-bg faq-widget">
-                                <h5 class="bg-title">Notre Processus</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_constitutional.process_title') %></h5>
                                 <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                     <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                         <div class="card-header" role="tab" id="qus-A">
                                             <h6 class="mb-0">
                                                 <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                    Analyse Constitutionnelle et Administrative
+                                                    <%= __('practice_detail_constitutional.process_1_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                             <div class="card-body">
-                                                Étude approfondie de votre situation au regard du cadre constitutionnel et administratif congolais, identification des enjeux et des voies de recours possibles.
+                                                <%= __('practice_detail_constitutional.process_1_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -168,13 +174,13 @@
                                         <div class="card-header" role="tab" id="qus-B">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                    Stratégie et Contentieux
+                                                    <%= __('practice_detail_constitutional.process_2_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                             <div class="card-body">
-                                                Élaboration d'une stratégie juridique adaptée, préparation des recours administratifs et judiciaires, représentation devant les instances compétentes.
+                                                <%= __('practice_detail_constitutional.process_2_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -182,52 +188,52 @@
                                         <div class="card-header" role="tab" id="qus-C">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                    Accompagnement Institutionnel
+                                                    <%= __('practice_detail_constitutional.process_3_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                             <div class="card-body">
-                                                Suivi des procédures, relations avec les institutions publiques, veille constitutionnelle et adaptation aux évolutions législatives.
+                                                <%= __('practice_detail_constitutional.process_3_desc') %>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget widget-bg icon-list-content">
-                                <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_constitutional.other_practices') %></h5>
                                 <ul>
                                     <li>
-                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-corporatif"><i class="fas fa-tractor"></i> Droit Agricole & Acquisition de Terres</a>
+                                        <a href="/practice-area-corporatif"><i class="fas fa-tractor"></i> <%= __('services.agricultural') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> Droit de la Famille & Divorce</a>
+                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> <%= __('services.family') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> Droit des Télécommunications</a>
+                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> <%= __('services.telecom') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> Droit Bancaire & Financement</a>
+                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> <%= __('services.banking') %></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="widget-bg sidebar-contact">
                                 <div class="overlay"></div>
-                                <h5>Laissez-nous Vous Aider !</h5>
+                                <h5><%= __('practice_detail_constitutional.sidebar_title') %></h5>
                                 <p>
-                                    Vous avez un litige avec l'administration ? Besoin de conseil constitutionnel ? Notre expertise en droit public garantit vos droits face aux institutions.
+                                    <%= __('practice_detail_constitutional.sidebar_text') %>
                                 </p>
                                 <div class="contact-options">
                                     <a href="tel:+243995482416" class="contact-phone">
@@ -239,7 +245,7 @@
                                         <span>+243 810 369 919</span>
                                     </a>
                                     <a href="/faq" class="btn-appointment mt-3">
-                                        <i class="fas fa-question-circle"></i> FAQ Constitutionnelle
+                                        <i class="fas fa-question-circle"></i> <%= __('practice_detail_constitutional.sidebar_faq') %>
                                     </a>
                                 </div>
                             </div>

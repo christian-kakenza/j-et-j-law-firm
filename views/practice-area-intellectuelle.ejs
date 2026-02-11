@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('practice_detail_intellectual.page_title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -19,110 +19,112 @@
                     <div class="col-lg-8">
                         <div class="right-sidebar">
                             <h3 class="practice-title">
-                                Droit de la Propriété Intellectuelle
+                                <%= __('practice_detail_intellectual.title') %>
                             </h3>
                             <figure class="practice-img">
-                                <img src="/images/trade2.jpg" alt="Droit de la Propriété Intellectuelle">
+                                <img src="/images/trade2.jpg" alt="<%= __('practice_detail_intellectual.title') %>">
                             </figure>
                             <p class="practice-paragraph">
-                                Le Cabinet J&J Law Firm dispose d'une expertise certifiée en droit de la propriété intellectuelle en République Démocratique du Congo. Notre cabinet est habilité à assister et représenter nos clients pour toutes les opérations liées aux brevets, marques, dessins et modèles, étant reconnu comme mandataire officiel en propriété intellectuelle auprès des autorités compétentes.
+                                <%= __('practice_detail_intellectual.intro_1') %>
                             </p>
                             <p class="practice-paragraph">
-                                En RDC, la loi exige que toute personne souhaitant effectuer des démarches d'enregistrement de droits de propriété intellectuelle soit représentée par un mandataire agréé. Notre cabinet vous accompagne dans toutes les procédures administratives nécessaires, garantissant la protection de vos inventions, marques et créations intellectuelles selon les standards légaux les plus rigoureux.
+                                <%= __('practice_detail_intellectual.intro_2') %>
                             </p>
                             <p class="practice-paragraph">
-                                La propriété intellectuelle joue un rôle fondamental dans l'économie moderne en protégeant les inventions, le savoir-faire et les innovations technologiques. Cette protection est essentielle non seulement dans le pays d'origine, mais également à l'international pour prévenir la contrefaçon et l'usurpation. Notre cabinet vous assiste dans la protection de vos droits partout où vos créations peuvent être utilisées ou exploitées.
+                                <%= __('practice_detail_intellectual.intro_3') %>
                             </p>
                             <article class="practice-summary">
-                                <h5 class="practice-summary-title">Expertise Certifiée en Protection Intellectuelle :</h5>
+                                <h5 class="practice-summary-title">
+                                    <%= __('practice_detail_intellectual.expertise_title') %>
+                                </h5>
                                 <p>
-                                    Notre cabinet garantit la protection optimale de vos créations et innovations grâce à notre statut de mandataire agréé et notre maîtrise approfondie de la législation congolaise et internationale en matière de propriété intellectuelle.
+                                    <%= __('practice_detail_intellectual.expertise_text') %>
                                 </p>
                                 <div class="practical-summary-wrapper">
                                     <figure class="practical-summary-img">
-                                        <img src="/images/trade3.jpg" alt="Enregistrement de propriété intellectuelle">
+                                        <img src="/images/trade3.jpg" alt="<%= __('practice_detail_intellectual.title') %>">
                                     </figure>
                                     <div class="practical-summary-info">
                                         <p>
-                                            Notre équipe d'avocats spécialisés travaille avec diligence pour protéger vos droits de propriété intellectuelle, de l'enregistrement initial à la défense en justice contre toute violation ou contrefaçon.
+                                            <%= __('practice_detail_intellectual.approach_text') %>
                                         </p>
 
                                         <p>
-                                            Nos services en propriété intellectuelle incluent :
+                                            <%= __('practice_detail_intellectual.services_title') %>
                                         </p>
                                         <ul>
                                             <li>
                                                 <i class="fas fa-trademark"></i>
-                                                Enregistrement et dépôt de marques, brevets et dessins industriels
+                                                <%= __('practice_detail_intellectual.service_1') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-file-contract"></i>
-                                                Rédaction et négociation de licences et accords de transfert de technologie
+                                                <%= __('practice_detail_intellectual.service_2') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-copyright"></i>
-                                                Protection des droits d'auteur et des droits voisins
+                                                <%= __('practice_detail_intellectual.service_3') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-gavel"></i>
-                                                Contentieux en contrefaçon et défense contre l'usurpation
+                                                <%= __('practice_detail_intellectual.service_4') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-globe"></i>
-                                                Protection internationale et extension des droits à l'étranger
+                                                <%= __('practice_detail_intellectual.service_5') %>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </article>
                             
-                            <!-- Section Cadre Légal -->
+                            <!-- Section Legal Framework -->
                             <div class="legal-framework mt-5">
-                                <h5 class="section-subtitle">Cadre Légal en RDC :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_intellectual.legal_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <div class="legal-card">
-                                            <h6><i class="fas fa-industry"></i> Propriété Industrielle</h6>
-                                            <p>Loi n°82-001 du 7 janvier 1982 régissant la propriété industrielle</p>
+                                            <h6><i class="fas fa-industry"></i> <%= __('practice_detail_intellectual.legal_1_title') %></h6>
+                                            <p><%= __('practice_detail_intellectual.legal_1_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="legal-card">
-                                            <h6><i class="fas fa-pen-fancy"></i> Droits d'Auteur</h6>
-                                            <p>Ordonnance-Loi n°86-033 du 5 janvier 1986 portant protection des droits d'auteur</p>
+                                            <h6><i class="fas fa-pen-fancy"></i> <%= __('practice_detail_intellectual.legal_2_title') %></h6>
+                                            <p><%= __('practice_detail_intellectual.legal_2_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="legal-card">
-                                            <h6><i class="fas fa-handshake"></i> Conventions Internationales</h6>
-                                            <p>Accords internationaux dont la RDC est signataire en matière de PI</p>
+                                            <h6><i class="fas fa-handshake"></i> <%= __('practice_detail_intellectual.legal_3_title') %></h6>
+                                            <p><%= __('practice_detail_intellectual.legal_3_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="legal-card">
-                                            <h6><i class="fas fa-certificate"></i> Mandataire Agréé</h6>
-                                            <p>Statut officiel de mandataire en propriété intellectuelle</p>
+                                            <h6><i class="fas fa-certificate"></i> <%= __('practice_detail_intellectual.legal_4_title') %></h6>
+                                            <p><%= __('practice_detail_intellectual.legal_4_desc') %></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <!-- Section Types de Protection -->
+                            <!-- Section Types of Protection -->
                             <div class="protection-types mt-4">
-                                <h5 class="section-subtitle">Types de Protection :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_intellectual.protection_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul class="protection-list">
-                                            <li><i class="fas fa-lightbulb"></i> <strong>Brevets</strong> : Protection des inventions et innovations techniques</li>
-                                            <li><i class="fas fa-tag"></i> <strong>Marques</strong> : Signes distinctifs pour produits et services</li>
-                                            <li><i class="fas fa-palette"></i> <strong>Dessins & Modèles</strong> : Aspect esthétique des produits</li>
+                                            <li><i class="fas fa-lightbulb"></i> <%- __('practice_detail_intellectual.protection_1') %></li>
+                                            <li><i class="fas fa-tag"></i> <%- __('practice_detail_intellectual.protection_2') %></li>
+                                            <li><i class="fas fa-palette"></i> <%- __('practice_detail_intellectual.protection_3') %></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul class="protection-list">
-                                            <li><i class="fas fa-book"></i> <strong>Droits d'Auteur</strong> : Œuvres littéraires, artistiques, musicales</li>
-                                            <li><i class="fas fa-cogs"></i> <strong>Secrets d'Affaires</strong> : Informations commerciales confidentielles</li>
-                                            <li><i class="fas fa-microchip"></i> <strong>Logiciels</strong> : Protection des programmes informatiques</li>
+                                            <li><i class="fas fa-book"></i> <%- __('practice_detail_intellectual.protection_4') %></li>
+                                            <li><i class="fas fa-cogs"></i> <%- __('practice_detail_intellectual.protection_5') %></li>
+                                            <li><i class="fas fa-microchip"></i> <%- __('practice_detail_intellectual.protection_6') %></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -131,14 +133,18 @@
                             <!-- Section Contact Action -->
                             <div class="practice-action mt-5">
                                 <div class="action-card">
-                                    <h5 class="action-title">Protégez vos innovations !</h5>
-                                    <p>Notre équipe de mandataires agréés en propriété intellectuelle assure la protection juridique de vos créations et inventions en RDC et à l'international.</p>
+                                    <h5 class="action-title">
+                                        <%= __('practice_detail_intellectual.action_title') %>
+                                    </h5>
+                                    <p>
+                                        <%= __('practice_detail_intellectual.action_text') %>
+                                    </p>
                                     <div class="action-buttons">
                                         <a href="/contact" class="btn btn-primary">
-                                            <i class="fas fa-envelope"></i> Dépôt de marque/brevet
+                                            <i class="fas fa-envelope"></i> <%= __('practice_detail_intellectual.action_contact') %>
                                         </a>
                                         <a href="/reservation" class="btn btn-secondary">
-                                            <i class="fas fa-calendar-check"></i> Consultation IP gratuite
+                                            <i class="fas fa-calendar-check"></i> <%= __('practice_detail_intellectual.action_appointment') %>
                                         </a>
                                     </div>
                                 </div>
@@ -148,19 +154,19 @@
                     <div class="col-lg-4">
                         <div class="left-sidebar">
                             <div class="widget-bg faq-widget">
-                                <h5 class="bg-title">Processus d'Enregistrement</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_intellectual.process_title') %></h5>
                                 <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                     <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                         <div class="card-header" role="tab" id="qus-A">
                                             <h6 class="mb-0">
                                                 <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                    Analyse et Recherche d'Antériorité
+                                                    <%= __('practice_detail_intellectual.process_1_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                             <div class="card-body">
-                                                Étude préalable de la protection envisagée, recherche d'antériorités pour vérifier la disponibilité et conseil sur la stratégie de protection optimale.
+                                                <%= __('practice_detail_intellectual.process_1_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -168,13 +174,13 @@
                                         <div class="card-header" role="tab" id="qus-B">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                    Préparation et Dépôt
+                                                    <%= __('practice_detail_intellectual.process_2_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                             <div class="card-body">
-                                                Rédaction des formulaires officiels, préparation des documents requis et dépôt de la demande auprès des offices compétents en qualité de mandataire agréé.
+                                                <%= __('practice_detail_intellectual.process_2_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -182,52 +188,52 @@
                                         <div class="card-header" role="tab" id="qus-C">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                    Suivi et Protection Continue
+                                                    <%= __('practice_detail_intellectual.process_3_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                             <div class="card-body">
-                                                Suivi de l'examen de la demande, réponse aux objections, obtention du titre et gestion des renouvellements et extensions internationales.
+                                                <%= __('practice_detail_intellectual.process_3_desc') %>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget widget-bg icon-list-content">
-                                <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_intellectual.other_practices') %></h5>
                                 <ul>
                                     <li>
-                                        <a href="/practice-area-constitutionnel"><i class="fas fa-landmark"></i> Droit Constitutionnel & Administratif</a>
+                                        <a href="/practice-area-constitutionnel"><i class="fas fa-landmark"></i> <%= __('services.constitutional') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-corporatif"><i class="fas fa-tractor"></i> Droit Agricole & Acquisition de Terres</a>
+                                        <a href="/practice-area-corporatif"><i class="fas fa-tractor"></i> <%= __('services.agricultural') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> Droit de la Famille & Divorce</a>
+                                        <a href="/practice-area-droits-homme"><i class="fas fa-heart-broken"></i> <%= __('services.family') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> Droit des Télécommunications</a>
+                                        <a href="/practice-area-ecommerce"><i class="fas fa-tower-broadcast"></i> <%= __('services.telecom') %></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="widget-bg sidebar-contact">
                                 <div class="overlay"></div>
-                                <h5>Laissez-nous Vous Aider !</h5>
+                                <h5><%= __('practice_detail_intellectual.sidebar_title') %></h5>
                                 <p>
-                                    Vous avez une invention à protéger ? Une marque à déposer ? Notre équipe de mandataires agréés en propriété intellectuelle assure la protection juridique de vos créations.
+                                    <%= __('practice_detail_intellectual.sidebar_text') %>
                                 </p>
                                 <div class="contact-options">
                                     <a href="tel:+243995482416" class="contact-phone">
@@ -239,7 +245,7 @@
                                         <span>+243 810 369 919</span>
                                     </a>
                                     <a href="/faq" class="btn-appointment mt-3">
-                                        <i class="fas fa-question-circle"></i> FAQ Propriété Intellectuelle
+                                        <i class="fas fa-question-circle"></i> <%= __('practice_detail_intellectual.sidebar_faq') %>
                                     </a>
                                 </div>
                             </div>

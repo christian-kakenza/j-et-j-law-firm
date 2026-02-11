@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Confirmation</h1> -->
+                    <!-- <h1 class="inner-title"><%= __("success_pages.confirmation") %></h1> -->
                 </div>
             </div>
         </div>
@@ -18,30 +18,30 @@
                 <div class="success-icon">
                     <i class="fas fa-check-circle"></i>
                 </div>
-                <h1 class="success-title"><%= title %></h1>
-                <p class="success-message"><%= message %></p>
+                <h1 class="success-title"><%= __("success_pages.contact.title") %></h1>
+                <p class="success-message"><%= __("success_pages.contact.message") %></p>
                 
                 <% if (contactInfo) { %>
                 <div class="contact-info">
                     <i class="fas fa-phone"></i>
-                    <span><%= contactInfo %></span>
+                    <span><%= __("success_pages.contact.contact") %></span>
                 </div>
                 <% } %>
                 
                 <div class="success-actions">
                     <a href="/" class="btn btn-primary">
-                        <i class="fas fa-home"></i> Retour à l'accueil
+                        <i class="fas fa-home"></i> <%= __("success_pages.back_to_home") %>
                     </a>
                     <a href="/contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Nous contacter
+                        <i class="fas fa-envelope"></i> <%= __("success_pages.contact_us") %>
                     </a>
                     <a href="/practice-area" class="btn btn-outline">
-                        <i class="fas fa-balance-scale"></i> Nos spécialités
+                        <i class="fas fa-balance-scale"></i> <%= __("success_pages.our_specialties") %>
                     </a>
                 </div>
                 
                 <div class="success-note">
-                    <p><i class="fas fa-clock"></i> Nous traiterons votre demande dans les plus brefs délais</p>
+                    <p><i class="fas fa-clock"></i> <%= __("success_pages.processing_note") %></p>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
-<%- include('header') %>
+
+   <%- include('header') %>
     <main id="content" class="site-main">
         <!-- Inner Banner html start-->
         <section class="inner-banner-wrap">
@@ -6,7 +7,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">Contactez-nous</h1> -->
+                        <!-- <h1 class="inner-title"><%= __("contact_page.title") %></h1> -->
                     </div>
                 </div>
             </div>
@@ -22,7 +23,8 @@
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="<%= __("contact_page.map_iframe_title") %>">
                     </iframe>
                 </div>
                 <div class="contact-form-inner">
@@ -30,23 +32,23 @@
                         <div class="col-lg-6">
                             <div class="contact-detail-container">
                                 <div class="section-head">
-                                    <h2 class="section-title">N'hésitez pas à nous contacter !</h2>
+                                    <h2 class="section-title"><%= __("contact_page.section_title") %></h2>
                                     <div class="section-disc">
                                         <p>
-                                            Nous sommes là pour vous accompagner dans vos démarches juridiques. Une question, un projet, un litige ? Échangeons dès maintenant pour trouver la meilleure solution pour vous.
+                                            <%= __("contact_page.section_subtitle") %>
                                         </p>
                                     </div>
                                     <div class="quick-links mt-4">
-                                        <h5>Liens rapides :</h5>
+                                        <h5><%= __("contact_page.quick_links") %></h5>
                                         <div class="d-flex flex-wrap gap-2 mt-2">
                                             <a href="/reservation" class="btn btn-sm btn-outline-primary">
-                                                <i class="fas fa-calendar-check"></i> Prendre rendez-vous
+                                                <i class="fas fa-calendar-check"></i> <%= __("contact_page.book_appointment_btn") %>
                                             </a>
                                             <a href="/practice-area" class="btn btn-sm btn-outline-secondary">
-                                                <i class="fas fa-balance-scale"></i> Nos spécialités
+                                                <i class="fas fa-balance-scale"></i> <%= __("contact_page.our_specialties_btn") %>
                                             </a>
                                             <a href="/attorney" class="btn btn-sm btn-outline-dark">
-                                                <i class="fas fa-users"></i> Notre équipe
+                                                <i class="fas fa-users"></i> <%= __("contact_page.our_team_btn") %>
                                             </a>
                                         </div>
                                     </div>
@@ -58,21 +60,21 @@
                                                 <i class="fas fa-phone-alt"></i>
                                             </span>
                                             <div class="details-content">
-                                                <h5>Numéros de téléphone :</h5>
+                                                <h5><%= __("contact_page.phone_numbers") %></h5>
                                                 <span><a href="tel:+243995482416" class="contact-link">
-                                                    <i class="fas fa-building"></i> Siège Social : +243 995 482 416
+                                                    <i class="fas fa-building"></i> <%= __("contact_page.head_office") %> : +243 995 482 416
                                                 </a></span>
                                                 <span><a href="tel:+243810369919" class="contact-link">
-                                                    <i class="fas fa-map-marker-alt"></i> Bureau Lubumbashi : +243 810 369 919
+                                                    <i class="fas fa-map-marker-alt"></i> <%= __("contact_page.lubumbashi_office") %> : +243 810 369 919
                                                 </a></span>
                                                 <span><a href="tel:+243990183829" class="contact-link">
-                                                    <i class="fas fa-user-tie"></i> Maître John : +243 990 183 829
+                                                    <i class="fas fa-user-tie"></i> <%= __("contact_page.master_john") %> : +243 990 183 829
                                                 </a></span>
                                                 <span><a href="tel:+243815113335" class="contact-link">
-                                                    <i class="fas fa-user-tie"></i> Maître Olga : +243 815 113 335
+                                                    <i class="fas fa-user-tie"></i> <%= __("contact_page.master_olga") %> : +243 815 113 335
                                                 </a></span>
                                                 <span><a href="tel:+243810648832" class="contact-link">
-                                                    <i class="fas fa-user-tie"></i> Maître Daniel : +243 810 648 832
+                                                    <i class="fas fa-user-tie"></i> <%= __("contact_page.master_daniel") %> : +243 810 648 832
                                                 </a></span>
                                             </div>
                                         </li>
@@ -81,23 +83,24 @@
                                                 <i class="fas fa-map-marker-alt"></i>
                                             </span>
                                             <div class="details-content">
-                                                <h5>Adresses des bureaux :</h5>
+                                                <h5><%= __("contact_page.office_addresses") %></h5>
                                                 <div class="address-item">
-                                                    <strong><i class="fas fa-city"></i> Siège Social - Kinshasa :</strong>
-                                                    <p>nᵒ 148/A, Blvd du 30 Juin, Gombe<br>
-                                                    4ᵉ étage, Immeuble LUXURY TOWER<br>
-                                                    <a href="https://maps.google.com/?q=148+A+Boulevard+du+30+Juin+Gombe+Kinshasa" target="_blank" class="map-link">
-                                                        <i class="fas fa-directions"></i> Voir sur la carte
-                                                    </a></p>
+                                                    <strong><i class="fas fa-city"></i> <%= __("footer.kinshasa") %> :</strong>
+                                                    <p>
+                                                        <%- __("contact_page.kinshasa_address_full") %><br>
+                                                        <a href="https://maps.google.com/?q=148+A+Boulevard+du+30+Juin+Gombe+Kinshasa" target="_blank" class="map-link">
+                                                            <i class="fas fa-directions"></i> <%= __("contact_page.view_on_map") %>
+                                                        </a>
+                                                    </p>
                                                 </div>
                                                 <div class="address-item mt-3">
-                                                    <strong><i class="fas fa-city"></i> Bureau Annexe - Lubumbashi :</strong>
-                                                    <p>nᵒ 701, avenue Kasavubu<br>
-                                                    Bâtiment Léopold, Quartier Makutano<br>
-                                                    Lubumbashi, RDC<br>
-                                                    <a href="https://maps.google.com/?q=701+Avenue+Kasa+Vubu+Lubumbashi" target="_blank" class="map-link">
-                                                        <i class="fas fa-directions"></i> Voir sur la carte
-                                                    </a></p>
+                                                    <strong><i class="fas fa-city"></i> <%= __("footer.lubumbashi") %> :</strong>
+                                                    <p>
+                                                        <%- __("contact_page.lubumbashi_address_full") %><br>
+                                                        <a href="https://maps.google.com/?q=701+Avenue+Kasa+Vubu+Lubumbashi" target="_blank" class="map-link">
+                                                            <i class="fas fa-directions"></i> <%= __("contact_page.view_on_map") %>
+                                                        </a>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </li>
@@ -106,13 +109,11 @@
                                                 <i class="fas fa-envelope"></i>
                                             </span>
                                             <div class="details-content">
-                                                <h5>Adresses email :</h5>
+                                                <h5><%= __("contact_page.email_addresses") %></h5>
                                                 <span><a href="mailto:lawfirmjetj@gmail.com" class="email-link">
                                                     <i class="fas fa-envelope"></i> lawfirmjetj@gmail.com
                                                 </a></span>
-                                                <!-- <span><a href="mailto:christian.kakenza0@gmail.com" class="email-link">
-                                                    <i class="fas fa-envelope"></i> christian.kakenza0@gmail.com
-                                                </a></span> -->
+                                                
                                                 <span><a href="mailto:Jethrotshimbu@yahoo.fr" class="email-link">
                                                     <i class="fas fa-user-tie"></i> Jethrotshimbu@yahoo.fr
                                                 </a></span>
@@ -123,12 +124,12 @@
                                                 <i class="fas fa-clock"></i>
                                             </span>
                                             <div class="details-content">
-                                                <h5>Heures d'ouverture :</h5>
+                                                <h5><%= __("contact_page.hours_title") %></h5>
                                                 <div class="schedule-time">
-                                                    <p><strong>Lundi - Vendredi :</strong> 8h00 - 18h00</p>
-                                                    <p><strong>Samedi :</strong> 9h00 - 13h00</p>
-                                                    <p><strong>Dimanche :</strong> Fermé</p>
-                                                    <p><small class="text-muted">Sur rendez-vous en dehors des heures d'ouverture</small></p>
+                                                    <p><strong><%= __("contact_page.hours_week") %></strong> 8h00 - 18h00</p>
+                                                    <p><strong><%= __("contact_page.hours_saturday") %></strong> 9h00 - 13h00</p>
+                                                    <p><strong><%= __("contact_page.hours_sunday") %></strong> <%= __("contact_page.closed") %></p>
+                                                    <p><small class="text-muted"><%= __("contact_page.by_appointment") %></small></p>
                                                 </div>
                                             </div>
                                         </li>
@@ -138,14 +139,14 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="contact-from-wrap">
-                                <h3 class="form-title">Envoyez-nous un message</h3>
-                                <p class="form-subtitle">Nous vous répondrons dans les 24 heures</p>
+                                <h3 class="form-title"><%= __("contact_page.form_title") %></h3>
+                                <p class="form-subtitle"><%= __("contact_page.form_subtitle") %></p>
                                 
                                 <form method="POST" action="/contact" class="contact-form" id="contactForm">
                                     <div class="form-group">
                                         <input type="text" 
                                                name="name" 
-                                               placeholder="Votre nom complet *" 
+                                               placeholder="<%= __("contact_page.form_name") %>" 
                                                required
                                                class="form-control">
                                     </div>
@@ -155,7 +156,7 @@
                                             <div class="form-group">
                                                 <input type="email" 
                                                        name="email" 
-                                                       placeholder="Votre email *" 
+                                                       placeholder="<%= __("contact_page.form_email") %>" 
                                                        required
                                                        class="form-control">
                                             </div>
@@ -164,7 +165,7 @@
                                             <div class="form-group">
                                                 <input type="tel" 
                                                        name="phone" 
-                                                       placeholder="Votre téléphone *" 
+                                                       placeholder="<%= __("contact_page.form_phone") %>" 
                                                        required
                                                        class="form-control">
                                             </div>
@@ -174,31 +175,31 @@
                                     <div class="form-group">
                                         <input type="text" 
                                                name="subject" 
-                                               placeholder="Sujet de votre message *" 
+                                               placeholder="<%= __("contact_page.form_subject") %>" 
                                                required
                                                class="form-control">
                                     </div>
                                     
                                     <div class="form-group">
                                         <select name="service" class="form-control" required>
-                                            <option value="" disabled selected>Domaine concerné *</option>
-                                            <option value="affaires">Droit des Affaires</option>
-                                            <option value="minier">Droit Minier</option>
-                                            <option value="ohada">Droit OHADA</option>
-                                            <option value="assurances">Droit des Assurances</option>
-                                            <option value="immobilier">Droit Immobilier</option>
-                                            <option value="droits-homme">Droit des Droits de l'Homme</option>
-                                            <option value="ecommerce">Droit de l'E-commerce</option>
-                                            <option value="pret">Droit Bancaire & Financement</option>
-                                            <option value="corporatif">Droit Agricole & Acquisition de Terres</option>
-                                            <option value="autre">Autre domaine</option>
+                                            <option value="" disabled selected><%= __("contact_page.service_select") %></option>
+                                            <option value="affaires"><%= __("contact_page.service_business") %></option>
+                                            <option value="minier"><%= __("contact_page.service_mining") %></option>
+                                            <option value="ohada"><%= __("contact_page.service_ohada") %></option>
+                                            <option value="assurances"><%= __("contact_page.service_insurance") %></option>
+                                            <option value="immobilier"><%= __("contact_page.service_real_estate") %></option>
+                                            <option value="droits-homme"><%= __("contact_page.service_human_rights") %></option>
+                                            <option value="ecommerce"><%= __("contact_page.service_ecommerce") %></option>
+                                            <option value="pret"><%= __("contact_page.service_banking") %></option>
+                                            <option value="corporatif"><%= __("contact_page.service_agricultural") %></option>
+                                            <option value="autre"><%= __("contact_page.service_other") %></option>
                                         </select>
                                     </div>
                                     
                                     <div class="form-group">
                                         <textarea name="message" 
                                                   rows="6" 
-                                                  placeholder="Votre message *" 
+                                                  placeholder="<%= __("contact_page.form_message") %>" 
                                                   required
                                                   class="form-control"></textarea>
                                     </div>
@@ -209,24 +210,24 @@
                                                id="privacyCheck" 
                                                required>
                                         <label class="form-check-label" for="privacyCheck">
-                                            J'accepte que mes données soient traitées conformément à la 
-                                            <a href="/legal-notice" target="_blank">politique de confidentialité</a>
+                                            <%= __("contact_page.privacy_consent") %> 
+                                            <a href="/legal-notice" target="_blank"><%= __("contact_page.privacy_policy") %></a>
                                         </label>
                                     </div>
                                     
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary btn-block">
-                                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                                            <i class="fas fa-paper-plane"></i> <%= __("contact_page.submit_btn") %>
                                         </button>
                                     </div>
                                 </form>
                                 
                                 <div class="alternative-contact mt-4">
-                                    <h6>Contact alternatif :</h6>
+                                    <h6><%= __("contact_page.alternative_contact") %></h6>
                                     <p>
                                         <small>
                                             <i class="fas fa-info-circle"></i> 
-                                            Pour les urgences, appelez directement au 
+                                            <%= __("contact_page.urgent_info") %> 
                                             <a href="tel:+243995482416" class="urgent-link">+243 995 482 416</a>
                                         </small>
                                     </p>
@@ -238,6 +239,7 @@
             </div>
         </div>
         <!-- contact form html end -->
+    
         
         <style>
             .contact-page-section {
@@ -442,25 +444,7 @@
                 text-decoration: underline;
             }
             
-            @media (max-width: 768px) {
-                .contact-page-section {
-                    padding: 30px 0;
-                }
-                
-                .contact-detail-container,
-                .contact-from-wrap {
-                    padding: 20px;
-                    margin-bottom: 20px;
-                }
-                
-                .d-flex {
-                    flex-direction: column;
-                }
-                
-                .gap-2 {
-                    gap: 5px;
-                }
-            }
+
         </style>
         
         <script>

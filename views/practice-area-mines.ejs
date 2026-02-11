@@ -6,7 +6,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                        <!-- <h1 class="inner-title"><%= __('practice_detail_mining.page_title') %></h1> -->
                     </div>
                 </div>
             </div>
@@ -19,54 +19,56 @@
                         <div class="col-lg-8">
                             <div class="right-sidebar">
                                 <h3 class="practice-title">
-                                    Droit Minier
+                                    <%= __('practice_detail_mining.title') %>
                                 </h3>
                                 <figure class="practice-img">
-                                    <img src="/images/DroitMinierUpdate.jpg" alt="Droit Minier en RDC">
+                                    <img src="/images/DroitMinierUpdate.jpg" alt="<%= __('practice_detail_mining.title') %>">
                                 </figure>
                                 <p class="practice-paragraph">
-                                    Le secteur minier constitue le pilier économique de la République Démocratique du Congo. Notre cabinet vous accompagne dans toutes les étapes de vos projets miniers, de l'acquisition des titres miniers jusqu'à l'exploitation et la commercialisation des ressources. Nous maîtrisons le Code Minier congolais, ses règlements d'application, et les conventions minières.
+                                    <%= __('practice_detail_mining.intro_1') %>
                                 </p>
                                 <p class="practice-paragraph">
-                                    Nous conseillons les investisseurs nationaux et internationaux dans la structuration juridique de leurs projets, les négociations avec l'État et les partenaires, le respect des obligations sociales et environnementales, ainsi que dans la résolution des litiges miniers. Notre expertise couvre également les aspects fiscaux, douaniers et de transfert de technologies spécifiques au secteur.
+                                    <%= __('practice_detail_mining.intro_2') %>
                                 </p>
                                 <article class="practice-summary">
-                                    <h5 class="practice-summary-title">Accompagnement Stratégique :</h5>
+                                    <h5 class="practice-summary-title">
+                                        <%= __('practice_detail_mining.expertise_title') %>
+                                    </h5>
                                     <p>
-                                        Nous offrons un accompagnement juridique complet pour sécuriser vos investissements miniers en RDC, depuis l'étude de faisabilité jusqu'à la mise en production.
+                                        <%= __('practice_detail_mining.expertise_text') %>
                                     </p>
                                     <div class="practical-summary-wrapper">
                                         <figure class="practical-summary-img">
-                                            <img src="/images/DroitMinierCarte.jpg" alt="Expertise en droit minier">
+                                            <img src="/images/DroitMinierCarte.jpg" alt="<%= __('practice_detail_mining.title') %>">
                                         </figure>
                                         <div class="practical-summary-info">
                                             <p>
-                                                Notre expertise inclut l'analyse des risques juridiques, la due diligence sur les titres miniers, et la négociation de partenariats stratégiques conformes au cadre légal congolais et aux standards internationaux.
+                                                <%= __('practice_detail_mining.approach_text') %>
                                             </p>
 
                                             <p>
-                                                Nos services en droit minier incluent :
+                                                <%= __('practice_detail_mining.services_title') %>
                                             </p>
                                             <ul>
                                                 <li>
                                                     <i class="fas fa-file-certificate"></i>
-                                                    Acquisition et sécurisation des titres miniers (Permis de Recherche, Permis d'Exploitation)
+                                                    <%= __('practice_detail_mining.service_1') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-handshake"></i>
-                                                    Négociation et rédaction de conventions minières et de joint-ventures
+                                                    <%= __('practice_detail_mining.service_2') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-users"></i>
-                                                    Conformité avec les obligations sociales, environnementales et de sous-traitance
+                                                    <%= __('practice_detail_mining.service_3') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-chart-line"></i>
-                                                    Conseil en fiscalité minière et en droits des communautés locales
+                                                    <%= __('practice_detail_mining.service_4') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-gavel"></i>
-                                                    Résolution des litiges miniers et contentieux administratifs
+                                                    <%= __('practice_detail_mining.service_5') %>
                                                 </li>
                                             </ul>
                                         </div>
@@ -76,14 +78,18 @@
                                 <!-- Section Contact Action -->
                                 <div class="practice-action mt-5">
                                     <div class="action-card">
-                                        <h5 class="action-title">Projet minier en RDC ?</h5>
-                                        <p>Nos experts en droit minier vous accompagnent pour sécuriser vos investissements et assurer la conformité de vos opérations.</p>
+                                        <h5 class="action-title">
+                                            <%= __('practice_detail_mining.action_title') %>
+                                        </h5>
+                                        <p>
+                                            <%= __('practice_detail_mining.action_text') %>
+                                        </p>
                                         <div class="action-buttons">
                                             <a href="/contact" class="btn btn-primary">
-                                                <i class="fas fa-envelope"></i> Demander une consultation
+                                                <i class="fas fa-envelope"></i> <%= __('practice_detail_mining.action_contact') %>
                                             </a>
                                             <a href="/reservation" class="btn btn-secondary">
-                                                <i class="fas fa-calendar-check"></i> Prendre rendez-vous
+                                                <i class="fas fa-calendar-check"></i> <%= __('practice_detail_mining.action_appointment') %>
                                             </a>
                                         </div>
                                     </div>
@@ -93,19 +99,19 @@
                         <div class="col-lg-4">
                             <div class="left-sidebar">
                                 <div class="widget-bg faq-widget">
-                                    <h5 class="bg-title">Notre Processus</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_mining.process_title') %></h5>
                                     <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                         <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                             <div class="card-header" role="tab" id="qus-A">
                                                 <h6 class="mb-0">
                                                     <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                        Analyse de Faisabilité et Due Diligence
+                                                        <%= __('practice_detail_mining.process_1_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                                 <div class="card-body">
-                                                    Étude approfondie du titre minier, vérification de sa validité et de son historique, analyse des risques juridiques et recommandations stratégiques.
+                                                    <%= __('practice_detail_mining.process_1_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,13 +119,13 @@
                                             <div class="card-header" role="tab" id="qus-B">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                        Négociation et Structuration Juridique
+                                                        <%= __('practice_detail_mining.process_2_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                                 <div class="card-body">
-                                                    Élaboration de la structure juridique optimale, négociation avec l'État et les partenaires, et rédaction des accords et conventions nécessaires.
+                                                    <%= __('practice_detail_mining.process_2_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,52 +133,52 @@
                                             <div class="card-header" role="tab" id="qus-C">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                        Suivi Opérationnel et Conformité
+                                                        <%= __('practice_detail_mining.process_3_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                                 <div class="card-body">
-                                                    Accompagnement continu pour garantir le respect des obligations légales, sociales et environnementales tout au long du projet minier.
+                                                    <%= __('practice_detail_mining.process_3_desc') %>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget widget-bg icon-list-content">
-                                    <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_mining.other_practices') %></h5>
                                     <ul>
                                         <li>
-                                            <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                            <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                            <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> Droit des Affaires</a>
+                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> <%= __('services.commercial') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> Droit Agricole & Acquisition de Terres</a>
+                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> <%= __('services.agricultural') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                            <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> Droit de la Famille & Divorce</a>
+                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> <%= __('services.family') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> Droit des Télécommunications</a>
+                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> <%= __('services.telecom') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> Droit Bancaire & Financement</a>
+                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> <%= __('services.banking') %></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="widget-bg sidebar-contact">
                                     <div class="overlay"></div>
-                                    <h5>Laissez-nous Vous Aider !</h5>
+                                    <h5><%= __('practice_detail_mining.sidebar_title') %></h5>
                                     <p>
-                                        Un projet minier en RDC ? Une question sur le Code Minier ? Notre cabinet vous apporte l'expertise nécessaire pour sécuriser vos investissements.
+                                        <%= __('practice_detail_mining.sidebar_text') %>
                                     </p>
                                     <div class="contact-options">
                                         <a href="tel:+243995482416" class="contact-phone">
@@ -184,7 +190,7 @@
                                             <span>+243 810 369 919</span>
                                         </a>
                                         <a href="/faq" class="btn-appointment mt-3">
-                                            <i class="fas fa-question-circle"></i> Consulter la FAQ
+                                            <i class="fas fa-question-circle"></i> <%= __('practice_detail_mining.sidebar_faq') %>
                                         </a>
                                     </div>
                                 </div>

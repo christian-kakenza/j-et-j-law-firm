@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('practice_detail_banking.page_title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -19,86 +19,88 @@
                     <div class="col-lg-8">
                         <div class="right-sidebar">
                             <h3 class="practice-title">
-                                Droit Bancaire & Financement
+                                <%= __('practice_detail_banking.title') %>
                             </h3>
                             <figure class="practice-img">
-                                <img src="/images/pretPriveUpdate2.jpg" alt="Droit Bancaire et Prêts">
+                                <img src="/images/pretPriveUpdate2.jpg" alt="<%= __('practice_detail_banking.title') %>">
                             </figure>
                             <p class="practice-paragraph">
-                                Le Cabinet J&J Law Firm possède une expertise approfondie en droit bancaire, avec une spécialisation particulière dans les opérations de prêt et de financement. Nous accompagnons les banques, institutions financières, entreprises et particuliers dans toutes les étapes des transactions de crédit en République Démocratique du Congo, de la négociation à la gestion des risques.
+                                <%= __('practice_detail_banking.intro_1') %>
                             </p>
                             <p class="practice-paragraph">
-                                Notre cabinet intervient dans la structuration des produits de prêt, la conformité bancaire, la constitution et le perfectionnement des garanties, ainsi que dans le contentieux du crédit. Nous maîtrisons les réglementations de la Banque Centrale du Congo, les normes de Bâle, et les dispositions spécifiques aux différents types de financement (prêts d'investissement, crédits à la consommation, crédits-bail, etc.).
+                                <%= __('practice_detail_banking.intro_2') %>
                             </p>
                             <article class="practice-summary">
-                                <h5 class="practice-summary-title">Expertise en Structuration de Prêts :</h5>
+                                <h5 class="practice-summary-title">
+                                    <%= __('practice_detail_banking.expertise_title') %>
+                                </h5>
                                 <p>
-                                    Nous concevons des montages juridiques sécurisés pour tous types d'opérations de crédit, en optimisant la protection des intérêts des parties tout en assurant la conformité avec le cadre réglementaire bancaire congolais et international.
+                                    <%= __('practice_detail_banking.expertise_text') %>
                                 </p>
                                 <div class="practical-summary-wrapper">
                                     <figure class="practical-summary-img">
-                                        <img src="/images/pretPriveUpdate3.jpg" alt="Structuration de prêts bancaires">
+                                        <img src="/images/pretPriveUpdate3.jpg" alt="<%= __('practice_detail_banking.title') %>">
                                     </figure>
                                     <div class="practical-summary-info">
                                         <p>
-                                            Notre expertise nous permet de concevoir des solutions de financement innovantes tout en minimisant les risques de défaut, en renforçant les garanties et en anticipant les enjeux de recouvrement.
+                                            <%= __('practice_detail_banking.approach_text') %>
                                         </p>
 
                                         <p>
-                                            Nos services en droit bancaire et financement incluent :
+                                            <%= __('practice_detail_banking.services_title') %>
                                         </p>
                                         <ul>
                                             <li>
                                                 <i class="fas fa-file-contract"></i>
-                                                Structuration juridique de produits de prêt et contrats de crédit
+                                                <%= __('practice_detail_banking.service_1') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-landmark"></i>
-                                                Conformité avec la réglementation bancaire (BCC, normes internationales)
+                                                <%= __('practice_detail_banking.service_2') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-shield-alt"></i>
-                                                Constitution et perfectionnement de garanties bancaires (hypothèques, nantissements, cautions bancaires)
+                                                <%= __('practice_detail_banking.service_3') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-handshake"></i>
-                                                Négociation de conventions de crédit syndiqué et financements structurés
+                                                <%= __('practice_detail_banking.service_4') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-balance-scale"></i>
-                                                Contentieux bancaire et recouvrement judiciaire de créances
+                                                <%= __('practice_detail_banking.service_5') %>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </article>
                             
-                            <!-- Section Types de Prêts -->
+                            <!-- Section Loan Types -->
                             <div class="loan-types mt-5">
-                                <h5 class="section-subtitle">Types de Prêts et Financements :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_banking.loan_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <div class="loan-type-card">
-                                            <h6><i class="fas fa-building"></i> Prêts d'Investissement</h6>
-                                            <p>Financement de projets industriels, miniers et d'infrastructures</p>
+                                            <h6><i class="fas fa-building"></i> <%= __('practice_detail_banking.loan_1_title') %></h6>
+                                            <p><%= __('practice_detail_banking.loan_1_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="loan-type-card">
-                                            <h6><i class="fas fa-home"></i> Crédits Immobiliers</h6>
-                                            <p>Prêts hypothécaires, financement de constructions et d'acquisitions</p>
+                                            <h6><i class="fas fa-home"></i> <%= __('practice_detail_banking.loan_2_title') %></h6>
+                                            <p><%= __('practice_detail_banking.loan_2_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="loan-type-card">
-                                            <h6><i class="fas fa-industry"></i> Crédits d'Exploitation</h6>
-                                            <p>Financement du fonds de roulement et besoins opérationnels</p>
+                                            <h6><i class="fas fa-industry"></i> <%= __('practice_detail_banking.loan_3_title') %></h6>
+                                            <p><%= __('practice_detail_banking.loan_3_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="loan-type-card">
-                                            <h6><i class="fas fa-sync-alt"></i> Crédit-Bail (Leasing)</h6>
-                                            <p>Structures de financement d'actifs avec option d'achat</p>
+                                            <h6><i class="fas fa-sync-alt"></i> <%= __('practice_detail_banking.loan_4_title') %></h6>
+                                            <p><%= __('practice_detail_banking.loan_4_desc') %></p>
                                         </div>
                                     </div>
                                 </div>
@@ -107,14 +109,18 @@
                             <!-- Section Contact Action -->
                             <div class="practice-action mt-5">
                                 <div class="action-card">
-                                    <h5 class="action-title">Besoin de conseil en financement ?</h5>
-                                    <p>Nos experts en droit bancaire vous accompagnent pour des opérations de crédit sécurisées et optimisées, que vous soyez prêteur ou emprunteur.</p>
+                                    <h5 class="action-title">
+                                        <%= __('practice_detail_banking.action_title') %>
+                                    </h5>
+                                    <p>
+                                        <%= __('practice_detail_banking.action_text') %>
+                                    </p>
                                     <div class="action-buttons">
                                         <a href="/contact" class="btn btn-primary">
-                                            <i class="fas fa-envelope"></i> Demander un conseil
+                                            <i class="fas fa-envelope"></i> <%= __('practice_detail_banking.action_contact') %>
                                         </a>
                                         <a href="/reservation" class="btn btn-secondary">
-                                            <i class="fas fa-calendar-check"></i> Consultation gratuite
+                                            <i class="fas fa-calendar-check"></i> <%= __('practice_detail_banking.action_appointment') %>
                                         </a>
                                     </div>
                                 </div>
@@ -124,19 +130,19 @@
                     <div class="col-lg-4">
                         <div class="left-sidebar">
                             <div class="widget-bg faq-widget">
-                                <h5 class="bg-title">Notre Processus Bancaire</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_banking.process_title') %></h5>
                                 <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                     <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                         <div class="card-header" role="tab" id="qus-A">
                                             <h6 class="mb-0">
                                                 <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                    Analyse et Structuration du Financement
+                                                    <%= __('practice_detail_banking.process_1_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                             <div class="card-body">
-                                                Étude de faisabilité du projet, analyse des risques, et conception de la structure juridique optimale pour l'opération de crédit.
+                                                <%= __('practice_detail_banking.process_1_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -144,13 +150,13 @@
                                         <div class="card-header" role="tab" id="qus-B">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                    Négociation et Conformité Réglementaire
+                                                    <%= __('practice_detail_banking.process_2_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                             <div class="card-body">
-                                                Négociation des conditions du prêt, rédaction des contrats, et mise en conformité avec la réglementation bancaire et les exigences de la Banque Centrale du Congo.
+                                                <%= __('practice_detail_banking.process_2_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -158,52 +164,52 @@
                                         <div class="card-header" role="tab" id="qus-C">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                    Gestion et Suivi du Dossier de Crédit
+                                                    <%= __('practice_detail_banking.process_3_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                             <div class="card-body">
-                                                Perfectionnement des garanties, monitoring des décaissements et échéances, et gestion proactive des risques tout au long de la vie du prêt.
+                                                <%= __('practice_detail_banking.process_3_desc') %>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget widget-bg icon-list-content">
-                                <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_banking.other_practices') %></h5>
                                 <ul>
                                     <li>
-                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> Droit de la Famille & Divorce</a>
+                                        <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> <%= __('services.family') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> Droit des Affaires</a>
+                                        <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> <%= __('services.commercial') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> Droit des Télécommunications</a>
+                                        <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> <%= __('services.telecom') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-corporatif"><i class="fas fa-building"></i> Droit Agricole & Acquisition de Terres</a>
+                                        <a href="/practice-area-corporatif"><i class="fas fa-building"></i> <%= __('services.agricultural') %></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="widget-bg sidebar-contact">
                                 <div class="overlay"></div>
-                                <h5>Laissez-nous Vous Aider !</h5>
+                                <h5><%= __('practice_detail_banking.sidebar_title') %></h5>
                                 <p>
-                                    Vous négociez un prêt bancaire important ? Besoin de conseil pour un financement structuré ? Notre expertise en droit bancaire sécurise vos transactions de crédit.
+                                    <%= __('practice_detail_banking.sidebar_text') %>
                                 </p>
                                 <div class="contact-options">
                                     <a href="tel:+243995482416" class="contact-phone">
@@ -215,7 +221,7 @@
                                         <span>+243 810 369 919</span>
                                     </a>
                                     <a href="/faq" class="btn-appointment mt-3">
-                                        <i class="fas fa-question-circle"></i> Consulter la FAQ
+                                        <i class="fas fa-question-circle"></i> <%= __('practice_detail_banking.sidebar_faq') %>
                                     </a>
                                 </div>
                             </div>

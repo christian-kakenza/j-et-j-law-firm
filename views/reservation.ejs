@@ -6,7 +6,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">Réservation</h1> -->
+                        <!-- <h1 class="inner-title"><%= __("reservation_page.title") %></h1> -->
                     </div>
                 </div>
             </div>
@@ -17,31 +17,31 @@
             <div class="container">
                 <form method="post" action="/reservation" class="reservation-form">
                     <div class="reservation-detais form-inner">
-                        <h3>Vos informations</h3>
+                        <h3><%= __("reservation_page.your_information") %></h3>
                         
                         <div class="row form-wrap">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+                                <input type="text" name="firstname" id="firstname" placeholder="<%= __("reservation_page.firstname") %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="text" name="lastname" id="lastname" placeholder="Nom">
+                                <input type="text" name="lastname" id="lastname" placeholder="<%= __("reservation_page.lastname") %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="text" name="middlename" id="middlename" placeholder="Post-Nom">
+                                <input type="text" name="middlename" id="middlename" placeholder="<%= __("reservation_page.middlename") %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input type="email" name="email" id="email" placeholder="<%= __("reservation_page.email") %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="text" name="address" id="address" placeholder="Adresse">
+                                <input type="text" name="address" id="address" placeholder="<%= __("reservation_page.address") %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <input type="tel" name="phone-no" id="phone-no" placeholder="Numéro de Téléphone">
+                                <input type="tel" name="phone-no" id="phone-no" placeholder="<%= __("reservation_page.phone") %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
                                 <input type="date" name="date" id="date" 
                                     value="<%= new Date().toISOString().split('T')[0] %>"
-                                    placeholder="<%= new Date().toLocaleDateString('fr-FR', { 
+                                    placeholder="<%= new Date().toLocaleDateString(locale === 'en' ? 'en-US' : 'fr-FR', { 
                                         day: 'numeric', 
                                         month: 'long', 
                                         year: 'numeric' 
@@ -54,68 +54,22 @@
                                         new Date().getHours().toString().padStart(2, '0') + ':' + 
                                         new Date().getMinutes().toString().padStart(2, '0')
                                     %>"
-                                    placeholder="<%= new Date().toLocaleTimeString('fr-FR', { 
+                                    placeholder="<%= new Date().toLocaleTimeString(locale === 'en' ? 'en-US' : 'fr-FR', { 
                                         hour: '2-digit', 
                                         minute: '2-digit',
-                                        hour12: false 
+                                        hour12: locale === 'en' ? true : false 
                                     }) %>">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                
+                                <!-- Espace vide intentionnel -->
                             </div>
                             <div class="col-lg-12 col-12 form-group">
-                                <textarea rows="7" name="note" id="note" placeholder="Description du Dossier..."></textarea>
+                                <textarea rows="7" name="note" id="note" placeholder="<%= __("reservation_page.case_description") %>"></textarea>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="reservation-method form-inner">
-                        <h3>Choisissez Votre Méthode de Paiement</h3>
-                        <div class="form-wrap d-flex gy-5">
-                            <div class="form-group radio-img">
-                                <input type="radio" checked name="a" id="card-1">
-                                <label for="card-1">
-                                    <img src="assets/img/icon-img1.png" alt="">
-                                </label>
-                            </div>
-                            <div class="form-group radio-img">
-                                <input type="radio" name="a" id="card-2">
-                                <label for="card-2">
-                                    <img src="assets/img/icon-img2.png" alt="">
-                                </label>
-                            </div>
-                            <div class="form-group radio-img">
-                                <input type="radio" name="a" id="card-3">
-                                <label for="card-3">
-                                    <img src="assets/img/icon-img3.png" alt="">
-                                </label>
-                            </div>
-                            <div class="form-group radio-img">
-                                <input type="radio" name="a" id="card-4">
-                                <label for="card-4">
-                                    <img src="assets/img/icon-img4.png" alt="">
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <label>Nom du Titulaire de la Carte</label>
-                                <input type="text" name="name" id="card-name">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <label>Numéro de la Carte</label>
-                                <input type="number" name="card number" id="card-number">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <label>CVV</label>
-                                <input type="number" name="ccv" id="ccv">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                <label>Date d'Expiration</label>
-                                <input type="number" name="expire date" id="expire-date">
-                            </div>
-                        </div>
-                    </div> -->
-                    <button type="submit" class="button-primary">Envoyer</button> 
+                    
+                    <button type="submit" class="button-primary"><%= __("reservation_page.submit") %></button> 
                 </form>
                 
             </div>

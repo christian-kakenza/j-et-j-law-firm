@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('practice_detail_family.page_title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -19,107 +19,109 @@
                     <div class="col-lg-8">
                         <div class="right-sidebar">
                             <h3 class="practice-title">
-                                Droit de la Famille & Divorce
+                                <%= __('practice_detail_family.title') %>
                             </h3>
                             <figure class="practice-img">
-                                <img src="/images/family2.jpg" alt="Droit de la Famille et Divorce">
+                                <img src="/images/family2.jpg" alt="<%= __('practice_detail_family.title') %>">
                             </figure>
                             <p class="practice-paragraph">
-                                Le Cabinet J&J Law Firm accompagne les familles avec empathie et expertise dans les moments délicats de la vie familiale, avec une spécialisation particulière dans les procédures de divorce. Notre approche combine compétence juridique et sensibilité humaine pour guider nos clients à travers les aspects juridiques et émotionnels de la séparation en République Démocratique du Congo.
+                                <%= __('practice_detail_family.intro_1') %>
                             </p>
                             <p class="practice-paragraph">
-                                Nous intervenons dans tous les types de divorce (par consentement mutuel, pour faute, pour séparation de corps) et maîtrisons les implications juridiques complexes : partage des biens, pension alimentaire, garde des enfants, droits de visite et d'hébergement. Notre cabinet privilégie les solutions négociées lorsqu'elles sont possibles, tout en étant préparé à défendre vigoureusement vos intérêts devant les tribunaux si nécessaire.
+                                <%= __('practice_detail_family.intro_2') %>
                             </p>
                             <article class="practice-summary">
-                                <h5 class="practice-summary-title">Accompagnement Personnalisé dans le Divorce :</h5>
+                                <h5 class="practice-summary-title">
+                                    <%= __('practice_detail_family.expertise_title') %>
+                                </h5>
                                 <p>
-                                    Nous vous guidons à chaque étape de la procédure de divorce, en protégeant vos droits et ceux de vos enfants, tout en cherchant à minimiser les conflits et à préserver les relations familiales essentielles.
+                                    <%= __('practice_detail_family.expertise_text') %>
                                 </p>
                                 <div class="practical-summary-wrapper">
                                     <figure class="practical-summary-img">
-                                        <img src="/images/family3.jpg" alt="Médiation familiale et divorce">
+                                        <img src="/images/family3.jpg" alt="<%= __('practice_detail_family.title') %>">
                                     </figure>
                                     <div class="practical-summary-info">
                                         <p>
-                                            Notre approche équilibrée nous permet de négocier des accords équitables et durables, en privilégiant toujours l'intérêt supérieur des enfants et le bien-être émotionnel de toutes les parties concernées.
+                                            <%= __('practice_detail_family.approach_text') %>
                                         </p>
 
                                         <p>
-                                            Nos services en droit de la famille et divorce incluent :
+                                            <%= __('practice_detail_family.services_title') %>
                                         </p>
                                         <ul>
                                             <li>
                                                 <i class="fas fa-heart-broken"></i>
-                                                Conseils et procédures pour tous les types de divorce
+                                                <%= __('practice_detail_family.service_1') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-home"></i>
-                                                Partage des biens matrimoniaux et régimes matrimoniaux
+                                                <%= __('practice_detail_family.service_2') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-child"></i>
-                                                Garde des enfants, droit de visite et pension alimentaire
+                                                <%= __('practice_detail_family.service_3') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-handshake"></i>
-                                                Médiation familiale et conventions de divorce à l'amiable
+                                                <%= __('practice_detail_family.service_4') %>
                                             </li>
                                             <li>
                                                 <i class="fas fa-balance-scale"></i>
-                                                Contentieux familial et représentation devant le tribunal de la famille
+                                                <%= __('practice_detail_family.service_5') %>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </article>
                             
-                            <!-- Section Types de Divorce -->
+                            <!-- Section Types of Divorce -->
                             <div class="divorce-types mt-5">
-                                <h5 class="section-subtitle">Types de Procédures de Divorce :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_family.divorce_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <div class="divorce-type-card">
-                                            <h6><i class="fas fa-handshake"></i> Divorce par Consentement Mutuel</h6>
-                                            <p>Procédure accélérée lorsque les époux sont d'accord sur tous les aspects de la séparation</p>
+                                            <h6><i class="fas fa-handshake"></i> <%= __('practice_detail_family.divorce_1_title') %></h6>
+                                            <p><%= __('practice_detail_family.divorce_1_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="divorce-type-card">
-                                            <h6><i class="fas fa-gavel"></i> Divorce pour Faute</h6>
-                                            <p>Lorsqu'un des époux a commis une faute grave rendant intolérable le maintien du mariage</p>
+                                            <h6><i class="fas fa-gavel"></i> <%= __('practice_detail_family.divorce_2_title') %></h6>
+                                            <p><%= __('practice_detail_family.divorce_2_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="divorce-type-card">
-                                            <h6><i class="fas fa-user-clock"></i> Divorce pour Altération Définitive</h6>
-                                            <p>Lorsque le lien conjugal est définitivement altéré depuis au moins deux ans</p>
+                                            <h6><i class="fas fa-user-clock"></i> <%= __('practice_detail_family.divorce_3_title') %></h6>
+                                            <p><%= __('practice_detail_family.divorce_3_desc') %></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <div class="divorce-type-card">
-                                            <h6><i class="fas fa-user-secret"></i> Divorce pour Séparation de Corps</h6>
-                                            <p>Séparation légale sans dissolution du mariage, alternative au divorce</p>
+                                            <h6><i class="fas fa-user-secret"></i> <%= __('practice_detail_family.divorce_4_title') %></h6>
+                                            <p><%= __('practice_detail_family.divorce_4_desc') %></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <!-- Section Aspects Financiers -->
+                            <!-- Section Financial Aspects -->
                             <div class="financial-aspects mt-4">
-                                <h5 class="section-subtitle">Aspects Financiers du Divorce :</h5>
+                                <h5 class="section-subtitle"><%= __('practice_detail_family.financial_title') %></h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul class="financial-list">
-                                            <li><i class="fas fa-coins"></i> <strong>Prestation compensatoire</strong> : Évaluation et fixation</li>
-                                            <li><i class="fas fa-home"></i> <strong>Partage des biens</strong> : Biens communs et propres</li>
-                                            <li><i class="fas fa-university"></i> <strong>Régime matrimonial</strong> : Communauté ou séparation</li>
+                                            <li><i class="fas fa-coins"></i> <%- __('practice_detail_family.financial_1') %></li>
+                                            <li><i class="fas fa-home"></i> <%- __('practice_detail_family.financial_2') %></li>
+                                            <li><i class="fas fa-university"></i> <%- __('practice_detail_family.financial_3') %></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul class="financial-list">
-                                            <li><i class="fas fa-child"></i> <strong>Pension alimentaire</strong> : Pour conjoint et enfants</li>
-                                            <li><i class="fas fa-file-invoice-dollar"></i> <strong>Dettes matrimoniales</strong> : Répartition</li>
-                                            <li><i class="fas fa-retirement"></i> <strong>Droits à pension</strong> : Partage des retraites</li>
+                                            <li><i class="fas fa-child"></i> <%- __('practice_detail_family.financial_4') %></li>
+                                            <li><i class="fas fa-file-invoice-dollar"></i> <%- __('practice_detail_family.financial_5') %></li>
+                                            <li><i class="fas fa-retirement"></i> <%- __('practice_detail_family.financial_6') %></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -129,19 +131,19 @@
                     <div class="col-lg-4">
                         <div class="left-sidebar">
                             <div class="widget-bg faq-widget">
-                                <h5 class="bg-title">Notre Processus de Divorce</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_family.process_title') %></h5>
                                 <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                     <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                         <div class="card-header" role="tab" id="qus-A">
                                             <h6 class="mb-0">
                                                 <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                    Consultation Initiale et Analyse
+                                                    <%= __('practice_detail_family.process_1_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                             <div class="card-body">
-                                                Écoute attentive de votre situation, analyse des options de divorce, explication des procédures et des implications juridiques, financières et familiales.
+                                                <%= __('practice_detail_family.process_1_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -149,13 +151,13 @@
                                         <div class="card-header" role="tab" id="qus-B">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                    Négociation et Médiation
+                                                    <%= __('practice_detail_family.process_2_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                             <div class="card-body">
-                                                Tentative de règlement amiable, négociation des termes du divorce, médiation pour les aspects concernant les enfants et le patrimoine.
+                                                <%= __('practice_detail_family.process_2_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -163,52 +165,52 @@
                                         <div class="card-header" role="tab" id="qus-C">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                    Procédure Judiciaire et Exécution
+                                                    <%= __('practice_detail_family.process_3_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                             <div class="card-body">
-                                                Introduction de la demande en divorce devant le tribunal, représentation aux audiences, et suivi de l'exécution du jugement de divorce.
+                                                <%= __('practice_detail_family.process_3_desc') %>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget widget-bg icon-list-content">
-                                <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_family.other_practices') %></h5>
                                 <ul>
                                     <li>
-                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                        <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                        <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                        <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                        <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                     </li>
                                     <!-- <li>
-                                        <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> Droit de la Famille & Divorce</a>
+                                        <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> <%= __('services.family') %></a>
                                     </li> -->
                                     <li>
-                                        <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> Droit des Affaires</a>
+                                        <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> <%= __('services.commercial') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> Droit Bancaire & Financement</a>
+                                        <a href="/practice-area-pret-prive"><i class="fas fa-landmark"></i> <%= __('services.banking') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-corporatif"><i class="fas fa-building"></i> Droit Agricole & Acquisition de Terres</a>
+                                        <a href="/practice-area-corporatif"><i class="fas fa-building"></i> <%= __('services.agricultural') %></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="widget-bg sidebar-contact">
                                 <div class="overlay"></div>
-                                <h5>Laissez-nous Vous Aider !</h5>
+                                <h5><%= __('practice_detail_family.sidebar_title') %></h5>
                                 <p>
-                                    Vous envisagez une séparation ? Besoin de conseils pour un divorce ? Notre équipe spécialisée vous accompagne avec discrétion et expertise dans cette épreuve difficile.
+                                    <%= __('practice_detail_family.sidebar_text') %>
                                 </p>
                                 <div class="contact-options">
                                     <a href="tel:+243972038147" class="contact-phone">
@@ -220,7 +222,7 @@
                                         <span>+243 999 632 302</span>
                                     </a>
                                     <a href="/reservation" class="btn-appointment mt-3">
-                                        <i class="fas fa-calendar-alt"></i> Consultation confidentielle
+                                        <i class="fas fa-calendar-alt"></i> <%= __('practice_detail_family.sidebar_appointment') %>
                                     </a>
                                 </div>
                             </div>

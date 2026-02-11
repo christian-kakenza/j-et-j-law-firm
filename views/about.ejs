@@ -6,7 +6,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">À propos de nous</h1> -->
+                        <!-- <h1 class="inner-title"><%= __("about.title") %></h1> -->
                     </div>
                 </div>
             </div>
@@ -15,20 +15,20 @@
         <!-- About page html start -->
         <section class="about-section">
             <div class="container">
-                <h2 class="about-title text-center">Présentation du Cabinet d'Avocats</h2>
+                <h2 class="about-title text-center"><%= __("about.presentation_title") %></h2>
                 <div class="row">
                     <div class="col-md-6">
                         <p class="about-describe info-left">
-                            <strong>J&J Law Firm</strong> incarne l'excellence juridique au plus haut niveau international. Sous la direction visionnaire de <strong>Maître Jethro Muyombi Tshimbu</strong>, avocat associé-gérant spécialiste en droit économique et minier, et de <strong>Maître John Ngoy Kibambe Kabange</strong>, notre cabinet allie expertise technique rigoureuse et stratégie juridique avancée. Nos associés fondateurs, forts de formations académiques prestigieuses et d'expériences diversifiées dans les secteurs public et privé, offrent un conseil juridique d'élite aux entreprises multinationales et institutions gouvernementales.
+                            <%- __("about.paragraph1") %>
                             <br><br>
-                            Notre rayonnement international s'enrichit désormais de l'expertise exclusive de <strong>Maître Mizou NSANDA BILONGO</strong>, Avocate aux barreaux de Paris et de Kinshasa-Matete. Forte d'un parcours académique international incluant un LLM aux États-Unis et une pratique professionnelle trilingue, elle apporte une expertise pointue en droit OHADA, Transaction Tax, et droit des ressources naturelles. Son expérience transcontinentale renforce notre capacité à conseiller des clients dans les secteurs des investissements, du commerce international, des infrastructures et des ressources naturelles.
+                            <%- __("about.paragraph2") %>
                         </p>
                     </div>
                     <div class="col-md-6">
                         <p class="about-describe info-right">
-                            Notre équipe de collaborateurs spécialisés, composée de <strong>Maîtres Olga Kasongo, Daniel Kyungu, Emmanuel Matongo et Séraphin Kabamba</strong>, complète cette expertise dirigeante avec des compétences approfondies en droit privé, droit de la famille, droit du travail et droit public. Cette synergie d'expertises garantit une couverture juridique exhaustive et multidisciplinaire.
+                            <%- __("about.paragraph3") %>
                             <br><br>
-                            Ce qui distingue <strong>J&J Law Firm</strong> est notre approche intégrée combinant savoir-faire local et vision globale. Polyglottes, profondément ancrés dans les réalités congolaises tout étant connectés aux standards internationaux, tous nos avocats partagent les valeurs cardinales de transparence absolue, d'écoute stratégique et d'engagement sans concession pour la défense optimale des intérêts de nos clients. Notre cabinet représente désormais une référence en matière de conseil juridique sophistiqué pour les opérations complexes en Afrique centrale et au-delà.
+                            <%- __("about.paragraph4") %>
                         </p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                                 <span class="counter">2</span>k+
                             </div>
                             <div class="Completed">
-                                Consultation Client
+                                <%= __("about.stats.consultations") %>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 counter-item">
@@ -47,7 +47,7 @@
                                 <span class="counter">95</span>%
                             </div>
                             <div class="Completed">
-                                Affaires Réussies
+                                <%= __("about.stats.success_rate") %>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 counter-item">
@@ -55,7 +55,7 @@
                                 <span class="counter">12</span>+
                             </div>
                             <div class="Completed">
-                                Avocats Professionnels
+                                <%= __("about.stats.lawyers") %>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 counter-item">
@@ -63,24 +63,22 @@
                                 <span class="counter">20</span>+
                             </div>
                             <span class="Completed">
-                                Prix Décernés
+                                <%= __("about.stats.awards") %>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="about-banner">
                     <figure class="about-image">
-                        <img src="/images/legalor-img18.jpg" alt="">
+                        <img src="/images/legalor-img18.jpg" alt="J&J Law Firm">
                     </figure>
                     <div class="about-left-banner">
                         <div class="banner-icon">
                             <i aria-hidden="true" class="icon icon-trophy1"></i>
                         </div>
-                        <h3>10+ ANS D'EXPÉRIENCE</h3>
+                        <h3><%= __("about.experience_badge") %></h3>
                     </div>
-                    <div class="about-right-banner">
-
-                    </div>
+                    <div class="about-right-banner"></div>
                 </div>
             </div>
         </section>
@@ -89,27 +87,27 @@
                 <div class="client-slider text-center">
                     <div class="client-item">
                         <figure>
-                            <img src="/images/legalor-img20.png" alt="">
+                            <img src="/images/legalor-img20.png" alt="Client logo">
                         </figure>
                     </div>
                     <div class="client-item">
                         <figure>
-                            <img src="/images/legalor-img21.png" alt="">
+                            <img src="/images/legalor-img21.png" alt="Client logo">
                         </figure>
                     </div>
                     <div class="client-item">
                         <figure>
-                            <img src="/images/legalor-img22.png" alt="">
+                            <img src="/images/legalor-img22.png" alt="Client logo">
                         </figure>
                     </div>
                     <div class="client-item">
                         <figure>
-                            <img src="/images/legalor-img23.png" alt="">
+                            <img src="/images/legalor-img23.png" alt="Client logo">
                         </figure>
                     </div>
                     <div class="client-item">
                         <figure>
-                            <img src="/images/legalor-img24.png" alt="">
+                            <img src="/images/legalor-img24.png" alt="Client logo">
                         </figure>
                     </div>
                 </div>
@@ -124,22 +122,22 @@
                     <div class="right-side-schedule">
                         <aside class="section-head">
                             <h2 class="section-title">
-                                Faites-nous appel pour tous vos besoins juridiques !
+                                <%= __("home.schedule.title") %>
                             </h2>
                             <p class="section-paragraph">
-                                Confiez vos affaires juridiques à notre équipe d'avocats expérimentés. Nous offrons des solutions personnalisées, efficaces et expertes pour une large gamme de questions juridiques.
+                                <%= __("home.schedule.subtitle") %>
                             </p>
                             <div class="timenote">
                                 <div class="schedule-time">
                                     <ul>
                                         <li>
-                                            <h6>Du lundi au vendredi</h6>
+                                            <h6><%= __("home.schedule.hours.weekdays") %></h6>
                                         </li>
                                         <li>
-                                            <h6>9h00 - 18h00</h6>
+                                            <h6><%= __("home.schedule.hours.hours") %></h6>
                                         </li>
                                         <li>
-                                            <h6>Dimanche et jours fériés (Fermé)</h6>
+                                            <h6><%= __("home.schedule.hours.closed") %></h6>
                                         </li>
                                     </ul>
                                 </div>
@@ -148,32 +146,32 @@
                                         <li>
                                             <i aria-hidden="true" class="far fa-check-square"></i>
                                             <span>
-                                                Excellence axée sur le client.
+                                                <%= __("home.schedule.commitments.client") %>
                                             </span>
                                         </li>
                                         <li>
                                             <i aria-hidden="true" class="far fa-check-square"></i>
                                             <span>
-                                                Perspectives juridiques stratégiques.
+                                                <%= __("home.schedule.commitments.strategic") %>
                                             </span>
                                         </li>
                                         <li>
                                             <i aria-hidden="true" class="far fa-check-square"></i>
                                             <span>
-                                                Pratique guidée par l'intégrité.
+                                                <%= __("home.schedule.commitments.integrity") %>
                                             </span>
                                         </li>
                                         <li>
                                             <i aria-hidden="true" class="far fa-check-square"></i>
                                             <span>
-                                                Naviguer dans le droit de manière efficace.
+                                                <%= __("home.schedule.commitments.navigate") %>
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="schedule-btn">
-                                <a href="/contact" class="button-primary">ENGAGEZ-NOUS DÈS MAINTENANT !</a>
+                                <a href="/contact" class="button-primary"><%= __("common.hire_us_now") %></a>
                             </div>
                         </aside>
                     </div>
@@ -184,7 +182,7 @@
                                     <div class="circle-number"></div>
                                 </div>
                             </div>
-                            <h5 class="goal-title">Solution Juridique</h5>
+                            <h5 class="goal-title"><%= __("home.schedule.legal_solution") %></h5>
                         </div>
                         <div class="goal-wrapper">
                             <div class="circle-progressbar-white circle-progressbar" data-animate="false">
@@ -192,7 +190,7 @@
                                     <div class="circle-number"></div>
                                 </div>
                             </div>
-                            <h5 class="goal-title">Réussite du Projet</h5>
+                            <h5 class="goal-title"><%= __("home.schedule.project_success") %></h5>
                         </div>
                     </div>
                 </div>

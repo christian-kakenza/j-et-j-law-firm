@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails du Maître</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('attorney_detail_john.title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -20,76 +20,72 @@
                     <div class="col-md-5">
                         <div class="author-img-wrapper">
                             <figure class="team-fig">
-                                <img src="/images/Mengoy.jpg" alt="Maître NGOY KIBAMBE KABANGE John">
+                                <img src="/images/Mengoy.jpg" alt="<%= __('attorney_detail_john.name') %>">
                             </figure>
                         </div>
                     </div>
                     <div class="col-md-7">
                         <div class="author-bio-date">
-                            <h6 class="author-title">Avocat associé</h6>
+                            <h6 class="author-title"><%= __('attorney_detail_john.position') %></h6>
                             <h2 class="author-name">
-                                Maître NGOY KIBAMBE KABANGE John
+                                <%= __('attorney_detail_john.name') %>
                             </h2>
                             <p class="author-disc">
-                                Fort d'une solide expérience en conseil et en contentieux, j'exerce le métier d'avocat 
-                                avec exigence et conviction. Mon approche privilégie la rigueur juridique, l'écoute active 
-                                et une stratégie sur mesure, dans le respect des règles déontologiques. Je veille à 
-                                instaurer une relation de confiance durable avec mes clients, fondée sur la transparence, 
-                                la compétence et la défense sincère de leurs intérêts.
+                                <%= __('attorney_detail_john.bio') %>
                             </p>
                             <div class="author-contact-info">
                                 <ul>
                                     <li>
-                                        <strong>Adresse e-mail : </strong>
+                                        <strong><%= __('attorney_detail_john.email') %> : </strong>
                                         <a href="mailto:John.ngoieki@gmail.com">John.ngoieki@gmail.com</a>
                                     </li>
                                     <li>
-                                        <strong>Numéros de téléphone : </strong>
+                                        <strong><%= __('attorney_detail_john.phone') %> : </strong>
                                         <a href="tel:+243810648832">+243 810 648 832</a>,
                                         <a href="tel:+243995482416">+243 995 482 416</a>
                                     </li>
                                     <li>
-                                        <strong>Spécialisations : </strong>
-                                        <span>Droit Économique & Social, Droit des Affaires, Droit du Travail, Droit Minier, Droit Foncier</span>
+                                        <strong><%= __('attorney_detail_john.specializations') %> : </strong>
+                                        <span><%= __('team.expertise_economic') %>, <%= __('services.commercial') %>, <%= __('services.family') %>, <%= __('services.mining') %>, <%= __('services.real_estate') %></span>
                                     </li>
                                     <li>
-                                        <strong>Domaines d'expertise : </strong>
-                                        <a href="/practice-area-detail">Droit des Affaires</a>, 
-                                        <a href="/practice-area-mines">Droit Minier</a>, 
-                                        <span>Droit Économique & Social</span>, 
-                                        <span>Droit du Travail</span>, 
-                                        <span>Droit Foncier</span>
+                                        <strong><%= __('attorney_detail_john.expertise_areas') %> : </strong>
+                                        <a href="/practice-area-detail"><%= __('services.commercial') %></a>, 
+                                        <a href="/practice-area-mines"><%= __('services.mining') %></a>, 
+                                        <span><%= __('team.expertise_economic') %></span>, 
+                                        <span><%= __('services.family') %></span>, 
+                                        <span><%= __('services.real_estate') %></span>
                                     </li>
                                     <li>
-                                        <strong>Langues : </strong>
-                                        <span>Français, Anglais, Lingala, Swahili, Kiluba</span>
+                                        <strong><%= __('attorney_detail_john.languages') %> : </strong>
+                                        <span>Français, English, Lingala, Swahili, Kiluba</span>
                                     </li>
                                 </ul>
                             </div>
                             <div class="qualification">
-                                <h5 class="qualification-title">Formation & Diplômes :</h5>
+                                <h5 class="qualification-title"><%= __('attorney_detail_john.education_title') %> :</h5>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        Licence en Droit à l'Université de Lubumbashi
+                                        <%= __('attorney_detail_john.education_1') %>
                                     </h6>
                                 </div>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        Licence en Développement Communautaire, Gestion et Administration des Projets à l'ISES Lubumbashi
+                                        <%= __('attorney_detail_john.education_2') %>
                                     </h6>
                                 </div>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        Diplôme d'État en section Pédagogique à l'Institut MWINE NTANDA
+                                        <%= __('attorney_detail_john.education_3') %>
                                     </h6>
                                 </div>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        Certificat d'études primaires à l'école "E.P. SHANDI WA BANA"
+                                        <%= __('attorney_detail_john.education_4') %>
                                     </h6>
                                 </div>
                             </div>
@@ -97,36 +93,36 @@
                     </div>
                 </div>
                 <div class="experience-info">
-                    <h5 class="experience-heading">Expériences Professionnelles :</h5>
+                    <h5 class="experience-heading"><%= __('attorney_detail_john.professional_experience') %> :</h5>
                     <ul class="experience-list">
-                        <li><strong>2014 à nos jours :</strong> Avocat à la Cour</li>
-                        <li><strong>2007 à nos jours :</strong> Défenseur judiciaire près le Tribunal de Grande instance de Lubumbashi</li>
-                        <li><strong>Juillet 2019 à Mars 2020 :</strong> Directeur de cabinet et Assistant au Commissariat en charge des Transports Tourisme dans le Gouvernement Provincial du Haut-Katanga</li>
-                        <li><strong>Octobre 2017 à Mai 2019 :</strong> Conseiller du Vice-Gouverneur de la province du Haut-Katanga</li>
-                        <li><strong>Janvier 2016 :</strong> Assistant au cabinet du Commissaire Spécial Adjoint en charge de l'Économie, Finances et Développement (ECOFIDEV) dans la province du Haut-Katanga</li>
-                        <li><strong>2010 à 2015 :</strong> Conseiller au cabinet du Ministre provincial de l'Éducation, Recherche Scientifique, Transport et Energie du Gouvernement Provincial du Katanga</li>
-                        <li><strong>2008 à 2010 :</strong> Conseiller chargé de missions au sein du cabinet du Ministre provincial des Infrastructures, Urbanisme, Transport et Energie du Gouvernement Provincial du Katanga</li>
+                        <li><strong><%= __('attorney_detail_john.exp_1') %></strong></li>
+                        <li><strong><%= __('attorney_detail_john.exp_2') %></strong></li>
+                        <li><strong><%= __('attorney_detail_john.exp_3') %></strong></li>
+                        <li><strong><%= __('attorney_detail_john.exp_4') %></strong></li>
+                        <li><strong><%= __('attorney_detail_john.exp_5') %></strong></li>
+                        <li><strong><%= __('attorney_detail_john.exp_6') %></strong></li>
+                        <li><strong><%= __('attorney_detail_john.exp_7') %></strong></li>
                     </ul>
                 </div>
                 <div class="experience-wrappered row">
                     <div class="col-md-6">
                         <div class="skill-container">
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Maîtrise Juridique</p>
+                                <p class="skill-titile"><%= __('attorney_detail_john.skill_1') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="92"></div>
                                     <span class="progress-percent">92%</span>
                                 </div>
                             </div>
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Contentieux Résolus</p>
+                                <p class="skill-titile"><%= __('attorney_detail_john.skill_2') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="88"></div>
                                     <span class="progress-percent">88%</span>
                                 </div>
                             </div>
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Réseautage & Communication</p>
+                                <p class="skill-titile"><%= __('attorney_detail_john.skill_3') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="95"></div>
                                     <span class="progress-percent">95%</span>
@@ -139,27 +135,27 @@
                             <ul>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-network-wired"></i>
-                                    Excellentes capacités de réseautage et de communication
+                                    <%= __('attorney_detail_john.achievement_1') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-gavel"></i>
-                                    Maîtrise approfondie de la législation congolaise et son interprétation
+                                    <%= __('attorney_detail_john.achievement_2') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-brain"></i>
-                                    Ouverture d'esprit et approche scientifique dans la recherche juridique
+                                    <%= __('attorney_detail_john.achievement_3') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-language"></i>
-                                    Polyglotte maîtrisant 5 langues pour une communication efficace
+                                    <%= __('attorney_detail_john.achievement_4') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-landmark"></i>
-                                    Expérience significative dans les institutions gouvernementales
+                                    <%= __('attorney_detail_john.achievement_5') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-handshake"></i>
-                                    Relation client basée sur la transparence et la confiance durable
+                                    <%= __('attorney_detail_john.achievement_6') %>
                                 </li>
                             </ul>
                         </div>
@@ -168,23 +164,23 @@
                 
                 <!-- Section Publications -->
                 <div class="publications-section mt-5">
-                    <h5 class="experience-heading">Publications & Recherches :</h5>
+                    <h5 class="experience-heading"><%= __('attorney_detail_john.publications_title') %> :</h5>
                     <div class="publications-list">
                         <ul>
-                            <li><strong>"De l'application des règles de participation criminelle aux infractions non intentionnelles"</strong></li>
-                            <li><strong>"Du droit des usagers de services publics face à la défaillance du fonctionnement des services"</strong></li>
+                            <li><strong><%= __('attorney_detail_john.publication_1') %></strong></li>
+                            <li><strong><%= __('attorney_detail_john.publication_2') %></strong></li>
                         </ul>
                     </div>
                 </div>
                 
-                <!-- Section pour voir d'autres avocats -->
+                <!-- Section for other attorneys -->
                 <div class="other-attorneys-section mt-5">
                     <div class="section-header text-center">
-                        <h3 class="section-title">Découvrez Notre Équipe</h3>
-                        <p class="section-subtitle">Rencontrez les autres membres de notre cabinet</p>
+                        <h3 class="section-title"><%= __('attorney_detail_john.other_attorneys_title') %></h3>
+                        <p class="section-subtitle"><%= __('attorney_detail_john.other_attorneys_subtitle') %></p>
                     </div>
                     <div class="text-center mt-4">
-                        <a href="/attorney" class="button-primary">VOIR TOUTE L'ÉQUIPE</a>
+                        <a href="/attorney" class="button-primary"><%= __('attorney_detail_john.other_attorneys_btn') %></a>
                     </div>
                 </div>
             </div>

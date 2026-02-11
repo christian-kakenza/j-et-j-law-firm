@@ -1,20 +1,74 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const path = require('path');
-
+const i18n = require('i18n');           // UNE SEULE FOIS
+const cookieParser = require('cookie-parser'); // AJOUTEZ CECI
 
 const app = express();
 
+// ============ CONFIGURATION I18N ============
+app.use(cookieParser()); // IMPORTANT - Placez-le ici
 
+i18n.configure({
+    locales: ['fr', 'en'],
+    defaultLocale: 'fr',
+    directory: path.join(__dirname, 'locales'),
+    cookie: 'lang',
+    autoReload: true,
+    syncFiles: true,
+    objectNotation: true
+});
+
+app.use(i18n.init);
+
+// Middleware pour gérer la langue avec cookie
+app.use((req, res, next) => {
+    // 1. Vérifier le paramètre ?lang= dans l'URL
+    if (req.query.lang && ['fr', 'en'].includes(req.query.lang)) {
+        res.setLocale(req.query.lang);
+        res.cookie('lang', req.query.lang, { 
+            maxAge: 30 * 24 * 60 * 60 * 1000,
+            httpOnly: true 
+        });
+    }
+    // 2. Vérifier le cookie existant
+    else if (req.cookies && req.cookies.lang && ['fr', 'en'].includes(req.cookies.lang)) {
+        res.setLocale(req.cookies.lang);
+    }
+    // 3. Par défaut: français
+    else {
+        res.setLocale('fr');
+    }
+    
+    res.locals.locale = res.getLocale();
+    res.locals.__ = res.__;
+    next();
+});
+
+// ============ CONFIGURATION EXPRESS ============
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// IMPORTANT : Middleware pour traiter les données des formulaires
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// ============ CONFIGURATION NODEMAILER GMAIL ============
+// ============ ROUTE POUR CHANGER LA LANGUE ============
+app.get('/set-language/:lang', (req, res) => {
+    const lang = req.params.lang;
+    if (['fr', 'en'].includes(lang)) {
+        res.cookie('lang', lang, { 
+            maxAge: 30 * 24 * 60 * 60 * 1000,
+            httpOnly: true 
+        });
+        res.status(200).send('OK');
+    } else {
+        res.status(400).send('Bad Request');
+    }
+});
+
+// ============ CONFIGURATION NODEMAILER ============
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -467,7 +521,7 @@ app.use((err, req, res, next) => {
 
 // ============ DÉMARRAGE DU SERVEUR ============
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`✅ Serveur démarré sur http://localhost:${PORT}`);

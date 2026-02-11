@@ -6,7 +6,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                        <!-- <h1 class="inner-title"><%= __('practice_detail_ohada.page_title') %></h1> -->
                     </div>
                 </div>
             </div>
@@ -19,54 +19,56 @@
                         <div class="col-lg-8">
                             <div class="right-sidebar">
                                 <h3 class="practice-title">
-                                    Droit OHADA
+                                    <%= __('practice_detail_ohada.title') %>
                                 </h3>
                                 <figure class="practice-img">
-                                    <img src="/images/ohadaUpdate.jpg" alt="Droit OHADA en RDC">
+                                    <img src="/images/ohadaUpdate.jpg" alt="<%= __('practice_detail_ohada.title') %>">
                                 </figure>
                                 <p class="practice-paragraph">
-                                    La RDC a adhéré depuis 2010 au Traité pour l'Harmonisation du Droit des Affaires en Afrique (OHADA) qui regroupe 17 pays de la sous-région de l'Afrique de l'Ouest et Centrale. Ce traité est devenu effectif en RDC depuis le 12 septembre 2012, à la suite du dépôt des instruments d'adhésion.
+                                    <%= __('practice_detail_ohada.intro_1') %>
                                 </p>
                                 <p class="practice-paragraph">
-                                    Notre cabinet maîtrise parfaitement l'ensemble des Actes Uniformes OHADA (droit des sociétés, droit commercial, sûretés, procédures collectives, arbitrage, etc.) et leur application en République Démocratique du Congo. Nous accompagnons les entreprises dans leur adaptation à ce cadre juridique harmonisé, garantissant ainsi leur sécurité juridique et leur compétitivité dans l'espace OHADA.
+                                    <%= __('practice_detail_ohada.intro_2') %>
                                 </p>
                                 <article class="practice-summary">
-                                    <h5 class="practice-summary-title">Expertise et Adaptation :</h5>
+                                    <h5 class="practice-summary-title">
+                                        <%= __('practice_detail_ohada.expertise_title') %>
+                                    </h5>
                                     <p>
-                                        Nous facilitons l'intégration de vos activités dans le cadre juridique OHADA, en assurant une transition fluide et une conformité totale avec les nouvelles dispositions.
+                                        <%= __('practice_detail_ohada.expertise_text') %>
                                     </p>
                                     <div class="practical-summary-wrapper">
                                         <figure class="practical-summary-img">
-                                            <img src="/images/ohadaUpdate2.jpg" alt="Expertise en droit OHADA">
+                                            <img src="/images/ohadaUpdate2.jpg" alt="<%= __('practice_detail_ohada.title') %>">
                                         </figure>
                                         <div class="practical-summary-info">
                                             <p>
-                                                Nos avocats ont bénéficié de formations spécifiques auprès d'experts du droit OHADA et participent régulièrement à des séminaires de mise à jour. Ainsi, tous les documents relatifs au droit des affaires (statuts, procès-verbaux d'assemblée générale, démarches aux greffes, etc.) sont conformes au droit OHADA.
+                                                <%= __('practice_detail_ohada.approach_text') %>
                                             </p>
 
                                             <p>
-                                                Notre accompagnement en droit OHADA inclut :
+                                                <%= __('practice_detail_ohada.services_title') %>
                                             </p>
                                             <ul>
                                                 <li>
                                                     <i class="fas fa-building"></i>
-                                                    Transformation et mise en conformité des sociétés existantes avec l'Acte Uniforme relatif au droit des sociétés commerciales
+                                                    <%= __('practice_detail_ohada.service_1') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-file-contract"></i>
-                                                    Conseil sur les sûretés (garanties) OHADA et leur inscription au Registre du Commerce et du Crédit Mobilier (RCCM)
+                                                    <%= __('practice_detail_ohada.service_2') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-balance-scale"></i>
-                                                    Gestion des procédures collectives (redressement et liquidation judiciaires) selon les règles OHADA
+                                                    <%= __('practice_detail_ohada.service_3') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-handshake"></i>
-                                                    Rédaction et négociation de contrats commerciaux conformes aux standards OHADA
+                                                    <%= __('practice_detail_ohada.service_4') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-gavel"></i>
-                                                    Représentation en arbitrage OHADA et résolution des litiges transfrontaliers dans l'espace OHADA
+                                                    <%= __('practice_detail_ohada.service_5') %>
                                                 </li>
                                             </ul>
                                         </div>
@@ -76,14 +78,18 @@
                                 <!-- Section Contact Action -->
                                 <div class="practice-action mt-5">
                                     <div class="action-card">
-                                        <h5 class="action-title">Besoin d'expertise OHADA ?</h5>
-                                        <p>Nos spécialistes en droit des affaires harmonisé vous accompagnent pour la conformité de vos opérations dans l'espace OHADA.</p>
+                                        <h5 class="action-title">
+                                            <%= __('practice_detail_ohada.action_title') %>
+                                        </h5>
+                                        <p>
+                                            <%= __('practice_detail_ohada.action_text') %>
+                                        </p>
                                         <div class="action-buttons">
                                             <a href="/contact" class="btn btn-primary">
-                                                <i class="fas fa-envelope"></i> Demander un audit
+                                                <i class="fas fa-envelope"></i> <%= __('practice_detail_ohada.action_contact') %>
                                             </a>
                                             <a href="/reservation" class="btn btn-secondary">
-                                                <i class="fas fa-calendar-check"></i> Consultation gratuite
+                                                <i class="fas fa-calendar-check"></i> <%= __('practice_detail_ohada.action_appointment') %>
                                             </a>
                                         </div>
                                     </div>
@@ -93,19 +99,19 @@
                         <div class="col-lg-4">
                             <div class="left-sidebar">
                                 <div class="widget-bg faq-widget">
-                                    <h5 class="bg-title">Notre Processus</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_ohada.process_title') %></h5>
                                     <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                         <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                             <div class="card-header" role="tab" id="qus-A">
                                                 <h6 class="mb-0">
                                                     <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                        Audit de Conformité OHADA
+                                                        <%= __('practice_detail_ohada.process_1_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                                 <div class="card-body">
-                                                    Analyse détaillée de votre structure et de vos documents juridiques pour évaluer leur conformité avec les Actes Uniformes OHADA.
+                                                    <%= __('practice_detail_ohada.process_1_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,13 +119,13 @@
                                             <div class="card-header" role="tab" id="qus-B">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                        Transformation et Mise en Conformité
+                                                        <%= __('practice_detail_ohada.process_2_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                                 <div class="card-body">
-                                                    Modification des statuts, mise à jour des registres légaux et accomplissement des formalités au RCCM pour une conformité totale avec le droit OHADA.
+                                                    <%= __('practice_detail_ohada.process_2_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,52 +133,52 @@
                                             <div class="card-header" role="tab" id="qus-C">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                        Accompagnement Continu et Formation
+                                                        <%= __('practice_detail_ohada.process_3_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                                 <div class="card-body">
-                                                    Suivi juridique permanent et formation de vos équipes aux spécificités du droit OHADA pour une application efficace au quotidien.
+                                                    <%= __('practice_detail_ohada.process_3_desc') %>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget widget-bg icon-list-content">
-                                    <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_ohada.other_practices') %></h5>
                                     <ul>
                                         <li>
-                                            <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                            <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                            <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> Droit des Affaires</a>
+                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> <%= __('services.commercial') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> Droit Agricole & Acquisition de Terres</a>
+                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> <%= __('services.agricultural') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                            <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> Droit de la Famille & Divorce</a>
+                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> <%= __('services.family') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> Droit des Télécommunications</a>
+                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> <%= __('services.telecom') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> Droit Bancaire & Financement</a>
+                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> <%= __('services.banking') %></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="widget-bg sidebar-contact">
                                     <div class="overlay"></div>
-                                    <h5>Laissez-nous Vous Aider !</h5>
+                                    <h5><%= __('practice_detail_ohada.sidebar_title') %></h5>
                                     <p>
-                                        Besoin de vous conformer au droit OHADA ? Une question sur les Actes Uniformes ? Notre expertise vous garantit une transition en toute sécurité juridique.
+                                        <%= __('practice_detail_ohada.sidebar_text') %>
                                     </p>
                                     <div class="contact-options">
                                         <a href="tel:+243995482416" class="contact-phone">
@@ -184,7 +190,7 @@
                                             <span>+243 810 369 919</span>
                                         </a>
                                         <a href="/faq" class="btn-appointment mt-3">
-                                            <i class="fas fa-question-circle"></i> Questions fréquentes
+                                            <i class="fas fa-question-circle"></i> <%= __('practice_detail_ohada.sidebar_faq') %>
                                         </a>
                                     </div>
                                 </div>

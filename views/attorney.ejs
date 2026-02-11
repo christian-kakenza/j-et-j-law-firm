@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Avocats</h1> -->
+                    <!-- <h1 class="inner-title"><%= __("attorney_page.title") %></h1> -->
                 </div>
             </div>
         </div>
@@ -16,18 +16,19 @@
     <div class="team-section">
         <div class="container">
             <div class="attorney-team-wrapper">
+                <!-- Maître Jethro -->
                 <div class="team-item">
                     <figure class="team-img">
-                        <img src="/images/Mejethro.jpg" alt="Maître MUYOMBI TSHIMBU Jéthro">
+                        <img src="/images/Mejethro.jpg" alt="<%= __("team.master_jethro") %>">
                     </figure>
                     <div class="team-content">
                         <aside class="auhtor-detail">
                             <span class="author-desc">
-                                Avocat associé-Gérant <br>Droit Economique & Social<br>
+                                <%= __("attorney_page.positions.managing_partner") %><br>
+                                <%= __("attorney_page.positions.economic_social") %><br>
                             </span>
-                            
                             <h5 class="author-name">
-                                <a href="/attorney-detail">Maître MUYOMBI TSHIMBU Jéthro</a>
+                                <a href="/attorney-detail"><%= __("team.master_jethro") %></a>
                             </h5>
                         </aside>
                         <aside class="author-info">
@@ -54,27 +55,27 @@
                             <div class="socail-link">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a href="https://www.facebook.com" target="_blank" title="<%= __("attorney_page.social.facebook") %>">
                                             <i class="fab fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com" target="_blank">
+                                        <a href="https://www.twitter.com" target="_blank" title="<%= __("attorney_page.social.twitter") %>">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a href="https://www.instagram.com" target="_blank" title="<%= __("attorney_page.social.instagram") %>">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.whatsapp.com" target="_blank">
+                                        <a href="https://www.whatsapp.com" target="_blank" title="<%= __("attorney_page.social.whatsapp") %>">
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com" target="_blank">
+                                        <a href="https://www.linkedin.com" target="_blank" title="<%= __("attorney_page.social.linkedin") %>">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -84,17 +85,19 @@
                     </div>
                 </div>
 
+                <!-- Maître Mizou -->
                 <div class="team-item">
                     <figure class="team-img">
-                        <img src="/images/Mensanda.jpg" alt="Maître Mizou NSANDA BILONGO">
+                        <img src="/images/Mensanda.jpg" alt="<%= __("team.master_mizou") %>">
                     </figure>
                     <div class="team-content">
                         <aside class="auhtor-detail">
                             <span class="author-desc">
-                                Avocate Associée <br>Droit OHADA & International<br>
+                                <%= __("attorney_page.positions.partner") %><br>
+                                <%= __("attorney_page.positions.ohada_international") %><br>
                             </span>
                             <h5 class="author-name">
-                                <a href="/attorney-detail-mizou">Maître Mizou NSANDA BILONGO</a>
+                                <a href="/attorney-detail-mizou"><%= __("team.master_mizou") %></a>
                             </h5>
                         </aside>
                         <aside class="author-info">
@@ -121,27 +124,27 @@
                             <div class="socail-link">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a href="https://www.facebook.com" target="_blank" title="<%= __("attorney_page.social.facebook") %>">
                                             <i class="fab fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com" target="_blank">
+                                        <a href="https://www.twitter.com" target="_blank" title="<%= __("attorney_page.social.twitter") %>">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a href="https://www.instagram.com" target="_blank" title="<%= __("attorney_page.social.instagram") %>">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.whatsapp.com" target="_blank">
+                                        <a href="https://www.whatsapp.com" target="_blank" title="<%= __("attorney_page.social.whatsapp") %>">
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com" target="_blank">
+                                        <a href="https://www.linkedin.com" target="_blank" title="<%= __("attorney_page.social.linkedin") %>">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -151,17 +154,19 @@
                     </div>
                 </div>
 
+                <!-- Maître John -->
                 <div class="team-item">
                     <figure class="team-img">
-                        <img src="/images/Mengoy.jpg" alt="Maître NGOY KIBAMBE KABANGE John">
+                        <img src="/images/Mengoy.jpg" alt="<%= __("team.master_ngoy") %>">
                     </figure>
                     <div class="team-content">
                         <aside class="auhtor-detail">
                             <span class="author-desc">
-                                Avocat associé <br>Droit Économique & Social<br>
+                                <%= __("attorney_page.positions.partner") %><br>
+                                <%= __("attorney_page.positions.economic_social") %><br>
                             </span>
                             <h5 class="author-name">
-                                <a href="/attorney-detail-john">Maître NGOY KIBAMBE KABANGE John</a>
+                                <a href="/attorney-detail-john"><%= __("team.master_ngoy") %></a>
                             </h5>
                         </aside>
                         <aside class="author-info">
@@ -188,27 +193,27 @@
                             <div class="socail-link">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a href="https://www.facebook.com" target="_blank" title="<%= __("attorney_page.social.facebook") %>">
                                             <i class="fab fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com" target="_blank">
+                                        <a href="https://www.twitter.com" target="_blank" title="<%= __("attorney_page.social.twitter") %>">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a href="https://www.instagram.com" target="_blank" title="<%= __("attorney_page.social.instagram") %>">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.whatsapp.com" target="_blank">
+                                        <a href="https://www.whatsapp.com" target="_blank" title="<%= __("attorney_page.social.whatsapp") %>">
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com" target="_blank">
+                                        <a href="https://www.linkedin.com" target="_blank" title="<%= __("attorney_page.social.linkedin") %>">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -218,17 +223,19 @@
                     </div>
                 </div>
 
+                <!-- Maître Olga -->
                 <div class="team-item">
                     <figure class="team-img">
-                        <img src="/images/Meolga.jpg" alt="Maître Olga KASONGO">
+                        <img src="/images/Meolga.jpg" alt="<%= __("team.master_olga") %>">
                     </figure>
                     <div class="team-content">
                         <aside class="auhtor-detail">
                             <span class="author-desc">
-                                Avocate collaboratrice <br>Droit privé et judiciaire<br>
+                                <%= __("attorney_page.positions.associate") %><br>
+                                <%= __("attorney_page.positions.private_judicial") %><br>
                             </span>
                             <h5 class="author-name">
-                                <a href="/attorney-detail-olga">Maître Olga KASONGO</a>
+                                <a href="/attorney-detail-olga"><%= __("team.master_olga") %></a>
                             </h5>
                         </aside>
                         <aside class="author-info">
@@ -255,27 +262,27 @@
                             <div class="socail-link">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a href="https://www.facebook.com" target="_blank" title="<%= __("attorney_page.social.facebook") %>">
                                             <i class="fab fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com" target="_blank">
+                                        <a href="https://www.twitter.com" target="_blank" title="<%= __("attorney_page.social.twitter") %>">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a href="https://www.instagram.com" target="_blank" title="<%= __("attorney_page.social.instagram") %>">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.whatsapp.com" target="_blank">
+                                        <a href="https://www.whatsapp.com" target="_blank" title="<%= __("attorney_page.social.whatsapp") %>">
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com" target="_blank">
+                                        <a href="https://www.linkedin.com" target="_blank" title="<%= __("attorney_page.social.linkedin") %>">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -285,17 +292,19 @@
                     </div>
                 </div>
                 
+                <!-- Maître Daniel -->
                 <div class="team-item">
                     <figure class="team-img">
-                        <img src="/images/Medanis.jpg" alt="Maître KYUNGU DANIS Daniel">
+                        <img src="/images/Medanis.jpg" alt="<%= __("team.master_daniel") %>">
                     </figure>
                     <div class="team-content">
                         <aside class="auhtor-detail">
                             <span class="author-desc">
-                                Avocat Collaborateur <br>Droit privé et judiciaire<br>
+                                <%= __("attorney_page.positions.associate") %><br>
+                                <%= __("attorney_page.positions.private_judicial") %><br>
                             </span>
                             <h5 class="author-name">
-                                <a href="/attorney-detail-daniel">Maître KYUNGU DANIS Daniel</a>
+                                <a href="/attorney-detail-daniel"><%= __("team.master_daniel") %></a>
                             </h5>
                         </aside>
                         <aside class="author-info">
@@ -322,27 +331,27 @@
                             <div class="socail-link">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a href="https://www.facebook.com" target="_blank" title="<%= __("attorney_page.social.facebook") %>">
                                             <i class="fab fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com" target="_blank">
+                                        <a href="https://www.twitter.com" target="_blank" title="<%= __("attorney_page.social.twitter") %>">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a href="https://www.instagram.com" target="_blank" title="<%= __("attorney_page.social.instagram") %>">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.whatsapp.com" target="_blank">
+                                        <a href="https://www.whatsapp.com" target="_blank" title="<%= __("attorney_page.social.whatsapp") %>">
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com" target="_blank">
+                                        <a href="https://www.linkedin.com" target="_blank" title="<%= __("attorney_page.social.linkedin") %>">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -352,17 +361,19 @@
                     </div>
                 </div>
                 
+                <!-- Maître Emmanuel -->
                 <div class="team-item">
                     <figure class="team-img">
-                        <img src="/images/Meemma.jpg" alt="Maître Emmanuel MATONGO KABILA">
+                        <img src="/images/Meemma.jpg" alt="<%= __("team.master_emmanuel") %>">
                     </figure>
                     <div class="team-content">
                         <aside class="auhtor-detail">
                             <span class="author-desc">
-                                Avocat Collaborateur <br>Droit de famille et civil<br>
+                                <%= __("attorney_page.positions.associate") %><br>
+                                <%= __("attorney_page.positions.family_civil") %><br>
                             </span>
                             <h5 class="author-name">
-                                <a href="/attorney-detail-emmanuel">Maître Emmanuel MATONGO KABILA</a>
+                                <a href="/attorney-detail-emmanuel"><%= __("team.master_emmanuel") %></a>
                             </h5>
                         </aside>
                         <aside class="author-info">
@@ -389,27 +400,27 @@
                             <div class="socail-link">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a href="https://www.facebook.com" target="_blank" title="<%= __("attorney_page.social.facebook") %>">
                                             <i class="fab fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com" target="_blank">
+                                        <a href="https://www.twitter.com" target="_blank" title="<%= __("attorney_page.social.twitter") %>">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a href="https://www.instagram.com" target="_blank" title="<%= __("attorney_page.social.instagram") %>">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.whatsapp.com" target="_blank">
+                                        <a href="https://www.whatsapp.com" target="_blank" title="<%= __("attorney_page.social.whatsapp") %>">
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com" target="_blank">
+                                        <a href="https://www.linkedin.com" target="_blank" title="<%= __("attorney_page.social.linkedin") %>">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -419,17 +430,19 @@
                     </div>
                 </div>
 
+                <!-- Maître Kabamba -->
                 <div class="team-item">
                     <figure class="team-img">
-                        <img src="/images/Menitz.jpg" alt="Maître KABAMBA NGOY Nitz">
+                        <img src="/images/Menitz.jpg" alt="<%= __("team.master_kabamba") %>">
                     </figure>
                     <div class="team-content">
                         <aside class="auhtor-detail">
                             <span class="author-desc">
-                                Avocat Collaborateur <br>Droit public & Criminologie<br>
+                                <%= __("attorney_page.positions.associate") %><br>
+                                <%= __("attorney_page.positions.public_criminology") %><br>
                             </span>
                             <h5 class="author-name">
-                                <a href="/attorney-detail-seraphin">Maître KABAMBA NGOY Nitz</a>
+                                <a href="/attorney-detail-seraphin"><%= __("team.master_kabamba") %></a>
                             </h5>
                         </aside>
                         <aside class="author-info">
@@ -456,27 +469,27 @@
                             <div class="socail-link">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a href="https://www.facebook.com" target="_blank" title="<%= __("attorney_page.social.facebook") %>">
                                             <i class="fab fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com" target="_blank">
+                                        <a href="https://www.twitter.com" target="_blank" title="<%= __("attorney_page.social.twitter") %>">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a href="https://www.instagram.com" target="_blank" title="<%= __("attorney_page.social.instagram") %>">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.whatsapp.com" target="_blank">
+                                        <a href="https://www.whatsapp.com" target="_blank" title="<%= __("attorney_page.social.whatsapp") %>">
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com" target="_blank">
+                                        <a href="https://www.linkedin.com" target="_blank" title="<%= __("attorney_page.social.linkedin") %>">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </li>

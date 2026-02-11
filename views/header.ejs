@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<%= locale || 'fr' %>">
 
 <head>
     <meta charset="utf-8">
@@ -44,57 +44,53 @@
             <div class="top-header">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-5 d-flex justify-content-md-start justify-content-center">
+                        <!-- <div class="col-md-5 d-flex justify-content-md-start justify-content-center">
                             <div class="header-schedule-info">
                                 <i class="fas fa-calendar-check"></i>
                                 <span class="schedule-info">
-                                    Besoin d'une consultation ?
-                                    <a href="/reservation">Prenez rendez-vous dès maintenant</a>
+                                    <%= __("header.consultation") %>
+                                    <a href="/reservation"><%= __("header.appointment") %></a>
                                 </span>
                             </div>
-                        </div>
-                        <div class="col-md-7 d-flex justify-content-md-end justify-content-between align-items-center">
-                            <div class="legal-list">
-                                <ul>
-                                    <li><a href="/faq">FAQ</a></li>
-                                    <li><a href="/legal-notice">Mentions légales</a></li>
-                                    <!-- <li><a href="/practice-area">Nos spécialités</a></li> -->
-                                </ul>
+                        </div> -->
+                        
+                        <!-- ✅ STRUCTURE SIMPLE ET PROPRE -->
+                        <div class="col-md-12 d-flex justify-content-between align-items-center">
+                            
+                            <!-- FAQ et Mentions légales côte à côte à gauche (couleurs originales) -->
+                            <div class="legal-list" style="display: flex; align-items: center; gap: 30px; margin-left: 20px;">
+                                <a href="/faq" style="color: inherit; text-decoration: none;"><%= __("header.faq") %></a>
+                                <a href="/legal-notice" style="color: inherit; text-decoration: none;"><%= __("header.legal") %></a>
                             </div>
-                            <div class="header-social social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <!-- <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="YouTube"> -->
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <!-- <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> -->
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://wa.me/243995482416" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-                                            <i class="fab fa-whatsapp"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                            
+                            <!-- Sélecteur de langue à droite -->
+                            <div class="language-selector" style="margin-right: 20px;">
+                                <button class="language-btn">
+                                    <i class="fas fa-globe"></i>
+                                    <span><%= locale === 'en' ? 'ENGLISH' : 'FRANÇAIS' %></span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                
+                                <div class="language-dropdown">
+                                    <a href="#" onclick="setLanguage('fr'); return false;" 
+                                    class="language-option <%= locale === 'fr' ? 'active' : '' %>">
+                                        <span>🇫🇷</span>
+                                        <span>Français</span>
+                                        <% if (locale === 'fr') { %>
+                                            <i class="fas fa-check"></i>
+                                        <% } %>
+                                    </a>
+                                    <a href="#" onclick="setLanguage('en'); return false;" 
+                                    class="language-option <%= locale === 'en' ? 'active' : '' %>">
+                                        <span>🇬🇧</span>
+                                        <span>English</span>
+                                        <% if (locale === 'en') { %>
+                                            <i class="fas fa-check"></i>
+                                        <% } %>
+                                    </a>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -115,57 +111,63 @@
                             <nav id="navigation" class="navigation d-none d-lg-inline-block">
                                 <ul>
                                     <li>
-                                        <a href="/">Accueil</a>
+                                        <a href="/"><%= __("header.home") %></a>
                                     </li>
                                     <li>
-                                        <a href="/about">À propos</a>
+                                        <a href="/about"><%= __("header.about") %></a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Services</a>
+                                        <a href="#"><%= __("header.services") %></a>
                                         <ul>
-                                            <li><a href="/practice-area">Nos spécialités</a></li>
+                                            <!-- ✅ LIEN AVEC BACKGROUND #565872 ET TEXTE BLANC -->
+                                            <li>
+                                                <a href="/practice-area" 
+                                                style="background-color: #565872 !important; color: white !important; display: block; padding: 10px 20px;">
+                                                    <%= __("services.all_services") %>
+                                                </a>
+                                            </li>
                                             <li class="submenu-divider"></li>
-                                            <li><a href="/practice-area-mines">Droit Minier</a></li>
-                                            <li><a href="/practice-area-constitutionnel">Droit Constitutionnel & Administratif</a></li>
-                                            <li><a href="/practice-area-assurances">Droit des Assurances</a></li>
-                                            <li><a href="/practice-area-immobilier">Droit Immobilier</a></li>
-                                            <li><a href="/practice-area-droits-homme">Droit de la Famille & Divorce</a></li>
-                                            <li><a href="/practice-area-detail">Droit Commercial</a></li>
-                                            <li><a href="/practice-area-ecommerce">Droit des Télécommunications</a></li>
-                                            <li><a href="/practice-area-pret-prive">Droit Bancaire & Financement</a></li>
-                                            <li><a href="/practice-area-corporatif">Droit Agricole & Acquisition de Terres</a></li>
-                                            <li><a href="/practice-area-ohada">Droit OHADA</a></li>
-                                            <li><a href="/practice-area-intellectuelle">Droit de la Propriété Intellectuelle</a></li>
-                                            <li><a href="/practice-area-transport">Droit du Transport & des Douanes</a></li>
+                                            <li><a href="/practice-area-mines"><%= __("services.mining") %></a></li>
+                                            <li><a href="/practice-area-constitutionnel"><%= __("services.constitutional") %></a></li>
+                                            <li><a href="/practice-area-assurances"><%= __("services.insurance") %></a></li>
+                                            <li><a href="/practice-area-immobilier"><%= __("services.real_estate") %></a></li>
+                                            <li><a href="/practice-area-droits-homme"><%= __("services.family") %></a></li>
+                                            <li><a href="/practice-area-detail"><%= __("services.commercial") %></a></li>
+                                            <li><a href="/practice-area-ecommerce"><%= __("services.telecom") %></a></li>
+                                            <li><a href="/practice-area-pret-prive"><%= __("services.banking") %></a></li>
+                                            <li><a href="/practice-area-corporatif"><%= __("services.agricultural") %></a></li>
+                                            <li><a href="/practice-area-ohada"><%= __("services.ohada") %></a></li>
+                                            <li><a href="/practice-area-intellectuelle"><%= __("services.intellectual") %></a></li>
+                                            <li><a href="/practice-area-transport"><%= __("services.transport") %></a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Équipe</a>
+                                        <a href="#"><%= __("header.team") %></a>
                                         <ul>
-                                            <li><a href="/attorney">Notre équipe</a></li>
-                                            <li><a href="/attorney-detail">Maître Jethro</a></li>
-                                            <li><a href="/attorney-detail-john">Maître NGOY KIBAMBE</a></li>
-                                            <li><a href="/attorney-detail-olga">Maître Olga KASONGO</a></li>
-                                            <li><a href="/attorney-detail-daniel">Maître KYUNGU Daniel</a></li>
-                                            <li><a href="/attorney-detail-emmanuel">Maître Emmanuel MATONGO</a></li>
-                                            <li><a href="attorney-detail-seraphin">Maître KABAMBA NGOY</a></li>
-                                            <li><a href="/attorney-detail-mizou">Maître Mizou NSANDA</a></li>
+                                            <!-- ✅ LIEN AVEC BACKGROUND #565872 ET TEXTE BLANC -->
+                                            <li>
+                                                <a href="/attorney" 
+                                                style="background-color: #565872 !important; color: white !important; display: block; padding: 10px 20px;">
+                                                    <%= __("team.our_team") %>
+                                                </a>
+                                            </li>
+                                            <li><a href="/attorney-detail"><%= __("team.master_jethro") %></a></li>
+                                            <li><a href="/attorney-detail-john"><%= __("team.master_ngoy") %></a></li>
+                                            <li><a href="/attorney-detail-olga"><%= __("team.master_olga") %></a></li>
+                                            <li><a href="/attorney-detail-daniel"><%= __("team.master_daniel") %></a></li>
+                                            <li><a href="/attorney-detail-emmanuel"><%= __("team.master_emmanuel") %></a></li>
+                                            <li><a href="/attorney-detail-seraphin"><%= __("team.master_kabamba") %></a></li>
+                                            <li><a href="/attorney-detail-mizou"><%= __("team.master_mizou") %></a></li>
                                         </ul>
                                     </li>
-                                    <!-- <li>
-                                        <a href="/faq">FAQ</a>
-                                    </li> -->
+
                                     <li>
-                                        <a href="/contact">Contact</a>
+                                        <a href="/contact"><%= __("header.contact") %></a>
                                     </li>
                                 </ul>
                             </nav>
                             <div class="bottom-sub-menu d-flex align-items-center">
-                                <!-- <div class="header-search-icon">
-                                    <button class="search-icon" id="searchToggle">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div> -->
+                                
                                 <div class="header-contact-info">
                                     <a href="tel:+243995482416">
                                         <div class="header-contact-inner">
@@ -173,17 +175,13 @@
                                                 <i class="fas fa-phone-alt"></i>
                                             </span>
                                             <div class="details-content">
-                                                <span class="content-title">PARLEZ À UN EXPERT</span>
-                                                <h6>+243 995 482 416</h6>
+                                                <span class="content-title"><%= __("header.talk_to_expert") %></span>
+                                                <h6><%= __("header.phone") %></h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <!-- <div class="more-about-ceo">
-                                    <button class="openbtn" onclick="openNav()">
-                                        <i class="fas fa-bars"></i>
-                                    </button>
-                                </div> -->
+
                             </div>
                         </div>
                     </div>
@@ -203,7 +201,7 @@
                     <!-- PROFIL DE L'AVOCAT -->
                     <div class="sub-section-detail attorney-profile">
                         <h6 class="head-title">
-                            Maître de Cabinet
+                            <%= __("team.head_of_cabinet") %>
                         </h6>
                         <figure class="attorney-image">
                             <img src="/images/honorableJethro.png" alt="Maître Jethro Muyombi Tshimbu">
@@ -212,31 +210,31 @@
                             Jethro Muyombi Tshimbu
                         </h5>
                         <p class="attorney-position text-primary">
-                            Avocat Associé-Gérant
+                            <%= __("team.managing_partner") %>
                         </p>
                         <p class="attorney-description">
-                            Avocat expérimenté spécialisé en droit économique et des affaires. Expert en droit minier, OHADA et droit des entreprises avec 15+ ans d'expérience en République Démocratique du Congo.
+                            <%= __("team.jethro_bio") %>
                         </p>
                         
                         <!-- SPÉCIALISATIONS -->
                         <div class="specializations-box">
-                            <h6 class="section-subtitle">Domaines d'expertise :</h6>
+                            <h6 class="section-subtitle"><%= __("team.expertise_areas") %> :</h6>
                             <ul class="expertise-items">
-                                <li><i class="fas fa-gavel"></i> Droit Économique & Social</li>
-                                <li><i class="fas fa-balance-scale"></i> Droit OHADA</li>
-                                <li><i class="fas fa-mountain"></i> Droit Minier</li>
-                                <li><i class="fas fa-briefcase"></i> Droit des Affaires</li>
-                                <li><i class="fas fa-landmark"></i> Droit Agricole & Acquisition de Terres</li>
+                                <li><i class="fas fa-gavel"></i> <%= __("team.expertise_economic") %></li>
+                                <li><i class="fas fa-balance-scale"></i> <%= __("team.expertise_ohada") %></li>
+                                <li><i class="fas fa-mountain"></i> <%= __("team.expertise_mining") %></li>
+                                <li><i class="fas fa-briefcase"></i> <%= __("team.expertise_corporate") %></li>
+                                <li><i class="fas fa-landmark"></i> <%= __("team.expertise_agricultural") %></li>
                             </ul>
                         </div>
                         
                         <!-- CONTACT DIRECT -->
                         <div class="direct-contact">
                             <a href="mailto:Jethrotshimbu@yahoo.fr" class="btn btn-outline-primary btn-sm btn-block">
-                                <i class="fas fa-envelope"></i> Envoyer un email
+                                <i class="fas fa-envelope"></i> <%= __("team.send_email") %>
                             </a>
                             <a href="tel:+243810369919" class="btn btn-outline-success btn-sm btn-block mt-2">
-                                <i class="fas fa-phone"></i> Appeler maintenant
+                                <i class="fas fa-phone"></i> <%= __("team.call_now") %>
                             </a>
                         </div>
                     </div>
@@ -244,9 +242,9 @@
                     <!-- COORDONNÉES DU CABINET -->
                     <div class="sub-section-detail cabinet-info">
                         <h6 class="head-title">
-                            Notre Cabinet
+                            <%= __("team.our_firm") %>
                         </h6>
-                        <p class="tagline"><em>Excellence, Intégrité, Résultats</em></p>
+                        <p class="tagline"><em><%= __("team.tagline") %></em></p>
                         
                         <div class="contact-details">
                             <div class="contact-item">
@@ -254,9 +252,8 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact-text">
-                                    <strong>Siège Social - Kinshasa :</strong><br>
-                                    nᵒ 148/A, Blvd du 30 Juin, Gombe<br>
-                                    4ᵉ étage, Immeuble LUXURY TOWER
+                                    <strong><%= __("footer.kinshasa") %> :</strong><br>
+                                    <%= __("footer.kinshasa_address") %>
                                 </div>
                             </div>
                             
@@ -265,9 +262,8 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact-text">
-                                    <strong>Bureau Annexe - Lubumbashi :</strong><br>
-                                    nᵒ 701, av. Kasavubu<br>
-                                    Bâtiment Léopold, Quartier Makutano
+                                    <strong><%= __("footer.lubumbashi") %> :</strong><br>
+                                    <%= __("footer.lubumbashi_address") %>
                                 </div>
                             </div>
                             
@@ -276,7 +272,7 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="contact-text">
-                                    <strong>Téléphones :</strong><br>
+                                    <strong><%= __("header.phone") %> :</strong><br>
                                     <a href="tel:+243995482416" class="phone-link">+243 995 482 416</a><br>
                                     <a href="tel:+243810369919" class="phone-link">+243 810 369 919</a>
                                 </div>
@@ -287,19 +283,18 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="contact-text">
-                                    <strong>Emails :</strong><br>
-                                    <a href="mailto:lawfirmjetj@gmail.com">lawfirmjetj@gmail.com</a><br>
-                                    <!-- <a href="mailto:christian.kakenza0@gmail.com">christian.kakenza0@gmail.com</a> -->
+                                    <strong>Email :</strong><br>
+                                    <a href="mailto:lawfirmjetj@gmail.com">lawfirmjetj@gmail.com</a>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- LANGUES -->
                         <div class="languages-section">
-                            <h6 class="section-subtitle">Langues parlées :</h6>
+                            <h6 class="section-subtitle"><%= __("team.languages") %> :</h6>
                             <div class="language-tags">
                                 <span class="badge">Français</span>
-                                <span class="badge">Anglais</span>
+                                <span class="badge">English</span>
                                 <span class="badge">Swahili</span>
                                 <span class="badge">Lingala</span>
                                 <span class="badge">Tshiluba</span>
@@ -310,14 +305,146 @@
                     <!-- ACTION -->
                     <div class="sidebar-action">
                         <a href="/reservation" class="btn btn-primary btn-block">
-                            <i class="fas fa-calendar-check"></i> Prendre rendez-vous
+                            <i class="fas fa-calendar-check"></i> <%= __("team.book_appointment") %>
                         </a>
                         <p class="text-center mt-2">
                             <a href="/attorney-detail" class="text-muted small">
-                                Voir le profil complet <i class="fas fa-arrow-right"></i>
+                                <%= __("team.view_full_profile") %> <i class="fas fa-arrow-right"></i>
                             </a>
                         </p>
                     </div>
                 </div>
             </section>
         </header>
+
+        <!-- ============ SCRIPT DE GESTION DE LANGUE AVEC COOKIES ============ -->
+        <script>
+            (function() {
+                'use strict';
+                
+                // Langue actuelle depuis le serveur
+                const currentLocale = '<%= locale %>' || 'fr';
+                
+                // ========== FONCTION PRINCIPALE DE CHANGEMENT DE LANGUE ==========
+                window.setLanguage = function(lang) {
+                    // Validation
+                    if (!['fr', 'en'].includes(lang)) {
+                        console.error('Langue non supportée:', lang);
+                        return false;
+                    }
+                    
+                    // Éviter de recharger si c'est la même langue
+                    if (lang === currentLocale) {
+                        console.log('Langue déjà active:', lang);
+                        return false;
+                    }
+                    
+                    console.log('🔄 Changement de langue:', currentLocale, '→', lang);
+                    
+                    // Sauvegarder dans le cookie VIA LE SERVEUR
+                    fetch('/set-language/' + lang, {
+                        method: 'GET',
+                        credentials: 'same-origin',
+                        cache: 'no-cache'
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            console.log('✅ Cookie langue mis à jour:', lang);
+                            
+                            // Sauvegarder aussi dans localStorage
+                            try {
+                                localStorage.setItem('preferred-language', lang);
+                            } catch(e) {
+                                console.warn('localStorage non disponible');
+                            }
+                            
+                            // Recharger la page pour appliquer la nouvelle langue
+                            window.location.reload();
+                        } else {
+                            console.error('❌ Erreur serveur:', response.status);
+                            // Fallback: redirection avec paramètre URL
+                            window.location.href = window.location.pathname + '?lang=' + lang;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('❌ Erreur réseau:', error);
+                        // Fallback: redirection avec paramètre URL
+                        window.location.href = window.location.pathname + '?lang=' + lang;
+                    });
+                    
+                    return false;
+                };
+                
+                // ========== INITIALISATION DU SÉLECTEUR DE LANGUE ==========
+                function initLanguageSelector() {
+                    const languageBtn = document.querySelector('.language-btn');
+                    const languageDropdown = document.querySelector('.language-dropdown');
+                    
+                    if (languageBtn && languageDropdown) {
+                        // Nettoyer les anciens listeners
+                        const newBtn = languageBtn.cloneNode(true);
+                        languageBtn.parentNode.replaceChild(newBtn, languageBtn);
+                        const newDropdown = languageDropdown.cloneNode(true);
+                        languageDropdown.parentNode.replaceChild(newDropdown, languageDropdown);
+                        
+                        // Réattacher les événements
+                        const finalBtn = document.querySelector('.language-btn');
+                        const finalDropdown = document.querySelector('.language-dropdown');
+                        
+                        if (finalBtn && finalDropdown) {
+                            // Toggle dropdown
+                            finalBtn.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                const isVisible = finalDropdown.style.display === 'block';
+                                finalDropdown.style.display = isVisible ? 'none' : 'block';
+                            });
+                            
+                            // Fermer en cliquant ailleurs
+                            document.addEventListener('click', function() {
+                                if (finalDropdown) {
+                                    finalDropdown.style.display = 'none';
+                                }
+                            });
+                            
+                            // Empêcher la fermeture quand on clique dans le dropdown
+                            finalDropdown.addEventListener('click', function(e) {
+                                e.stopPropagation();
+                            });
+                        }
+                    }
+                }
+                
+                // ========== CHARGEMENT INITIAL ==========
+                document.addEventListener('DOMContentLoaded', function() {
+                    initLanguageSelector();
+                    console.log('🌐 Langue active:', currentLocale, '(persistante avec cookies)');
+                });
+                
+                // ========== SYNC LOCALSTORAGE ==========
+                try {
+                    const savedLang = localStorage.getItem('preferred-language');
+                    if (savedLang && savedLang !== currentLocale && ['fr', 'en'].includes(savedLang)) {
+                        console.log('🔄 Synchronisation localStorage → cookie:', savedLang);
+                        fetch('/set-language/' + savedLang, { 
+                            method: 'GET', 
+                            credentials: 'same-origin',
+                            cache: 'no-cache'
+                        }).catch(() => {});
+                    }
+                } catch(e) {
+                    // Ignorer erreurs localStorage
+                }
+                
+            })();
+        </script>
+
+        <!-- Script pour la sidebar (closeNav) -->
+        <script>
+            function closeNav() {
+                const sidebar = document.getElementById('attorneySidepannel');
+                if (sidebar) {
+                    sidebar.classList.remove('active');
+                }
+            }
+        </script>

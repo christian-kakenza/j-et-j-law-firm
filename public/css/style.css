@@ -3633,9 +3633,27 @@ input[type=submit]:focus {
   color: #361002;
 }
 
-.fixed-header .navigation > ul > li > ul {
-  max-height: calc(100vh - 50px);
+/* AJOUT POUR CENTRER LA NAVIGATION - UNIQUEMENT CECI */
+.site-header .main-navigation {
+  display: flex;
+  justify-content: center;
 }
+
+.site-header .main-navigation .navigation {
+  margin: 0 auto;
+}
+
+.site-header .main-navigation .navigation > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* .fixed-header .navigation > ul > li > ul {
+  max-height: calc(100vh - 50px);
+} */
 
 @-webkit-keyframes slide-up {
   from {
@@ -11650,5 +11668,124 @@ product slider range for price css
 @media screen and (max-width: 767px) {
   .Community-section .about-purpose .mission-and-aim-inside .about-mission-content .faq-widget .accordion-content .card .mb-0 a {
     font-size: 13px;
+  }
+}
+
+
+/* === SÉLECTEUR DE LANGUE === */
+.language-selector {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+.language-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-btn span {
+    font-size: 13px;
+}
+
+.language-btn i.fa-globe {
+    font-size: 14px;
+}
+
+.language-btn i.fa-chevron-down {
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    min-width: 160px;
+    z-index: 1000;
+    display: none;
+    margin-top: 5px;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s;
+}
+
+.language-option:last-child {
+    border-bottom: none;
+}
+
+.language-option:hover {
+    background: #f8f9fa;
+}
+
+.language-option.active {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #8B0000;
+}
+
+.language-option span:first-child {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.language-option span:last-child {
+    flex: 1;
+}
+
+.language-option i.fa-check {
+    color: #8B0000;
+}
+
+
+/* ESPACE POUR LE LOGO SUR MOBILE - CENTRÉ */
+@media screen and (max-width: 991px) {
+  .site-header .bottom-header .hb-group {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .site-header .bottom-header .hb-group .site-identity {
+    padding-top: 0px !important;
+    padding-bottom: 8px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .site-header .bottom-header .hb-group .site-identity img {
+    margin: 0 auto !important;
+    display: block !important;
+  }
+}
+
+/* FAQ, MENTIONS LÉGALES ET LANGUE - MÊME TAILLE SUR MOBILE */
+@media screen and (max-width: 991px) {
+  .top-header .legal-list ul li a,
+  .top-header .language-selector .language-btn {
+    font-size: 13px !important;
+  }
+  
+  .top-header .language-selector .language-btn span {
+    font-size: 13px !important;
   }
 }

@@ -6,7 +6,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                        <!-- <h1 class="inner-title"><%= __('practice_detail_insurance.page_title') %></h1> -->
                     </div>
                 </div>
             </div>
@@ -19,54 +19,56 @@
                         <div class="col-lg-8">
                             <div class="right-sidebar">
                                 <h3 class="practice-title">
-                                    Droit des Assurances
+                                    <%= __('practice_detail_insurance.title') %>
                                 </h3>
                                 <figure class="practice-img">
-                                    <img src="/images/assurance2.jpg" alt="Droit des Assurances">
+                                    <img src="/images/assurance2.jpg" alt="<%= __('practice_detail_insurance.title') %>">
                                 </figure>
                                 <p class="practice-paragraph">
-                                    Le Cabinet J&J Law Firm dispose d'une expertise approfondie en droit des assurances, couvrant l'ensemble des aspects juridiques liés aux contrats d'assurance, aux sinistres et à la réglementation du secteur en République Démocratique du Congo. Nous accompagnons aussi bien les assureurs que les assurés dans la sécurisation de leurs relations contractuelles.
+                                    <%= __('practice_detail_insurance.intro_1') %>
                                 </p>
                                 <p class="practice-paragraph">
-                                    Notre cabinet intervient dans la rédaction et la négociation des polices d'assurance, l'interprétation des clauses contractuelles, la gestion des litiges liés aux sinistres, et le contentieux des assurances. Nous maîtrisons les spécificités du Code des Assurances congolais ainsi que les standards internationaux en la matière.
+                                    <%= __('practice_detail_insurance.intro_2') %>
                                 </p>
                                 <article class="practice-summary">
-                                    <h5 class="practice-summary-title">Protection et Recouvrement :</h5>
+                                    <h5 class="practice-summary-title">
+                                        <%= __('practice_detail_insurance.protection_title') %>
+                                    </h5>
                                     <p>
-                                        Nous assurons une protection juridique optimale pour nos clients, qu'ils soient entreprises assurées, particuliers ou compagnies d'assurances, avec une approche équilibrée et stratégique.
+                                        <%= __('practice_detail_insurance.protection_text') %>
                                     </p>
                                     <div class="practical-summary-wrapper">
                                         <figure class="practical-summary-img">
-                                            <img src="/images/assurance3.jpg" alt="Expertise en assurances">
+                                            <img src="/images/assurance3.jpg" alt="<%= __('practice_detail_insurance.title') %>">
                                         </figure>
                                         <div class="practical-summary-info">
                                             <p>
-                                                Notre expertise nous permet d'anticiper les risques et de proposer des solutions préventives, tout en intervenant efficacement en cas de litige pour assurer le recouvrement des indemnités dues.
+                                                <%= __('practice_detail_insurance.expertise_text') %>
                                             </p>
 
                                             <p>
-                                                Nos services en droit des assurances incluent :
+                                                <%= __('practice_detail_insurance.services_title') %>
                                             </p>
                                             <ul>
                                                 <li>
                                                     <i class="fas fa-file-contract"></i>
-                                                    Rédaction et négociation de polices d'assurance (RC, multirisques, transport, etc.)
+                                                    <%= __('practice_detail_insurance.service_1') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-shield-alt"></i>
-                                                    Conseil aux compagnies d'assurances sur la conformité réglementaire
+                                                    <%= __('practice_detail_insurance.service_2') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-balance-scale"></i>
-                                                    Gestion des déclarations de sinistres et contentieux indemnitaires
+                                                    <%= __('practice_detail_insurance.service_3') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-hard-hat"></i>
-                                                    Assurances des grands projets (énergie, construction, mining)
+                                                    <%= __('practice_detail_insurance.service_4') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-gavel"></i>
-                                                    Litiges avec les assureurs et recours en cas de refus d'indemnisation
+                                                    <%= __('practice_detail_insurance.service_5') %>
                                                 </li>
                                             </ul>
                                         </div>
@@ -76,14 +78,18 @@
                                 <!-- Section Contact Action -->
                                 <div class="practice-action mt-5">
                                     <div class="action-card">
-                                        <h5 class="action-title">Besoin d'assistance en droit des assurances ?</h5>
-                                        <p>Nos experts sont disponibles pour analyser votre situation et vous proposer la meilleure stratégie.</p>
+                                        <h5 class="action-title">
+                                            <%= __('practice_detail_insurance.action_title') %>
+                                        </h5>
+                                        <p>
+                                            <%= __('practice_detail_insurance.action_text') %>
+                                        </p>
                                         <div class="action-buttons">
                                             <a href="/contact" class="btn btn-primary">
-                                                <i class="fas fa-envelope"></i> Nous contacter
+                                                <i class="fas fa-envelope"></i> <%= __('practice_detail_insurance.action_contact') %>
                                             </a>
                                             <a href="tel:+243995482416" class="btn btn-secondary">
-                                                <i class="fas fa-phone"></i> Appeler maintenant
+                                                <i class="fas fa-phone"></i> <%= __('practice_detail_insurance.action_call') %>
                                             </a>
                                         </div>
                                     </div>
@@ -93,19 +99,19 @@
                         <div class="col-lg-4">
                             <div class="left-sidebar">
                                 <div class="widget-bg faq-widget">
-                                    <h5 class="bg-title">Notre Processus</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_insurance.process_title') %></h5>
                                     <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                         <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                             <div class="card-header" role="tab" id="qus-A">
                                                 <h6 class="mb-0">
                                                     <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                        Analyse du Contrat et des Risques
+                                                        <%= __('practice_detail_insurance.process_1_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                                 <div class="card-body">
-                                                    Examen approfondi des polices d'assurance, identification des risques couverts et des exclusions, évaluation des garanties nécessaires.
+                                                    <%= __('practice_detail_insurance.process_1_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,13 +119,13 @@
                                             <div class="card-header" role="tab" id="qus-B">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                        Négociation et Optimisation Contractuelle
+                                                        <%= __('practice_detail_insurance.process_2_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                                 <div class="card-body">
-                                                    Négociation des termes du contrat, clarification des clauses ambiguës, optimisation des garanties en fonction de votre profil de risque.
+                                                    <%= __('practice_detail_insurance.process_2_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,52 +133,52 @@
                                             <div class="card-header" role="tab" id="qus-C">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                        Gestion des Sinistres et Contentieux
+                                                        <%= __('practice_detail_insurance.process_3_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                                 <div class="card-body">
-                                                    Accompagnement complet dans la déclaration des sinistres, négociation avec l'assureur et représentation en justice si nécessaire.
+                                                    <%= __('practice_detail_insurance.process_3_desc') %>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget widget-bg icon-list-content">
-                                    <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_insurance.other_practices') %></h5>
                                     <ul>
                                         <li>
-                                            <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                            <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                            <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> Droit des Affaires</a>
+                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> <%= __('services.commercial') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-immobilier"><i class="fas fa-home"></i> Droit Immobilier</a>
+                                            <a href="/practice-area-immobilier"><i class="fas fa-home"></i> <%= __('services.real_estate') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> Droit de la Famille & Divorce</a>
+                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> <%= __('services.family') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> Droit des Télécommunications</a>
+                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> <%= __('services.telecom') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> Droit Bancaire & Financement</a>
+                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> <%= __('services.banking') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> Droit Agricole & Acquisition de Terres</a>
+                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> <%= __('services.agricultural') %></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="widget-bg sidebar-contact">
                                     <div class="overlay"></div>
-                                    <h5>Laissez-nous Vous Aider !</h5>
+                                    <h5><%= __('practice_detail_insurance.sidebar_title') %></h5>
                                     <p>
-                                        Un problème avec votre assureur ? Besoin de conseil pour vos polices d'assurance ? Notre cabinet vous accompagne pour protéger vos intérêts.
+                                        <%= __('practice_detail_insurance.sidebar_text') %>
                                     </p>
                                     <div class="contact-options">
                                         <a href="tel:+243995482416" class="contact-phone">
@@ -184,7 +190,7 @@
                                             <span>+243 810 369 919</span>
                                         </a>
                                         <a href="/reservation" class="btn-appointment mt-3">
-                                            <i class="fas fa-calendar-check"></i> Prendre rendez-vous
+                                            <i class="fas fa-calendar-check"></i> <%= __('practice_detail_insurance.sidebar_appointment') %>
                                         </a>
                                     </div>
                                 </div>

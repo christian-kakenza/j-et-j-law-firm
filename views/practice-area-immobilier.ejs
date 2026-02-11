@@ -6,7 +6,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                        <!-- <h1 class="inner-title"><%= __('practice_detail_real_estate.page_title') %></h1> -->
                     </div>
                 </div>
             </div>
@@ -19,54 +19,56 @@
                         <div class="col-lg-8">
                             <div class="right-sidebar">
                                 <h3 class="practice-title">
-                                    Droit Immobilier
+                                    <%= __('practice_detail_real_estate.title') %>
                                 </h3>
                                 <figure class="practice-img">
-                                    <img src="/images/ImmoUbdate.jpg" alt="Droit Immobilier">
+                                    <img src="/images/ImmoUbdate.jpg" alt="<%= __('practice_detail_real_estate.title') %>">
                                 </figure>
                                 <p class="practice-paragraph">
-                                    Le Cabinet J&J Law Firm accompagne ses clients dans tous les aspects juridiques liés au secteur immobilier en République Démocratique du Congo. Notre expertise couvre l'acquisition, la vente, la location, la construction et la gestion des biens immobiliers, qu'il s'agisse de propriétés résidentielles, commerciales ou industrielles.
+                                    <%= __('practice_detail_real_estate.intro_1') %>
                                 </p>
                                 <p class="practice-paragraph">
-                                    Nous intervenons dans la vérification des titres de propriété, la négociation des contrats, le suivi des procédures d'expropriation, la résolution des conflits de voisinage et les litiges entre propriétaires et locataires. Notre cabinet maîtrise les spécificités du droit foncier congolais, y compris les régimes de concession et les questions liées aux terres ancestrales.
+                                    <%= __('practice_detail_real_estate.intro_2') %>
                                 </p>
                                 <article class="practice-summary">
-                                    <h5 class="practice-summary-title">Sécurisation des Transactions Immobilières :</h5>
+                                    <h5 class="practice-summary-title">
+                                        <%= __('practice_detail_real_estate.expertise_title') %>
+                                    </h5>
                                     <p>
-                                        Nous garantissons la sécurité juridique de vos investissements immobiliers grâce à une vérification rigoureuse des droits de propriété et une rédaction contractuelle précise.
+                                        <%= __('practice_detail_real_estate.expertise_text') %>
                                     </p>
                                     <div class="practical-summary-wrapper">
                                         <figure class="practical-summary-img">
-                                            <img src="/images/ImmoUpdate@@@@.jpg" alt="Transaction immobilière sécurisée">
+                                            <img src="/images/ImmoUpdate@@@@.jpg" alt="<%= __('practice_detail_real_estate.title') %>">
                                         </figure>
                                         <div class="practical-summary-info">
                                             <p>
-                                                Notre approche préventive permet d'identifier et de résoudre les problèmes potentiels avant qu'ils ne deviennent des litiges coûteux, préservant ainsi la valeur de votre patrimoine immobilier.
+                                                <%= __('practice_detail_real_estate.approach_text') %>
                                             </p>
 
                                             <p>
-                                                Nos services en droit immobilier incluent :
+                                                <%= __('practice_detail_real_estate.services_title') %>
                                             </p>
                                             <ul>
                                                 <li>
                                                     <i class="fas fa-file-certificate"></i>
-                                                    Vérification des titres de propriété et due diligence foncière
+                                                    <%= __('practice_detail_real_estate.service_1') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-file-contract"></i>
-                                                    Rédaction et négociation de contrats de vente, achat et location
+                                                    <%= __('practice_detail_real_estate.service_2') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-landmark"></i>
-                                                    Conseil sur les régimes de concession et les droits d'occupation
+                                                    <%= __('practice_detail_real_estate.service_3') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-hard-hat"></i>
-                                                    Accompagnement dans les projets de construction et d'aménagement
+                                                    <%= __('practice_detail_real_estate.service_4') %>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-gavel"></i>
-                                                    Résolution des litiges immobiliers et contentieux fonciers
+                                                    <%= __('practice_detail_real_estate.service_5') %>
                                                 </li>
                                             </ul>
                                         </div>
@@ -76,14 +78,18 @@
                                 <!-- Section Contact Action -->
                                 <div class="practice-action mt-5">
                                     <div class="action-card">
-                                        <h5 class="action-title">Projet immobilier en RDC ?</h5>
-                                        <p>Nos experts en droit foncier et immobilier vous accompagnent pour sécuriser vos transactions et protéger vos investissements.</p>
+                                        <h5 class="action-title">
+                                            <%= __('practice_detail_real_estate.action_title') %>
+                                        </h5>
+                                        <p>
+                                            <%= __('practice_detail_real_estate.action_text') %>
+                                        </p>
                                         <div class="action-buttons">
                                             <a href="/contact" class="btn btn-primary">
-                                                <i class="fas fa-envelope"></i> Demander un conseil
+                                                <i class="fas fa-envelope"></i> <%= __('practice_detail_real_estate.action_contact') %>
                                             </a>
                                             <a href="/reservation" class="btn btn-secondary">
-                                                <i class="fas fa-calendar-check"></i> Consultation gratuite
+                                                <i class="fas fa-calendar-check"></i> <%= __('practice_detail_real_estate.action_appointment') %>
                                             </a>
                                         </div>
                                     </div>
@@ -93,19 +99,19 @@
                         <div class="col-lg-4">
                             <div class="left-sidebar">
                                 <div class="widget-bg faq-widget">
-                                    <h5 class="bg-title">Notre Processus</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_real_estate.process_title') %></h5>
                                     <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                         <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                             <div class="card-header" role="tab" id="qus-A">
                                                 <h6 class="mb-0">
                                                     <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                        Audit Foncier et Due Diligence
+                                                        <%= __('practice_detail_real_estate.process_1_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                                 <div class="card-body">
-                                                    Investigation complète sur l'historique du bien, vérification des titres de propriété, identification des servitudes et des éventuels litiges.
+                                                    <%= __('practice_detail_real_estate.process_1_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,13 +119,13 @@
                                             <div class="card-header" role="tab" id="qus-B">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                        Négociation et Sécurisation Contractuelle
+                                                        <%= __('practice_detail_real_estate.process_2_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                                 <div class="card-body">
-                                                    Élaboration de contrats sur mesure, négociation des termes, inclusion de clauses protectrices et organisation de la signature authentique devant notaire.
+                                                    <%= __('practice_detail_real_estate.process_2_desc') %>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,52 +133,52 @@
                                             <div class="card-header" role="tab" id="qus-C">
                                                 <h6 class="mb-0">
                                                     <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                        Suivi Administratif et Enregistrement
+                                                        <%= __('practice_detail_real_estate.process_3_title') %>
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                                 <div class="card-body">
-                                                    Accomplissement de toutes les formalités administratives, enregistrement des actes, et obtention des certificats fonciers définitifs.
+                                                    <%= __('practice_detail_real_estate.process_3_desc') %>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget widget-bg icon-list-content">
-                                    <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                    <h5 class="bg-title"><%= __('practice_detail_real_estate.other_practices') %></h5>
                                     <ul>
                                         <li>
-                                            <a href="/practice-area-mines"><i class="fas fa-mountain"></i> Droit Minier</a>
+                                            <a href="/practice-area-mines"><i class="fas fa-mountain"></i> <%= __('services.mining') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> Droit OHADA</a>
+                                            <a href="/practice-area-ohada"><i class="fas fa-balance-scale"></i> <%= __('services.ohada') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> Droit des Assurances</a>
+                                            <a href="/practice-area-assurances"><i class="fas fa-shield-alt"></i> <%= __('services.insurance') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> Droit des Affaires</a>
+                                            <a href="/practice-area-detail"><i class="fas fa-briefcase"></i> <%= __('services.commercial') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> Droit Agricole & Acquisition de Terres</a>
+                                            <a href="/practice-area-corporatif"><i class="fas fa-building"></i> <%= __('services.agricultural') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> Droit de la Famille & Divorce</a>
+                                            <a href="/practice-area-droits-homme"><i class="fas fa-handshake"></i> <%= __('services.family') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> Droit des Télécommunications</a>
+                                            <a href="/practice-area-ecommerce"><i class="fas fa-shopping-cart"></i> <%= __('services.telecom') %></a>
                                         </li>
                                         <li>
-                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> Droit Bancaire & Financement</a>
+                                            <a href="/practice-area-pret-prive"><i class="fas fa-hand-holding-usd"></i> <%= __('services.banking') %></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="widget-bg sidebar-contact">
                                     <div class="overlay"></div>
-                                    <h5>Laissez-nous Vous Aider !</h5>
+                                    <h5><%= __('practice_detail_real_estate.sidebar_title') %></h5>
                                     <p>
-                                        Un projet d'achat, de vente ou de construction ? Un litige foncier ? Notre expertise en droit immobilier vous garantit une sécurité juridique totale.
+                                        <%= __('practice_detail_real_estate.sidebar_text') %>
                                     </p>
                                     <div class="contact-options">
                                         <a href="tel:+243995482416" class="contact-phone">
@@ -184,7 +190,7 @@
                                             <span>+243 810 369 919</span>
                                         </a>
                                         <a href="/faq" class="btn-appointment mt-3">
-                                            <i class="fas fa-question-circle"></i> Questions fréquentes
+                                            <i class="fas fa-question-circle"></i> <%= __('practice_detail_real_estate.sidebar_faq') %>
                                         </a>
                                     </div>
                                 </div>

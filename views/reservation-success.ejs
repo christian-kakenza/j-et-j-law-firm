@@ -6,7 +6,7 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Confirmation</h1> -->
+                    <!-- <h1 class="inner-title"><%= __("success_pages.confirmation") %></h1> -->
                 </div>
             </div>
         </div>
@@ -16,25 +16,25 @@
         <div class="container">
             <div class="success-container">
                 <div class="success-icon">✓</div>
-                <h1><%= title %></h1>
-                <p><%= message %></p>
+                <h1><%= __("success_pages.reservation.title") %></h1>
+                <p><%= __("success_pages.reservation.message") %></p>
                 
                 <div class="contact-info">
                     <i class="fas fa-phone-alt"></i>
-                    <%= contactInfo %>
+                    <%= __("success_pages.reservation.contact") %>
                 </div>
                 
                 <div class="success-actions">
                     <a href="/" class="btn btn-primary">
-                        <i class="fas fa-home"></i> Retour à l'accueil
+                        <i class="fas fa-home"></i> <%= __("success_pages.back_to_home") %>
                     </a>
                     <a href="/contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Nous contacter
+                        <i class="fas fa-envelope"></i> <%= __("success_pages.contact_us") %>
                     </a>
                 </div>
                 
                 <div class="success-note">
-                    <p><small><i class="fas fa-clock"></i> Nous traiterons votre demande dans les plus brefs délais</small></p>
+                    <p><small><i class="fas fa-clock"></i> <%= __("success_pages.processing_note") %></small></p>
                 </div>
             </div>
         </div>

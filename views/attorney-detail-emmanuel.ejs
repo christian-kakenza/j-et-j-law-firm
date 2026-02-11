@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails du Maître</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('attorney_detail_emmanuel.title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -20,66 +20,61 @@
                     <div class="col-md-5">
                         <div class="author-img-wrapper">
                             <figure class="team-fig">
-                                <img src="/images/Meemma.jpg" alt="Maître Emmanuel MATONGO KABILA">
+                                <img src="/images/Meemma.jpg" alt="<%= __('attorney_detail_emmanuel.name') %>">
                             </figure>
                         </div>
                     </div>
                     <div class="col-md-7">
                         <div class="author-bio-date">
-                            <h6 class="author-title">Avocat Collaborateur</h6>
+                            <h6 class="author-title"><%= __('attorney_detail_emmanuel.position') %></h6>
                             <h2 class="author-name">
-                                Maître Emmanuel MATONGO KABILA
+                                <%= __('attorney_detail_emmanuel.name') %>
                             </h2>
                             <p class="author-disc">
-                                Avocat inscrit au barreau, je mets mon expertise juridique au service d'une défense 
-                                rigoureuse et stratégique. Soucieux de la qualité du conseil apporté, j'allie précision 
-                                technique, sens de l'analyse et accompagnement personnalisé. Ma pratique repose sur 
-                                l'écoute, la transparence et une exigence constante de justesse et d'efficacité. 
-                                J'interviens tant en conseil qu'en contentieux, dans le respect strict des principes 
-                                déontologiques et de l'intérêt de mes clients.
+                                <%= __('attorney_detail_emmanuel.bio') %>
                             </p>
                             <div class="author-contact-info">
                                 <ul>
                                     <li>
-                                        <strong>Adresse e-mail : </strong>
+                                        <strong><%= __('attorney_detail_emmanuel.email') %> : </strong>
                                         <a href="mailto:emmanuelmatongog@gmail.com">emmanuelmatongog@gmail.com</a>
                                     </li>
                                     <li>
-                                        <strong>Numéro de téléphone : </strong>
+                                        <strong><%= __('attorney_detail_emmanuel.phone') %> : </strong>
                                         <a href="tel:+243999632302">+243 999 632 302</a>
                                     </li>
                                     <li>
-                                        <strong>Spécialisations : </strong>
-                                        <span>Droit privé et judiciaire (Droit Civil), Droit de famille, Droit des mineurs, Droit des personnes âgées, Droit patrimonial</span>
+                                        <strong><%= __('attorney_detail_emmanuel.specializations') %> : </strong>
+                                        <span><%= __('attorney_page.positions.private_judicial') %>, <%= __('services.family') %>, <%= __('attorney_detail_emmanuel.minors_law_title') %>, <%= __('attorney_detail_emmanuel.elderly_law_title') %>, <%= __('attorney_detail_emmanuel.property_law_title') %></span>
                                     </li>
                                     <li>
-                                        <strong>Domaines d'expertise : </strong>
-                                        <span>Droit Civil et Judiciaire, Droit de Famille (Mariage, Divorce, Tutelle), Droit des Mineurs, Droit des Personnes Âgées, Droit Patrimonial (Succession, Propriété, Contrats)</span>
+                                        <strong><%= __('attorney_detail_emmanuel.expertise_areas') %> : </strong>
+                                        <span><%= __('attorney_page.positions.private_judicial') %>, <%= __('services.family') %>, <%= __('attorney_detail_emmanuel.minors_law_title') %>, <%= __('attorney_detail_emmanuel.elderly_law_title') %>, <%= __('attorney_detail_emmanuel.property_law_title') %></span>
                                     </li>
                                     <li>
-                                        <strong>Langues : </strong>
+                                        <strong><%= __('attorney_detail_emmanuel.languages') %> : </strong>
                                         <span>Français, Lingala, Swahili, Kiluba</span>
                                     </li>
                                 </ul>
                             </div>
                             <div class="qualification">
-                                <h5 class="qualification-title">Formation & Diplômes :</h5>
+                                <h5 class="qualification-title"><%= __('attorney_detail_emmanuel.education_title') %> :</h5>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        2015 : Licence en Droit privé judiciaire, Option Droit Civil à l'Université de Lubumbashi
+                                        <%= __('attorney_detail_emmanuel.education_1') %>
                                     </h6>
                                 </div>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-scale-balanced"></i>
-                                        2024 : Avocat au Barreau de Lualaba à Kolwezi
+                                        <%= __('attorney_detail_emmanuel.education_2') %>
                                     </h6>
                                 </div>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-gavel"></i>
-                                        2024 : Avocat près la Cour d'Appel de Lualaba
+                                        <%= __('attorney_detail_emmanuel.education_3') %>
                                     </h6>
                                 </div>
                             </div>
@@ -87,30 +82,30 @@
                     </div>
                 </div>
                 <div class="experience-info">
-                    <h5 class="experience-heading">Expériences Professionnelles :</h5>
+                    <h5 class="experience-heading"><%= __('attorney_detail_emmanuel.professional_experience') %> :</h5>
                     <ul class="experience-list">
-                        <li><strong>Depuis 2024 :</strong> Avocat collaborateur au cabinet J&J Law Firm</li>
+                        <li><strong><%= __('attorney_detail_emmanuel.exp_1') %></strong></li>
                     </ul>
                 </div>
                 <div class="experience-wrappered row">
                     <div class="col-md-6">
                         <div class="skill-container">
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Plaidoirie</p>
+                                <p class="skill-titile"><%= __('attorney_detail_emmanuel.skill_1') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="92"></div>
                                     <span class="progress-percent">92%</span>
                                 </div>
                             </div>
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Rédaction de Contrats</p>
+                                <p class="skill-titile"><%= __('attorney_detail_emmanuel.skill_2') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="90"></div>
                                     <span class="progress-percent">90%</span>
                                 </div>
                             </div>
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Conseil Juridique</p>
+                                <p class="skill-titile"><%= __('attorney_detail_emmanuel.skill_3') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="94"></div>
                                     <span class="progress-percent">94%</span>
@@ -123,83 +118,83 @@
                             <ul>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-gavel"></i>
-                                    Excellente maîtrise et interprétation de la législation congolaise
+                                    <%= __('attorney_detail_emmanuel.achievement_1') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-microphone"></i>
-                                    Expertise en plaidoirie et représentation devant les tribunaux
+                                    <%= __('attorney_detail_emmanuel.achievement_2') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-file-contract"></i>
-                                    Compétence avérée en rédaction de contrats et actes juridiques
+                                    <%= __('attorney_detail_emmanuel.achievement_3') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-comments"></i>
-                                    Conseil juridique précis et personnalisé pour chaque client
+                                    <%= __('attorney_detail_emmanuel.achievement_4') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-user-tie"></i>
-                                    Assistance et représentation juridique complète et professionnelle
+                                    <%= __('attorney_detail_emmanuel.achievement_5') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-family"></i>
-                                    Spécialisation en droit de la famille et droit des personnes vulnérables
+                                    <%= __('attorney_detail_emmanuel.achievement_6') %>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Section Domaines de Spécialisation Détail -->
+                <!-- Section Detailed Specialization Areas -->
                 <div class="specialization-details-section mt-5">
-                    <h5 class="experience-heading">Domaines de Spécialisation Détail :</h5>
+                    <h5 class="experience-heading"><%= __('attorney_detail_emmanuel.specialization_detail_title') %> :</h5>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="specialization-item">
-                                <h6><i class="fas fa-heart"></i> Droit de Famille</h6>
+                                <h6><i class="fas fa-heart"></i> <%= __('attorney_detail_emmanuel.family_law_title') %></h6>
                                 <ul>
-                                    <li>Mariage et régimes matrimoniaux</li>
-                                    <li>Divorce et séparation</li>
-                                    <li>Tutelle et curatelle</li>
+                                    <li><%= __('attorney_detail_emmanuel.family_law_list_1') %></li>
+                                    <li><%= __('attorney_detail_emmanuel.family_law_list_2') %></li>
+                                    <li><%= __('attorney_detail_emmanuel.family_law_list_3') %></li>
                                 </ul>
                             </div>
                             <div class="specialization-item">
-                                <h6><i class="fas fa-child"></i> Droit des Mineurs</h6>
+                                <h6><i class="fas fa-child"></i> <%= __('attorney_detail_emmanuel.minors_law_title') %></h6>
                                 <ul>
-                                    <li>Protection des droits des mineurs</li>
-                                    <li>Éducation et droit scolaire</li>
-                                    <li>Droits des jeunes de moins de 18 ans</li>
+                                    <li><%= __('attorney_detail_emmanuel.minors_law_list_1') %></li>
+                                    <li><%= __('attorney_detail_emmanuel.minors_law_list_2') %></li>
+                                    <li><%= __('attorney_detail_emmanuel.minors_law_list_3') %></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="specialization-item">
-                                <h6><i class="fas fa-user-friends"></i> Droit des Personnes Âgées</h6>
+                                <h6><i class="fas fa-user-friends"></i> <%= __('attorney_detail_emmanuel.elderly_law_title') %></h6>
                                 <ul>
-                                    <li>Protection des droits des personnes âgées</li>
-                                    <li>Assistance et représentation</li>
+                                    <li><%= __('attorney_detail_emmanuel.elderly_law_list_1') %></li>
+                                    <li><%= __('attorney_detail_emmanuel.elderly_law_list_2') %></li>
                                 </ul>
                             </div>
                             <div class="specialization-item">
-                                <h6><i class="fas fa-home"></i> Droit Patrimonial</h6>
+                                <h6><i class="fas fa-home"></i> <%= __('attorney_detail_emmanuel.property_law_title') %></h6>
                                 <ul>
-                                    <li>Successions et héritages</li>
-                                    <li>Propriété immobilière</li>
-                                    <li>Contrats et libéralités (dons, legs)</li>
+                                    <li><%= __('attorney_detail_emmanuel.property_law_list_1') %></li>
+                                    <li><%= __('attorney_detail_emmanuel.property_law_list_2') %></li>
+                                    <li><%= __('attorney_detail_emmanuel.property_law_list_3') %></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Section pour voir d'autres avocats -->
+                <!-- Section for other attorneys -->
                 <div class="other-attorneys-section mt-5">
                     <div class="section-header text-center">
-                        <h3 class="section-title">Découvrez Notre Équipe</h3>
-                        <p class="section-subtitle">Rencontrez les autres membres de notre cabinet</p>
+                        <h3 class="section-title"><%= __('attorney_detail_emmanuel.other_attorneys_title') %></h3>
+                        <p class="section-subtitle"><%= __('attorney_detail_emmanuel.other_attorneys_subtitle') %></p>
                     </div>
                     <div class="text-center mt-4">
-                        <a href="/attorney" class="button-primary">VOIR TOUTE L'ÉQUIPE</a>
+                        <a href="/attorney" class="button-primary"><%= __('attorney_detail_emmanuel.other_attorneys_btn') %></a>
                     </div>
                 </div>
             </div>

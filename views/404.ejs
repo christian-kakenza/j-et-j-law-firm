@@ -1,0 +1,56 @@
+<%- include('header') %>
+
+<main id="content" class="site-main">
+    <!-- Inner Banner html start-->
+    <section class="inner-banner-wrap">
+        <div class="inner-baner-container" style="background-image: url(/images/principal1.jpg);">
+            <div class="overlay balance-patten"></div>
+            <div class="container">
+                <div class="inner-banner-content">
+                    <h1 class="inner-title"><%= __("error_pages.404.heading") %></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inner Banner html end-->
+
+    <!-- 404 error section html start -->
+    <section class="error-page-section">
+        <div class="container">
+            <div class="error-container text-center">
+                <div class="error-code">
+                    <span>404</span>
+                </div>
+                <h2 class="error-title"><%= __("error_pages.404.heading") %></h2>
+                <p class="error-message"><%= __("error_pages.404.message") %></p>
+                <p class="error-description"><%= __("error_pages.404.description") %></p>
+                
+                <div class="error-suggestions mt-5">
+                    <h4><%= __("error_pages.404.suggestions.title") %></h4>
+                    <div class="suggestion-links mt-4">
+                        <a href="/" class="btn btn-primary">
+                            <i class="fas fa-home"></i> <%= __("error_pages.common.back_home") %>
+                        </a>
+                        <a href="/contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> <%= __("error_pages.common.contact_support") %>
+                        </a>
+                        <a href="/practice-area" class="btn btn-outline">
+                            <i class="fas fa-balance-scale"></i> <%= __("error_pages.common.our_specialties") %>
+                        </a>
+                        <a href="/attorney" class="btn btn-outline">
+                            <i class="fas fa-users"></i> <%= __("error_pages.common.our_team") %>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="error-help mt-5">
+                    <p><i class="fas fa-phone-alt"></i> <%= __("header.phone") %></p>
+                    <p><i class="fas fa-envelope"></i> lawfirmjetj@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 404 error section html end -->
+</main>
+
+<%- include('footer') %>

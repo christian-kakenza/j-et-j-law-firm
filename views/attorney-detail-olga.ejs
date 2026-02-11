@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails du Maître</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('attorney_detail_olga.title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -20,68 +20,64 @@
                     <div class="col-md-5">
                         <div class="author-img-wrapper">
                             <figure class="team-fig">
-                                <img src="/images/Meolga.jpg" alt="Maître Olga KASONGO">
+                                <img src="/images/Meolga.jpg" alt="<%= __('attorney_detail_olga.name') %>">
                             </figure>
                         </div>
                     </div>
                     <div class="col-md-7">
                         <div class="author-bio-date">
-                            <h6 class="author-title">Avocate collaboratrice</h6>
+                            <h6 class="author-title"><%= __('attorney_detail_olga.position') %></h6>
                             <h2 class="author-name">
-                                Maître Olga KASONGO
+                                <%= __('attorney_detail_olga.name') %>
                             </h2>
                             <p class="author-disc">
-                                Professionnel du droit, j'exerce avec une approche fondée sur la maîtrise technique, 
-                                la rigueur intellectuelle et la compréhension fine des enjeux humains et économiques. 
-                                Mon objectif est d'offrir un accompagnement juridique complet et pertinent, fondé sur 
-                                la loyauté, la réactivité et la recherche de solutions durables. Je m'attache à défendre 
-                                mes clients avec discernement, efficacité et une éthique irréprochable.
+                                <%= __('attorney_detail_olga.bio') %>
                             </p>
                             <div class="author-contact-info">
                                 <ul>
                                     <li>
-                                        <strong>Adresse e-mail : </strong>
+                                        <strong><%= __('attorney_detail_olga.email') %> : </strong>
                                         <a href="mailto:okasongo88@gmail.com">okasongo88@gmail.com</a>
                                     </li>
                                     <li>
-                                        <strong>Numéro de téléphone : </strong>
+                                        <strong><%= __('attorney_detail_olga.phone') %> : </strong>
                                         <a href="tel:+243972038147">+243 972 038 147</a>
                                     </li>
                                     <li>
-                                        <strong>Spécialisations : </strong>
-                                        <span>Droit privé et judiciaire, Droit des affaires, Droit du travail, Droit Foncier</span>
+                                        <strong><%= __('attorney_detail_olga.specializations') %> : </strong>
+                                        <span><%= __('attorney_page.positions.private_judicial') %>, <%= __('services.commercial') %>, <%= __('services.family') %>, <%= __('services.real_estate') %></span>
                                     </li>
                                     <li>
-                                        <strong>Domaines d'expertise : </strong>
-                                        <a href="/practice-area-detail">Droit des Affaires</a>,
-                                        <span>Droit privé et judiciaire</span>,
-                                        <span>Droit du Travail</span>,
-                                        <span>Droit Foncier</span>
+                                        <strong><%= __('attorney_detail_olga.expertise_areas') %> : </strong>
+                                        <a href="/practice-area-detail"><%= __('services.commercial') %></a>,
+                                        <span><%= __('attorney_page.positions.private_judicial') %></span>,
+                                        <span><%= __('services.family') %></span>,
+                                        <span><%= __('services.real_estate') %></span>
                                     </li>
                                     <li>
-                                        <strong>Langues : </strong>
+                                        <strong><%= __('attorney_detail_olga.languages') %> : </strong>
                                         <span>Français, Lingala, Swahili, Kiluba</span>
                                     </li>
                                 </ul>
                             </div>
                             <div class="qualification">
-                                <h5 class="qualification-title">Formation & Diplômes :</h5>
+                                <h5 class="qualification-title"><%= __('attorney_detail_olga.education_title') %> :</h5>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        Licence en Droit à l'Université de Kamina
+                                        <%= __('attorney_detail_olga.education_1') %>
                                     </h6>
                                 </div>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        Diplôme d'État en section Pédagogique à l'Institut LUPELU
+                                        <%= __('attorney_detail_olga.education_2') %>
                                     </h6>
                                 </div>
                                 <div class="experience-detail">
                                     <h6 class="certificate">
                                         <i aria-hidden="true" class="fas fa-graduation-cap"></i>
-                                        Certificat d'études primaires à l'école "E.P. LA TERMITIERE"
+                                        <%= __('attorney_detail_olga.education_3') %>
                                     </h6>
                                 </div>
                             </div>
@@ -89,32 +85,32 @@
                     </div>
                 </div>
                 <div class="experience-info">
-                    <h5 class="experience-heading">Expériences Professionnelles :</h5>
+                    <h5 class="experience-heading"><%= __('attorney_detail_olga.professional_experience') %> :</h5>
                     <ul class="experience-list">
-                        <li><strong>2022 à nos jours :</strong> Avocate à la Cour</li>
-                        <li><strong>2019 à nos jours :</strong> Défenseur judiciaire près le Tribunal de Grande instance de Lubumbashi</li>
-                        <li><strong>2021 à nos jours :</strong> Conseillère juridique de la société RABBY Business service Sarl à Kolwezi</li>
+                        <li><strong><%= __('attorney_detail_olga.exp_1') %></strong></li>
+                        <li><strong><%= __('attorney_detail_olga.exp_2') %></strong></li>
+                        <li><strong><%= __('attorney_detail_olga.exp_3') %></strong></li>
                     </ul>
                 </div>
                 <div class="experience-wrappered row">
                     <div class="col-md-6">
                         <div class="skill-container">
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Droit Privé & Judiciaire</p>
+                                <p class="skill-titile"><%= __('attorney_detail_olga.skill_1') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="90"></div>
                                     <span class="progress-percent">90%</span>
                                 </div>
                             </div>
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Communication</p>
+                                <p class="skill-titile"><%= __('attorney_detail_olga.skill_2') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="88"></div>
                                     <span class="progress-percent">88%</span>
                                 </div>
                             </div>
                             <div class="skill-wrapper">
-                                <p class="skill-titile">Analyse Juridique</p>
+                                <p class="skill-titile"><%= __('attorney_detail_olga.skill_3') %></p>
                                 <div class="progress-wrapper">
                                     <div class="ab-progress example" data-progress data-value="92"></div>
                                     <span class="progress-percent">92%</span>
@@ -127,27 +123,27 @@
                             <ul>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-scale-balanced"></i>
-                                    Expertise en droit privé et procédures judiciaires
+                                    <%= __('attorney_detail_olga.achievement_1') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-comments"></i>
-                                    Excellentes capacités de communication et de réseautage
+                                    <%= __('attorney_detail_olga.achievement_2') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-gavel"></i>
-                                    Maîtrise et interprétation précise de la législation congolaise
+                                    <%= __('attorney_detail_olga.achievement_3') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-lightbulb"></i>
-                                    Ouverture d'esprit et approche scientifique dans la recherche juridique
+                                    <%= __('attorney_detail_olga.achievement_4') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-language"></i>
-                                    Maîtrise de 4 langues pour une communication multilingue efficace
+                                    <%= __('attorney_detail_olga.achievement_5') %>
                                 </li>
                                 <li>
                                     <i aria-hidden="true" class="fas fa-handshake"></i>
-                                    Accompagnement juridique fondé sur la loyauté et la réactivité
+                                    <%= __('attorney_detail_olga.achievement_6') %>
                                 </li>
                             </ul>
                         </div>
@@ -156,23 +152,23 @@
                 
                 <!-- Section Publications -->
                 <div class="publications-section mt-5">
-                    <h5 class="experience-heading">Publications & Conférences :</h5>
+                    <h5 class="experience-heading"><%= __('attorney_detail_olga.publications_title') %> :</h5>
                     <div class="publications-list">
                         <ul>
-                            <li><strong>"De la politisation de la justice : problèmes et pistes de solutions"</strong></li>
-                            <li><strong>"De la délinquance juvénile sur les lieux du deuil : problèmes et pistes de solutions"</strong></li>
+                            <li><strong><%= __('attorney_detail_olga.publication_1') %></strong></li>
+                            <li><strong><%= __('attorney_detail_olga.publication_2') %></strong></li>
                         </ul>
                     </div>
                 </div>
                 
-                <!-- Section pour voir d'autres avocats -->
+                <!-- Section for other attorneys -->
                 <div class="other-attorneys-section mt-5">
                     <div class="section-header text-center">
-                        <h3 class="section-title">Découvrez Notre Équipe</h3>
-                        <p class="section-subtitle">Rencontrez les autres membres de notre cabinet</p>
+                        <h3 class="section-title"><%= __('attorney_detail_olga.other_attorneys_title') %></h3>
+                        <p class="section-subtitle"><%= __('attorney_detail_olga.other_attorneys_subtitle') %></p>
                     </div>
                     <div class="text-center mt-4">
-                        <a href="/attorney" class="button-primary">VOIR TOUTE L'ÉQUIPE</a>
+                        <a href="/attorney" class="button-primary"><%= __('attorney_detail_olga.other_attorneys_btn') %></a>
                     </div>
                 </div>
             </div>

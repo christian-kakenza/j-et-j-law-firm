@@ -11,31 +11,29 @@
                             </a>
                         </div>
                         <div class="textwidget widget-text">
-                            Cabinet d'avocats spécialisé en droit congolais et OHADA. Nous vous accompagnons avec expertise et engagement dans toutes vos démarches juridiques en RDC.
+                            <%= __("footer.description") %>
                         </div>
                         <div class="footer-locate-link">
                             <ul>
                                 <li>
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span class="locate-txt">
-                                        <strong>Siège Social - Kinshasa :</strong><br>
-                                        nᵒ 148/A, Blvd du 30 Juin, Gombe<br>
-                                        4ᵉ étage, Immeuble LUXURY TOWER
+                                        <strong><%= __("footer.kinshasa") %> :</strong><br>
+                                        <%= __("footer.kinshasa_address") %>
                                     </span>
                                 </li>
                                 <li>
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span class="locate-txt">
-                                        <strong>Bureau Annexe - Lubumbashi :</strong><br>
-                                        nᵒ 701, av. Kasavubu, Bâtiment Léopold<br>
-                                        Quartier Makutano, Lubumbashi
+                                        <strong><%= __("footer.lubumbashi") %> :</strong><br>
+                                        <%= __("footer.lubumbashi_address") %>
                                     </span>
                                 </li>
                                 <li>
                                     <a href="tel:+243995482416">
                                         <i class="fas fa-phone-alt"></i>
                                         <span class="locate-txt">
-                                            +243 995 482 416 (Siège Social)
+                                            <%= __("header.phone") %> (<%= __("footer.head_office") %>)
                                         </span>
                                     </a>
                                 </li>
@@ -43,7 +41,7 @@
                                     <a href="tel:+243810369919">
                                         <i class="fas fa-phone-alt"></i>
                                         <span class="locate-txt">
-                                            +243 810 369 919 (Bureau Lubumbashi)
+                                            +243 810 369 919 (<%= __("footer.branch_office") %>)
                                         </span>
                                     </a>
                                 </li>
@@ -55,132 +53,88 @@
                                         </span>
                                     </a>
                                 </li>
-                                <!-- <li>
-                                    <a href="mailto:christian.kakenza0@gmail.com">
-                                        <i class="fas fa-envelope"></i>
-                                        <span class="locate-txt">
-                                            christian.kakenza0@gmail.com
-                                        </span>
-                                    </a>
-                                </li> -->
+
                             </ul>
                         </div>
                     </aside>
                 </div>
                 <div class="col-lg-2 col-sm-6">
                     <aside class="widget">
-                        <h5 class="widget-title">Navigation</h5>
+                        <h5 class="widget-title"><%= __("footer.navigation") %></h5>
                         <ul class="widget-underline">
                             <li>
-                                <a href="/">Accueil</a>
+                                <a href="/"><%= __("header.home") %></a>
                             </li>
                             <li>
-                                <a href="/about">À propos</a>
+                                <a href="/about"><%= __("header.about") %></a>
                             </li>
                             <li>
-                                <a href="/practice-area">Spécialités</a>
+                                <a href="/practice-area"><%= __("services.all_services") %></a>
                             </li>
                             <li>
-                                <a href="/attorney">Notre équipe</a>
+                                <a href="/attorney"><%= __("team.our_team") %></a>
                             </li>
                             <li>
-                                <a href="/contact">Contact</a>
+                                <a href="/contact"><%= __("header.contact") %></a>
                             </li>
                             <li>
-                                <a href="/faq">FAQ</a>
+                                <a href="/faq"><%= __("header.faq") %></a>
                             </li>
                         </ul>
                     </aside>
                 </div>
                 <div class="col-lg-2 col-sm-6">
                     <aside class="widget">
-                        <h5 class="widget-title">Services clés</h5>
+                        <h5 class="widget-title"><%= __("footer.key_services") %></h5>
                         <ul>
                             <li>
-                                <a href="/practice-area-mines">Droit Minier</a>
+                                <a href="/practice-area-mines"><%= __("services.mining") %></a>
                             </li>
                             <li>
-                                <a href="/practice-area-ohada">Droit OHADA</a>
+                                <a href="/practice-area-ohada"><%= __("services.ohada") %></a>
                             </li>
                             <li>
-                                <a href="/practice-area-assurances">Droit des Assurances</a>
+                                <a href="/practice-area-assurances"><%= __("services.insurance") %></a>
                             </li>
                             <li>
-                                <a href="/practice-area-immobilier">Droit Immobilier</a>
+                                <a href="/practice-area-immobilier"><%= __("services.real_estate") %></a>
                             </li>
                             <li>
-                                <a href="/practice-area-corporatif">Droit Agricole & Acquisition de Terres</a>
+                                <a href="/practice-area-corporatif"><%= __("services.agricultural") %></a>
                             </li>
                             <li>
-                                <a href="/practice-area-droits-homme">Droit de la Famille & Divorce</a>
+                                <a href="/practice-area-droits-homme"><%= __("services.family") %></a>
                             </li>
                         </ul>
                     </aside>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <aside class="widget news-widget">
-                        <h5 class="widget-title">Newsletter</h5>
+                        <h5 class="widget-title"><%= __("footer.newsletter") %></h5>
                         <div class="textwidget widget-text">
-                            Inscrivez-vous pour recevoir les dernières actualités juridiques, 
-                            réformes législatives en RDC et conseils exclusifs.
+                            <%= __("footer.newsletter_desc") %>
                         </div>
                         
                         <!-- Message de confirmation -->
                         <div id="newsletter-message" style="display: none; background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #28a745;">
-                            <i class="fas fa-check-circle"></i> Merci ! Vous êtes maintenant inscrit à notre newsletter.
+                            <i class="fas fa-check-circle"></i> <span id="newsletter-message-text"></span>
                         </div>
                         
                         <!-- Formulaire newsletter -->
                         <form class="footer-email-form" id="newsletter-form">
                             <div class="input-group">
-                                <input type="email" name="email" placeholder="Votre adresse email" required>
-                                <button type="submit" class="footer-email-btn" title="S'abonner">
+                                <input type="email" name="email" placeholder="<%= __("footer.email_placeholder") %>" required>
+                                <button type="submit" class="footer-email-btn" title="<%= __("footer.subscribe") %>">
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>
                         </form>
                         
-                        <!-- Script newsletter -->
-                        <script>
-                            document.getElementById('newsletter-form').addEventListener('submit', function(e) {
-                                e.preventDefault();
-                                
-                                const email = this.querySelector('input[name="email"]').value;
-                                const messageDiv = document.getElementById('newsletter-message');
-                                
-                                // Validation simple
-                                if (!email || !email.includes('@')) {
-                                    messageDiv.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Veuillez entrer une adresse email valide.';
-                                    messageDiv.style.background = '#f8d7da';
-                                    messageDiv.style.color = '#721c24';
-                                    messageDiv.style.borderLeftColor = '#dc3545';
-                                    messageDiv.style.display = 'block';
-                                    return;
-                                }
-                                
-                                // Simulation d'envoi (remplacer par appel API)
-                                messageDiv.innerHTML = '<i class="fas fa-check-circle"></i> Merci ! Vous êtes maintenant inscrit à notre newsletter.';
-                                messageDiv.style.background = '#d4edda';
-                                messageDiv.style.color = '#155724';
-                                messageDiv.style.borderLeftColor = '#28a745';
-                                messageDiv.style.display = 'block';
-                                
-                                // Réinitialiser le formulaire
-                                this.reset();
-                                
-                                // Masquer le message après 5 secondes
-                                setTimeout(() => {
-                                    messageDiv.style.display = 'none';
-                                }, 5000);
-                                
-                                // Log pour débogage
-                                console.log('Newsletter subscription:', email);
-                            });
-                        </script>
-                        
+
+
                         <!-- Réseaux sociaux -->
                         <div class="footer-social-links">
-                            <p>Suivez-nous :</p>
+                            <p><%= __("footer.follow_us") %> :</p>
                             <ul>
                                 <li>
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
@@ -192,11 +146,7 @@
                                         <i class="fab fa-twitter"></i>
                                     </a>
                                 </li>
-                                <!-- <li>
-                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </li> -->
+
                                 <li>
                                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
                                         <i class="fab fa-instagram"></i>
@@ -209,15 +159,8 @@
                                 </li>
                             </ul>
                         </div>
-                        
-                        <!-- Liens légaux -->
-                        <!-- <div class="footer-legal-links">
-                            <p class="small">
-                                <a href="/legal-notice">Mentions légales</a> | 
-                                <a href="/legal-notice">Politique de confidentialité</a> | 
-                                <a href="/legal-notice">CGU</a>
-                            </p>
-                        </div> -->
+
+
                     </aside>
                 </div>
             </div>
@@ -226,15 +169,15 @@
     <div class="bottom-footer">
         <div class="container">
             <div class="copy-right">
-                Copyright &copy; <%= new Date().getFullYear() %> <strong>J&J LAW FIRM</strong>. 
-                Tous droits réservés. Cabinet d'avocats agréé en République Démocratique du Congo.
+                <%- __("footer.copyright_full") %> <%= new Date().getFullYear() %> <strong>J&J LAW FIRM</strong>. 
+                <%= __("footer.all_rights_reserved") %>
             </div>
         </div>
     </div>
 </footer>
 
 <!-- Bouton retour en haut -->
-<a id="backTotop" href="#" class="to-top-icon" title="Retour en haut">
+<a id="backTotop" href="#" class="to-top-icon" title="<%= __("footer.back_to_top") %>">
     <i class="fas fa-chevron-up"></i>
 </a>
 
@@ -243,7 +186,7 @@
     <div class="container">
         <div class="header-search-container">
             <form class="search-form" role="search" method="get">
-                <input type="text" name="s" placeholder="Rechercher...">
+                <input type="text" name="s" placeholder="<%= __("footer.search_placeholder") %>">
                 <button type="submit">
                     <i class="fas fa-search"></i>
                 </button>
@@ -272,23 +215,232 @@
 <script src="/vendors/slick-nav/jquery.slicknav.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Script de retour en haut -->
+<!-- ============ SCRIPT UNIFIÉ DE GESTION DE LANGUE AVEC COOKIES PERSISTANTS ============ -->
 <script>
-    // Retour en haut
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('#backTotop').fadeIn();
-            } else {
-                $('#backTotop').fadeOut();
+    (function() {
+        'use strict';
+        
+        // ========== 1. DÉTECTION DE LA LANGUE ACTUELLE ==========
+        // Utiliser locale depuis le serveur (correct)
+        const currentLocale = '<%= locale %>' || 'fr';
+        
+        // ========== 2. FONCTION PRINCIPALE DE CHANGEMENT DE LANGUE ==========
+        window.setLanguage = function(lang) {
+            // Validation
+            if (!['fr', 'en'].includes(lang)) {
+                console.error('Langue non supportée:', lang);
+                return false;
             }
+            
+            // Sauvegarder dans le cookie VIA LE SERVEUR (méthode fiable)
+            fetch('/set-language/' + lang, {
+                method: 'GET',
+                credentials: 'same-origin' // Important pour les cookies
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('✅ Langue changée pour:', lang);
+                    
+                    // Sauvegarder aussi dans localStorage comme backup
+                    try {
+                        localStorage.setItem('preferred-language', lang);
+                    } catch(e) {
+                        console.warn('localStorage non disponible');
+                    }
+                    
+                    // Recharger la page pour appliquer la nouvelle langue
+                    window.location.reload();
+                } else {
+                    console.error('❌ Erreur serveur:', response.status);
+                    // Fallback: redirection avec paramètre URL
+                    window.location.href = window.location.pathname + '?lang=' + lang;
+                }
+            })
+            .catch(error => {
+                console.error('❌ Erreur réseau:', error);
+                // Fallback: redirection avec paramètre URL
+                window.location.href = window.location.pathname + '?lang=' + lang;
+            });
+            
+            return false;
+        };
+        
+        // ========== 3. SÉLECTEUR DE LANGUE DROPDOWN ==========
+        function initLanguageSelector() {
+            const languageBtn = document.querySelector('.language-btn');
+            const languageDropdown = document.querySelector('.language-dropdown');
+            
+            if (languageBtn && languageDropdown) {
+                // Supprimer les anciens event listeners
+                const newBtn = languageBtn.cloneNode(true);
+                languageBtn.parentNode.replaceChild(newBtn, languageBtn);
+                const newDropdown = languageDropdown.cloneNode(true);
+                languageDropdown.parentNode.replaceChild(newDropdown, languageDropdown);
+                
+                // Réattacher les événements
+                const finalBtn = document.querySelector('.language-btn');
+                const finalDropdown = document.querySelector('.language-dropdown');
+                
+                if (finalBtn && finalDropdown) {
+                    finalBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const isVisible = finalDropdown.style.display === 'block';
+                        finalDropdown.style.display = isVisible ? 'none' : 'block';
+                    });
+                    
+                    document.addEventListener('click', function() {
+                        if (finalDropdown) {
+                            finalDropdown.style.display = 'none';
+                        }
+                    });
+                    
+                    finalDropdown.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                    });
+                    
+                    // Mettre à jour le texte du bouton selon la langue active
+                    const btnText = finalBtn.querySelector('span');
+                    if (btnText) {
+                        const langNames = {
+                            fr: 'FRANÇAIS',
+                            en: 'ENGLISH'
+                        };
+                        btnText.textContent = langNames[currentLocale] || 'FRANÇAIS';
+                    }
+                }
+            }
+        }
+        
+        // ========== 4. NEWSLETTER MULTILINGUE ==========
+        function initNewsletter() {
+            const newsletterForm = document.getElementById('newsletter-form');
+            if (!newsletterForm) return;
+            
+            // Supprimer ancien listener
+            const newForm = newsletterForm.cloneNode(true);
+            newsletterForm.parentNode.replaceChild(newForm, newsletterForm);
+            
+            // Ajouter nouveau listener
+            const finalForm = document.getElementById('newsletter-form');
+            
+            finalForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const emailInput = this.querySelector('input[name="email"]');
+                const email = emailInput ? emailInput.value : '';
+                const messageDiv = document.getElementById('newsletter-message');
+                const messageText = document.getElementById('newsletter-message-text');
+                
+                if (!messageDiv || !messageText) return;
+                
+                // Messages multilingues
+                const messages = {
+                    fr: {
+                        error: 'Veuillez entrer une adresse email valide.',
+                        success: 'Merci ! Vous êtes maintenant inscrit à notre newsletter.'
+                    },
+                    en: {
+                        error: 'Please enter a valid email address.',
+                        success: 'Thank you! You are now subscribed to our newsletter.'
+                    }
+                };
+                
+                // Validation email
+                if (!email || !email.includes('@') || !email.includes('.')) {
+                    messageText.innerHTML = messages[currentLocale]?.error || messages.fr.error;
+                    messageDiv.style.background = '#f8d7da';
+                    messageDiv.style.color = '#721c24';
+                    messageDiv.style.borderLeftColor = '#dc3545';
+                    messageDiv.style.display = 'block';
+                    return;
+                }
+                
+                // Simulation succès
+                messageText.innerHTML = messages[currentLocale]?.success || messages.fr.success;
+                messageDiv.style.background = '#d4edda';
+                messageDiv.style.color = '#155724';
+                messageDiv.style.borderLeftColor = '#28a745';
+                messageDiv.style.display = 'block';
+                
+                // Reset form
+                emailInput.value = '';
+                
+                // Masquer après 5 secondes
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+                
+                console.log('📧 Newsletter inscription:', email, 'Langue:', currentLocale);
+            });
+        }
+        
+        // ========== 5. BOUTON RETOUR EN HAUT ==========
+        function initBackToTop() {
+            const backToTop = document.getElementById('backTotop');
+            if (!backToTop) return;
+            
+            // Gérer l'affichage au scroll
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#backTotop').fadeIn();
+                } else {
+                    $('#backTotop').fadeOut();
+                }
+            });
+            
+            // Gérer le click
+            $('#backTotop').click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+            
+            // Mettre à jour le titre selon la langue
+            const titles = {
+                fr: 'Retour en haut',
+                en: 'Back to top'
+            };
+            backToTop.setAttribute('title', titles[currentLocale] || titles.fr);
+        }
+        
+        // ========== 6. INITIALISATION AU CHARGEMENT ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            initLanguageSelector();
+            initNewsletter();
+            initBackToTop();
+            
+            console.log('🌐 Langue active:', currentLocale, '(persistante sur toutes les pages)');
         });
         
-        $('#backTotop').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
-    });
+        // ========== 7. SYNC AVEC LOCALSTORAGE AU CHARGEMENT ==========
+        try {
+            const savedLang = localStorage.getItem('preferred-language');
+            if (savedLang && savedLang !== currentLocale) {
+                console.log('🔄 Synchronisation localStorage -> cookie:', savedLang);
+                // Silencieusement synchroniser
+                fetch('/set-language/' + savedLang, { 
+                    method: 'GET', 
+                    credentials: 'same-origin' 
+                }).catch(() => {});
+            }
+        } catch(e) {
+            // Ignorer erreurs localStorage
+        }
+        
+    })();
+</script>
+
+<!-- ============ CORRECTION DU HTML LANG DANS LE HEADER ============ -->
+<!-- Ce script doit être ajouté DANS LE HEADER, pas dans le footer -->
+<!-- Mais je le mets ici pour que tu voies la correction à appliquer -->
+<script>
+    // Correction pour le header : à déplacer dans le fichier header
+    // Remplacer : <html lang="<%= __("locale") || 'fr' %>">
+    // Par :        <html lang="<%= locale || 'fr' %>">
+    // 
+    // Si tu ne peux pas modifier le header, ce script ajuste automatiquement
+    document.documentElement.lang = '<%= locale || "fr" %>';
 </script>
 
 </body>

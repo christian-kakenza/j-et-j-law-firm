@@ -27,13 +27,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>J&J LAW FIRM</title>
+    <title>J&J LAW FIRM - Cabinet d'Avocats en RDC</title>
 </head>
 
 <body class="home">
     <div id="siteLoader" class="site-loader ">
         <div class="preloader-content">
-            <img src="/images/loader1.gif" alt="">
+            <img src="/images/loader1.gif" alt="Chargement...">
         </div>
     </div>
     <div id="page" class="full-page">
@@ -42,69 +42,66 @@
             <!-- header html start -->
             <div class="top-header">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-5 d-flex justify-content-md-start justify-content-center">
-                            <div class="header-schedule-info">
-                                <i class="fas fa-calendar-check"></i>
-                                <span class="schedule-info">
-                                    Besoin d'une consultation ?
-                                    <a href="/reservation">Prenez rendez-vous dès maintenant</a>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-7 d-flex justify-content-md-end justify-content-between align-items-center">
-                            <div class="legal-list">
-                                <ul>
-                                    <li><a href="/faq">FAQ</a></li>
-                                    <li><a href="/legal-notice">Mentions légales</a></li>
-                                    <!-- <li><a href="/practice-area">Nos spécialités</a></li> -->
-                                </ul>
-                            </div>
-                            <div class="header-social social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <!-- <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="YouTube"> -->
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <!-- <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> -->
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://wa.me/243995482416" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-                                            <i class="fab fa-whatsapp"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+    <div class="row align-items-center">
+        <!-- <div class="col-md-5 d-flex justify-content-md-start justify-content-center">
+            <div class="header-schedule-info">
+                <i class="fas fa-calendar-check"></i>
+                <span class="schedule-info">
+                    <%= __("header.consultation") %>
+                    <a href="/reservation"><%= __("header.appointment") %></a>
+                </span>
+            </div>
+        </div> -->
+        
+        <!-- ✅ STRUCTURE SIMPLE ET PROPRE -->
+        <div class="col-md-12 d-flex justify-content-between align-items-center">
+            
+            <!-- FAQ et Mentions légales côte à côte à gauche (couleurs originales) -->
+            <div class="legal-list" style="display: flex; align-items: center; gap: 30px; margin-left: 20px;">
+                <a href="/faq" style="color: inherit; text-decoration: none;"><%= __("header.faq") %></a>
+                <a href="/legal-notice" style="color: inherit; text-decoration: none;"><%= __("header.legal") %></a>
+            </div>
+            
+            <!-- Sélecteur de langue à droite -->
+            <div class="language-selector" style="margin-right: 20px;">
+                <button class="language-btn">
+                    <i class="fas fa-globe"></i>
+                    <span><%= locale === 'en' ? 'ENGLISH' : 'FRANÇAIS' %></span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="language-dropdown">
+                    <a href="#" onclick="setLanguage('fr'); return false;" 
+                       class="language-option <%= locale === 'fr' ? 'active' : '' %>">
+                        <span>🇫🇷</span>
+                        <span>Français</span>
+                        <% if (locale === 'fr') { %>
+                            <i class="fas fa-check"></i>
+                        <% } %>
+                    </a>
+                    <a href="#" onclick="setLanguage('en'); return false;" 
+                       class="language-option <%= locale === 'en' ? 'active' : '' %>">
+                        <span>🇬🇧</span>
+                        <span>English</span>
+                        <% if (locale === 'en') { %>
+                            <i class="fas fa-check"></i>
+                        <% } %>
+                    </a>
                 </div>
             </div>
+            
+        </div>
+    </div>
+</div>
+            </div>
+            <!-- main header -->
             <div class="bottom-header">
                 <div class="container">
                     <div class="hb-group d-flex align-items-center justify-content-between">
                         <div class="site-identity col-lg-2">
                             <p class="site-title">
-                                <a href="/index">
-                                    <img src="/images/J&J logo white.svg" alt="logo">
+                                <a href="/">
+                                    <img src="/images/J&J logo white.svg" alt="J&J Law Firm Logo">
                                 </a>
                             </p>
                         </div>
@@ -112,81 +109,85 @@
                             <nav id="navigation" class="navigation d-none d-lg-inline-block">
                                 <ul>
                                     <li>
-                                        <a href="/">Accueil</a>
+                                        <a href="/"><%= __("header.home") %></a>
                                     </li>
                                     <li>
-                                        <a href="/about">À propos</a>
+                                        <a href="/about"><%= __("header.about") %></a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Services</a>
+                                        <a href="#"><%= __("header.services") %></a>
                                         <ul>
-                                            <li><a href="/practice-area">Nos spécialités</a></li>
+                                            <!-- ✅ LIEN AVEC BACKGROUND #565872 ET TEXTE BLANC -->
+                                            <li>
+                                                <a href="/practice-area" 
+                                                style="background-color: #565872 !important; color: white !important; display: block; padding: 10px 20px;">
+                                                    <%= __("services.all_services") %>
+                                                </a>
+                                            </li>
                                             <li class="submenu-divider"></li>
-                                            <li><a href="/practice-area-mines">Droit Minier</a></li>
-                                            <li><a href="/practice-area-constitutionnel">Droit Constitutionnel & Administratif</a></li>
-                                            <li><a href="/practice-area-assurances">Droit des Assurances</a></li>
-                                            <li><a href="/practice-area-immobilier">Droit Immobilier</a></li>
-                                            <li><a href="/practice-area-droits-homme">Droit de la Famille & Divorce</a></li>
-                                            <li><a href="/practice-area-detail">Droit Commercial</a></li>
-                                            <li><a href="/practice-area-ecommerce">Droit des Télécommunications</a></li>
-                                            <li><a href="/practice-area-pret-prive">Droit Bancaire & Financement</a></li>
-                                            <li><a href="/practice-area-corporatif">Droit Agricole & Acquisition de Terres</a></li>
-                                            <li><a href="/practice-area-ohada">Droit OHADA</a></li>
-                                            <li><a href="/practice-area-intellectuelle">Droit de la Propriété Intellectuelle</a></li>
-                                            <li><a href="/practice-area-transport">Droit du Transport & des Douanes</a></li>
+                                            <li><a href="/practice-area-mines"><%= __("services.mining") %></a></li>
+                                            <li><a href="/practice-area-constitutionnel"><%= __("services.constitutional") %></a></li>
+                                            <li><a href="/practice-area-assurances"><%= __("services.insurance") %></a></li>
+                                            <li><a href="/practice-area-immobilier"><%= __("services.real_estate") %></a></li>
+                                            <li><a href="/practice-area-droits-homme"><%= __("services.family") %></a></li>
+                                            <li><a href="/practice-area-detail"><%= __("services.commercial") %></a></li>
+                                            <li><a href="/practice-area-ecommerce"><%= __("services.telecom") %></a></li>
+                                            <li><a href="/practice-area-pret-prive"><%= __("services.banking") %></a></li>
+                                            <li><a href="/practice-area-corporatif"><%= __("services.agricultural") %></a></li>
+                                            <li><a href="/practice-area-ohada"><%= __("services.ohada") %></a></li>
+                                            <li><a href="/practice-area-intellectuelle"><%= __("services.intellectual") %></a></li>
+                                            <li><a href="/practice-area-transport"><%= __("services.transport") %></a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Équipe</a>
+                                        <a href="#"><%= __("header.team") %></a>
                                         <ul>
-                                            <li><a href="/attorney">Notre équipe</a></li>
-                                            <li><a href="/attorney-detail">Maître Jethro</a></li>
-                                            <li><a href="/attorney-detail-john">Maître NGOY KIBAMBE</a></li>
-                                            <li><a href="/attorney-detail-olga">Maître Olga KASONGO</a></li>
-                                            <li><a href="/attorney-detail-daniel">Maître KYUNGU Daniel</a></li>
-                                            <li><a href="/attorney-detail-emmanuel">Maître Emmanuel MATONGO</a></li>
-                                            <li><a href="attorney-detail-seraphin">Maître KABAMBA NGOY</a></li>
-                                            <li><a href="/attorney-detail-mizou">Maître Mizou NSANDA</a></li>
+                                            <!-- ✅ LIEN AVEC BACKGROUND #565872 ET TEXTE BLANC -->
+                                            <li>
+                                                <a href="/attorney" 
+                                                style="background-color: #565872 !important; color: white !important; display: block; padding: 10px 20px;">
+                                                    <%= __("team.our_team") %>
+                                                </a>
+                                            </li>
+                                            <li><a href="/attorney-detail"><%= __("team.master_jethro") %></a></li>
+                                            <li><a href="/attorney-detail-john"><%= __("team.master_ngoy") %></a></li>
+                                            <li><a href="/attorney-detail-olga"><%= __("team.master_olga") %></a></li>
+                                            <li><a href="/attorney-detail-daniel"><%= __("team.master_daniel") %></a></li>
+                                            <li><a href="/attorney-detail-emmanuel"><%= __("team.master_emmanuel") %></a></li>
+                                            <li><a href="/attorney-detail-seraphin"><%= __("team.master_kabamba") %></a></li>
+                                            <li><a href="/attorney-detail-mizou"><%= __("team.master_mizou") %></a></li>
                                         </ul>
                                     </li>
-                                    <!-- <li>
-                                        <a href="/faq">FAQ</a>
-                                    </li> -->
+
                                     <li>
-                                        <a href="/contact">Contact</a>
+                                        <a href="/contact"><%= __("header.contact") %></a>
                                     </li>
-                                </ul>                               
+                                </ul>
                             </nav>
                             <div class="bottom-sub-menu d-flex align-items-center">
-                                <!-- <div class="header-search-icon">
-                                    <button class="search-icon">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div> -->
-                                <div class="header-contact-info">
-                                    <a href="tel:+243999009319">
+
+                                 <div class="header-contact-info">
+                                    <a href="tel:+243995482416">
                                         <div class="header-contact-inner">
                                             <span class="icon">
-                                                <i aria-hidden="true" class="icon icon-phone1"></i>
+                                                <i class="fas fa-phone-alt"></i>
                                             </span>
                                             <div class="details-content">
-                                                <span class="content-title">PARLEZ À UN EXPERT !</span>
-                                                <h6>+243 995482416</h6>
+                                                <span class="content-title"><%= __("header.talk_to_expert") %></span>
+                                                <h6><%= __("header.phone") %></h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="more-about-ceo">
-                                    <button class="openbtn" onclick="openNav()">
-                                        <i aria-hidden="true" class="icon icon-menu-11"></i>
-                                    </button>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="mobile-menu-container"></div>
             </div>
+            <!-- Sidebar attorney panel -->
+
         <section class="sidebar-section" id="attorneySidepannel">
                 <div class="sidebar-content" id="attorneySidepannelchild">
                     <div class="sidebar-close-section">
@@ -316,1011 +317,1063 @@
                 </div>
             </section>
         </header>
+
+       <!-- ============ SCRIPT DE GESTION DE LANGUE AVEC COOKIES ============ -->
+        <script>
+            (function() {
+                'use strict';
+                
+                // Langue actuelle depuis le serveur
+                const currentLocale = '<%= locale %>' || 'fr';
+                
+                // ========== FONCTION PRINCIPALE DE CHANGEMENT DE LANGUE ==========
+                window.setLanguage = function(lang) {
+                    // Validation
+                    if (!['fr', 'en'].includes(lang)) {
+                        console.error('Langue non supportée:', lang);
+                        return false;
+                    }
+                    
+                    // Éviter de recharger si c'est la même langue
+                    if (lang === currentLocale) {
+                        console.log('Langue déjà active:', lang);
+                        return false;
+                    }
+                    
+                    console.log('🔄 Changement de langue:', currentLocale, '→', lang);
+                    
+                    // Sauvegarder dans le cookie VIA LE SERVEUR
+                    fetch('/set-language/' + lang, {
+                        method: 'GET',
+                        credentials: 'same-origin',
+                        cache: 'no-cache'
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            console.log('✅ Cookie langue mis à jour:', lang);
+                            
+                            // Sauvegarder aussi dans localStorage
+                            try {
+                                localStorage.setItem('preferred-language', lang);
+                            } catch(e) {
+                                console.warn('localStorage non disponible');
+                            }
+                            
+                            // Recharger la page pour appliquer la nouvelle langue
+                            window.location.reload();
+                        } else {
+                            console.error('❌ Erreur serveur:', response.status);
+                            // Fallback: redirection avec paramètre URL
+                            window.location.href = window.location.pathname + '?lang=' + lang;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('❌ Erreur réseau:', error);
+                        // Fallback: redirection avec paramètre URL
+                        window.location.href = window.location.pathname + '?lang=' + lang;
+                    });
+                    
+                    return false;
+                };
+                
+                // ========== INITIALISATION DU SÉLECTEUR DE LANGUE ==========
+                function initLanguageSelector() {
+                    const languageBtn = document.querySelector('.language-btn');
+                    const languageDropdown = document.querySelector('.language-dropdown');
+                    
+                    if (languageBtn && languageDropdown) {
+                        // Nettoyer les anciens listeners
+                        const newBtn = languageBtn.cloneNode(true);
+                        languageBtn.parentNode.replaceChild(newBtn, languageBtn);
+                        const newDropdown = languageDropdown.cloneNode(true);
+                        languageDropdown.parentNode.replaceChild(newDropdown, languageDropdown);
+                        
+                        // Réattacher les événements
+                        const finalBtn = document.querySelector('.language-btn');
+                        const finalDropdown = document.querySelector('.language-dropdown');
+                        
+                        if (finalBtn && finalDropdown) {
+                            // Toggle dropdown
+                            finalBtn.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                const isVisible = finalDropdown.style.display === 'block';
+                                finalDropdown.style.display = isVisible ? 'none' : 'block';
+                            });
+                            
+                            // Fermer en cliquant ailleurs
+                            document.addEventListener('click', function() {
+                                if (finalDropdown) {
+                                    finalDropdown.style.display = 'none';
+                                }
+                            });
+                            
+                            // Empêcher la fermeture quand on clique dans le dropdown
+                            finalDropdown.addEventListener('click', function(e) {
+                                e.stopPropagation();
+                            });
+                        }
+                    }
+                }
+                
+                // ========== CHARGEMENT INITIAL ==========
+                document.addEventListener('DOMContentLoaded', function() {
+                    initLanguageSelector();
+                    console.log('🌐 Langue active:', currentLocale, '(persistante avec cookies)');
+                });
+                
+                // ========== SYNC LOCALSTORAGE ==========
+                try {
+                    const savedLang = localStorage.getItem('preferred-language');
+                    if (savedLang && savedLang !== currentLocale && ['fr', 'en'].includes(savedLang)) {
+                        console.log('🔄 Synchronisation localStorage → cookie:', savedLang);
+                        fetch('/set-language/' + savedLang, { 
+                            method: 'GET', 
+                            credentials: 'same-origin',
+                            cache: 'no-cache'
+                        }).catch(() => {});
+                    }
+                } catch(e) {
+                    // Ignorer erreurs localStorage
+                }
+                
+            })();
+        </script>
+
+        <!-- Script pour la sidebar (closeNav) -->
+        <script>
+            function closeNav() {
+                const sidebar = document.getElementById('attorneySidepannel');
+                if (sidebar) {
+                    sidebar.classList.remove('active');
+                }
+            }
+        </script>
+
         <main id="content" class="site-main">
-            <!-- home banner section html start -->
-            <section class="home-banner">
-                <div class="overlay overlay-balance"></div>
-                <div class="container">
-                    <div class="row align-items-center g-0">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="banner-detail">
-                                <h2 class="banner-title">
-                                    PROTÉGEZ VOS INTÉRÊTS AVEC DES EXPERTS
-                                </h2>
-                                <p class="banner-info">
-                                    Droit minier, affaires (OHADA), corporatif, fiscal et ressources naturelles. Notre équipe d'avocats expérimentés vous conseille et vous défend avec stratégie et détermination pour assurer le succès de vos projets.
-                                </p>
-                                <div class="banner-btn-wrapper">
-                                    <a href="/reservation" class="button-primary">PRISE DE RENDEZ-VOUS</a>
-                                    <a href="/about" class="button-white">EN SAVOIR PLUS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <figure class="banner-img">
-                                <div class="banner-overlay-img overlay"></div>
-                                <img src="images/jethro profile.png" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="banner-service-content">
-                        <div class="serice-type">
-                            <a href="#">
-                                <h5 class="service-header">
-                                    Officiellement accrédité
-                                </h5>
-                                <figure class="servie-icon">
-                                    <i aria-hidden="true" class="icon icon-Profile"></i>
-                                </figure>
-                                <p class="service-desc">
-                                    Certifié officiellement par les autorités gouvernementales
-                                </p>
-                            </a>
-                        </div>
-                        <div class="serice-type active">
-                            <a href="#">
-                                <h5 class="service-header">
-                                    Spécialiste juridique
-                                </h5>
-                                <figure class="servie-icon">
-                                    <i aria-hidden="true" class="icon icon-Rating"></i>
-                                </figure>
-                                <p class="service-desc">
-                                    Fournissant des solutions juridiques expertes de manière efficace.
-                                </p>
-                            </a>
-                        </div>
-                        <div class="serice-type">
-                            <a href="#">
-                                <h5 class="service-header">
-                                    Rentable
-                                </h5>
-                                <figure class="servie-icon">
-                                    <i aria-hidden="true" class="icon icon-save-money"></i>
-                                </figure>
-                                <p class="service-desc">
-                                    Offrant des services de qualité à des prix compétitifs.
-                                </p>
-                            </a>
-                        </div>
-                        <div class="serice-type">
-                            <a href="#">
-                                <h5 class="service-header">
-                                    Fortement convivial
-                                </h5>
-                                <figure class="servie-icon">
-                                    <i aria-hidden="true" class="icon icon-handshake"></i>
-                                </figure>
-                                <p class="service-desc">
-                                    Favoriser la confiance, la loyauté et le respect mutuel.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- home about section html start -->
-            <section class="home-about-us">
-                <div class="container">
-                    <div class="about-intro">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h2 class="about-title">
-                                    Bien plus qu'un cabinet, un partenaire
-                                </h2>
-                            </div>
-                            <div class="col-lg-4">
-                                <p>
-                                    <span class="first-word">N</span>otre plus grande fierté ? Voir nos clients nous recommander à leur tour. Cette reconnaissance constante nous motive chaque jour à perfectionner notre expertise et à renforcer la qualité de notre écoute et de nos conseils.
-                                </p>
-                            </div>
-                            <div class="col-lg-4">
-                                <p>
-                                    Nous croyons qu'un bon conseil juridique ne se limite pas aux textes de loi. C'est avant tout une écoute attentive de vos besoins, une compréhension de vos défis et une volonté sincère de vous voir réussir dans un environnement juridique sécurisé.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="home-about-image">
-                        <!-- <figure class="left-img">
-                            <div class="video-button">
-                                <a id="video-container" data-video-id="IUN664s7N-c">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                        </figure> -->
-                        <aside class="about-aside-content">
-                            <h6 class="about-content-title">
-                                <em>
-                                    ” Nous offrons une expertise juridique fiable et personnalisée, en nous engageant à protéger vos intérêts avec intégrité et excellence. “
-                                </em>
-                            </h6>
-                            <div class="about-author-wrapper">
-                                <div class="author-detail">
-                                    <figure class="author-img">
-                                        <img src="/images/honorableJethro.png" alt="Maître Jethro Muyombi Tshimbu" class="img-responsive">
-                                    </figure>
-                                    <div class="author-description">
-                                        <h5 class="author-name">Jethro Muyombi tshimbu </h5>
-                                        <span class="author-title">Avocat associé-Gérant</span>
-                                    </div>
-                                </div>
-                                <figure class="author-signature">
-                                </figure>
-                            </div>
-                            <div id="accordion-tab-one" class="accordion-content" role="tablist">
-                                <div id="accordion-A" class="card tab-pane fade show" role="tabpanel" aria-labelledby="accordion-A">
-                                    <div class="card-header" role="tab" id="qus-A">
-                                        <h6 class="mb-0">
-                                            <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                1. FIABILITÉ : Votre confiance est notre engagement
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <div id="collapse-one" class="collapse show" data-bs-parent="#accordion-tab-one" role="tabpanel" aria-labelledby="qus-A">
-                                        <div class="card-body">
-                                            <p><strong>Transparence absolue :</strong> Nous croyons que l'honnêteté est le fondement de toute relation de confiance durable.</p>
-                                            <p><strong>Anticipation proactive :</strong> Nous pensons à l'avance pour vous, anticipant les défis pour mieux les prévenir.</p>
-                                            <p><strong>Écoute empathique :</strong> Nous nous mettons à votre place pour comprendre pleinement vos enjeux et vos préoccupations.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion-B" class="card tab-pane" role="tabpanel" aria-labelledby="accordion-B">
-                                    <div class="card-header" role="tab" id="qus-B">
-                                        <h6 class="mb-0">
-                                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                2. PRAGMATISME : Des solutions concrètes pour vos défis
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <div id="collapse-two" class="collapse" data-bs-parent="#accordion-tab-one" role="tabpanel" aria-labelledby="qus-B">
-                                        <div class="card-body">
-                                            <p><strong>Apprentissage continu :</strong> Nous restons en veille permanente pour vous offrir une expertise toujours actualisée.</p>
-                                            <p><strong>Solutions adaptées :</strong> Nous privilégions les approches pratiques qui répondent réellement à vos besoins spécifiques.</p>
-                                            <p><strong>Flexibilité :</strong> Nous nous adaptons à chaque situation unique, car nous savons que chaque client mérite une approche sur mesure.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion-D" class="card tab-pane" role="tabpanel" aria-labelledby="accordion-D">
-                                    <div class="card-header" role="tab" id="qus-D">
-                                        <h6 class="mb-0">
-                                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-four" aria-expanded="true" aria-controls="collapse-four">
-                                                3. AUDACE : Innover pour mieux vous défendre
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <div id="collapse-four" class="collapse" data-bs-parent="#accordion-tab-one" role="tabpanel" aria-labelledby="qus-D">
-                                        <div class="card-body">  
-                                            <p><strong>Approche innovante :</strong> Nous osons sortir des sentiers battus pour trouver les meilleures stratégies juridiques.</p>
-                                            <p><strong>Créativité :</strong> Nous apportons des solutions novatrices là où d'autres voient des obstacles.</p>
-                                            <p><strong>Communication authentique :</strong> Nous échangeons avec franchise tout en restant attentifs à vos besoins et sensibilités.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </section>
-            <!-- home area section html start -->
-            <section class="home-legal-area">
-                <div class="container">
-                    <div class="top-section-head text-center col-lg-8 offset-lg-2">
-                        <h2 class="section-title">
-                            Nos spécialités
+    <!-- home banner section html start -->
+    <section class="home-banner">
+        <div class="overlay overlay-balance"></div>
+        <div class="container">
+            <div class="row align-items-center g-0">
+                <div class="col-lg-6 col-md-6">
+                    <div class="banner-detail">
+                        <h2 class="banner-title">
+                            <%= __("home.banner.title") %>
                         </h2>
-                        <p class="section-paragraph">
-                            Nous existons pour offrir un service innovant qui favorise les relations et impacte les vies.
+                        <p class="banner-info">
+                            <%= __("home.banner.subtitle") %>
                         </p>
-                    </div>
-                    <div class="legal-area-list">
-
-                         <div class="legal-area-detail">
-                            <figure class="area-img">
-                                <img src="/images/droitMinier2Update.jpg" alt="">
-                            </figure>
-                            <div class="area-content-wrapper">
-                                <div class="area-detail">
-                                    <h5 class="role-title">Droit Minier</h5>
-                                    <span class="area-role-btn">
-                                        <a href="/practice-area-mines">EN SAVOIR PLUS
-                                            <i aria-hidden="true" class="icon icon-arrow-right"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                                <div class="legal-area-icon">
-                                    <i aria-hidden="true" class="fas fa-handshake"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="legal-area-detail item-3">
-                            <figure class="area-img">
-                                <img src="/images/familyUpdate.jpg" alt="">
-                            </figure>
-                            <div class="area-content-wrapper">
-                                <div class="area-detail">
-                                    <h5 class="role-title">Droit de la Famille & Divorce</h5>
-                                    <span class="area-role-btn">
-                                        <a href="/practice-area-droits-homme">EN SAVOIR PLUS
-                                            <i aria-hidden="true" class="icon icon-arrow-right"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                                <div class="legal-area-icon">
-                                    <i aria-hidden="true" class="fas fa-home"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="legal-area-detail">
-                            <figure class="area-img">
-                                <img src="/images/Mines.jpg" alt="">
-                            </figure>
-                            <div class="area-content-wrapper">
-                                <div class="area-detail">
-                                    <h5 class="role-title">Droit Agricole & Acquisition de Terres</h5>
-                                    <span class="area-role-btn">
-                                        <a href="/practice-area-corporatif">EN SAVOIR PLUS
-                                            <i aria-hidden="true" class="icon icon-arrow-right"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                                <div class="legal-area-icon">
-                                    <i aria-hidden="true" class="fas fa-balance-scale-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                       
-
-                    </div>
-                    <div class="legal-area-btn text-center">
-                        <a href="/practice-area" class="button-primary">AUTRES DOMAINES DE PRATIQUE</a>
-                    </div>
-                </div>
-            </section>
-            <!-- home schedule section html start -->
-            <section class="home-schedule">
-                <div class="overlay gradient-overlay"></div>
-                <div class="container">
-                    <div class="schedule-wrapper">
-                        <div class="right-side-schedule">
-                            <div class="overlay balance-patten"></div>
-                            <aside class="section-head-white ">
-                                <h2 class="section-title">
-                                    Faites-nous appel pour tous vos besoins juridiques !
-                                </h2>
-                                <p class="section-paragraph">
-                                    Confiez vos affaires juridiques à notre équipe d'avocats expérimentés. Nous offrons des solutions personnalisées, efficaces et expertes pour une large gamme de questions juridiques.
-                                </p>
-                                <div class="timenote">
-                                    <div class="schedule-time">
-                                        <ul>
-                                            <li>
-                                                <h6>Du lundi au vendredi</h6>
-                                            </li>
-                                            <li>
-                                                <h6>9h00 - 18h00</h6>
-                                            </li>
-                                            <li>
-                                                <h6>Dimanche et jours fériés (Fermé)</h6>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="note-list">
-                                        <ul>
-                                            <li>
-                                                <i aria-hidden="true" class="far fa-check-square"></i>
-                                                <span>
-                                                    Excellence axée sur le client.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <i aria-hidden="true" class="far fa-check-square"></i>
-                                                <span>
-                                                    Perspectives juridiques stratégiques.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <i aria-hidden="true" class="far fa-check-square"></i>
-                                                <span>
-                                                    Pratique guidée par l'intégrité.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <i aria-hidden="true" class="far fa-check-square"></i>
-                                                <span>
-                                                    Naviguer dans le droit de manière efficace.
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="schedule-btn">
-                                    <a href="/reservation" class="button-primary">ENGAGEZ-NOUS DÈS MAINTENANT !</a>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="left-side-shedule">
-                            <div class="goal-wrapper">
-                                <div class="circle-progressbar-yellow circle-progressbar" data-animate="false">
-                                    <div class="circle-bar" data-percent="95">
-                                        <div class="circle-number"></div>
-                                    </div>
-                                </div>
-                                <h5 class="goal-title">Solution Juridique</h5>
-                            </div>
-                            <div class="goal-wrapper">
-                                <div class="circle-progressbar-white circle-progressbar" data-animate="false">
-                                    <div class="circle-bar" data-percent="98">
-                                        <div class="circle-number"></div>
-                                    </div>
-                                </div>
-                                <h5 class="goal-title">Réussite du Projet</h5>
-                            </div>
+                        <div class="banner-btn-wrapper">
+                            <a href="/reservation" class="button-primary"><%= __("common.book_appointment_btn") %></a>
+                            <a href="/about" class="button-white"><%= __("common.learn_more_btn") %></a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- home gallery html section -->
-            <section class="home-gallery-section">
-                <div class="container">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="top-section-head text-center">
-                            <h2 class="section-title">
-                                Analyses Juridiques Récentes
-                            </h2>
-                            <p class="section-paragraph">
-                               Découvrez les secteurs dans lesquels nous excellons et où notre expertise fait la différence pour nos clients.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="gallery-nav">
-                        <ul class="filter-menu">
-                            <li class="button filtering-button is-checked" data-filter=".LEGAL-WORK">TRAVAUX JURIDIQUES</li>
-                            <li class="button filtering-button" data-filter=".MANAGEMENT">GESTION</li>
-                            <li class="button filtering-button" data-filter=".CORPORATE">CORPORATIF</li>
-                        </ul>
-                    </div>
-                    <div class="gallery-container">
-                        <div class="gallery-grid">
-                            <div class="mix single-gallery gallery-grid-item LEGAL-WORK">
-                                <figure class="gallery-img">
-                                    <a href="/images/index1.jpg" data-fancybox="gallery" class="img-box">
-                                        <img src="/images/index1.jpg" alt="">
-                                    </a>
-                                    <div class="facility-gallery-wrapper">
-                                        <div class="facility-content">
-                                            <h5 class="facility-title">
-                                                <a href="/case-detail">Propriété et Immobilier</a>
-                                            </h5>
-                                            <p class="facility-info">
-                                                Expertise en droit immobilier pour protéger et valoriser vos biens
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="single-gallery gallery-grid-item LEGAL-WORK">
-                                <figure class="gallery-img">
-                                    <a href="/images/index2.jpg" data-fancybox="gallery" class="img-box">
-                                        <img src="/images/index2.jpg" alt="">
-                                    </a>
-                                    <div class="facility-gallery-wrapper">
-                                        <div class="facility-content">
-                                            <h5 class="facility-title">
-                                                <a href="/case-detail">Droit Minier & Ressources Naturelles</a>
-                                            </h5>
-                                            <p class="facility-info">
-                                                Expertise complète en droit minier : concessions, permis d'exploitation, régulation sectorielle, et accompagnement des investissements dans les ressources stratégiques.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="single-gallery gallery-grid-item MANAGEMENT">
-                                <figure class="gallery-img">
-                                    <a href="/images/index5.jpg" data-fancybox="gallery" class="img-box">
-                                        <img src="/images/index5.jpg" alt="">
-                                    </a>
-                                    <div class="facility-gallery-wrapper">
-                                        <div class="facility-content">
-                                            <h5 class="facility-title">
-                                                <a href="/case-detail">Litiges Civils et Juridiques</a>
-                                            </h5>
-                                            <p class="facility-info">
-                                                Gestion experte des litiges civils pour défendre vos droits avec assurance.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="single-gallery gallery-grid-item MANAGEMENT">
-                                <figure class="gallery-img">
-                                    <a href="/images/index4.jpg" data-fancybox="gallery" class="img-box">
-                                        <img src="/images/index4.jpg" alt="">
-                                    </a>
-                                    <div class="facility-gallery-wrapper">
-                                        <div class="facility-content">
-                                            <h5 class="facility-title">
-                                                <a href="/case-detail">Termes Juridiques Commerciaux
-                                                </a>
-                                            </h5>
-                                            <p class="facility-info">
-                                                Conseils en droit commercial pour des contrats solides et conformes.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="single-gallery gallery-grid-item CORPORATE">
-                                <figure class="gallery-img">
-                                    <a href="/images/index3.jpg" data-fancybox="gallery" class="img-box">
-                                        <img src="/images/index3.jpg" alt="">
-                                    </a>
-                                    <div class="facility-gallery-wrapper">
-                                        <div class="facility-content">
-                                            <h5 class="facility-title">
-                                                <a href="/case-detail">Télécommunications & Économie Numérique</a>
-                                            </h5>
-                                            <p class="facility-info">
-                                                Expertise en régulation des télécoms, contrats de licences, protection des données, et accompagnement juridique des projets d'infrastructures technologiques.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="single-gallery gallery-grid-item CORPORATE">
-                                <figure class="gallery-img">
-                                    <a href="/images/index7.jpg" data-fancybox="gallery" class="img-box">
-                                        <img src="/images/index7.jpg" alt="">
-                                    </a>
-                                    <div class="facility-gallery-wrapper">
-                                        <div class="facility-content">
-                                            <h5 class="facility-title">
-                                                <a href="/case-detail">Droit Bancaire & Financier</a>
-                                            </h5>
-                                            <p class="facility-info">
-                                                Conseil juridique spécialisé pour les établissements bancaires et les opérations financières complexes.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- home service section html -->
-            <section class="home-service">
-                <div class="overlay balance-patten"></div>
-                <div class="container">
-                    <div class="home-service-wrapper">
-                        <div class="service-left">
-                            <div class="fact-inner-box">
-                                <div class="fact-content top-left-content">
-                                    <i aria-hidden="true" class="fas fa-user-graduate"></i>
-                                    <h5>Notre expertise est acquise grâce à notre expérience</h5>
-                                </div>
-                                <figure class="fact-image top-right-image"></figure>
-                                <figure class="fact-image bottom-left-image"></figure>
-                                <div class="fact-content bottom-right-content">
-                                    <i aria-hidden="true" class="icon icon-idea1"></i>
-                                    <h5>Notre meilleure équipe pour tous vos conseils et travaux juridiques</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-right">
-                            <div class="section-head-white">
-                                <h2 class="section-title">
-                                    Une expérience de confiance, un service sur lequel compter !
-                                </h2>
-                                <p class="section-paragraph">
-                                    Nous sommes votre partenaire de confiance pour des solutions juridiques sur mesure. Notre équipe d’experts vous offre des conseils personnalisés et une assistance efficace pour gérer vos enjeux avec compétence et intégrité.
-                                </p>
-                            </div>
-                            <div class="counter-inner-two-side">
-                                <div class="row">
-                                    <div class=" counter-item col-6">
-                                        <div class="counter-no">
-                                            <span class="counter">320</span>+
-                                        </div>
-                                        <div class="Completed">
-                                            Projets Réalisés
-                                        </div>
-                                    </div>
-                                    <div class=" counter-item col-6">
-                                        <div class="counter-no">
-                                            <span class="counter">20</span>+
-                                        </div>
-                                        <div class="Completed">
-                                            Prix Décerné
-                                        </div>
-                                    </div>
-                                    <div class=" counter-item col-6">
-                                        <div class="counter-no">
-                                            <span class="counter">5</span>+
-                                        </div>
-                                        <div class="Completed">
-                                            Bureaux
-                                        </div>
-                                    </div>
-                                    <div class=" counter-item col-6">
-                                        <div class="counter-no">
-                                            <span class="counter">2000</span>+
-                                        </div>
-                                        <div class="Completed">
-                                            Client Satisfait
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- home testimonial section html -->
-            <!-- <section class="home-testimonial-section">
-                <div class="container">
-                    <div class="home-testimonial-wrapper">
-                        <div class="section-head">
-                            <h2 class="section-title">
-                                Trusted By Our Customers
-                            </h2>
-                            <p class="section-paragraph">
-                                Hic voluptatibus asperiores animi vero. Felis ipsum. Gravida aspernatur adipisci mus adipisci ipsam etiam, repellendus aptent aliquam quas, aptent ab curabitu.
-                            </p>
-                            <a href="testimonial.html" class="testimonial-btn button-primary">VIEW ALL REVIEWS</a>
-                        </div>
-                        <div class="review-slider-wrapper">
-                            <div class="testimonial-slider">
-                                <div class="home-testimonial-content">
-                                    <div class="testimonila-detail">
-                                        <figure class="testimonila-icon">
-                                            <i aria-hidden="true" class="icon icon-quote2"></i>
-                                        </figure>
-                                        <p>
-                                            Repellendus ad voluptate quaerat sociosqu repellat quisque quas sagittis laboriosam perferendis placeat, ducimus perferendis omnis placeat, ducimus perfere.
-                                        </p>
-                                    </div>
-                                    <div class="author-detail">
-                                        <figure class="author-img">
-                                            <img src="assets/img/legalor-img9.jpg" alt="">
-                                        </figure>
-                                        <div class="author-info">
-                                            <h5 class="author-name">Jason Lawrence</h5>
-                                            <span class="author-desc">CLIENT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="home-testimonial-content">
-                                    <div class="testimonila-detail">
-                                        <figure class="testimonila-icon">
-                                            <i aria-hidden="true" class="icon icon-quote2"></i>
-                                        </figure>
-                                        <p>
-                                            Repellendus ad voluptate quaerat sociosqu repellat quisque quas sagittis laboriosam perferendis placeat, ducimus perferendis omnis placeat, ducimus perfere.
-                                        </p>
-                                    </div>
-                                    <div class="author-detail">
-                                        <figure class="author-img">
-                                            <img src="assets/img/legalor-img8.jpg" alt="">
-                                        </figure>
-                                        <div class="author-info">
-                                            <h5 class="author-name">Alison White</h5>
-                                            <span class="author-desc">CLIENT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="home-testimonial-content">
-                                    <div class="testimonila-detail">
-                                        <figure class="testimonila-icon">
-                                            <i aria-hidden="true" class="icon icon-quote2"></i>
-                                        </figure>
-                                        <p>
-                                            Repellendus ad voluptate quaerat sociosqu repellat quisque quas sagittis laboriosam perferendis placeat, ducimus perferendis omnis placeat, ducimus perfere.
-                                        </p>
-                                    </div>
-                                    <div class="author-detail">
-                                        <figure class="author-img">
-                                            <img src="assets/img/legalor-img10.jpg" alt="">
-                                        </figure>
-                                        <div class="author-info">
-                                            <h5 class="author-name">William Scott</h5>
-                                            <span class="author-desc">CLIENT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- home blog section html start -->
-            <section class="home-blog-section">
-                <div class="container">
-                    <div class="section-head col-md-8 offset-md-2 text-center">
-                        <h2 class="section-title">
-                            Actualités et Articles
-                        </h2>
-                        <p class="section-paragraph">
-                            Découvrez nos analyses juridiques et restez informé des dernières évolutions pour mieux comprendre les enjeux légaux actuels.
-                        </p>
-                    </div>
-                    <div class="inner-blog-wrapper">
-                        <article class="post">
-                            <figure class="feature-image">
-                                <img src="images/j&j parquet 2 lu.jpg" alt="">
-                                <span class="cat-meta">
-                                    <!-- <a href="#">LEGAL WORK</a> -->
-                                </span>
-                            </figure>
-                            <div class="entry-content">
-                                <h5>
-                                    <a href="#">La Charge de Travail Augmente dans Votre Département Juridique</a>
-                                </h5>
-                                <div class="entry-meta">
-                                    <span class="posted-on">
-                                        <a href="#"><%= new Date().toLocaleDateString('fr-FR', { 
-                                            day: 'numeric', 
-                                            month: 'long', 
-                                            year: 'numeric' 
-                                        }) %></a>
-                                    </span>
-                                    <span class="comments">
-                                        <!-- <a href="#">No Comments</a> -->
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="post">
-                            <figure class="feature-image">
-                                <img src="images/j&j actu 2.jpg" alt="">
-                                <span class="cat-meta">
-                                    <!-- <a href="#">LAW & TERMS</a> -->
-                                </span>
-                            </figure>
-                            <div class="entry-content">
-                                <h5>
-                                    <a href="#">Écouter les clients nous apportera davantage d'expérience</a>
-                                </h5>
-                                <div class="entry-meta">
-                                    <span class="posted-on">
-                                        <a href="#"><%= new Date().toLocaleDateString('fr-FR', { 
-                                            day: 'numeric', 
-                                            month: 'long', 
-                                            year: 'numeric' 
-                                        }) %></a>
-                                    </span>
-                                    <span class="comments">
-                                        <!-- <a href="#">No Comments</a> -->
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="post item-3 item-3">
-                            <figure class="feature-image">
-                                <img src="images/j&j actu.jpg" alt="">
-                                <span class="cat-meta">
-                                    <!-- <a href="#">LEGAL WORK</a> -->
-                                </span>
-                            </figure>
-                            <div class="entry-content">
-                                <h5>
-                                    <a href="#">Différence entre Information Juridique et Conseil Juridique</a>
-                                </h5>
-                                <div class="entry-meta">
-                                    <span class="posted-on">
-                                        <a href="#"><%= new Date().toLocaleDateString('fr-FR', { 
-                                            day: 'numeric', 
-                                            month: 'long', 
-                                            year: 'numeric' 
-                                        }) %></a>
-                                    </span>
-                                    <span class="comments">
-                                        <!-- <a href="#">No Comments</a> -->
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- footer part -->
-       <footer id="colophon" class="site-footer">
-            <div class="top-footer">
-                <div class="footer-overlay overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <aside class="widget widget_text img-textwidget primary-bg">
-                                <div class="footer-logo">
-                                    <a href="/">
-                                        <img src="/images/J&J logo white.svg" alt="J&J Law Firm Logo">
-                                    </a>
-                                </div>
-                                <div class="textwidget widget-text">
-                                    Cabinet d'avocats spécialisé en droit congolais et OHADA. Nous vous accompagnons avec expertise et engagement dans toutes vos démarches juridiques en RDC.
-                                </div>
-                                <div class="footer-locate-link">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <span class="locate-txt">
-                                                <strong>Siège Social - Kinshasa :</strong><br>
-                                                nᵒ 148/A, Blvd du 30 Juin, Gombe<br>
-                                                4ᵉ étage, Immeuble LUXURY TOWER
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <span class="locate-txt">
-                                                <strong>Bureau Annexe - Lubumbashi :</strong><br>
-                                                nᵒ 701, av. Kasavubu, Bâtiment Léopold<br>
-                                                Quartier Makutano, Lubumbashi
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+243995482416">
-                                                <i class="fas fa-phone-alt"></i>
-                                                <span class="locate-txt">
-                                                    +243 995 482 416 (Siège Social)
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+243810369919">
-                                                <i class="fas fa-phone-alt"></i>
-                                                <span class="locate-txt">
-                                                    +243 810 369 919 (Bureau Lubumbashi)
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:lawfirmjetj@gmail.com">
-                                                <i class="fas fa-envelope"></i>
-                                                <span class="locate-txt">
-                                                    lawfirmjetj@gmail.com
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <!-- <li>
-                                            <a href="mailto:christian.kakenza0@gmail.com">
-                                                <i class="fas fa-envelope"></i>
-                                                <span class="locate-txt">
-                                                    christian.kakenza0@gmail.com
-                                                </span>
-                                            </a>
-                                        </li> -->
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <aside class="widget">
-                                <h5 class="widget-title">Navigation</h5>
-                                <ul class="widget-underline">
-                                    <li>
-                                        <a href="/">Accueil</a>
-                                    </li>
-                                    <li>
-                                        <a href="/about">À propos</a>
-                                    </li>
-                                    <li>
-                                        <a href="/practice-area">Spécialités</a>
-                                    </li>
-                                    <li>
-                                        <a href="/attorney">Notre équipe</a>
-                                    </li>
-                                    <li>
-                                        <a href="/contact">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a href="/faq">FAQ</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <aside class="widget">
-                                <h5 class="widget-title">Services clés</h5>
-                                <ul>
-                                    <li>
-                                        <a href="/practice-area-mines">Droit Minier</a>
-                                    </li>
-                                    <li>
-                                        <a href="/practice-area-ohada">Droit OHADA</a>
-                                    </li>
-                                    <li>
-                                        <a href="/practice-area-assurances">Droit des Assurances</a>
-                                    </li>
-                                    <li>
-                                        <a href="/practice-area-immobilier">Droit Immobilier</a>
-                                    </li>
-                                    <li>
-                                        <a href="/practice-area-corporatif">Droit Agricole & Acquisition de Terres</a>
-                                    </li>
-                                    <li>
-                                        <a href="/practice-area-droits-homme">Droit de la Famille & Divorce</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <aside class="widget news-widget">
-                                <h5 class="widget-title">Newsletter</h5>
-                                <div class="textwidget widget-text">
-                                    Inscrivez-vous pour recevoir les dernières actualités juridiques, 
-                                    réformes législatives en RDC et conseils exclusifs.
-                                </div>
-                                
-                                <!-- Message de confirmation -->
-                                <div id="newsletter-message" style="display: none; background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #28a745;">
-                                    <i class="fas fa-check-circle"></i> Merci ! Vous êtes maintenant inscrit à notre newsletter.
-                                </div>
-                                
-                                <!-- Formulaire newsletter -->
-                                <form class="footer-email-form" id="newsletter-form">
-                                    <div class="input-group">
-                                        <input type="email" name="email" placeholder="Votre adresse email" required>
-                                        <button type="submit" class="footer-email-btn" title="S'abonner">
-                                            <i class="fas fa-paper-plane"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                                
-                                <!-- Script newsletter -->
-                                <script>
-                                    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
-                                        e.preventDefault();
-                                        
-                                        const email = this.querySelector('input[name="email"]').value;
-                                        const messageDiv = document.getElementById('newsletter-message');
-                                        
-                                        // Validation simple
-                                        if (!email || !email.includes('@')) {
-                                            messageDiv.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Veuillez entrer une adresse email valide.';
-                                            messageDiv.style.background = '#f8d7da';
-                                            messageDiv.style.color = '#721c24';
-                                            messageDiv.style.borderLeftColor = '#dc3545';
-                                            messageDiv.style.display = 'block';
-                                            return;
-                                        }
-                                        
-                                        // Simulation d'envoi (remplacer par appel API)
-                                        messageDiv.innerHTML = '<i class="fas fa-check-circle"></i> Merci ! Vous êtes maintenant inscrit à notre newsletter.';
-                                        messageDiv.style.background = '#d4edda';
-                                        messageDiv.style.color = '#155724';
-                                        messageDiv.style.borderLeftColor = '#28a745';
-                                        messageDiv.style.display = 'block';
-                                        
-                                        // Réinitialiser le formulaire
-                                        this.reset();
-                                        
-                                        // Masquer le message après 5 secondes
-                                        setTimeout(() => {
-                                            messageDiv.style.display = 'none';
-                                        }, 5000);
-                                        
-                                        // Log pour débogage
-                                        console.log('Newsletter subscription:', email);
-                                    });
-                                </script>
-                                
-                                <!-- Réseaux sociaux -->
-                                <div class="footer-social-links">
-                                    <p>Suivez-nous :</p>
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <!-- <li>
-                                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </li> -->
-                                        <li>
-                                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://wa.me/243995482416" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-                                                <i class="fab fa-whatsapp"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                
-                                <!-- Liens légaux -->
-                                <!-- <div class="footer-legal-links">
-                                    <p class="small">
-                                        <a href="/legal-notice">Mentions légales</a> | 
-                                        <a href="/legal-notice">Politique de confidentialité</a> | 
-                                        <a href="/legal-notice">CGU</a>
-                                    </p>
-                                </div> -->
-                            </aside>
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-6">
+                    <figure class="banner-img">
+                        <div class="banner-overlay-img overlay"></div>
+                        <img src="images/jethro profile.png" alt="<%= __("team.master_jethro") %>">
+                    </figure>
                 </div>
             </div>
-            <div class="bottom-footer">
-                <div class="container">
-                    <div class="copy-right">
-                        Copyright &copy; <%= new Date().getFullYear() %> <strong>J&J LAW FIRM</strong>. 
-                        Tous droits réservés. Cabinet d'avocats agréé en République Démocratique du Congo.
-                    </div>
+            <div class="banner-service-content">
+                <div class="serice-type">
+                    <a href="#">
+                        <h5 class="service-header">
+                            <%= __("home.values.accredited.title") %>
+                        </h5>
+                        <figure class="servie-icon">
+                            <i aria-hidden="true" class="icon icon-Profile"></i>
+                        </figure>
+                        <p class="service-desc">
+                            <%= __("home.values.accredited.desc") %>
+                        </p>
+                    </a>
                 </div>
-            </div>
-        </footer>
-
-        <!-- Bouton retour en haut -->
-        <a id="backTotop" href="#" class="to-top-icon" title="Retour en haut">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-
-        <!-- Formulaire de recherche (optionnel) -->
-        <div class="header-search-form" style="display: none;">
-            <div class="container">
-                <div class="header-search-container">
-                    <form class="search-form" role="search" method="get">
-                        <input type="text" name="s" placeholder="Rechercher...">
-                        <button type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                    <a href="#" class="search-close">
-                        <i class="fas fa-times"></i>
+                <div class="serice-type active">
+                    <a href="#">
+                        <h5 class="service-header">
+                            <%= __("home.values.specialist.title") %>
+                        </h5>
+                        <figure class="servie-icon">
+                            <i aria-hidden="true" class="icon icon-Rating"></i>
+                        </figure>
+                        <p class="service-desc">
+                            <%= __("home.values.specialist.desc") %>
+                        </p>
+                    </a>
+                </div>
+                <div class="serice-type">
+                    <a href="#">
+                        <h5 class="service-header">
+                            <%= __("home.values.cost_effective.title") %>
+                        </h5>
+                        <figure class="servie-icon">
+                            <i aria-hidden="true" class="icon icon-save-money"></i>
+                        </figure>
+                        <p class="service-desc">
+                            <%= __("home.values.cost_effective.desc") %>
+                        </p>
+                    </a>
+                </div>
+                <div class="serice-type">
+                    <a href="#">
+                        <h5 class="service-header">
+                            <%= __("home.values.user_friendly.title") %>
+                        </h5>
+                        <figure class="servie-icon">
+                            <i aria-hidden="true" class="icon icon-handshake"></i>
+                        </figure>
+                        <p class="service-desc">
+                            <%= __("home.values.user_friendly.desc") %>
+                        </p>
                     </a>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- home about section html start -->
+    
+    <section class="home-testimonial-section">
+        <div class="container">
+            <div class="home-testimonial-wrapper">
+                <div class="section-head">
+                    <h2 class="section-title">
+                        <%= __("home.team.title") %>
+                    </h2>
+                    <p class="section-paragraph">
+                        <%= __("home.team.subtitle") %>
+                    </p>
+                    <a href="/attorney" class="testimonial-btn button-primary"><%= __("common.discover_full_team") %></a>
+                </div>
+                <div class="review-slider-wrapper">
+                    <div class="testimonial-slider">
+                        <div class="home-testimonial-content">
+                            <div class="testimonila-detail">
+                                <figure class="testimonila-icon">
+                                    <i aria-hidden="true" class="icon icon-quote2"></i>
+                                </figure>
+                                <p>
+                                    <%= __("home.team.testimonials.jethro") %>
+                                </p>
+                            </div>
+                            <div class="author-detail">
+                                <figure class="author-img">
+                                    <a href="/attorney-detail">
+                                        <img src="/images/jethrohome.jpg" alt="<%= __("team.master_jethro") %>">
+                                    </a>
+                                </figure>
+                                <div class="author-info">
+                                    <h5 class="author-name">
+                                        <a href="/attorney-detail"><%= __("team.master_jethro") %></a>
+                                    </h5>
+                                    <span class="author-desc"><%= __("team.managing_partner") %></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-testimonial-content">
+                            <div class="testimonila-detail">
+                                <figure class="testimonila-icon">
+                                    <i aria-hidden="true" class="icon icon-quote2"></i>
+                                </figure>
+                                <p>
+                                    <%= __("home.team.testimonials.john") %>
+                                </p>
+                            </div>
+                            <div class="author-detail">
+                                <figure class="author-img">
+                                    <a href="/attorney-detail-john">
+                                        <img src="/images/johnhome.jpg" alt="<%= __("team.master_ngoy") %>">
+                                    </a>
+                                </figure>
+                                <div class="author-info">
+                                    <h5 class="author-name">
+                                        <a href="/attorney-detail-john"><%= __("team.master_ngoy") %></a>
+                                    </h5>
+                                    <span class="author-desc"><%= __("team.partner") %></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-testimonial-content">
+                            <div class="testimonila-detail">
+                                <figure class="testimonila-icon">
+                                    <i aria-hidden="true" class="icon icon-quote2"></i>
+                                </figure>
+                                <p>
+                                    <%= __("home.team.testimonials.mizou") %>
+                                </p>
+                            </div>
+                            <div class="author-detail">
+                                <figure class="author-img">
+                                    <a href="/attorney-detail-mizou">
+                                        <img src="/images/misouhome.jpg" alt="<%= __("team.master_mizou") %>">
+                                    </a>
+                                </figure>
+                                <div class="author-info">
+                                    <h5 class="author-name">
+                                        <a href="/attorney-detail-mizou"><%= __("team.master_mizou") %></a>
+                                    </h5>
+                                    <span class="author-desc"><%= __("team.associate") %></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Scripts JavaScript -->
-        <script src="/vendors/jquery/jquery.js"></script>
-        <script src="/vendors/waypoint/jquery.waypoints.min.js"></script>
-        <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
-        <script src="/vendors/progressbar-fill-visible/js/progressBar.min.js"></script>
-        <script src="/vendors/circle-progress/circle-progress.min.js"></script>
-        <script src="/vendors/countdown-date-loop-counter/loopcounter.js"></script>
-        <script src="/vendors/counterup/jquery.counterup.js"></script>
-        <script src="/vendors/modal-video/jquery-modal-video.min.js"></script>
-        <script src="/vendors/masonry/masonry.pkgd.min.js"></script>
-        <script src="/vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="/vendors/fancybox/dist/jquery.fancybox.min.js"></script>
-        <script src="/vendors/slick/slick.min.js"></script>
-        <script src="/vendors/slick-nav/jquery.slicknav.js"></script>
-        <script src="/js/custom.js"></script>
+    <!-- home schedule section html start -->
+    <section class="home-schedule">
+        <div class="overlay gradient-overlay"></div>
+        <div class="container">
+            <div class="schedule-wrapper">
+                <div class="right-side-schedule">
+                    <div class="overlay balance-patten"></div>
+                    <aside class="section-head-white ">
+                        <h2 class="section-title">
+                            <%= __("home.schedule.title") %>
+                        </h2>
+                        <p class="section-paragraph">
+                            <%= __("home.schedule.subtitle") %>
+                        </p>
+                        <div class="timenote">
+                            <div class="schedule-time">
+                                <ul>
+                                    <li>
+                                        <h6><%= __("home.schedule.hours.weekdays") %></h6>
+                                    </li>
+                                    <li>
+                                        <h6><%= __("home.schedule.hours.hours") %></h6>
+                                    </li>
+                                    <li>
+                                        <h6><%= __("home.schedule.hours.closed") %></h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="note-list">
+                                <ul>
+                                    <li>
+                                        <i aria-hidden="true" class="far fa-check-square"></i>
+                                        <span>
+                                            <%= __("home.schedule.commitments.client") %>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i aria-hidden="true" class="far fa-check-square"></i>
+                                        <span>
+                                            <%= __("home.schedule.commitments.strategic") %>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i aria-hidden="true" class="far fa-check-square"></i>
+                                        <span>
+                                            <%= __("home.schedule.commitments.integrity") %>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i aria-hidden="true" class="far fa-check-square"></i>
+                                        <span>
+                                            <%= __("home.schedule.commitments.navigate") %>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="schedule-btn">
+                            <a href="/reservation" class="button-primary"><%= __("home.schedule.cta") %></a>
+                        </div>
+                    </aside>
+                </div>
+                <div class="left-side-shedule">
+                    <div class="goal-wrapper">
+                        <div class="circle-progressbar-yellow circle-progressbar" data-animate="false">
+                            <div class="circle-bar" data-percent="95">
+                                <div class="circle-number"></div>
+                            </div>
+                        </div>
+                        <h5 class="goal-title"><%= __("home.schedule.legal_solution") %></h5>
+                    </div>
+                    <div class="goal-wrapper">
+                        <div class="circle-progressbar-white circle-progressbar" data-animate="false">
+                            <div class="circle-bar" data-percent="98">
+                                <div class="circle-number"></div>
+                            </div>
+                        </div>
+                        <h5 class="goal-title"><%= __("home.schedule.project_success") %></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home gallery html section -->
 
-        <!-- Script de retour en haut -->
-        <script>
-            // Retour en haut
-            $(document).ready(function(){
-                $(window).scroll(function(){
-                    if ($(this).scrollTop() > 100) {
-                        $('#backTotop').fadeIn();
-                    } else {
-                        $('#backTotop').fadeOut();
+    <section class="home-legal-area">
+        <div class="container">
+            <div class="top-section-head text-center col-lg-8 offset-lg-2">
+                <h2 class="section-title">
+                    <%= __("home.specialties.title") %>
+                </h2>
+                <p class="section-paragraph">
+                    <%= __("home.specialties.subtitle") %>
+                </p>
+            </div>
+            <div class="legal-area-list">
+                <div class="legal-area-detail">
+                    <figure class="area-img">
+                        <img src="/images/droitMinier2Update.jpg" alt="<%= __("services.mining") %>">
+                    </figure>
+                    <div class="area-content-wrapper">
+                        <div class="area-detail">
+                            <h5 class="role-title"><%= __("home.specialties.mining") %></h5>
+                            <span class="area-role-btn">
+                                <a href="/practice-area-mines"><%= __("home.specialties.learn_more") %>
+                                    <i aria-hidden="true" class="icon icon-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="legal-area-icon">
+                            <i aria-hidden="true" class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legal-area-detail item-3">
+                    <figure class="area-img">
+                        <img src="/images/familyUpdate.jpg" alt="<%= __("services.family") %>">
+                    </figure>
+                    <div class="area-content-wrapper">
+                        <div class="area-detail">
+                            <h5 class="role-title"><%= __("home.specialties.family") %></h5>
+                            <span class="area-role-btn">
+                                <a href="/practice-area-droits-homme"><%= __("home.specialties.learn_more") %>
+                                    <i aria-hidden="true" class="icon icon-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="legal-area-icon">
+                            <i aria-hidden="true" class="fas fa-home"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legal-area-detail">
+                    <figure class="area-img">
+                        <img src="/images/Mines.jpg" alt="<%= __("services.agricultural") %>">
+                    </figure>
+                    <div class="area-content-wrapper">
+                        <div class="area-detail">
+                            <h5 class="role-title"><%= __("home.specialties.agricultural") %></h5>
+                            <span class="area-role-btn">
+                                <a href="/practice-area-corporatif"><%= __("home.specialties.learn_more") %>
+                                    <i aria-hidden="true" class="icon icon-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="legal-area-icon">
+                            <i aria-hidden="true" class="fas fa-balance-scale-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="legal-area-btn text-center">
+                <a href="/practice-area" class="button-primary"><%= __("common.other_practice_areas") %></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- home service section html -->
+    <section class="home-service">
+        <div class="overlay balance-patten"></div>
+        <div class="container">
+            <div class="home-service-wrapper">
+                <div class="service-left">
+                    <div class="fact-inner-box">
+                        <div class="fact-content top-left-content">
+                            <i aria-hidden="true" class="fas fa-user-graduate"></i>
+                            <h5><%= __("home.expertise.title") %></h5>
+                        </div>
+                        <figure class="fact-image top-right-image"></figure>
+                        <figure class="fact-image bottom-left-image"></figure>
+                        <div class="fact-content bottom-right-content">
+                            <i aria-hidden="true" class="icon icon-idea1"></i>
+                            <h5><%= __("home.expertise.subtitle") %></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-right">
+                    <div class="section-head-white">
+                        <h2 class="section-title">
+                            <%= __("home.expertise.section_title") %>
+                        </h2>
+                        <p class="section-paragraph">
+                            <%= __("home.expertise.section_subtitle") %>
+                        </p>
+                    </div>
+                    <div class="counter-inner-two-side">
+                        <div class="row">
+                            <div class="counter-item col-6">
+                                <div class="counter-no">
+                                    <span class="counter">320</span>+
+                                </div>
+                                <div class="Completed">
+                                    <%= __("home.expertise.stats.projects") %>
+                                </div>
+                            </div>
+                            <div class="counter-item col-6">
+                                <div class="counter-no">
+                                    <span class="counter">20</span>+
+                                </div>
+                                <div class="Completed">
+                                    <%= __("home.expertise.stats.awards") %>
+                                </div>
+                            </div>
+                            <div class="counter-item col-6">
+                                <div class="counter-no">
+                                    <span class="counter">5</span>+
+                                </div>
+                                <div class="Completed">
+                                    <%= __("home.expertise.stats.offices") %>
+                                </div>
+                            </div>
+                            <div class="counter-item col-6">
+                                <div class="counter-no">
+                                    <span class="counter">2000</span>+
+                                </div>
+                                <div class="Completed">
+                                    <%= __("home.expertise.stats.clients") %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- home blog section html start -->
+    <section class="home-blog-section">
+        <div class="container">
+            <div class="section-head col-md-8 offset-md-2 text-center">
+                <h2 class="section-title">
+                    <%= __("home.blog.title") %>
+                </h2>
+                <p class="section-paragraph">
+                    <%= __("home.blog.subtitle") %>
+                </p>
+            </div>
+            <div class="inner-blog-wrapper">
+                <article class="post">
+                    <figure class="feature-image">
+                        <img src="images/j&j parquet 2 lu.jpg" alt="<%= __("home.blog.posts.workload") %>">
+                        <span class="cat-meta"></span>
+                    </figure>
+                    <div class="entry-content">
+                        <h5>
+                            <a href="#"><%= __("home.blog.posts.workload") %></a>
+                        </h5>
+                        <div class="entry-meta">
+                            <span class="posted-on">
+                                <a href="#"><%= new Date().toLocaleDateString(locale === 'en' ? 'en-US' : 'fr-FR', { 
+                                    day: 'numeric', 
+                                    month: 'long', 
+                                    year: 'numeric' 
+                                }) %></a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post">
+                    <figure class="feature-image">
+                        <img src="images/j&j actu 2.jpg" alt="<%= __("home.blog.posts.listening") %>">
+                        <span class="cat-meta"></span>
+                    </figure>
+                    <div class="entry-content">
+                        <h5>
+                            <a href="#"><%= __("home.blog.posts.listening") %></a>
+                        </h5>
+                        <div class="entry-meta">
+                            <span class="posted-on">
+                                <a href="#"><%= new Date().toLocaleDateString(locale === 'en' ? 'en-US' : 'fr-FR', { 
+                                    day: 'numeric', 
+                                    month: 'long', 
+                                    year: 'numeric' 
+                                }) %></a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post item-3">
+                    <figure class="feature-image">
+                        <img src="images/j&j actu.jpg" alt="<%= __("home.blog.posts.difference") %>">
+                        <span class="cat-meta"></span>
+                    </figure>
+                    <div class="entry-content">
+                        <h5>
+                            <a href="#"><%= __("home.blog.posts.difference") %></a>
+                        </h5>
+                        <div class="entry-meta">
+                            <span class="posted-on">
+                                <a href="#"><%= new Date().toLocaleDateString(locale === 'en' ? 'en-US' : 'fr-FR', { 
+                                    day: 'numeric', 
+                                    month: 'long', 
+                                    year: 'numeric' 
+                                }) %></a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+        <!-- footer part -->
+    <footer id="colophon" class="site-footer">
+    <div class="top-footer">
+        <div class="footer-overlay overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <aside class="widget widget_text img-textwidget primary-bg">
+                        <div class="footer-logo">
+                            <a href="/">
+                                <img src="/images/J&J logo white.svg" alt="J&J Law Firm Logo">
+                            </a>
+                        </div>
+                        <div class="textwidget widget-text">
+                            <%= __("footer.description") %>
+                        </div>
+                        <div class="footer-locate-link">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="locate-txt">
+                                        <strong><%= __("footer.kinshasa") %> :</strong><br>
+                                        <%= __("footer.kinshasa_address") %>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="locate-txt">
+                                        <strong><%= __("footer.lubumbashi") %> :</strong><br>
+                                        <%= __("footer.lubumbashi_address") %>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="tel:+243995482416">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span class="locate-txt">
+                                            <%= __("header.phone") %> (<%= __("footer.head_office") %>)
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+243810369919">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span class="locate-txt">
+                                            +243 810 369 919 (<%= __("footer.branch_office") %>)
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:lawfirmjetj@gmail.com">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="locate-txt">
+                                            lawfirmjetj@gmail.com
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <aside class="widget">
+                        <h5 class="widget-title"><%= __("footer.navigation") %></h5>
+                        <ul class="widget-underline">
+                            <li>
+                                <a href="/"><%= __("header.home") %></a>
+                            </li>
+                            <li>
+                                <a href="/about"><%= __("header.about") %></a>
+                            </li>
+                            <li>
+                                <a href="/practice-area"><%= __("services.all_services") %></a>
+                            </li>
+                            <li>
+                                <a href="/attorney"><%= __("team.our_team") %></a>
+                            </li>
+                            <li>
+                                <a href="/contact"><%= __("header.contact") %></a>
+                            </li>
+                            <li>
+                                <a href="/faq"><%= __("header.faq") %></a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <aside class="widget">
+                        <h5 class="widget-title"><%= __("footer.key_services") %></h5>
+                        <ul>
+                            <li>
+                                <a href="/practice-area-mines"><%= __("services.mining") %></a>
+                            </li>
+                            <li>
+                                <a href="/practice-area-ohada"><%= __("services.ohada") %></a>
+                            </li>
+                            <li>
+                                <a href="/practice-area-assurances"><%= __("services.insurance") %></a>
+                            </li>
+                            <li>
+                                <a href="/practice-area-immobilier"><%= __("services.real_estate") %></a>
+                            </li>
+                            <li>
+                                <a href="/practice-area-corporatif"><%= __("services.agricultural") %></a>
+                            </li>
+                            <li>
+                                <a href="/practice-area-droits-homme"><%= __("services.family") %></a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <aside class="widget news-widget">
+                        <h5 class="widget-title"><%= __("footer.newsletter") %></h5>
+                        <div class="textwidget widget-text">
+                            <%= __("footer.newsletter_desc") %>
+                        </div>
+                        
+                        <!-- Message de confirmation -->
+                        <div id="newsletter-message" style="display: none; background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #28a745;">
+                            <i class="fas fa-check-circle"></i> <span id="newsletter-message-text"></span>
+                        </div>
+                        
+                        <!-- Formulaire newsletter -->
+                        <form class="footer-email-form" id="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" name="email" placeholder="<%= __("footer.email_placeholder") %>" required>
+                                <button type="submit" class="footer-email-btn" title="<%= __("footer.subscribe") %>">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                        
+
+
+                        <!-- Réseaux sociaux -->
+                        <div class="footer-social-links">
+                            <p><%= __("footer.follow_us") %> :</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.me/243995482416" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="copy-right">
+                <%- __("footer.copyright_full") %> <%= new Date().getFullYear() %> <strong>J&J LAW FIRM</strong>. 
+                <%= __("footer.all_rights_reserved") %>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bouton retour en haut -->
+<a id="backTotop" href="#" class="to-top-icon" title="<%= __("footer.back_to_top") %>">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- Formulaire de recherche (optionnel) -->
+<div class="header-search-form" style="display: none;">
+    <div class="container">
+        <div class="header-search-container">
+            <form class="search-form" role="search" method="get">
+                <input type="text" name="s" placeholder="<%= __("footer.search_placeholder") %>">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <a href="#" class="search-close">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts JavaScript -->
+<script src="/vendors/jquery/jquery.js"></script>
+<script src="/vendors/waypoint/jquery.waypoints.min.js"></script>
+<script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+<script src="/vendors/progressbar-fill-visible/js/progressBar.min.js"></script>
+<script src="/vendors/circle-progress/circle-progress.min.js"></script>
+<script src="/vendors/countdown-date-loop-counter/loopcounter.js"></script>
+<script src="/vendors/counterup/jquery.counterup.js"></script>
+<script src="/vendors/modal-video/jquery-modal-video.min.js"></script>
+<script src="/vendors/masonry/masonry.pkgd.min.js"></script>
+<script src="/vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="/vendors/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="/vendors/slick/slick.min.js"></script>
+<script src="/vendors/slick-nav/jquery.slicknav.js"></script>
+<script src="/js/custom.js"></script>
+
+<!-- ============ SCRIPT UNIFIÉ DE GESTION DE LANGUE AVEC COOKIES PERSISTANTS ============ -->
+<script>
+    (function() {
+        'use strict';
+        
+        // ========== 1. DÉTECTION DE LA LANGUE ACTUELLE ==========
+        // Utiliser locale depuis le serveur (correct)
+        const currentLocale = '<%= locale %>' || 'fr';
+        
+        // ========== 2. FONCTION PRINCIPALE DE CHANGEMENT DE LANGUE ==========
+        window.setLanguage = function(lang) {
+            // Validation
+            if (!['fr', 'en'].includes(lang)) {
+                console.error('Langue non supportée:', lang);
+                return false;
+            }
+            
+            // Sauvegarder dans le cookie VIA LE SERVEUR (méthode fiable)
+            fetch('/set-language/' + lang, {
+                method: 'GET',
+                credentials: 'same-origin' // Important pour les cookies
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('✅ Langue changée pour:', lang);
+                    
+                    // Sauvegarder aussi dans localStorage comme backup
+                    try {
+                        localStorage.setItem('preferred-language', lang);
+                    } catch(e) {
+                        console.warn('localStorage non disponible');
                     }
-                });
-                
-                $('#backTotop').click(function(){
-                    $("html, body").animate({ scrollTop: 0 }, 600);
-                    return false;
-                });
+                    
+                    // Recharger la page pour appliquer la nouvelle langue
+                    window.location.reload();
+                } else {
+                    console.error('❌ Erreur serveur:', response.status);
+                    // Fallback: redirection avec paramètre URL
+                    window.location.href = window.location.pathname + '?lang=' + lang;
+                }
+            })
+            .catch(error => {
+                console.error('❌ Erreur réseau:', error);
+                // Fallback: redirection avec paramètre URL
+                window.location.href = window.location.pathname + '?lang=' + lang;
             });
-        </script>
+            
+            return false;
+        };
+        
+        // ========== 3. SÉLECTEUR DE LANGUE DROPDOWN ==========
+        function initLanguageSelector() {
+            const languageBtn = document.querySelector('.language-btn');
+            const languageDropdown = document.querySelector('.language-dropdown');
+            
+            if (languageBtn && languageDropdown) {
+                // Supprimer les anciens event listeners
+                const newBtn = languageBtn.cloneNode(true);
+                languageBtn.parentNode.replaceChild(newBtn, languageBtn);
+                const newDropdown = languageDropdown.cloneNode(true);
+                languageDropdown.parentNode.replaceChild(newDropdown, languageDropdown);
+                
+                // Réattacher les événements
+                const finalBtn = document.querySelector('.language-btn');
+                const finalDropdown = document.querySelector('.language-dropdown');
+                
+                if (finalBtn && finalDropdown) {
+                    finalBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const isVisible = finalDropdown.style.display === 'block';
+                        finalDropdown.style.display = isVisible ? 'none' : 'block';
+                    });
+                    
+                    document.addEventListener('click', function() {
+                        if (finalDropdown) {
+                            finalDropdown.style.display = 'none';
+                        }
+                    });
+                    
+                    finalDropdown.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                    });
+                    
+                    // Mettre à jour le texte du bouton selon la langue active
+                    const btnText = finalBtn.querySelector('span');
+                    if (btnText) {
+                        const langNames = {
+                            fr: 'FRANÇAIS',
+                            en: 'ENGLISH'
+                        };
+                        btnText.textContent = langNames[currentLocale] || 'FRANÇAIS';
+                    }
+                }
+            }
+        }
+        
+        // ========== 4. NEWSLETTER MULTILINGUE ==========
+        function initNewsletter() {
+            const newsletterForm = document.getElementById('newsletter-form');
+            if (!newsletterForm) return;
+            
+            // Supprimer ancien listener
+            const newForm = newsletterForm.cloneNode(true);
+            newsletterForm.parentNode.replaceChild(newForm, newsletterForm);
+            
+            // Ajouter nouveau listener
+            const finalForm = document.getElementById('newsletter-form');
+            
+            finalForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const emailInput = this.querySelector('input[name="email"]');
+                const email = emailInput ? emailInput.value : '';
+                const messageDiv = document.getElementById('newsletter-message');
+                const messageText = document.getElementById('newsletter-message-text');
+                
+                if (!messageDiv || !messageText) return;
+                
+                // Messages multilingues
+                const messages = {
+                    fr: {
+                        error: 'Veuillez entrer une adresse email valide.',
+                        success: 'Merci ! Vous êtes maintenant inscrit à notre newsletter.'
+                    },
+                    en: {
+                        error: 'Please enter a valid email address.',
+                        success: 'Thank you! You are now subscribed to our newsletter.'
+                    }
+                };
+                
+                // Validation email
+                if (!email || !email.includes('@') || !email.includes('.')) {
+                    messageText.innerHTML = messages[currentLocale]?.error || messages.fr.error;
+                    messageDiv.style.background = '#f8d7da';
+                    messageDiv.style.color = '#721c24';
+                    messageDiv.style.borderLeftColor = '#dc3545';
+                    messageDiv.style.display = 'block';
+                    return;
+                }
+                
+                // Simulation succès
+                messageText.innerHTML = messages[currentLocale]?.success || messages.fr.success;
+                messageDiv.style.background = '#d4edda';
+                messageDiv.style.color = '#155724';
+                messageDiv.style.borderLeftColor = '#28a745';
+                messageDiv.style.display = 'block';
+                
+                // Reset form
+                emailInput.value = '';
+                
+                // Masquer après 5 secondes
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+                
+                console.log('📧 Newsletter inscription:', email, 'Langue:', currentLocale);
+            });
+        }
+        
+        // ========== 5. BOUTON RETOUR EN HAUT ==========
+        function initBackToTop() {
+            const backToTop = document.getElementById('backTotop');
+            if (!backToTop) return;
+            
+            // Gérer l'affichage au scroll
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#backTotop').fadeIn();
+                } else {
+                    $('#backTotop').fadeOut();
+                }
+            });
+            
+            // Gérer le click
+            $('#backTotop').click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+            
+            // Mettre à jour le titre selon la langue
+            const titles = {
+                fr: 'Retour en haut',
+                en: 'Back to top'
+            };
+            backToTop.setAttribute('title', titles[currentLocale] || titles.fr);
+        }
+        
+        // ========== 6. INITIALISATION AU CHARGEMENT ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            initLanguageSelector();
+            initNewsletter();
+            initBackToTop();
+            
+            console.log('🌐 Langue active:', currentLocale, '(persistante sur toutes les pages)');
+        });
+        
+        // ========== 7. SYNC AVEC LOCALSTORAGE AU CHARGEMENT ==========
+        try {
+            const savedLang = localStorage.getItem('preferred-language');
+            if (savedLang && savedLang !== currentLocale) {
+                console.log('🔄 Synchronisation localStorage -> cookie:', savedLang);
+                // Silencieusement synchroniser
+                fetch('/set-language/' + savedLang, { 
+                    method: 'GET', 
+                    credentials: 'same-origin' 
+                }).catch(() => {});
+            }
+        } catch(e) {
+            // Ignorer erreurs localStorage
+        }
+        
+    })();
+</script>
 
-        </body>
+<!-- ============ CORRECTION DU HTML LANG DANS LE HEADER ============ -->
+<!-- Ce script doit être ajouté DANS LE HEADER, pas dans le footer -->
+<!-- Mais je le mets ici pour que tu voies la correction à appliquer -->
+<script>
+    // Correction pour le header : à déplacer dans le fichier header
+    // Remplacer : <html lang="<%= __("locale") || 'fr' %>">
+    // Par :        <html lang="<%= locale || 'fr' %>">
+    // 
+    // Si tu ne peux pas modifier le header, ce script ajuste automatiquement
+    document.documentElement.lang = '<%= locale || "fr" %>';
+</script>
 
-        </html>
+</body>
+
+</html>

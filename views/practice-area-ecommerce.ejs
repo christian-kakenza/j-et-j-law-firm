@@ -6,7 +6,7 @@
             <div class="overlay balance-patten"></div>
             <div class="container">
                 <div class="inner-banner-content">
-                    <!-- <h1 class="inner-title">Détails des Domaines de Pratique</h1> -->
+                    <!-- <h1 class="inner-title"><%= __('practice_detail_telecom.page_title') %></h1> -->
                 </div>
             </div>
         </div>
@@ -19,54 +19,56 @@
                     <div class="col-lg-8">
                         <div class="right-sidebar">
                             <h3 class="practice-title">
-                                Droit des Télécommunications
+                                <%= __('practice_detail_telecom.title') %>
                             </h3>
                             <figure class="practice-img">
-                                <img src="/images/telecom2.jpg" alt="Droit des Télécommunications">
+                                <img src="/images/telecom2.jpg" alt="<%= __('practice_detail_telecom.title') %>">
                             </figure>
                             <p class="practice-paragraph">
-                                Le Cabinet J&J Law Firm accompagne les opérateurs télécoms, fournisseurs de services et entreprises utilisatrices dans le secteur des télécommunications en pleine expansion en République Démocratique du Congo. Notre expertise couvre l'ensemble du cadre juridique régissant les communications électroniques, les licences d'exploitation et la conformité réglementaire.
+                                <%= __('practice_detail_telecom.intro_1') %>
                             </p>
                             <p class="practice-paragraph">
-                                Nous conseillons les acteurs du secteur sur l'obtention et le renouvellement des licences, la conformité avec les règlements de l'Autorité de Régulation des Postes et Télécommunications, les contrats d'interconnexion et les partenariats stratégiques. Notre cabinet maîtrise les enjeux juridiques spécifiques aux nouvelles technologies de communication et à la transformation numérique des télécoms.
+                                <%= __('practice_detail_telecom.intro_2') %>
                             </p>
                             <article class="practice-summary">
-                                <h5 class="practice-summary-title">Sécurisation des Opérations Télécoms :</h5>
+                                <h5 class="practice-summary-title">
+                                    <%= __('practice_detail_telecom.expertise_title') %>
+                                </h5>
                                 <p>
-                                    Nous garantissons la conformité réglementaire de vos activités dans le secteur des télécommunications tout en protégeant vos investissements et en optimisant vos opérations dans un environnement juridique en constante évolution.
+                                    <%= __('practice_detail_telecom.expertise_text') %>
                                 </p>
                                 <div class="practical-summary-wrapper">
                                     <figure class="practical-summary-img">
-                                        <img src="/images/telecom3.jpg" alt="">
+                                        <img src="/images/telecom3.jpg" alt="<%= __('practice_detail_telecom.title') %>">
                                     </figure>
                                     <div class="practical-summary-info">
                                         <p>
-                                            Notre approche stratégique permet d'anticiper les défis réglementaires du secteur des télécommunications et de mettre en place des structures juridiques robustes pour soutenir votre croissance.
+                                            <%= __('practice_detail_telecom.approach_text') %>
                                         </p>
 
                                         <p>
-                                            Nos services en droit des télécommunications incluent :
+                                            <%= __('practice_detail_telecom.services_title') %>
                                         </p>
                                         <ul>
                                             <li>
                                                 <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                                                Conseil pour l'obtention et le renouvellement de licences d'exploitation
+                                                <%= __('practice_detail_telecom.service_1') %>
                                             </li>
                                             <li>
                                                 <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                                                Négociation et rédaction de contrats d'interconnexion et de roaming
+                                                <%= __('practice_detail_telecom.service_2') %>
                                             </li>
                                             <li>
                                                 <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                                                Conformité réglementaire avec l'ARPT et autres autorités de régulation
+                                                <%= __('practice_detail_telecom.service_3') %>
                                             </li>
                                             <li>
                                                 <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                                                Protection des données et cybersécurité dans les communications
+                                                <%= __('practice_detail_telecom.service_4') %>
                                             </li>
                                             <li>
                                                 <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                                                Résolution des litiges et contentieux dans le secteur des télécoms
+                                                <%= __('practice_detail_telecom.service_5') %>
                                             </li>
                                         </ul>
                                     </div>
@@ -75,21 +77,21 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class=" left-sidebar">
+                        <div class="left-sidebar">
                             <div class="widget-bg faq-widget">
-                                <h5 class="bg-title">Notre Processus</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_telecom.process_title') %></h5>
                                 <div id="sidebar-tab-content" class="accordion-content" role="tablist">
                                     <div id="accordion-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="accordion-A">
                                         <div class="card-header" role="tab" id="qus-A">
                                             <h6 class="mb-0">
                                                 <a data-bs-toggle="collapse" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                                    Audit de Conformité Réglementaire
+                                                    <%= __('practice_detail_telecom.process_1_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-one" class="collapse show" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-A">
                                             <div class="card-body">
-                                                Analyse complète de votre conformité avec la réglementation des télécommunications, vérification des licences et identification des risques réglementaires spécifiques au secteur.
+                                                <%= __('practice_detail_telecom.process_1_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -97,13 +99,13 @@
                                         <div class="card-header" role="tab" id="qus-B">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-                                                    Négociation et Sécurisation Contractuelle
+                                                    <%= __('practice_detail_telecom.process_2_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-two" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-B">
                                             <div class="card-body">
-                                                Élaboration et négociation des contrats clés (interconnexion, roaming, partenariats) et mise en place des structures juridiques pour sécuriser vos opérations télécoms.
+                                                <%= __('practice_detail_telecom.process_2_desc') %>
                                             </div>
                                         </div>
                                     </div>
@@ -111,47 +113,48 @@
                                         <div class="card-header" role="tab" id="qus-C">
                                             <h6 class="mb-0">
                                                 <a class="collapsed" data-bs-toggle="collapse" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                                    Accompagnement Réglementaire Continu
+                                                    <%= __('practice_detail_telecom.process_3_title') %>
                                                 </a>
                                             </h6>
                                         </div>
                                         <div id="collapse-three" class="collapse" data-bs-parent="#sidebar-tab-content" role="tabpanel" aria-labelledby="qus-C">
                                             <div class="card-body">
-                                                Support permanent pour les mises à jour réglementaires, gestion des relations avec les autorités de régulation et adaptation aux évolutions technologiques et légales du secteur.
+                                                <%= __('practice_detail_telecom.process_3_desc') %>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget widget-bg icon-list-content">
-                                <h5 class="bg-title">Autres Domaines de Pratique</h5>
+                                <h5 class="bg-title"><%= __('practice_detail_telecom.other_practices') %></h5>
                                 <ul>
                                     <li>
-                                        <a href="/practice-area-mines"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i>Droit Minier</a>
+                                        <a href="/practice-area-mines"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i> <%= __('services.mining') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-ohada"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i>Droit OHADA</a>
+                                        <a href="/practice-area-ohada"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i> <%= __('services.ohada') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-assurances"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i>Droit des Assurances</a>
+                                        <a href="/practice-area-assurances"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i> <%= __('services.insurance') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-immobilier"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i>Droit Immobilier</a>
+                                        <a href="/practice-area-immobilier"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i> <%= __('services.real_estate') %></a>
                                     </li>
                                     <li>
-                                        <a href="/practice-area-droits-homme"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i>Droit de la Famille & Divorce</a>
+                                        <a href="/practice-area-droits-homme"><i aria-hidden="true" class="fas fa-arrow-circle-right"></i> <%= __('services.family') %></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="widget-bg sidebar-contact">
                                 <div class="overlay"></div>
-                                <h5>Laissez-nous Vous Aider !</h5>
+                                <h5><%= __('practice_detail_telecom.sidebar_title') %></h5>
                                 <p>
-                                    Vous opérez dans le secteur des télécommunications ? Besoin de conseils pour vos licences ou votre conformité réglementaire ? Notre expertise en droit des télécoms protège vos investissements.
+                                    <%= __('practice_detail_telecom.sidebar_text') %>
                                 </p>
-                                <a href="tel:+243 995482416">
-                                    <h6> Appelez-nous :
-                                        <span>+243 995482416</span>
+                                <a href="tel:+243995482416">
+                                    <h6>
+                                        <%= __('practice_detail_telecom.sidebar_call') %>
+                                        <span>+243 995 482 416</span>
                                     </h6>
                                 </a>
                             </div>

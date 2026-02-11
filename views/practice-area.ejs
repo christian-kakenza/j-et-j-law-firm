@@ -6,7 +6,7 @@
                 <div class="overlay balance-patten"></div>
                 <div class="container">
                     <div class="inner-banner-content">
-                        <!-- <h1 class="inner-title">Nos Domaines de Pratique</h1> -->
+                        <!-- <h1 class="inner-title"><%= __("practice_area.title") %></h1> -->
                     </div>
                 </div>
             </div>
@@ -16,21 +16,21 @@
         <section class="practice-area-section home-legal-area">
             <div class="container">
                 <div class="section-header text-center mb-5">
-                    <h2 class="section-title">Nos Spécialités Juridiques</h2>
-                    <p class="section-subtitle">Découvrez l'étendue de notre expertise couvrant tous les secteurs du droit en RDC</p>
+                    <h2 class="section-title"><%= __("practice_area.section_title") %></h2>
+                    <p class="section-subtitle"><%= __("practice_area.section_subtitle") %></p>
                 </div>
                 
                 <div class="legal-area-list">
                     <!-- Carte 1 : Droit des Affaires -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit1.jpg" alt="Droit des Affaires">
+                            <img src="/images/droit1.jpg" alt="<%= __("practice_area.commercial") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit Commercial</h5>
+                                <h5 class="role-title"><%= __("practice_area.commercial") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-detail">EN SAVOIR PLUS
+                                    <a href="/practice-area-detail"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -41,57 +41,36 @@
                         </div>
                     </div>
 
-                    <!-- carte 2 Droit constitutionnel -->
+                    <!-- Carte 12 : Droit Bancaire & Financement -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit2.jpg" alt="Droit des Affaires">
+                            <img src="/images/droit12.jpg" alt="<%= __("practice_area.banking") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit Constitutionnel & Administratif</h5>
+                                <h5 class="role-title"><%= __("practice_area.banking") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-constitutionnel">EN SAVOIR PLUS
+                                    <a href="/practice-area-pret-prive"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
                             </div>
                             <div class="legal-area-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  carte 3 Droit de la propriété intellectuelle -->
-
-                    <div class="legal-area-detail">
-                        <figure class="area-img">
-                            <img src="/images/droit3.jpg" alt="Droit des Affaires">
-                        </figure>
-                        <div class="area-content-wrapper">
-                            <div class="area-detail">
-                                <h5 class="role-title">Droit de la Propriété Intellectuelle</h5>
-                                <span class="area-role-btn">
-                                    <a href="/practice-area-intellectuelle">EN SAVOIR PLUS
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                </span>
-                            </div>
-                            <div class="legal-area-icon">
-                                <i class="fas fa-briefcase"></i>
+                                <i class="fas fa-hand-holding-usd"></i>
                             </div>
                         </div>
                     </div>
                     
-                    <!--  carte 4 Droit du transport et de douanes -->
+                    <!-- Carte 4 : Droit du transport et des douanes -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit4.jpg" alt="Droit du transport">
+                            <img src="/images/droit4.jpg" alt="<%= __("practice_area.transport") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit du Transport & des Douanes</h5>
+                                <h5 class="role-title"><%= __("practice_area.transport") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-transport">EN SAVOIR PLUS
+                                    <a href="/practice-area-transport"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -100,19 +79,20 @@
                                 <i class="fas fa-mountain"></i>
                             </div>
                         </div>
+
                     </div>
 
-
+                    
                     <!-- Carte 5 : Droit Minier -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droitMinier3.jpg" alt="Droit Minier">
+                            <img src="/images/droitMinier3.jpg" alt="<%= __("practice_area.mining") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit Minier</h5>
+                                <h5 class="role-title"><%= __("practice_area.mining") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-mines">EN SAVOIR PLUS
+                                    <a href="/practice-area-mines"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -126,13 +106,13 @@
                     <!-- Carte 6 : Droit OHADA -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/ohada1.jpg" alt="Droit OHADA">
+                            <img src="/images/ohada1.jpg" alt="<%= __("practice_area.ohada") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit OHADA</h5>
+                                <h5 class="role-title"><%= __("practice_area.ohada") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-ohada">EN SAVOIR PLUS
+                                    <a href="/practice-area-ohada"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -146,13 +126,13 @@
                     <!-- Carte 7 : Droit Agricole & Acquisition de Terres -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit7.jpg" alt="Droit Agricole & Acquisition de Terres">
+                            <img src="/images/droit7.jpg" alt="<%= __("practice_area.agricultural") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit Agricole & Acquisition de Terres</h5>
+                                <h5 class="role-title"><%= __("practice_area.agricultural") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-corporatif">EN SAVOIR PLUS
+                                    <a href="/practice-area-corporatif"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -166,13 +146,13 @@
                     <!-- Carte 8 : Droit des Assurances -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit8.jpg" alt="Droit des Assurances">
+                            <img src="/images/droit8.jpg" alt="<%= __("practice_area.insurance") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit des Assurances</h5>
+                                <h5 class="role-title"><%= __("practice_area.insurance") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-assurances">EN SAVOIR PLUS
+                                    <a href="/practice-area-assurances"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -186,13 +166,13 @@
                     <!-- Carte 9 : Droit Immobilier -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit9.jpg" alt="Droit Immobilier">
+                            <img src="/images/droit9.jpg" alt="<%= __("practice_area.real_estate") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit Immobilier</h5>
+                                <h5 class="role-title"><%= __("practice_area.real_estate") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-immobilier">EN SAVOIR PLUS
+                                    <a href="/practice-area-immobilier"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -206,13 +186,13 @@
                     <!-- Carte 10 : Droit de la Famille & Divorce -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit10.jpg" alt="Droit de la Famille & Divorce">
+                            <img src="/images/droit10.jpg" alt="<%= __("practice_area.family") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit de la Famille & Divorce</h5>
+                                <h5 class="role-title"><%= __("practice_area.family") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-droits-homme">EN SAVOIR PLUS
+                                    <a href="/practice-area-droits-homme"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -226,13 +206,13 @@
                     <!-- Carte 11 : Droit des Télécommunications -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit11.jpg" alt="Droit des Télécommunications">
+                            <img src="/images/droit11.jpg" alt="<%= __("practice_area.telecom") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit des Télécommunications</h5>
+                                <h5 class="role-title"><%= __("practice_area.telecom") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-ecommerce">EN SAVOIR PLUS
+                                    <a href="/practice-area-ecommerce"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
@@ -243,50 +223,70 @@
                         </div>
                     </div>
                     
-                    <!-- Carte 12 : Droit Bancaire & Financement -->
+                    <!-- Carte 3 : Droit de la Propriété Intellectuelle -->
                     <div class="legal-area-detail">
                         <figure class="area-img">
-                            <img src="/images/droit12.jpg" alt="Droit du Droit Bancaire & Financement">
+                            <img src="/images/droit3.jpg" alt="<%= __("practice_area.intellectual") %>">
                         </figure>
                         <div class="area-content-wrapper">
                             <div class="area-detail">
-                                <h5 class="role-title">Droit Bancaire & Financement</h5>
+                                <h5 class="role-title"><%= __("practice_area.intellectual") %></h5>
                                 <span class="area-role-btn">
-                                    <a href="/practice-area-pret-prive">EN SAVOIR PLUS
+                                    <a href="/practice-area-intellectuelle"><%= __("practice_area.learn_more") %>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </span>
                             </div>
                             <div class="legal-area-icon">
-                                <i class="fas fa-hand-holding-usd"></i>
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 2 : Droit Constitutionnel & Administratif -->
+                    <div class="legal-area-detail">
+                        <figure class="area-img">
+                            <img src="/images/droit2.jpg" alt="<%= __("practice_area.constitutional") %>">
+                        </figure>
+                        <div class="area-content-wrapper">
+                            <div class="area-detail">
+                                <h5 class="role-title"><%= __("practice_area.constitutional") %></h5>
+                                <span class="area-role-btn">
+                                    <a href="/practice-area-constitutionnel"><%= __("practice_area.learn_more") %>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="legal-area-icon">
+                                <i class="fas fa-briefcase"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Navigation entre spécialités -->
-            <div class="specialties-navigation mt-5 text-center">
-                <p class="mb-3">Explorez toutes nos spécialités ou prenez contact pour un conseil personnalisé</p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="/attorney" class="btn btn-outline-primary" 
-                    style="color: #565872 !important; border-color: #565872 !important;"
-                    onmouseover="this.style.backgroundColor='#565872'; this.style.color='white'"
-                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#565872'">
-                        <i class="fas fa-users"></i> Rencontrer notre équipe
-                    </a>
-                    
-                    <a href="/contact" class="btn btn-primary" 
-                    style="background-color: #565872 !important; border-color: #565872 !important;"
-                    onmouseover="this.style.backgroundColor='white'; this.style.color='#565872'"
-                    onmouseout="this.style.backgroundColor='#565872'; this.style.color='white'">
-                        <i class="fas fa-envelope"></i> Demander un devis
-                    </a>
-                    
-                    <a href="/faq" class="btn btn-outline-secondary">
-                        <i class="fas fa-question-circle"></i> Consulter la FAQ
-                    </a>
+                <div class="specialties-navigation mt-5 text-center">
+                    <p class="mb-3"><%= __("practice_area.navigation.explore") %></p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/attorney" class="btn btn-outline-primary" 
+                        style="color: #565872 !important; border-color: #565872 !important;"
+                        onmouseover="this.style.backgroundColor='#565872'; this.style.color='white'"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#565872'">
+                            <i class="fas fa-users"></i> <%= __("practice_area.navigation.meet_team") %>
+                        </a>
+                        
+                        <a href="/contact" class="btn btn-primary" 
+                        style="background-color: #565872 !important; border-color: #565872 !important;"
+                        onmouseover="this.style.backgroundColor='white'; this.style.color='#565872'"
+                        onmouseout="this.style.backgroundColor='#565872'; this.style.color='white'">
+                            <i class="fas fa-envelope"></i> <%= __("practice_area.navigation.request_quote") %>
+                        </a>
+                        
+                        <a href="/faq" class="btn btn-outline-secondary">
+                            <i class="fas fa-question-circle"></i> <%= __("practice_area.navigation.consult_faq") %>
+                        </a>
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
         <!-- about schedule section html start -->
@@ -297,22 +297,22 @@
                     <div class="right-side-schedule">
                         <aside class="section-head">
                             <h2 class="section-title">
-                                Engagez-nous pour Tous Types de Services Juridiques !
+                                <%= __("practice_area.schedule.title") %>
                             </h2>
                             <p class="section-paragraph">
-                                Notre cabinet allie expertise technique rigoureuse et approche stratégique pour défendre efficacement vos intérêts. Forts de spécialisations complémentaires en droit des affaires, droit minier, droit du travail et droit de la famille, nous offrons un accompagnement juridique sur mesure à chaque étape de votre projet.
+                                <%= __("practice_area.schedule.subtitle") %>
                             </p>
                             <div class="timenote">
                                 <div class="schedule-time">
                                     <ul>
                                         <li>
-                                            <h6>Lundi - Vendredi</h6>
+                                            <h6><%= __("practice_area.schedule.hours.weekdays") %></h6>
                                         </li>
                                         <li>
-                                            <h6>9h00 - 18h00</h6>
+                                            <h6><%= __("practice_area.schedule.hours.hours") %></h6>
                                         </li>
                                         <li>
-                                            <h6>Dimanche et Jours Fériés (Fermé)</h6>
+                                            <h6><%= __("practice_area.schedule.hours.closed") %></h6>
                                         </li>
                                     </ul>
                                 </div>
@@ -320,33 +320,33 @@
                                     <ul>
                                         <li>
                                             <i class="fas fa-check"></i>
-                                            <span>Droit des Affaires & Contrats</span>
+                                            <span><%= __("practice_area.schedule.expertise_list.business") %></span>
                                         </li>
                                         <li>
                                             <i class="fas fa-check"></i>
-                                            <span>Droit Minier & Énergétique</span>
+                                            <span><%= __("practice_area.schedule.expertise_list.mining") %></span>
                                         </li>
                                         <li>
                                             <i class="fas fa-check"></i>
-                                            <span>Droit du Travail & Social</span>
+                                            <span><%= __("practice_area.schedule.expertise_list.labor") %></span>
                                         </li>
                                         <li>
                                             <i class="fas fa-check"></i>
-                                            <span>Droit de la Famille & Successions</span>
+                                            <span><%= __("practice_area.schedule.expertise_list.family") %></span>
                                         </li>
                                         <li>
                                             <i class="fas fa-check"></i>
-                                            <span>Droit Public & Administratif</span>
+                                            <span><%= __("practice_area.schedule.expertise_list.public") %></span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="schedule-btn">
                                 <a href="/reservation" class="button-primary">
-                                    <i class="fas fa-calendar-check"></i> PRENDRE RENDEZ-VOUS
+                                    <i class="fas fa-calendar-check"></i> <%= __("practice_area.schedule.cta.appointment") %>
                                 </a>
                                 <a href="/contact" class="button-secondary ml-3">
-                                    <i class="fas fa-envelope"></i> NOUS CONTACTER
+                                    <i class="fas fa-envelope"></i> <%= __("practice_area.schedule.cta.contact") %>
                                 </a>
                             </div>
                         </aside>
@@ -358,8 +358,8 @@
                                     <div class="circle-number">95%</div>
                                 </div>
                             </div>
-                            <h5 class="goal-title">Taux de Satisfaction</h5>
-                            <p class="goal-subtitle">Clients satisfaits</p>
+                            <h5 class="goal-title"><%= __("practice_area.schedule.stats.satisfaction") %></h5>
+                            <p class="goal-subtitle"><%= __("practice_area.schedule.stats.clients") %></p>
                         </div>
                         <div class="goal-wrapper">
                             <div class="circle-progressbar-white circle-progressbar" data-animate="false">
@@ -367,8 +367,8 @@
                                     <div class="circle-number">98%</div>
                                 </div>
                             </div>
-                            <h5 class="goal-title">Réussite des Dossiers</h5>
-                            <p class="goal-subtitle">Affaires résolues</p>
+                            <h5 class="goal-title"><%= __("practice_area.schedule.stats.success") %></h5>
+                            <p class="goal-subtitle"><%= __("practice_area.schedule.stats.cases") %></p>
                         </div>
                     </div>
                 </div>
