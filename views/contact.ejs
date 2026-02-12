@@ -38,20 +38,21 @@
                                             <%= __("contact_page.section_subtitle") %>
                                         </p>
                                     </div>
-                                    <div class="quick-links mt-4">
-                                        <h5><%= __("contact_page.quick_links") %></h5>
-                                        <div class="d-flex flex-wrap gap-2 mt-2">
-                                            <a href="/reservation" class="btn btn-sm btn-outline-primary">
-                                                <i class="fas fa-calendar-check"></i> <%= __("contact_page.book_appointment_btn") %>
-                                            </a>
-                                            <a href="/practice-area" class="btn btn-sm btn-outline-secondary">
-                                                <i class="fas fa-balance-scale"></i> <%= __("contact_page.our_specialties_btn") %>
-                                            </a>
-                                            <a href="/attorney" class="btn btn-sm btn-outline-dark">
-                                                <i class="fas fa-users"></i> <%= __("contact_page.our_team_btn") %>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <div class="cta-buttons-wrapper">
+            <div class="cta-primary">
+                <a href="/reservation" class="btn">
+                    <i class="fas fa-calendar-check"></i> <%= __("contact_page.book_appointment_btn") %>
+                </a>
+            </div>
+            <div class="cta-secondary">
+                <a href="/practice-area" class="btn btn-outline-primary">
+                    <i class="fas fa-balance-scale"></i> <%= __("contact_page.our_specialties_btn") %>
+                </a>
+                <a href="/attorney" class="btn btn-outline-primary">
+                    <i class="fas fa-users"></i> <%= __("contact_page.our_team_btn") %>
+                </a>
+            </div>
+        </div>
                                 </div>
                                 <div class="contact-details-list">
                                     <ul>
@@ -444,6 +445,105 @@
                 text-decoration: underline;
             }
             
+
+            /* ===== REPOSITIONNEMENT DES BOUTONS CTA ===== */
+.cta-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+.cta-primary {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.cta-primary .btn {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-primary .btn:hover {
+    background-color: #a00000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.4);
+}
+
+.cta-secondary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.cta-secondary .btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Version Desktop */
+@media screen and (min-width: 768px) {
+    .cta-buttons-wrapper {
+        margin: 50px auto;
+        max-width: 800px;
+    }
+    
+    .cta-secondary {
+        gap: 30px;
+    }
+}
+
+/* Version Mobile */
+@media screen and (max-width: 767px) {
+    .cta-buttons-wrapper {
+        margin: 30px 0;
+        padding: 15px;
+    }
+    
+    .cta-primary {
+        max-width: 100%;
+    }
+    
+    .cta-primary .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    
+    .cta-secondary {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+    }
+    
+    .cta-secondary .btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
 
         </style>
         

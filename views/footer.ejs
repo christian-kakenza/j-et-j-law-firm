@@ -432,14 +432,13 @@
 </script>
 
 <!-- ============ CORRECTION DU HTML LANG DANS LE HEADER ============ -->
-<!-- Ce script doit être ajouté DANS LE HEADER, pas dans le footer -->
-<!-- Mais je le mets ici pour que tu voies la correction à appliquer -->
+
 <script>
     // Correction pour le header : à déplacer dans le fichier header
     // Remplacer : <html lang="<%= __("locale") || 'fr' %>">
     // Par :        <html lang="<%= locale || 'fr' %>">
     // 
-    // Si tu ne peux pas modifier le header, ce script ajuste automatiquement
+    // le header, ce script ajuste automatiquement
     document.documentElement.lang = '<%= locale || "fr" %>';
 </script>
 

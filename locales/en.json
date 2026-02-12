@@ -172,7 +172,8 @@
 			"mining": "Mining Law",
 			"family": "Family Law & Divorce",
 			"agricultural": "Agricultural Law & Land Acquisition",
-			"learn_more": "LEARN MORE"
+			"learn_more": "LEARN MORE",
+			"ohada": "home.specialties.ohada"
 		},
 		"expertise": {
 			"title": "Our Expertise Is Acquired Through Experience",
@@ -194,6 +195,47 @@
 				"listening": "Listening to Clients Will Bring Us More Experience",
 				"difference": "The Difference Between Legal Information and Legal Advice"
 			}
+		},
+		"testimonials": {
+			"title": "Trusted by Our Clients",
+			"subtitle": "Discover the testimonials of our satisfied clients"
+		}
+	},
+	"testimonials": {
+		"client1": {
+			"name": "John KASONGO",
+			"location": "Lubumbashi",
+			"testimonial": "Excellent law firm! Professional and attentive team. They assisted me in the acquisition of my mining contract.",
+			"service": "Mining Law",
+			"service_link": "/practice-area-mines"
+		},
+		"client2": {
+			"name": "Lambert KOMBO",
+			"location": "Kinshasa",
+			"testimonial": "Excellent law firm! Professional and attentive team. They assisted me in resolving my land disputes and agricultural litigation.",
+			"service": "Agricultural Law & Land Acquisition",
+			"service_link": "/practice-area-corporatif"
+		},
+		"client3": {
+			"name": "Mathieu TSHIBANGU",
+			"location": "Kinshasa",
+			"testimonial": "Excellent law firm! Professional and attentive team. They handled my customs dispute with remarkable efficiency.",
+			"service": "Transport & Customs Law",
+			"service_link": "/practice-area-transport"
+		},
+		"client4": {
+			"name": "Sophie Martin",
+			"location": "Paris",
+			"testimonial": "Very satisfied with the services. Only drawback: a slight delay in obtaining an appointment.",
+			"service": "Real Estate Law",
+			"service_link": "/practice-area-immobilier"
+		},
+		"client5": {
+			"name": "Thomas KAZADI",
+			"location": "Kinshasa",
+			"testimonial": "Competent and compassionate attorneys. They defended me with passion. I will not hesitate to retain their services again.",
+			"service": "Banking Law & Finance",
+			"service_link": "/practice-area-pret-prive"
 		}
 	},
 	"about": {
@@ -693,11 +735,8 @@
 		"gdpr_right_object": "The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.",
 		"gdpr_right_portability": "The right to data portability – You have the right to request that we transfer the data we have collected to another organization, or directly to you, under certain conditions.",
 		"gdpr_response": "If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please <a href=\"/contact\">contact us</a>."
-
-		
 	},
-
-		"feature_page": {
+	"feature_page": {
 		"title": "Our Strengths",
 		"card_1_title": "Officially Accredited",
 		"card_1_desc": "Official accreditation by the Bar Association and Congolese government authorities",
@@ -735,8 +774,7 @@
 		"goal_3_desc": "Exceptional success rate before all Congolese jurisdictions",
 		"goal_3_link": "Testimonials"
 	},
-
-		"attorney_detail": {
+	"attorney_detail": {
 		"title": "Attorney Details",
 		"position": "Managing Partner",
 		"name": "Master MUYOMBI TSHIMBU Jéthro",
@@ -777,9 +815,7 @@
 		"other_attorneys_subtitle": "Meet the other members of our firm",
 		"other_attorneys_btn": "VIEW FULL TEAM"
 	},
-
-
-		"attorney_detail_kabamba": {
+	"attorney_detail_kabamba": {
 		"title": "Attorney Details",
 		"position": "Associate Lawyer",
 		"name": "Master KABAMBA NGOY Nitz",
@@ -825,8 +861,7 @@
 		"other_attorneys_subtitle": "Meet the other members of our firm",
 		"other_attorneys_btn": "VIEW FULL TEAM"
 	},
-
-		"attorney_detail_olga": {
+	"attorney_detail_olga": {
 		"title": "Attorney Details",
 		"position": "Associate Lawyer",
 		"name": "Master Olga KASONGO",
@@ -860,8 +895,7 @@
 		"other_attorneys_subtitle": "Meet the other members of our firm",
 		"other_attorneys_btn": "VIEW FULL TEAM"
 	},
-
-		"attorney_detail_mizou": {
+	"attorney_detail_mizou": {
 		"title": "Attorney Details",
 		"position": "Partner Attorney",
 		"name": "Master Mizou NSANDA BILONGO",
@@ -916,8 +950,7 @@
 		"other_attorneys_subtitle": "Meet the other members of our firm",
 		"other_attorneys_btn": "VIEW FULL TEAM"
 	},
-
-		"attorney_detail_john": {
+	"attorney_detail_john": {
 		"title": "Attorney Details",
 		"position": "Partner Attorney",
 		"name": "Master NGOY KIBAMBE KABANGE John",
@@ -956,8 +989,7 @@
 		"other_attorneys_subtitle": "Meet the other members of our firm",
 		"other_attorneys_btn": "VIEW FULL TEAM"
 	},
-
-		"attorney_detail_emmanuel": {
+	"attorney_detail_emmanuel": {
 		"title": "Attorney Details",
 		"position": "Associate Lawyer",
 		"name": "Master Emmanuel MATONGO KABILA",
@@ -1002,8 +1034,7 @@
 		"other_attorneys_subtitle": "Meet the other members of our firm",
 		"other_attorneys_btn": "VIEW FULL TEAM"
 	},
-
-		"attorney_detail_daniel": {
+	"attorney_detail_daniel": {
 		"title": "Attorney Details",
 		"position": "Associate Lawyer",
 		"name": "Master KYUNGU DANIS Daniel",
@@ -1045,8 +1076,7 @@
 		"other_attorneys_subtitle": "Meet the other members of our firm",
 		"other_attorneys_btn": "VIEW FULL TEAM"
 	},
-
-		"practice_detail_insurance": {
+	"practice_detail_insurance": {
 		"title": "Insurance Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm possesses in-depth expertise in Insurance Law, covering all legal aspects related to insurance contracts, claims, and sector regulations in the Democratic Republic of Congo. We assist both insurers and policyholders in securing their contractual relationships.",
@@ -1076,7 +1106,7 @@
 		"sidebar_text": "Issues with your insurer? Need advice on your insurance policies? Our firm supports you in protecting your interests.",
 		"sidebar_appointment": "Book an appointment"
 	},
-		"practice_detail_constitutional": {
+	"practice_detail_constitutional": {
 		"title": "Constitutional & Administrative Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm possesses in-depth expertise in Constitutional and Administrative Law, fundamental areas that form the foundation of modern Congolese society. Our specialized team understands that mastery of these disciplines is essential for compliance with all legal norms and the proper functioning of institutions in the Democratic Republic of Congo.",
@@ -1123,8 +1153,7 @@
 		"sidebar_text": "Have a dispute with the administration? Need constitutional advice? Our public law expertise guarantees your rights before institutions.",
 		"sidebar_faq": "Constitutional FAQ"
 	},
-
-		"practice_detail_agricultural": {
+	"practice_detail_agricultural": {
 		"title": "Agricultural Law & Land Acquisition",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm possesses specialized expertise in Congolese Agricultural Law, with a particular focus on the acquisition, securing, and exploitation of agricultural land in the Democratic Republic of Congo. We assist agricultural investors, agro-industries, cooperatives, and rural communities in the legal securing of their agricultural projects.",
@@ -1170,8 +1199,7 @@
 		"sidebar_text": "Do you have an agricultural project in the DRC? Need to secure land for agriculture? Our expertise in agricultural land law guarantees the security of your investments.",
 		"sidebar_contact": "Free Land Study"
 	},
-
-		"practice_detail_commercial": {
+	"practice_detail_commercial": {
 		"title": "Commercial Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm possesses in-depth expertise in Commercial Law, assisting businesses and merchants in all their commercial operations in the Democratic Republic of Congo. Our firm masters the specificities of Congolese commercial law, the Commercial Code, and local and international business practices.",
@@ -1218,9 +1246,7 @@
 		"sidebar_text": "Do you have a commercial activity? Need advice for your contracts or a commercial dispute? Our commercial law expertise protects your interests.",
 		"sidebar_faq": "Commercial FAQ"
 	},
-
-
-		"practice_detail_family": {
+	"practice_detail_family": {
 		"title": "Family Law & Divorce",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm supports families with empathy and expertise during delicate moments of family life, with particular specialization in divorce proceedings. Our approach combines legal competence with human sensitivity to guide our clients through the legal and emotional aspects of separation in the Democratic Republic of Congo.",
@@ -1262,8 +1288,7 @@
 		"sidebar_text": "Are you considering separation? Need advice for a divorce? Our specialized team supports you with discretion and expertise through this difficult ordeal.",
 		"sidebar_appointment": "Confidential Consultation"
 	},
-
-		"practice_detail_telecom": {
+	"practice_detail_telecom": {
 		"title": "Telecommunications Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm supports telecom operators, service providers, and corporate users in the rapidly expanding telecommunications sector in the Democratic Republic of Congo. Our expertise covers the entire legal framework governing electronic communications, operating licenses, and regulatory compliance.",
@@ -1289,9 +1314,7 @@
 		"sidebar_text": "Do you operate in the telecommunications sector? Need advice on your licenses or regulatory compliance? Our telecom law expertise protects your investments.",
 		"sidebar_call": "Call us:"
 	},
-
-
-		"practice_detail_real_estate": {
+	"practice_detail_real_estate": {
 		"title": "Real Estate Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm supports its clients in all legal aspects related to the real estate sector in the Democratic Republic of Congo. Our expertise covers the acquisition, sale, lease, construction, and management of real estate properties, whether residential, commercial, or industrial.",
@@ -1321,8 +1344,7 @@
 		"sidebar_text": "A purchase, sale, or construction project? A land dispute? Our real estate law expertise guarantees you total legal security.",
 		"sidebar_faq": "Frequently Asked Questions"
 	},
-
-		"practice_detail_intellectual": {
+	"practice_detail_intellectual": {
 		"title": "Intellectual Property Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm possesses certified expertise in Intellectual Property Law in the Democratic Republic of Congo. Our firm is authorized to assist and represent our clients for all operations related to patents, trademarks, designs and models, being recognized as an official intellectual property agent before the competent authorities.",
@@ -1369,8 +1391,7 @@
 		"sidebar_text": "Do you have an invention to protect? A trademark to register? Our team of accredited intellectual property agents ensures the legal protection of your creations.",
 		"sidebar_faq": "Intellectual Property FAQ"
 	},
-
-		"practice_detail_mining": {
+	"practice_detail_mining": {
 		"title": "Mining Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "The mining sector constitutes the economic pillar of the Democratic Republic of Congo. Our firm supports you at every stage of your mining projects, from the acquisition of mining titles to the exploitation and marketing of resources. We master the Congolese Mining Code, its implementing regulations, and mining conventions.",
@@ -1400,8 +1421,7 @@
 		"sidebar_text": "A mining project in the DRC? A question about the Mining Code? Our firm provides the expertise needed to secure your investments.",
 		"sidebar_faq": "Consult the FAQ"
 	},
-
-		"practice_detail_ohada": {
+	"practice_detail_ohada": {
 		"title": "OHADA Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "The DRC has been a member since 2010 of the Treaty for the Harmonization of Business Law in Africa (OHADA), which brings together 17 countries in the West and Central African sub-region. This treaty became effective in the DRC on September 12, 2012, following the deposit of accession instruments.",
@@ -1431,8 +1451,7 @@
 		"sidebar_text": "Need to comply with OHADA law? A question about the Uniform Acts? Our expertise guarantees you a transition with complete legal security.",
 		"sidebar_faq": "Frequently Asked Questions"
 	},
-
-		"practice_detail_banking": {
+	"practice_detail_banking": {
 		"title": "Banking & Finance Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "J&J Law Firm possesses in-depth expertise in Banking Law, with a particular specialization in lending and financing operations. We assist banks, financial institutions, companies, and individuals at every stage of credit transactions in the Democratic Republic of Congo, from negotiation to risk management.",
@@ -1471,8 +1490,7 @@
 		"sidebar_text": "Are you negotiating a major bank loan? Need advice for structured financing? Our banking law expertise secures your credit transactions.",
 		"sidebar_faq": "Consult the FAQ"
 	},
-
-		"practice_detail_transport": {
+	"practice_detail_transport": {
 		"title": "Transport & Customs Law",
 		"page_title": "Practice Area Details",
 		"intro_1": "In a country where the economy is primarily supported by extractive and forestry industries like the Democratic Republic of Congo, transport plays a vital role in the evacuation and export of products. J&J Law Firm possesses specialized expertise in Transport and Customs Law, mastering the extensive legislation governing these areas both nationally and internationally.",

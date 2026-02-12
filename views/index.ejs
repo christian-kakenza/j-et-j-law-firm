@@ -710,78 +710,81 @@
     <!-- home gallery html section -->
 
     <section class="home-legal-area">
-        <div class="container">
-            <div class="top-section-head text-center col-lg-8 offset-lg-2">
-                <h2 class="section-title">
-                    <%= __("home.specialties.title") %>
-                </h2>
-                <p class="section-paragraph">
-                    <%= __("home.specialties.subtitle") %>
-                </p>
-            </div>
-            <div class="legal-area-list">
-                <div class="legal-area-detail">
-                    <figure class="area-img">
-                        <img src="/images/droitMinier2Update.jpg" alt="<%= __("services.mining") %>">
-                    </figure>
-                    <div class="area-content-wrapper">
-                        <div class="area-detail">
-                            <h5 class="role-title"><%= __("home.specialties.mining") %></h5>
-                            <span class="area-role-btn">
-                                <a href="/practice-area-mines"><%= __("home.specialties.learn_more") %>
-                                    <i aria-hidden="true" class="icon icon-arrow-right"></i>
-                                </a>
-                            </span>
-                        </div>
-                        <div class="legal-area-icon">
-                            <i aria-hidden="true" class="fas fa-handshake"></i>
-                        </div>
+    <div class="container">
+        <div class="top-section-head text-center col-lg-8 offset-lg-2">
+            <h2 class="section-title">
+                <%= __("home.specialties.title") %>
+            </h2>
+            <p class="section-paragraph">
+                <%= __("home.specialties.subtitle") %>
+            </p>
+        </div>
+        <div class="legal-area-list">
+            <!-- Droit Minier -->
+            <div class="legal-area-detail">
+                <figure class="area-img">
+                    <img src="/images/droitMinier2Update.jpg" alt="<%= __("services.mining") %>">
+                </figure>
+                <div class="area-content-wrapper">
+                    <div class="area-detail">
+                        <h5 class="role-title"><%= __("home.specialties.mining") %></h5>
+                        <span class="area-role-btn">
+                            <a href="/practice-area-mines"><%= __("home.specialties.learn_more") %>
+                                <i aria-hidden="true" class="icon icon-arrow-right"></i>
+                            </a>
+                        </span>
                     </div>
-                </div>
-
-                <div class="legal-area-detail item-3">
-                    <figure class="area-img">
-                        <img src="/images/familyUpdate.jpg" alt="<%= __("services.family") %>">
-                    </figure>
-                    <div class="area-content-wrapper">
-                        <div class="area-detail">
-                            <h5 class="role-title"><%= __("home.specialties.family") %></h5>
-                            <span class="area-role-btn">
-                                <a href="/practice-area-droits-homme"><%= __("home.specialties.learn_more") %>
-                                    <i aria-hidden="true" class="icon icon-arrow-right"></i>
-                                </a>
-                            </span>
-                        </div>
-                        <div class="legal-area-icon">
-                            <i aria-hidden="true" class="fas fa-home"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="legal-area-detail">
-                    <figure class="area-img">
-                        <img src="/images/Mines.jpg" alt="<%= __("services.agricultural") %>">
-                    </figure>
-                    <div class="area-content-wrapper">
-                        <div class="area-detail">
-                            <h5 class="role-title"><%= __("home.specialties.agricultural") %></h5>
-                            <span class="area-role-btn">
-                                <a href="/practice-area-corporatif"><%= __("home.specialties.learn_more") %>
-                                    <i aria-hidden="true" class="icon icon-arrow-right"></i>
-                                </a>
-                            </span>
-                        </div>
-                        <div class="legal-area-icon">
-                            <i aria-hidden="true" class="fas fa-balance-scale-right"></i>
-                        </div>
+                    <div class="legal-area-icon">
+                        <i aria-hidden="true" class="fas fa-hard-hat"></i>
                     </div>
                 </div>
             </div>
-            <div class="legal-area-btn text-center">
-                <a href="/practice-area" class="button-primary"><%= __("common.other_practice_areas") %></a>
+
+            <!-- Droit de la Famille -->
+            <div class="legal-area-detail item-3">
+                <figure class="area-img">
+                    <img src="/images/familyUpdate.jpg" alt="<%= __("services.family") %>">
+                </figure>
+                <div class="area-content-wrapper">
+                    <div class="area-detail">
+                        <h5 class="role-title"><%= __("home.specialties.family") %></h5>
+                        <span class="area-role-btn">
+                            <a href="/practice-area-droits-homme"><%= __("home.specialties.learn_more") %>
+                                <i aria-hidden="true" class="icon icon-arrow-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="legal-area-icon">
+                        <i aria-hidden="true" class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Droit OHADA -->
+            <div class="legal-area-detail">
+                <figure class="area-img">
+                    <img src="/images/ohada1.jpg" alt="<%= __("services.ohada") %>">
+                </figure>
+                <div class="area-content-wrapper">
+                    <div class="area-detail">
+                        <h5 class="role-title"><%= __("services.ohada") %></h5>  <!-- CORRIGÉ -->
+                        <span class="area-role-btn">
+                            <a href="/practice-area-ohada"><%= __("home.specialties.learn_more") %>
+                                <i aria-hidden="true" class="icon icon-arrow-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="legal-area-icon">
+                        <i aria-hidden="true" class="fas fa-gavel"></i>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="legal-area-btn text-center">
+            <a href="/practice-area" class="button-primary"><%= __("common.other_practice_areas") %></a>
+        </div>
+    </div>
+</section>
 
     <!-- home service section html -->
     <section class="home-service">
@@ -852,81 +855,247 @@
         </div>
     </section>
     
-    <!-- home blog section html start -->
-    <section class="home-blog-section">
-        <div class="container">
-            <div class="section-head col-md-8 offset-md-2 text-center">
-                <h2 class="section-title">
-                    <%= __("home.blog.title") %>
-                </h2>
-                <p class="section-paragraph">
-                    <%= __("home.blog.subtitle") %>
-                </p>
-            </div>
-            <div class="inner-blog-wrapper">
-                <article class="post">
-                    <figure class="feature-image">
-                        <img src="images/j&j parquet 2 lu.jpg" alt="<%= __("home.blog.posts.workload") %>">
-                        <span class="cat-meta"></span>
-                    </figure>
-                    <div class="entry-content">
-                        <h5>
-                            <a href="#"><%= __("home.blog.posts.workload") %></a>
-                        </h5>
-                        <div class="entry-meta">
-                            <span class="posted-on">
-                                <a href="#"><%= new Date().toLocaleDateString(locale === 'en' ? 'en-US' : 'fr-FR', { 
-                                    day: 'numeric', 
-                                    month: 'long', 
-                                    year: 'numeric' 
-                                }) %></a>
-                            </span>
+   <section class="testimonials-carousel-section">
+    <div class="container">
+        <div class="section-head col-md-8 offset-md-2 text-center">
+            <h2 class="section-title">
+                <%= __("home.testimonials.title") %>
+            </h2>
+            <p class="section-paragraph">
+                <%= __("home.testimonials.subtitle") %>
+            </p>
+        </div>
+
+        <div class="testimonials-wrapper">
+            <div class="testimonials-track">
+                <!-- PREMIER JEU DE TÉMOIGNAGES -->
+                <!-- Témoignage 1 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4><%= __("testimonials.client1.name") %></h4>
+                                <span class="client-location"><%= __("testimonials.client1.location") %></span>
+                            </div>
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"<%= __("testimonials.client1.testimonial") %>"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <a href="<%= __("testimonials.client1.service_link") %>" class="service-type-link">
+                                <span class="service-type"><%= __("testimonials.client1.service") %></span>
+                            </a>
                         </div>
                     </div>
-                </article>
-                <article class="post">
-                    <figure class="feature-image">
-                        <img src="images/j&j actu 2.jpg" alt="<%= __("home.blog.posts.listening") %>">
-                        <span class="cat-meta"></span>
-                    </figure>
-                    <div class="entry-content">
-                        <h5>
-                            <a href="#"><%= __("home.blog.posts.listening") %></a>
-                        </h5>
-                        <div class="entry-meta">
-                            <span class="posted-on">
-                                <a href="#"><%= new Date().toLocaleDateString(locale === 'en' ? 'en-US' : 'fr-FR', { 
-                                    day: 'numeric', 
-                                    month: 'long', 
-                                    year: 'numeric' 
-                                }) %></a>
-                            </span>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4><%= __("testimonials.client2.name") %></h4>
+                                <span class="client-location"><%= __("testimonials.client2.location") %></span>
+                            </div>
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"<%= __("testimonials.client2.testimonial") %>"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <a href="<%= __("testimonials.client2.service_link") %>" class="service-type-link">
+                                <span class="service-type"><%= __("testimonials.client2.service") %></span>
+                            </a>
                         </div>
                     </div>
-                </article>
-                <article class="post item-3">
-                    <figure class="feature-image">
-                        <img src="images/j&j actu.jpg" alt="<%= __("home.blog.posts.difference") %>">
-                        <span class="cat-meta"></span>
-                    </figure>
-                    <div class="entry-content">
-                        <h5>
-                            <a href="#"><%= __("home.blog.posts.difference") %></a>
-                        </h5>
-                        <div class="entry-meta">
-                            <span class="posted-on">
-                                <a href="#"><%= new Date().toLocaleDateString(locale === 'en' ? 'en-US' : 'fr-FR', { 
-                                    day: 'numeric', 
-                                    month: 'long', 
-                                    year: 'numeric' 
-                                }) %></a>
-                            </span>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4><%= __("testimonials.client3.name") %></h4>
+                                <span class="client-location"><%= __("testimonials.client3.location") %></span>
+                            </div>
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"<%= __("testimonials.client3.testimonial") %>"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <a href="<%= __("testimonials.client3.service_link") %>" class="service-type-link">
+                                <span class="service-type"><%= __("testimonials.client3.service") %></span>
+                            </a>
                         </div>
                     </div>
-                </article>
+                </div>
+
+                <!-- Témoignage 4 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4><%= __("testimonials.client4.name") %></h4>
+                                <span class="client-location"><%= __("testimonials.client4.location") %></span>
+                            </div>
+                            <div class="rating">
+                                ★★★★☆
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"<%= __("testimonials.client4.testimonial") %>"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <a href="<%= __("testimonials.client4.service_link") %>" class="service-type-link">
+                                <span class="service-type"><%= __("testimonials.client4.service") %></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 5 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4><%= __("testimonials.client5.name") %></h4>
+                                <span class="client-location"><%= __("testimonials.client5.location") %></span>
+                            </div>
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"<%= __("testimonials.client5.testimonial") %>"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <a href="<%= __("testimonials.client5.service_link") %>" class="service-type-link">
+                                <span class="service-type"><%= __("testimonials.client5.service") %></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DEUXIÈME JEU DE TÉMOIGNAGES (DUPLIQUÉ POUR L'EFFET INFINI) -->
+                <!-- Témoignage 1 (copie) -->
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4><%= __("testimonials.client1.name") %></h4>
+                                <span class="client-location"><%= __("testimonials.client1.location") %></span>
+                            </div>
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"<%= __("testimonials.client1.testimonial") %>"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <a href="<%= __("testimonials.client1.service_link") %>" class="service-type-link">
+                                <span class="service-type"><%= __("testimonials.client1.service") %></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 2 (copie) -->
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-info">
+                                <h4><%= __("testimonials.client2.name") %></h4>
+                                <span class="client-location"><%= __("testimonials.client2.location") %></span>
+                            </div>
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"<%= __("testimonials.client2.testimonial") %>"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <a href="<%= __("testimonials.client2.service_link") %>" class="service-type-link">
+                                <span class="service-type"><%= __("testimonials.client2.service") %></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Script pour la section des témoignages -->
+
+<script>
+// Carrousel témoignages - MÊME COMPORTEMENT PARTOUT
+document.addEventListener('DOMContentLoaded', function() {
+    const wrapper = document.querySelector('.testimonials-wrapper');
+    const track = document.querySelector('.testimonials-track');
+    
+    if (!wrapper || !track) return;
+    
+    // ===== PAUSE AU SURVOL (TOUS ÉCRANS) =====
+    track.addEventListener('mouseenter', function() {
+        this.style.animationPlayState = 'paused';
+    });
+    
+    track.addEventListener('mouseleave', function() {
+        this.style.animationPlayState = 'running';
+    });
+    
+    // ===== MOBILE : PAUSE AU TOUCHER =====
+    if (window.innerWidth <= 767) {
+        wrapper.addEventListener('touchstart', function() {
+            track.style.animationPlayState = 'paused';
+            this.classList.add('touching');
+        });
+        
+        wrapper.addEventListener('touchend', function() {
+            track.style.animationPlayState = 'running';
+            this.classList.remove('touching');
+        });
+        
+        wrapper.addEventListener('touchcancel', function() {
+            track.style.animationPlayState = 'running';
+            this.classList.remove('touching');
+        });
+    }
+    
+    // ===== DUPLICATION POUR EFFET INFINI =====
+    function duplicateItems() {
+        const items = Array.from(track.children);
+        if (items.length < 10) {
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                track.appendChild(clone);
+            });
+        }
+    }
+    
+    duplicateItems();
+});
+
+</script>
+
+
+
+
+
+
+
+
+
 </main>
         <!-- footer part -->
     <footer id="colophon" class="site-footer">

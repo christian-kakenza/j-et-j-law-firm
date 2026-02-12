@@ -172,7 +172,8 @@
 			"mining": "Droit Minier",
 			"family": "Droit de la Famille & Divorce",
 			"agricultural": "Droit Agricole & Acquisition de Terres",
-			"learn_more": "EN SAVOIR PLUS"
+			"learn_more": "EN SAVOIR PLUS",
+			"ohada": "home.specialties.ohada"
 		},
 		"expertise": {
 			"title": "Notre expertise est acquise grâce à notre expérience",
@@ -194,6 +195,47 @@
 				"listening": "Écouter les clients nous apportera davantage d'expérience",
 				"difference": "Différence entre Information Juridique et Conseil Juridique"
 			}
+		},
+		"testimonials": {
+			"title": "Ils nous font confiance",
+			"subtitle": "Découvrez les avis de nos clients satisfaits"
+		}
+	},
+	"testimonials": {
+		"client1": {
+			"name": "John KASONGO",
+			"location": "Lubumbashi",
+			"testimonial": "Excellent cabinet d'avocats ! Équipe professionnelle et à l'écoute. Ils m'ont accompagné dans l'acquisition de mon contrat minier.",
+			"service": "Droit Minier",
+			"service_link": "/practice-area-mines"
+		},
+		"client2": {
+			"name": "Lambert KOMBO",
+			"location": "Kinshasa",
+			"testimonial": "Excellent cabinet d'avocats ! Équipe professionnelle et à l'écoute. Ils m'ont accompagné dans la résolution de mes conflits fonciers et contentieux agricoles.",
+			"service": "Droit Agricole & Acquisition de Terres",
+			"service_link": "/practice-area-corporatif"
+		},
+		"client3": {
+			"name": "Mathieu TSHIBANGU",
+			"location": "Kinshasa",
+			"testimonial": "Excellent cabinet d'avocats ! Équipe professionnelle et à l'écoute. Ils m'ont accompagné dans mon litige douanier avec une grande efficacité.",
+			"service": "Droit du Transport & des Douanes",
+			"service_link": "/practice-area-transport"
+		},
+		"client4": {
+			"name": "Sophie Martin",
+			"location": "Paris",
+			"testimonial": "Très satisfaite des services. Seul bémol : un peu d'attente pour obtenir un rendez-vous.",
+			"service": "Droit immobilier",
+			"service_link": "/practice-area-immobilier"
+		},
+		"client5": {
+			"name": "Thomas KAZADI",
+			"location": "Kinshasa",
+			"testimonial": "Avocats compétents et humains. Ils m'ont défendu avec passion. Je n'hésiterai pas à refaire appel à eux.",
+			"service": "Droit Bancaire & Financement",
+			"service_link": "/practice-area-pret-prive"
 		}
 	},
 	"about": {
@@ -694,9 +736,7 @@
 		"gdpr_right_portability": "Le droit à la portabilité des données – Vous avez le droit de demander que nous transférions les données que nous avons collectées à une autre organisation, ou directement à vous, dans certaines conditions.",
 		"gdpr_response": "Si vous faites une demande, nous avons un mois pour y répondre. Si vous souhaitez exercer l'un de ces droits, veuillez <a href=\"/contact\">nous contacter</a>."
 	},
-
-
-		"feature_page": {
+	"feature_page": {
 		"title": "Nos Atouts",
 		"card_1_title": "Officiellement accrédité",
 		"card_1_desc": "Accréditation officielle par l'Ordre des Avocats et les autorités gouvernementales congolaises",
@@ -734,8 +774,7 @@
 		"goal_3_desc": "Taux exceptionnel de victoires devant toutes les juridictions congolaises",
 		"goal_3_link": "Témoignages"
 	},
-
-		"attorney_detail": {
+	"attorney_detail": {
 		"title": "Détails du Maître",
 		"position": "Avocat associé-Gérant",
 		"name": "Maître MUYOMBI TSHIMBU Jéthro",
@@ -776,8 +815,7 @@
 		"other_attorneys_subtitle": "Rencontrez les autres membres de notre cabinet",
 		"other_attorneys_btn": "VOIR TOUTE L'ÉQUIPE"
 	},
-
-		"attorney_detail_kabamba": {
+	"attorney_detail_kabamba": {
 		"title": "Détails du Maître",
 		"position": "Avocat Collaborateur",
 		"name": "Maître KABAMBA NGOY Nitz",
@@ -823,8 +861,7 @@
 		"other_attorneys_subtitle": "Rencontrez les autres membres de notre cabinet",
 		"other_attorneys_btn": "VOIR TOUTE L'ÉQUIPE"
 	},
-
-		"attorney_detail_olga": {
+	"attorney_detail_olga": {
 		"title": "Détails du Maître",
 		"position": "Avocate collaboratrice",
 		"name": "Maître Olga KASONGO",
@@ -858,8 +895,7 @@
 		"other_attorneys_subtitle": "Rencontrez les autres membres de notre cabinet",
 		"other_attorneys_btn": "VOIR TOUTE L'ÉQUIPE"
 	},
-
-		"attorney_detail_mizou": {
+	"attorney_detail_mizou": {
 		"title": "Détails du Maître",
 		"position": "Avocate Associée",
 		"name": "Maître Mizou NSANDA BILONGO",
@@ -914,8 +950,7 @@
 		"other_attorneys_subtitle": "Rencontrez les autres membres de notre cabinet",
 		"other_attorneys_btn": "VOIR TOUTE L'ÉQUIPE"
 	},
-
-		"attorney_detail_john": {
+	"attorney_detail_john": {
 		"title": "Détails du Maître",
 		"position": "Avocat associé",
 		"name": "Maître NGOY KIBAMBE KABANGE John",
@@ -954,8 +989,7 @@
 		"other_attorneys_subtitle": "Rencontrez les autres membres de notre cabinet",
 		"other_attorneys_btn": "VOIR TOUTE L'ÉQUIPE"
 	},
-
-		"attorney_detail_emmanuel": {
+	"attorney_detail_emmanuel": {
 		"title": "Détails du Maître",
 		"position": "Avocat Collaborateur",
 		"name": "Maître Emmanuel MATONGO KABILA",
@@ -1000,8 +1034,7 @@
 		"other_attorneys_subtitle": "Rencontrez les autres membres de notre cabinet",
 		"other_attorneys_btn": "VOIR TOUTE L'ÉQUIPE"
 	},
-
-		"attorney_detail_daniel": {
+	"attorney_detail_daniel": {
 		"title": "Détails du Maître",
 		"position": "Avocat Collaborateur",
 		"name": "Maître KYUNGU DANIS Daniel",
@@ -1043,8 +1076,7 @@
 		"other_attorneys_subtitle": "Rencontrez les autres membres de notre cabinet",
 		"other_attorneys_btn": "VOIR TOUTE L'ÉQUIPE"
 	},
-
-		"practice_detail_insurance": {
+	"practice_detail_insurance": {
 		"title": "Droit des Assurances",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm dispose d'une expertise approfondie en droit des assurances, couvrant l'ensemble des aspects juridiques liés aux contrats d'assurance, aux sinistres et à la réglementation du secteur en République Démocratique du Congo. Nous accompagnons aussi bien les assureurs que les assurés dans la sécurisation de leurs relations contractuelles.",
@@ -1074,8 +1106,7 @@
 		"sidebar_text": "Un problème avec votre assureur ? Besoin de conseil pour vos polices d'assurance ? Notre cabinet vous accompagne pour protéger vos intérêts.",
 		"sidebar_appointment": "Prendre rendez-vous"
 	},
-
-		"practice_detail_constitutional": {
+	"practice_detail_constitutional": {
 		"title": "Droit Constitutionnel & Administratif",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm dispose d'une expertise approfondie en droit constitutionnel et administratif, domaines fondamentaux qui constituent le socle de l'organisation de la société congolaise moderne. Notre équipe spécialisée comprend que la maîtrise de ces disciplines est essentielle pour le respect de l'ensemble des normes juridiques et le bon fonctionnement des institutions en République Démocratique du Congo.",
@@ -1122,8 +1153,7 @@
 		"sidebar_text": "Vous avez un litige avec l'administration ? Besoin de conseil constitutionnel ? Notre expertise en droit public garantit vos droits face aux institutions.",
 		"sidebar_faq": "FAQ Constitutionnelle"
 	},
-
-		"practice_detail_agricultural": {
+	"practice_detail_agricultural": {
 		"title": "Droit Agricole & Acquisition de Terres",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm dispose d'une expertise spécialisée en droit agricole congolais, avec un focus particulier sur l'acquisition, la sécurisation et l'exploitation des terres agricoles en République Démocratique du Congo. Nous accompagnons les investisseurs agricoles, les agro-industries, les coopératives et les communautés rurales dans la sécurisation juridique de leurs projets agricoles.",
@@ -1169,8 +1199,7 @@
 		"sidebar_text": "Vous avez un projet agricole en RDC ? Besoin de sécuriser des terres pour l'agriculture ? Notre expertise en droit foncier agricole garantit la sécurité de vos investissements.",
 		"sidebar_contact": "Étude foncière gratuite"
 	},
-
-		"practice_detail_commercial": {
+	"practice_detail_commercial": {
 		"title": "Droit Commercial",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm possède une expertise approfondie en droit commercial, accompagnant les entreprises et commerçants dans toutes leurs opérations commerciales en République Démocratique du Congo. Notre cabinet maîtrise les spécificités du droit commercial congolais, du Code de Commerce et des pratiques commerciales locales et internationales.",
@@ -1217,8 +1246,7 @@
 		"sidebar_text": "Vous avez une activité commerciale ? Besoin de conseil pour vos contrats ou un litige commercial ? Notre expertise en droit commercial protège vos intérêts.",
 		"sidebar_faq": "FAQ Commerciale"
 	},
-
-		"practice_detail_family": {
+	"practice_detail_family": {
 		"title": "Droit de la Famille & Divorce",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm accompagne les familles avec empathie et expertise dans les moments délicats de la vie familiale, avec une spécialisation particulière dans les procédures de divorce. Notre approche combine compétence juridique et sensibilité humaine pour guider nos clients à travers les aspects juridiques et émotionnels de la séparation en République Démocratique du Congo.",
@@ -1260,8 +1288,7 @@
 		"sidebar_text": "Vous envisagez une séparation ? Besoin de conseils pour un divorce ? Notre équipe spécialisée vous accompagne avec discrétion et expertise dans cette épreuve difficile.",
 		"sidebar_appointment": "Consultation confidentielle"
 	},
-
-		"practice_detail_telecom": {
+	"practice_detail_telecom": {
 		"title": "Droit des Télécommunications",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm accompagne les opérateurs télécoms, fournisseurs de services et entreprises utilisatrices dans le secteur des télécommunications en pleine expansion en République Démocratique du Congo. Notre expertise couvre l'ensemble du cadre juridique régissant les communications électroniques, les licences d'exploitation et la conformité réglementaire.",
@@ -1287,8 +1314,7 @@
 		"sidebar_text": "Vous opérez dans le secteur des télécommunications ? Besoin de conseils pour vos licences ou votre conformité réglementaire ? Notre expertise en droit des télécoms protège vos investissements.",
 		"sidebar_call": "Appelez-nous :"
 	},
-
-		"practice_detail_real_estate": {
+	"practice_detail_real_estate": {
 		"title": "Droit Immobilier",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm accompagne ses clients dans tous les aspects juridiques liés au secteur immobilier en République Démocratique du Congo. Notre expertise couvre l'acquisition, la vente, la location, la construction et la gestion des biens immobiliers, qu'il s'agisse de propriétés résidentielles, commerciales ou industrielles.",
@@ -1318,8 +1344,7 @@
 		"sidebar_text": "Un projet d'achat, de vente ou de construction ? Un litige foncier ? Notre expertise en droit immobilier vous garantit une sécurité juridique totale.",
 		"sidebar_faq": "Questions fréquentes"
 	},
-
-		"practice_detail_intellectual": {
+	"practice_detail_intellectual": {
 		"title": "Droit de la Propriété Intellectuelle",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm dispose d'une expertise certifiée en droit de la propriété intellectuelle en République Démocratique du Congo. Notre cabinet est habilité à assister et représenter nos clients pour toutes les opérations liées aux brevets, marques, dessins et modèles, étant reconnu comme mandataire officiel en propriété intellectuelle auprès des autorités compétentes.",
@@ -1366,8 +1391,7 @@
 		"sidebar_text": "Vous avez une invention à protéger ? Une marque à déposer ? Notre équipe de mandataires agréés en propriété intellectuelle assure la protection juridique de vos créations.",
 		"sidebar_faq": "FAQ Propriété Intellectuelle"
 	},
-
-		"practice_detail_mining": {
+	"practice_detail_mining": {
 		"title": "Droit Minier",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le secteur minier constitue le pilier économique de la République Démocratique du Congo. Notre cabinet vous accompagne dans toutes les étapes de vos projets miniers, de l'acquisition des titres miniers jusqu'à l'exploitation et la commercialisation des ressources. Nous maîtrisons le Code Minier congolais, ses règlements d'application, et les conventions minières.",
@@ -1397,9 +1421,7 @@
 		"sidebar_text": "Un projet minier en RDC ? Une question sur le Code Minier ? Notre cabinet vous apporte l'expertise nécessaire pour sécuriser vos investissements.",
 		"sidebar_faq": "Consulter la FAQ"
 	},
-
-
-		"practice_detail_ohada": {
+	"practice_detail_ohada": {
 		"title": "Droit OHADA",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "La RDC a adhéré depuis 2010 au Traité pour l'Harmonisation du Droit des Affaires en Afrique (OHADA) qui regroupe 17 pays de la sous-région de l'Afrique de l'Ouest et Centrale. Ce traité est devenu effectif en RDC depuis le 12 septembre 2012, à la suite du dépôt des instruments d'adhésion.",
@@ -1429,8 +1451,7 @@
 		"sidebar_text": "Besoin de vous conformer au droit OHADA ? Une question sur les Actes Uniformes ? Notre expertise vous garantit une transition en toute sécurité juridique.",
 		"sidebar_faq": "Questions fréquentes"
 	},
-
-		"practice_detail_banking": {
+	"practice_detail_banking": {
 		"title": "Droit Bancaire & Financement",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Le Cabinet J&J Law Firm possède une expertise approfondie en droit bancaire, avec une spécialisation particulière dans les opérations de prêt et de financement. Nous accompagnons les banques, institutions financières, entreprises et particuliers dans toutes les étapes des transactions de crédit en République Démocratique du Congo, de la négociation à la gestion des risques.",
@@ -1469,8 +1490,7 @@
 		"sidebar_text": "Vous négociez un prêt bancaire important ? Besoin de conseil pour un financement structuré ? Notre expertise en droit bancaire sécurise vos transactions de crédit.",
 		"sidebar_faq": "Consulter la FAQ"
 	},
-
-		"practice_detail_transport": {
+	"practice_detail_transport": {
 		"title": "Droit du Transport & des Douanes",
 		"page_title": "Détails des Domaines de Pratique",
 		"intro_1": "Dans un pays où l'économie est principalement soutenue par les industries extractives et forestières comme la République Démocratique du Congo, le transport joue un rôle primordial pour l'évacuation et l'exportation des produits. Le Cabinet J&J Law Firm dispose d'une expertise spécialisée en droit du transport et des douanes, maîtrisant la législation abondante régissant ces domaines tant au niveau national qu'international.",
