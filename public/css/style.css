@@ -1663,77 +1663,7 @@ input[type=submit]:focus {
     }
 }
 
-/* ===== BOUTONS SCHEDULE - STYLE COMME ACTION BUTTONS ===== */
-.schedule-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 300px;
-    margin: 20px auto 0;  /* Changé: auto pour centrer */
-    align-items: center;  /* Centrage horizontal */
-}
 
-.schedule-btn .button-primary,
-.schedule-btn .button-secondary {
-    width: 100%;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.schedule-btn .button-primary {
-    background: #8B0000;
-    color: white;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.2);
-}
-
-.schedule-btn .button-primary:hover {
-    background: #a00000;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.3);
-}
-
-.schedule-btn .button-secondary {
-    background: #2c3e50;
-    color: white;
-    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.15);
-}
-
-.schedule-btn .button-secondary:hover {
-    background: #34495e;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(44, 62, 80, 0.25);
-}
-
-/* Supprimer la marge left qui n'est plus utile */
-.schedule-btn .button-secondary.ml-3 {
-    margin-left: 0 !important;
-}
-
-/* Version mobile */
-@media screen and (max-width: 767px) {
-    .schedule-btn {
-        max-width: 280px;
-        gap: 12px;
-        margin: 20px auto;  /* Centré */
-    }
-    
-    .schedule-btn .button-primary,
-    .schedule-btn .button-secondary {
-        padding: 12px 18px;
-        font-size: 15px;
-        width: 100%;  /* Pleine largeur */
-    }
-}
 
 .success-container .btn-primary {
     background: #872b06;
