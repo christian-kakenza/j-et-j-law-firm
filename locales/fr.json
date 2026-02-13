@@ -14,7 +14,8 @@
 		"phone": "+243 995 482 416",
 		"language": "Langue",
 		"french": "Français",
-		"english": "Anglais"
+		"english": "Anglais",
+		"menu": "header.menu"
 	},
 	"services": {
 		"all_services": "Nos spécialités",
@@ -118,8 +119,8 @@
 	},
 	"home": {
 		"banner": {
-			"title": "PROTÉGEZ VOS INTÉRÊTS AVEC DES EXPERTS",
-			"subtitle": "Droit minier, affaires (OHADA), corporatif, fiscal et ressources naturelles. Notre équipe d'avocats expérimentés vous conseille et vous défend avec stratégie et détermination pour assurer le succès de vos projets."
+			"title": "CONSEIL JURIDIQUE STRATÉGIQUE POUR LES AFFAIRES ET LE DROIT",
+			"subtitle": "J&J Law Firm offre une représentation experte en droit minier, droit des affaires OHADA, droit des sociétés, droit fiscal et droit des ressources naturelles à travers l'Afrique francophone. Nos avocats assurent une défense rigoureuse et orientée vers les résultats pour protéger vos intérêts et garantir la réussite de vos projets dans l'ensemble de la région."
 		},
 		"values": {
 			"accredited": {

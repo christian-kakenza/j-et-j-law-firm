@@ -570,7 +570,7 @@ a:visited {
 --------------------------------------------------------------*/
 
 .language-tags .badge {
-    background-color: #8B0000 !important;
+    background-color: #872b06 !important;
     color: white !important;
     padding: 4px 8px !important;
     border-radius: 3px !important;
@@ -1488,7 +1488,7 @@ input[type=submit]:focus {
 }
 
 .action-title {
-    color: #2c3e50;
+    color: #565872;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
@@ -1504,7 +1504,7 @@ input[type=submit]:focus {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: #8B0000;
+    background: #872b06;
     border-radius: 3px;
 }
 
@@ -1546,7 +1546,7 @@ input[type=submit]:focus {
 }
 
 .action-buttons .btn-primary {
-    background: #8B0000;
+    background: #872b06;
     color: white;
     box-shadow: 0 5px 15px rgba(139, 0, 0, 0.2);
 }
@@ -1558,7 +1558,7 @@ input[type=submit]:focus {
 }
 
 .action-buttons .btn-secondary {
-    background: #2c3e50;
+    background: #565872;
     color: white;
     box-shadow: 0 5px 15px rgba(44, 62, 80, 0.15);
 }
@@ -3666,6 +3666,7 @@ input[type=submit]:focus {
   transition: opacity 0.4s linear;
 }
 
+
 /*--------------------------------------------------------------
 >>> Main Header Menu
 ----------------------------------------------------------------*/
@@ -4424,6 +4425,10 @@ input[type=submit]:focus {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+
+
+
 
 /*--------------------------------------------------------------
 >>> Home Main section  
@@ -12276,7 +12281,7 @@ product slider range for price css
 .language-option.active {
     background: #f8f9fa;
     font-weight: 600;
-    color: #8B0000;
+    color: #872b06;
 }
 
 .language-option span:first-child {
@@ -12289,7 +12294,7 @@ product slider range for price css
 }
 
 .language-option i.fa-check {
-    color: #8B0000;
+    color: #872b06;
 }
 
 
@@ -12327,3 +12332,7 @@ product slider range for price css
     font-size: 13px !important;
   }
 }
+
+
+
+
