@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser'); // AJOUTEZ CECI
 const app = express();
 
 // ============ CONFIGURATION I18N ============
-app.use(cookieParser()); // IMPORTANT - Placez-le ici
+app.use(cookieParser());
 
 i18n.configure({
     locales: ['fr', 'en'],
@@ -16,30 +16,18 @@ i18n.configure({
     cookie: 'lang',
     autoReload: true,
     syncFiles: true,
-    objectNotation: true
+    objectNotation: true,
+    queryParameter: 'lang',
+    register: global
 });
 
 app.use(i18n.init);
 
-// Middleware pour gérer la langue avec cookie
+// Rendre la locale disponible pour les vues
+
 app.use((req, res, next) => {
-    // 1. Vérifier le paramètre ?lang= dans l'URL
-    if (req.query.lang && ['fr', 'en'].includes(req.query.lang)) {
-        res.setLocale(req.query.lang);
-        res.cookie('lang', req.query.lang, { 
-            maxAge: 30 * 24 * 60 * 60 * 1000,
-            httpOnly: true 
-        });
-    }
-    // 2. Vérifier le cookie existant
-    else if (req.cookies && req.cookies.lang && ['fr', 'en'].includes(req.cookies.lang)) {
-        res.setLocale(req.cookies.lang);
-    }
-    // 3. Par défaut: français
-    else {
-        res.setLocale('fr');
-    }
-    
+
+
     res.locals.locale = res.getLocale();
     res.locals.__ = res.__;
     next();
@@ -70,11 +58,17 @@ app.get('/set-language/:lang', (req, res) => {
 
 // ============ CONFIGURATION NODEMAILER ============
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',      // 👈 Spécifiez le host au lieu de 'service: gmail'
+    port: 587,                    // 👈 Port 587 au lieu de 465
+    secure: false,                // 👈 false pour le port 587 (STARTTLS)
     auth: {
         user: 'christian.kakenza0@gmail.com',
         pass: 'eipm qxzw hdmr sfsi'
-    }
+    },
+    family: 4,                     // 👈 FORCE IPv4 (important pour Render!)
+    requireTLS: true,              // 👈 Force TLS
+    connectionTimeout: 30000,       // 👈 Timeout plus long (30 secondes)
+    socketTimeout: 30000
 });
 
 // ============ ROUTES GET ============
